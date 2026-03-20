@@ -1,0 +1,1 @@
+<style>	@media print {		a[href]:after {			content: none !important; /* 隱藏連結的 URL */		}	}</style><form action="/error404.asp" method="post" name="redirectform"></form><script>document.redirectform.submit();</script>
