@@ -1,0 +1,9 @@
+@media(max-width:1083px){.pagenav .stuck{padding-left:1rem;padding-right:1rem;background-color:#fff}
+}
+@media(min-width:1084px) and (max-width:1775px){.pagenav .stuck{padding-left:5%;padding-right:5%;background-color:#fff}
+}
+@media(min-width:1776px){.pagenav .stuck{padding-left:8%;padding-right:8%;background-color:#fff}
+}
+@media(forced-colors:active){.nav-item.active .nav-link,.nav-item .nav-link:hover{border-bottom:.125rem solid #0067b8}
+.nav-item .nav-link :hover{padding-bottom:.6rem}
+}

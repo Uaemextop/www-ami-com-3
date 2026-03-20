@@ -1,90 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Pragma" content="no_cache" />
-    <meta name="Distribution" content="Global" />
-    <meta name="Robots" content="index,follow" />
-    <meta name="Revisit-After" content="1 Days" />
-    <meta name="Copyright" content="&copy; 2026 DIGITIMES Inc." />
-    <meta name="Publisher" content="DIGITIMES Inc." />
-    <meta name="Content-language" content="EN-US" />
-    <meta name="Author" content="DIGITIMES" />
-    <meta name="Date" content="2026/03/20 08:34:19" />
-    <meta name="Description" content="DIGITIMES Research - analysis, data and reports" />
-    <meta name="Keywords" content="DIGITIMES, Taipei, Taiwan, China, Asia, IT, Information Technology, DIGITIMES Research, reports, market, analysis, data" />
-    <meta name="Pragma" content="no_cache" />
-    <title>DIGITIMES Research</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://img.digitimes.com">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Pragma" content="no_cache"/>
+<meta name="Distribution" content="Global"/>
+<meta name="Robots" content="index, follow, max-image-preview:large, noarchive"/>
+<meta name="Revisit-After" content="1 Days"/>
+<meta name="Copyright" content="&copy; 2026 DIGITIMES Inc."/>
+<meta name="Publisher" content="DIGITIMES Inc."/>
+<meta name="Content-language" content="en"/>
+<meta name="Author" content="DIGITIMES Asia"/>
+<meta name="Date" content="Wednesday 15 October 2025"/>
+<meta name="Description" content=""/>
+<meta name="Keywords" content="AMD, CPU, global server, global server research, server shipments, shipments"/>
+<meta name="referrer" content="unsafe-url"/>
+<meta name="Pragma" content="no_cache"/>
+<meta property="fb:pages" content="89446733162" />
+<meta property="og:site_name" content="DIGITIMES" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.digitimes.com/reports/item.php?id=20251007RS400" />
+<meta property="og:title" content="Global server shipment forecast, 2026 and beyond" />
+<meta property="og:description" content="Introduction" />
+<meta name="thumbnail" content="https://img.digitimes.com/newsshow/2025100700400_files/10_s.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@DigitimesAsia" />
+<meta name="twitter:creator" content="@DigitimesAsia" />
+<meta property="og:image" content="https://img.digitimes.com/newsshow/2025100700400_files/_2b" />
+<link rel="canonical" href="https://www.digitimes.com/reports/item.php?id=20251007RS400">
+<title>Global server shipment forecast, 2026 and beyond</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="//connect.facebook.net">
+<link rel="dns-prefetch" href="//connect.facebook.net">
+    <link rel="preconnect" href="https://img.digitimes.com">
     <link rel="dns-prefetch" href="https://img.digitimes.com">
-        <link rel="preload" href="https://img.digitimes.com/script/js/jquery-3.6.0.min.js" as="script">
-    <link rel="preload" href="https://img.digitimes.com/script/js/jquery.bez.js" as="script">
-    <link rel="preload" href="https://img.digitimes.com/script/js/swiper-3.4.2.min.js" as="script">
-    <link rel="preload" href="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js" as="script">
-    <link rel="preload" href="/script/js/site.v1.js?cb=198.1&v=20230207001" as="script">
-    <link rel="preload" href="https://img.digitimes.com/script/normalize.css" as="style" />
-    <link rel="preload" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" as="style" />
-    <link rel="preload" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" as="style" />
-    <link rel="preload" href="/script/site.v1.css?cb=3&v=20230207001" as="style" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" />
-    <script type="text/javascript" src="https://img.digitimes.com/script/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.bez.js"></script>
-    <script type="text/javascript" src="https://img.digitimes.com/script/js/swiper-3.4.2.min.js"></script>
-    <script type="text/javascript" src="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js"></script>
-    <script type="text/javascript" src="/script/js/site.v1.js?cb=198.1&v=20230207001"></script>
-    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/normalize.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3&v=20230207001" />   
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-    <script language="JavaScript" type="text/javascript">
-      $(function() {
-        $("#sfrm input[name='ch']").val("2");
-        $("#sfrmmob input[name='ch']").val("2");
-        $('.main-nav-frame a[href$="/reports/"]:first').addClass("focus");
-        $(".research-submenu .link-group .link-item").hover(function() {
-          $(".research-submenu .link-group .link-item menu").addClass("show");
-        }, function() {
-          $(".research-submenu .link-group .link-item menu").removeClass("show");
-        });
-
-        const latest_reports_cards = document.querySelectorAll('.section-latest-reports .card')
-
-      });
-    </script>
-    <!--style mod-->
-    <style>
-      .trending-frame{display:none!important}
-      .chip{text-transform: uppercase;}
-      @media(min-width: 768px){
-        .section-latest-reports .wrapper .card .content .content-wrapper .author {
-          font-size: 18px!important;
+<link rel="preload" href="https://img.digitimes.com/script/js/jquery-3.6.0.min.js" as="script">
+<link rel="preload" href="https://img.digitimes.com/script/js/jquery.bez.js" as="script">
+<link rel="preload" href="https://img.digitimes.com/script/js/swiper-3.4.2.min.js" as="script">
+<link rel="preload" href="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js" as="script">
+<link rel="preload" href="https://img.digitimes.com/script/js/jquery.mark.min.js" as="script">
+<link rel="preload" href="/script/js/site.v1.js?cb=198.1&v=2023080701" as="script">
+<link rel="preload" href="https://img.digitimes.com/script/normalize.css" as="style" />
+<link rel="preload" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" as="style" />
+<link rel="preload" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" as="style" />
+<link rel="preload" href="/script/site.v1.css?cb=3&v=2023080701" as="style" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" />
+<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.bez.js"></script>
+<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.mark.min.js"></script>
+<script type="text/javascript" src="/script/js/site.v1.js?cb=198.1&v=2023080701"></script>
+<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/normalize.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3&v=2023080701" />
+<link rel="stylesheet" type="text/css" media="all" href="/reports/styles/style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "url": "https://www.digitimes.com/reports/item.php?id=20251007RS400",
+    "datePublished": "2025-10-15T13:31:55+08:00",
+    "dateModified": "2025-10-15T13:31:55+08:00",
+    "headline": "Global server shipment forecast, 2026 and beyond",
+    "mainEntityOfPage": "https://www.digitimes.com/reports/item.php?id=20251007RS400",
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "DIGITIMES Inc.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.digitimes.com/images/logos/digitimes.jpg"
         }
-      }
-      .channels .wrapper .btn{font-weight:500!important;}
-    </style>
-
-    <!--JS/CSS-->
-    <link rel="stylesheet" type="text/css" media="all" href="styles/style.css" />
-    <script type="module">
-      var swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        // Pagination
-        pagination: ".swiper-pagination",
-        nextButton: ".swiper-button-next",
-        prevButton: ".swiper-button-prev",
-      });
+    },
+    "author": {
+        "@type": "Thing",
+        "name": "DIGITIMES Asia"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.digitimes.com/newsshow/20251007RS400_files/10_2b.jpg"
+    },
+    "thumbnailUrl": "https://www.digitimes.com/newsshow/20251007RS400_files/10_s.jpg"
+}
+</script>    <script language="JavaScript" type="text/javascript">
+        $(function(){
+            $("#content a").not(".text a, .toc a").attr("target","_blank");
+        	$("#content img").addClass("img-fluid");
+        	$("#content table").wrap( "<div class='table-responsive borderless'></div>" );
+        	$("#content p.R1").wrap("<h2></h2>").contents().unwrap();
+        	$("#content p.R2").wrap("<h3></h3>").contents().unwrap();
+        	$("#sfrm input[name='ch']").val("2");
+        	$("#sfrmmob input[name='ch']").val("2");
+        	$('.main-nav-frame a[href$="/reports/"]:first').addClass("focus");
+                                    $('.link-group .link-item').hover(function () {
+                $('.link-group .link-item menu').addClass("show");
+        	}, function () {
+                $('.link-group .link-item menu').removeClass("show");
+        	});
+            //$('.follow-btn').on('click', function () {
+                //if ($(this).hasClass('btn-unfollow')) {
+                    //$(this).removeClass('btn-unfollow');
+                    //$(this).addClass('btn-follow');
+                    //$(this).children('.count').text('1');
+                //} else {
+                    //$(this).removeClass('btn-follow');
+                    //$(this).addClass('btn-unfollow');
+                    //$(this).children('.count').text('0');
+                //}
+            //});
+            //$('.package .option-block li').on('click', function () {
+                //if ($(this).hasClass('selected')) {
+                    //$(this).removeClass('active');
+                //} else {
+                    //$('.package .option-block li').removeClass('selected');
+                    //$(this).addClass('selected');
+                //}
+            //});
+            $('input[name="option"]').change(function() {
+                if ($('#option3').is(':checked')) {
+                    $('input[name="addon"]').prop('disabled', false);
+                } else {
+                    $('input[name="addon"]').prop('checked', false).prop('disabled', true);
+                }
+            });
+            if (!$('#option3').is(':checked')) {
+                $('input[name="addon"]').prop('disabled', true);
+            };
+        });
     </script>
-  <meta name='cXenseParse:pageclass' content='frontpage' />
+    <style>
+    .trending-frame{display:none!important}
+    #content .warning{display:none}
+    .author-block{margin-bottom:25px!important}
+    .RAbs {font-size:1em; margin-top:0px; margin-right:0px; margin-bottom:5px; margin-left:1px;line-height:1.5}
+    .toc{padding-bottom:5px;}
+    .toc ul {padding:0;margin:0;list-style:none;}
+    .toc ul li {margin:0;padding:0;	display:block;border:none;}
+    .toc ul li p{margin-bottom:3px;}
+    .toc ul li p.l1 a{color:#333;text-decoration:underline;}
+    .dtoc{text-transform:uppercase;font-size:1em;padding-top:19px;padding-bottom:17px;font-weight:900}
+    .toc img{margin-left:10px; margin-right:10px; margin-bottom:10px;}
+    .toc ul li p.l2 a{color:#333;}
+    .toc ul li p.l3 a{color:#666;}
+    li p.l1 {font-size:1.2em;padding:0;margin:0;}
+    li p.l2 {font-size:1.1em;padding:0;margin:0 0 0 1em;}
+    li p.l3 {font-size:1em;font-style:italic;padding:0;	margin:0 0 0 2em;}
+    #content .toc p.R1{text-transform:none;	font-weight:bold;font-size:1em;	padding-top:0px;padding-bottom:9px;margin:0;}
+    .rsmore{font-size:.84em;line-height:normal;color:#eb4c07;margin-top:10px;margin-bottom:10px;padding:0 0 5px 10px;}
+    .rsmore a:hover, .rsmore a:visited, .rsmore a:active, .rsmore a:link {color:#eb4c07;}
+    .other-link:hover{color: #F49C00!important;text-decoration:underline;}
+    /*news mods*/
+    #content a:not(.toc a):not(.text a):not(.news-title a){color: #007bff;font-weight:600;text-decoration:underline;}
+    #content a:hover:not(.text a):not(.news-title a){color: #F49C00!important;text-decoration:underline;}
+    #content .p1,.P1,.p2,.P2,MsoNormal{font-size:1em;margin:0 1em 1em 0;}
+    #content .Video{font-size:1em;margin:0 0 1em 0;}
+    #content .TCap,.tCap{font-size:.95em;font-style:italic;margin:0 6em 12pt 0;}
+    #content .Image{page-break-after:avoid;font-size:1em;margin:6pt 0 0;}
+    #content .R1, #content h2 {font-size:1.2em;font-weight:bold;margin:20px 0 10px;}
+    #content .R2, #content h3{font-size:1.1em;font-weight:bold;color:#339;font-style:italic;margin:15px 0 10px;}
+    #content h2, #content h3 {line-height: 1.8}
+    #content .Chart{font-size:1em;font-weight:bold;color:#906;margin:15px 0 1px;}
+    #content .TH1{page-break-after:avoid;font-size:1.1em;font-weight:bold;margin:6pt 2.25pt;}
+    #content .TTopL{page-break-after:avoid;font-size:.95em;font-weight:bold;margin:4pt 0 4pt 2.25pt;}
+    #content .TTxtL{page-break-after:avoid;font-size:.95em;margin:3pt 0 3pt 2.25pt;}
+    #content .TTop{text-align:center;page-break-after:avoid;font-size:.95em;font-weight:bold;margin:4pt 0;}
+    #content .Plist{mso-style-name:Plist;mso-style-parent:P1;text-indent:-11.35pt;mso-pagination:none;mso-layout-grid-align:none;font-size:.9em;layout-grid-mode:line;margin:0 1cm 12pt 11.35pt;}
+    #content .TTxt,#content .TTopTxt{text-align:center;page-break-after:avoid;font-size:.95em;margin:3pt 0;}
+    #content .H2,#content .H3,#content .H4{font-size:.8em;font-weight:bold;margin:5px;}
+    #introimg{margin-left:10px; margin-right:10px; margin-bottom:10px;}
+    /*responsive content tables*/
+    #content .inbodytable > thead > tr > th,#content .inbodytable > tbody > tr > th,#content .inbodytable > tfoot > tr > th,#content .inbodytable > thead > tr > td,#content .inbodytable > tbody > tr > td,#content .inbodytable > tfoot > tr > td {padding:4px; margin:0}
+    #content .bottomzero{margin-bottom:0; margin-top:5px;}
+    #content .table-responsive{background:#fff; padding:0; margin-bottom:0;overflow-x: auto;overflow-y:hidden;-ms-overflow-y:hidden; scrollbar-color: #dedede transparent; scrollbar-width: thin;}
+    #content .table-responsive::-webkit-scrollbar { height: 6px;}
+    #content .table-responsive::-webkit-scrollbar-track { border-radius: 10px;}
+    #content .table-responsive::-webkit-scrollbar-thumb { background: #cccccc; border-radius: 10px;}
+    #content .table-responsive::-webkit-scrollbar-thumb:hover { background: #bebebe}
+    #content .table-responsive>.table {border: none;}
+    #content .table-nofluid {width: auto !important;}
+    #content .borderless {border: none;}
+    #content .highlight, h1 .highlight{color: #ff0000;}
+    .frmfld{margin-top:15px;font-size:1em;margin-bottom:40px;text-align:left;background-color: #f0f0f0;border: 1px solid #e9e9e9;padding: 15px;border-radius: var(--border-radius);}
+    .frmfld p{padding-bottom:7px;padding-top:0px;margin:0;}
+    .flist{margin-top:10px;margin-bottom:10px; background-color: #e6e6e6;border: 2px solid #ddd;padding: 15px; border-radius: var(--border-radius);}
+    .flist ul {padding:0;margin:0;list-style:none;}
+    .flist ul li {padding:2px;display:block;margin:0;}
+    .flist ul li.a1 {margin-top:8px;margin-bottom:0px;margin-left:0px;margin-right:0px;padding-bottom:0px}
+    /* styles content.css keep on page*/
+    .news-content-frame .info {display: flex;align-items: center;flex-wrap: wrap;font-size: 14px;font-family: "Open Sans", sans-serif;font-weight: 400;margin: 25px 0px;line-height: 1;}
+    @media screen and (min-width: 768px) {
+        .news-content-frame .info {flex-wrap: nowrap;}
+    }
+    .news-content-frame .info .author, .news-content-frame .info .date {flex: 0 0 100%;max-width: 100%;margin-bottom: 10px;}
+    @media screen and (min-width: 768px) {
+        .news-content-frame .info .author, .news-content-frame .info .date {flex: 0 1 auto;max-width: none;margin-bottom: 0px;}
+    }
+    .news-content-frame .info .separate {border-right: 2px solid #999999;height: 16px;margin: 0px 20px;display: none;}
+    @media screen and (min-width: 768px) {
+        .news-content-frame .info .separate {display: inline-block;}
+    }
+    .news-content-frame .warning {display: flex;align-items: flex-start;background-color: #DC3545;padding: 15px;border-radius: var(--border-radius);margin: 20px 0px;}
+    .news-content-frame .warning .text {color: #ffffff;font-size: 14px;font-family: "Open Sans", sans-serif;font-weight: 400;line-height: 1.4;margin-top: -2px;}
+    .news-content-frame .warning .text b {font-weight: 800;}
+    .news-content-frame .warning .text a {color: #2e2e2e!important;font-weight: 600;text-decoration: underline;}
+    .news-content-frame .warning .text a:hover {color: #ffffff!important;}
+    .news-content-frame .warning .icon {min-width: 16px;width: 16px;height: 16px;margin-right: 10px;}
+    .news-content-frame .main-title h1 {font-size: 28px;font-weight: 600;margin-bottom:30px;}
+    @media screen and (min-width: 768px) {
+        .news-content-frame .main-title h1 {font-size: 34px;}
+    }
+    .news-content-frame .content {margin-top: 20px;margin-bottom: 40px;width: 100%;font-size: 16px;font-family: "Open Sans", sans-serif;font-weight: 400;line-height: 1.8;}
+    /*range mod frome site css*/
+    .range-noborder{border:none; box-shadow:none;padding:5px 5px 5px 15px;margin-top:10px;}
+    /*text a mod frome content css*/
+    .news-content-frame .warning .text a {color: #ffffff!important;}
+    .news-content-frame .caption {font-size:.95em;font-style:italic;padding-bottom: 7px; margin: 6pt 0 12pt 0; text-align:right; border-bottom: 1px solid #e9e9e9; width:100%;}
+    #pno-promotion{position: fixed;right: 0px;bottom: 10px;width: 350px;z-index:9999!important;}
+    .sc-container {font-family: "Open Sans", sans-serif;font-size:1em;line-height:1.4;overflow: scroll;max-height:350px;}
+    /* custom scrollbar */
+    .sc-container::-webkit-scrollbar {width: 20px;}
+    .sc-container::-webkit-scrollbar-track {background-color: transparent;}
+    .sc-container::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;border: 6px solid transparent;background-clip: content-box;}
+    .sc-container::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}
+    .sc-max{height:70%}
+    .sh-height{height:320px}
+    @media screen and (max-width: 992px) {
+        .sc-max{height:150px}
+        .sc-container {margin-top:0px;margin-bottom:0px;}
+    }
+    /*toc mods*/
+    li p.l1, li p.l2, li p.l3{font-size:1em!important; margin-left:0!important;font-style:normal!important}
+    li p.l2 {font-size:0.9em!important;font-style:italic!important;padding-left:8px!important;}
+    .toc li{list-style:none!important; padding:3px}
+    .block{cursor:default!important}
+    .report-packages .container .packages-block .package .option-block .item {border-bottom:none!important;}
+    .report-packages .container .packages-block .package .option-block .item.pb {padding-bottom:12px;}
+    .report-packages .container .packages-block .package .option-block .sub-item {display: flex;align-items: center;justify-content: space-between;padding: 0 8px 12px 8px;}
+    .report-packages .container .packages-block .package .option-block .sub-item label {display: flex;align-items: center;justify-content: flex-start;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox] {cursor: pointer;appearance: none; -webkit-appearance: none;-moz-appearance: none;height: 20px;width: 20px;background-color: #ffffff;border-radius: 4px;border: 1px solid #D9D9D9;display: flex;align-items: center;justify-content: center;position: relative;}
+    .report-packages .container .packages-block .package .option-block .sub-item label .desc {margin-left: 8px;font-size: 13px;color: #7f7f7f;text-align: left;}
+    .report-packages .container .packages-block .package .option-block .sub-item .dollar {white-space: nowrap;font-size: 12px;}
+    .report-packages .container .packages-block .package .option-block .sub-item.selected .desc {color: #575757;font-weight: 700;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]::after {content: "";background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>');background-repeat: no-repeat;background-size: 20px;background-position: center;height: 12px;width: 12px;color: black;display: none;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked {background-color: white;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked:after {display: block;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked::before {background-color: #F49C00;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:disabled {background-color: #f0f0f0;border-color: #f0f0f0;cursor: not-allowed;}
+    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:disabled:checked::after {color: #f0f0f0;}
+    @media (max-width: 768px) {
+        .report-packages .container .report-block .main {padding:25px 25px;}
+    }
+    .uln:hover{color: #F49C00;}
+    </style>
+    <script defer type="text/javascript" src="/reports/js/bradcrumble.js"></script>
+<meta name='cXenseParse:pageclass' content='frontpage' />
 </head>
-  <body>
-    <svg width="0" height="0" style="display: block">
+<body>
+<svg width="0" height="0" style="display: block">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 47" id="digitimes-logo-white">
         <path d="M283.44 37.4c-4.45 0-9.52-.98-12.67-1.86-.12.52-1.65 7.57-1.74 8.01 4.02 1.68 9.33 2.69 14.26 2.69 13.84 0 16.47-4.51 16.47-12.83 0-7.33-.58-9.97-11.87-11.98-6.83-1.22-7.53-1.65-7.53-4.62 0-2.61 1.27-3.08 4.86-3.08 3.63 0 7.85.47 12.18 1.35.07-.52 1.16-8.08 1.23-8.54-3.93-1.06-9.83-1.64-13.49-1.64-11.15 0-15.69 3.33-15.69 11.51 0 6.87.77 11.18 11.39 12.9 7.35 1.17 7.99 1.82 7.99 4.62.01 2.71-1.2 3.47-5.39 3.47zM172.84 5.69h-10.92v39.77h10.92V5.69zM86.89 46.24c5.32 0 11.03-.76 16.09-2.12V24.55h-9.83v12.06l-.25.03c-2.12.26-4.04.39-6.01.39-3.94 0-5.7-1.54-5.7-5.01V19.06c0-3.39 1.66-4.78 5.7-4.78 3.82 0 9.63.57 13.96 1.06.06-.52.97-8.59 1.02-9.07-5.14-.91-10.04-1.36-14.98-1.36-11.18 0-16.63 4.04-16.63 12.37v16.51c0 8.38 5.45 12.45 16.63 12.45zM62.03 5.69H51.11v39.77h10.92V5.69zm74.98 40.14h10.32V9.15h11.1V0H125.9v9.15h11.11v36.68zM.98 27.78c.66.13 6.97.97 6.97.97l.8 4.86h8.62v-9.15H.98c-.46 0-.98.31-.98 1.61.01 1.3.31 1.58.98 1.71zm7.77 18.05h19.18c11.29 0 15.49-5.78 15.49-11.9V11.91C43.42 5.72 39.22 0 27.93 0H.98C.52 0 0 .3 0 1.61c0 1.3.3 1.58.98 1.71.66.12 6.97.97 6.97.97l.8 4.85h17.94c5.16 0 6.41 2 6.41 5.58v16.37c0 3.58-1.24 5.58-6.41 5.58H.98c-.46 0-.98.31-.98 1.61 0 1.31.3 1.59.98 1.71.66.13 6.97.98 6.97.98l.8 4.86zm-.8-29.3l.8 4.85h8.62v-9.14H.98c-.46 0-.98.3-.98 1.61 0 1.3.3 1.59.98 1.71.66.12 6.97.97 6.97.97zm207.88 9.42l.76 19.51h10.52c-.02-.57-2.03-39.25-2.05-39.77h-10.65c-.14.34-10.19 24.02-10.19 24.02S194.18 6.03 194.03 5.69h-10.64c-.03.52-2.03 39.2-2.07 39.77h10.54l.75-19.43.55-.11s6.22 14.24 6.36 14.57h9.42c.13-.33 6.37-14.64 6.37-14.64l.52.1zm47.26 10.92H245.4v-7.31h16.29v-8.6H245.4v-6.68h17.69V5.69h-28.6v39.77h28.6v-8.59zM121.88 5.69h-10.91v39.77h10.91V5.69z" fill="#fff"></path>
     </symbol>
@@ -637,171 +811,148 @@
             </li>
         </ul>
     </div>
-    <style>.research-submenu .link-group .link-item menu .item .link {font-weight:400!important;}</style>
-    <!--swiper slide-->
-    <div class="swiper swiper-container">
-      <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-                      <div class="swiper-slide swiper-slide__servers">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">Servers</h1>
-                  <p class="desc">Clear visibility into global server shipment trends, AI server growth, and market direction shaping the data center ecosystem.</p>
-                  <button onclick="Action.bannerDiscover(485)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                      <div class="swiper-slide swiper-slide__semiconductor">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">Semiconductor</h1>
-                  <p class="desc">A data-driven view of semiconductor market trends, technology shifts, and long-term industry direction across the global supply chain.</p>
-                  <button onclick="Action.bannerDiscover(606)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                      <div class="swiper-slide swiper-slide__aiot">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">AIoT</h1>
-                  <p class="desc">Insight into the AIoT landscape, covering intelligent systems, edge technologies, and emerging applications across key industries.</p>
-                  <button onclick="Action.bannerDiscover(626)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                      <div class="swiper-slide swiper-slide__notebooks">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">Notebooks</h1>
-                  <p class="desc">Timely insight into global notebook market trends, technology developments, and supply-chain dynamics led by Taiwan’s ODM ecosystem.</p>
-                  <button onclick="Action.bannerDiscover(36)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                      <div class="swiper-slide swiper-slide__smart-device">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">Smart Devices</h1>
-                  <p class="desc">Comprehensive coverage of global and China smartphone markets, highlighting shipment trends, technology evolution, and industry momentum.</p>
-                  <button onclick="Action.bannerDiscover(279)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                      <div class="swiper-slide swiper-slide__more-topics">
-              <div class="slide-content">
-                <div class="wrapper">
-                  <h1 class="Topic">More Topics</h1>
-                  <p class="desc">Providing specialized industry reports in communications, automotive, displays, ESG, and more, covering market trends, brand strategy, supply chain, and technology development.</p>
-                  <button onclick="Action.bannerDiscover(283)"> Discover More <div class="icon"></div></button>
-                </div>
-              </div>
-            </div>
-                  </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-    <!--channels button-->
-    <div class="channels">
-      <div class="wrapper">
-        <a href="list.php?cat=626" class="btn"><div class="icon icon__aiot"></div> AIoT</a>
-        <a href="list.php?cat=36" class="btn"><div class="icon icon__notebooks"></div> Notebooks</a>
-        <a href="list.php?cat=606" class="btn"><div class="icon icon__idmwfabless"></div> Semiconductor</a>
-        <a href="list.php?cat=485" class="btn"><div class="icon icon__servers"></div> Servers</a>
-        <a href="list.php?cat=279" class="btn"><div class="icon icon__smart-device"></div> Smart Devices</a>
-        <a href="list.php?cat=283" class="btn"><div class="icon icon__more"></div> More Topics</a>
-      </div>
-    </div>
-    <!--channel-search section-->
-    <section class="channel-search">
-      <div class="wrapper">
-        <div class="input-container">
-          <label>
-            <input type="text" placeholder="Search for Report, Data and Other Research" id="k_search">
-          </label>
-          <div class="icon icon__search" onclick="Action.search();"></div>
-        </div>
-      </div>
-      <div class="chips">
-        <div class="title">Trending topics</div>
-        <div class="chips-group">
-          <div class="chip" onclick="Action.chipSearch(11598)">2026</div><div class="chip" onclick="Action.chipSearch(452)">Taiwan</div><div class="chip" onclick="Action.chipSearch(4507)">development</div><div class="chip" onclick="Action.chipSearch(4590)">5G</div><div class="chip" onclick="Action.chipSearch(11145)">business</div><div class="chip" onclick="Action.chipSearch(391)">packaging</div><div class="chip" onclick="Action.chipSearch(701)">ASIC</div><div class="chip" onclick="Action.chipSearch(214)">Apple</div><div class="chip" onclick="Action.chipSearch(12910)">technology</div><div class="chip" onclick="Action.chipSearch(44)">Samsung</div><div class="chip" onclick="Action.chipSearch(5)">Chips + components</div><div class="chip" onclick="Action.chipSearch(14132)">market</div><div class="chip" onclick="Action.chipSearch(12603)">GenAI</div><div class="chip" onclick="Action.chipSearch(241)">DRAM</div><div class="chip" onclick="Action.chipSearch(11889)">HBM</div><div class="chip" onclick="Action.chipSearch(1886)">revenue</div><div class="chip" onclick="Action.chipSearch(7286)">growth</div><div class="chip" onclick="Action.chipSearch(10195)">AIoT</div><div class="chip" onclick="Action.chipSearch(14129)">performance</div><div class="chip" onclick="Action.chipSearch(13567)">hardware</div>        </div>
-      </div>
-    </section>
-    <div class="separator separator__20"></div>
-    <div class="section-tittle">LATEST REPORTS</div>
-    <section class="section-latest-reports"><div class="wrapper"><a class="card" href="item.asp?id=20260226RS400"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">AIOT</div></div></div><img src="https://img.digitimes.com/newsshow/20260226rs400_files/13_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 19 March 2026</div><div class="title small-text">New Chinese AI service startup analysis</div><div class="author">Aaron Chen</div></div></div></a><a class="card" href="item.asp?id=20260303RS400"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">SEMICONDUCTOR</div></div></div><img src="https://img.digitimes.com/newsshow/20260303rs400_files/59_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Monday 16 March 2026</div><div class="title small-text">Global smartphone AP industry, 4Q 2025</div><div class="author">Jim Chien</div></div></div></a><a class="card" href="item.asp?id=20260130RS400"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">SEMICONDUCTOR</div></div></div><img src="https://img.digitimes.com/newsshow/20260130rs400_files/6_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 12 March 2026</div><div class="title small-text">Taiwan IC designers in rack-level AI delivery</div><div class="author">Joyce Chen</div></div></div></a></div></section><div class="separator separator__20"></div><section class="section-latest-reports"><div class="wrapper"><a class="card" href="item.asp?id=20260310RS400"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">NOTEBOOKS</div></div></div><img src="https://img.digitimes.com/newsshow/20260310rs400_files/3_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Tuesday 10 March 2026</div><div class="title small-text">Notebook shipment update, January 2026</div><div class="author">Henry Chang</div></div></div></a><a class="card" href="item.asp?id=20260226RS402"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">SMART DEVICES</div></div></div><img src="https://img.digitimes.com/newsshow/20260226rs402_files/11_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 5 March 2026</div><div class="title small-text">Global smartphone industry, 4Q 2025</div><div class="author">Luke  Lin</div></div></div></a><a class="card" href="item.asp?id=20260126RS400"><div class="image-block"><div class="tag-position-block"><div class="channel-tag-root"><div class="tag">SEMICONDUCTOR</div></div></div><img src="https://img.digitimes.com/newsshow/20260126rs400_files/10_r.jpg"/></div><div class="content"><div class="content-wrapper"><div class="time">Wednesday 4 March 2026</div><div class="title small-text">Global OSAT industry, 2026</div><div class="author">Staff writer</div></div></div></a></div></section><div class="separator separator__20"></div>      
-    <div class="separator separator__40"></div>
-
-
-            <div class="text-center">
-    <div class="clclgjs" rel="96780">
-        <a href="/webad/click.asp?Seq=96780" target="_blank">
-            <img src="https://img.digitimes.com/ad/en_20260224_asiaai_button1240x200.jpg"
-                class="awh"
-                alt="AsiaAI" 
-                style="max-width:1240px;"
-                border="0"
-            >
-        </a>
+    <style>.research-submenu .link-group .link-item menu .item .link {font-weight:400!important;}</style><div class="gotop">
+	<svg class="icon"><use xlink:href="#arrow-icon-white"></use></svg>
+</div>
+<div class="reports-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li class="item"><a class="link" href="/reports/">Home</a></li>
+            <li class="item"><a class="link" href="/reports/list.php?cat=0">Research</a></li>
+                        <li class="item"><a class="link" href="/reports/list.php?cat=485">Servers</a></li>
+                    </ul>
     </div>
 </div>
-    <div class="section-tittle">RESEARCH INSIGHTS</div>
-    <section class="section-analyst-insight">
-      <div class="wrapper">
-        <div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260309PD213.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260309pd213_files/1_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Monday 9 March 2026</div><div class="title">Global EV charging stations to surpass 9 million by 2026 as China, Europe expand</div></a></div></div></div><div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260302VL212.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260302vl212_files/4_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Monday 2 March 2026</div><div class="title">Insight: Broadcom delivers 2nm 3.5D AI processor, expanding custom chip push against Nvidia</div></a></div></div></div><div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260226VL216.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260226vl216_files/2_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Monday 2 March 2026</div><div class="title">Insight: Memory shortage tightens grip on smartphone market as prices near tipping point</div></a></div></div></div><div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260225VL215.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260225vl215_files/2_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 26 February 2026</div><div class="title">Insight: Qualcomm ships rack-scale AI systems built on 2019 AI 100 chip; analyst sees structural barriers</div></a></div></div></div><div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260213VL204.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260213vl204_files/2_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 19 February 2026</div><div class="title">DIGITIMES Insight: TSMC's swelling facilities budget signals a global capacity race</div></a></div></div></div><div class="card"><div class="image-wrapper"><div class="image-block"><a href="/news/a20260213VL205.html" target="_blank"><img src="https://img.digitimes.com/newsshow/20260213vl205_files/2_s.jpg"/></div></div><div class="content"><div class="content-wrapper"><div class="time">Thursday 19 February 2026</div><div class="title">DIGITIMES Insight: US tariff-credit design could pressure Korean memory makers to localize production</div></a></div></div></div>      </div>
-    </section>
-    <div class="separator separator__40"></div>
-    <div class="subscribe-bar">
-      <div class="wrapper">
-        <div class="text">
-          <div> Stay updated with the latest DIGITIMES Research reports. Subscribe now for instant notifications! </div>
-        </div>
-        <div class="subscribe-btn">
-          <a href="/register/setprofile.asp?pkg=1">
-            <div class="icon icon__subscribe"></div>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <!--about the report-->
-    <div class="about-the-report">
-      <div class="wrapper">
-        <div class="first-content">
-          <div class="main-intro">
-            <div class="title">About DIGITIMES Research</div>
-            <p class="desc">DIGITIMES connects with over 1,200 members from Taiwan's top tech companies, focusing on advancing technology research across key areas like semiconductors, AI, IoT, IT, consumer electronics, telecom, automotive tech, and displays. We are dedicated to providing firsthand access to industry insights and global supply chain trends.</p>
-          </div>
-          <div class="sub-intro-group">
-            <div class="sub-intro">
-              <div class="title">Research report content</div>
-              <p class="desc">DIGITIMES Research's reports cover global and Taiwanese production, industry trends, technological advancements, and strategies of leading companies, with a focus on supply chain dynamics and key components in regional and emerging markets.</p>
-            </div>
-            <div class="sub-intro">
-              <div class="title">Supply chain analysis</div>
-              <p class="desc">DIGITIMES Research provides comprehensive, clear analysis of the entire supply chain—from semiconductor design to end products—enabling businesses to navigate complex challenges with precise data and strategic insights.</p>
-            </div>
-            <div class="sub-intro">
-              <div class="title">Expert team</div>
-              <p class="desc">Our team of experienced professionals produces high-quality reports grounded in reliable data and rigorous methodologies, ensuring accuracy and credibility through industry-leading partnerships.</p>
-            </div>
-            <div class="sub-intro">
-              <div class="title">Customized research and consulting services</div>
-              <p class="desc">DIGITIMES Research provides customized research and consulting services, including technology forecasting, competitor analysis, and supply chain insights, equipping businesses to make informed decisions and maintain a competitive edge in the fast-evolving tech landscape.</p>
-            </div>
-          </div>
-        </div>
-        <div class="second-content">
-          <img src="./images/visual-placeholder.jpg" alt="visual" />
-        </div>
-      </div>
-    </div>
+<!--report-packages-block-->
+<div class="report-packages">
+    <div class="container">
+        <div class="report-block">
+            <div class="main">
+                <div class="wrapper news-content-frame">
+				    <div class="main-title"><h1>Global server shipment forecast, 2026 and beyond</h1></div>
+                    <div class="author-block">
+                                                                                    <a href="/reports/analysts.php?rid=704"><img class="portrait" alt="Jim Hsiao " src="https://img.digitimes.com/tw/x/img/viewpoint/orange/a01111a.jpg"></a><div class="author-name"><a class="uln underline" href="/reports/analysts.php?rid=704" style="color:#939090!important">Jim Hsiao</a>, Senior Analyst</div>
+                                                        <div class="social-media-group">
+                                <a class="link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.digitimes.com/reports/item.php?id=2025100700400" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#facebook-icon-squared"></use>
+                                    </svg>
+                                </a>
+                                <a class="link" href="https://twitter.com/intent/tweet?url=https://www.digitimes.com/reports/item.php?id=2025100700400&text=Global+server+shipment+forecast%2C+2026+and+beyond" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#twitter-icon-squared"></use>
+                                    </svg>
+                                </a>
+                                <a class="link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.digitimes.com/reports/item.php?id=2025100700400" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="#linkedin-icon-squared"></use>
+                                    </svg>
+                                </a>
+                                <a class="link" href="/newsshow/emailnews.asp?datePublish=2025/10/07&pages=RS&seq=400">
+                                    <svg class="icon">
+                                        <use xlink:href="#mail-icon-squared"></use>
+                                    </svg>
+                                </a>
+                            </div>
 
-    <footer class="footer">
+                                                        <div class="fb-like" data-href="https://www.digitimes.com/reports/item.php?id=2025100700400" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+                                            </div>
+                    
+				    <div class="content" id="content">
+                        <div class="RAbs">The global server shipments are projected to have a CAGR of approximately 5% from 2025 to 2030, with AI demand driving technological innovation.</div><div class="toc"><div class="dtoc">Abstract</div><p class="P1">DIGITIMES estimates that global server shipments will grow at a CAGR of 5.1% from 2025 to 2030. In 2025, large North American cloud service providers (CSPs), in addition to aggressively purchasing high-end AI servers, will not slow down their purchases of general-purpose servers, which is expected to result in a higher-than-expected annual growth rate.</p><div id="article-lock-inline"></div>
+<p class="P1">Global server shipment growth will slow in 2026, while a recovery in general corporate purchasing is expected to stimulate shipments by brand vendors. Significant progress is expected in AI and general-purpose server-related technologies in 2027, making 2027 the year with the highest annual growth rate in server shipments.</p>
+<p class="P1">Server shipment growth is expected to slow from 2028 to 2029, and in 2030, the full maturity of co-packaged optics (CPO) technology is expected to significantly reduce energy consumption and drive a new wave of server upgrade demand.</p></div><div class="clear-both"></div><div class="outnow" style="width:100%"><div class="dtoc">Table of contents</div><div class="outline sc-container"><div class="toc"><ul><li><p class=l1><a href="#1">Introduction</a></p></li><li><p class=l2><a href="#2">Global server shipments</a></p></li><li><p class=l2><a href="#3">Chart 1: Global server shipments, 2024-2030 (k unit)</a></p></li><li><p class=l1><a href="#4">Shipments breakdown</a></p></li><li><p class=l2><a href="#5">Vendor type</a></p></li><li><p class=l2><a href="#6">Chart 2: Shipment share by vendor type, 2024-2030</a></p></li><li><p class=l2><a href="#7">Top-4 CSPs in North America</a></p></li><li><p class=l2><a href="#8">Chart 3: Top-4 North American CSPs capex growth, 2022-2027</a></p></li><li><p class=l1><a href="#9">Components</a></p></li><li><p class=l2><a href="#10">CPUs</a></p></li><li><p class=l2><a href="#11">Chart 4: Global server shipment share by CPU, 2024-2030</a></p></li><li><p class=l2><a href="#12">CPU development roadmap</a></p></li><li><p class=l2><a href="#13">Chart 5: CPU roadmaps by player, 2025-2029</a></p></li><li><p class=l2><a href="#14">Memory and storage</a></p></li><li><p class=l2><a href="#15">Chart 6: Server memory and storage development, 2026-2030</a></p></li><li><p class=l1><a href="#16">High-end AI server</a></p></li><li><p class=l2><a href="#17">Shipments of high-end and general AI servers</a></p></li><li><p class=l2><a href="#18">Chart 7: High-end and general AI server shipments, 2022-2026 (k units)</a></p></li><li><p class=l2><a href="#19">GPU player roadmaps</a></p></li><li><p class=l2><a href="#20">Chart 8: GPU roadmaps of AMD, Nvidia, 2025-2029</a></p></li><li><p class=l2><a href="#21">AI ASIC development roadmaps</a></p></li><li><p class=l2><a href="#22">Chart 9: AI ASIC roadmaps of top-3 CSPs, 2025-2029</a></p></li><li><p class=l1><a href="#23">Summary</a></p></li><li><p class=l2><a href="#24">Chart 10: Global server shipment summary for 2026 and beyond</a></p></li></ul></div></div></div>				    </div>
+                </div>
+            </div>
+        </div>
+        <div class="packages-block">
+                            <p class="minor-title">
+                                                    <span class="icon icon__download"></span> Download full report (<a href="/newregister/join.asp" class="uln underline">subscription required</a>)
+                                </p>
+                <p class="minor-title">
+                    <span class="icon icon__gear"></span>
+                    Published: 
+                    October 15, 2025                </p>
+                                    <p class="center">Pick an option that is right for you</p>
+                                            <form name="checkout" method="post" action="/register/checkout.asp" id="checkout" style="margin:0; padding:0;">
+                        <div class="package package__single"><div class="block"><h5>Single Report</h5></div><ul class="option-block"><li class="item" style="padding-bottom:3px"><label for="option1"><input type="radio" name="option" value="rs-20251007RS400" id="option1"><div class="desc">Single user license</div></label><span class="dollar">US$2,100</span></li><li class="item" style="padding-bottom:3px"><label for="option2"><input type="radio" name="option" value="rs-20251007RS400-B" id="option2"><div class="desc">Team license</div></label><span class="dollar">US$3,150</span></li><li class="item" style="padding-bottom:15px"><label for="optiondisable"><input type="radio" name="optiondisable" value="rs-20251007RS400-C" id="optiondisable" disabled style="background-color:#ccc!important;"><div class="desc">Enterprise license</div></label><span class="dollar"><a href="/register/corporate.php" class="uln underline">Contact sales</a></span></li></ul></div>                        <div class="package package__recommended"><div class="recommended">Recommended</div><div class="block" id="tooltip-trigger"><h5>Annual Servers subscription</h5></div><ul class="option-block"><li class="item pb"><label for="option3"><input type="radio" name="option" value="pid-9" id="option3" autocomplete="off"><div class="desc">Single user license</div></label><span class="dollar">US$5,700</span></li><li class="sub-item"><label for="option11"><input type="checkbox" name="addon" value="2" id="option11"><div class="desc">Servers Database<br/>(add-on service)</div></label><span class="dollar">US$3,000</span></li></ul></div>                        <button class="add-to-cart">Check out</button>
+                        <div class="empty empty__20"></div>
+                        </form>
+                                        <div class="package package__single">
+                    <div class="block">
+                        <h5>Team or Enterprise subscription</h5>
+                    </div>
+                    <a class="connect-with-consultant"href="/register/corporate.asp" target="_blank">Inquire</a>
+                    <div class="empty empty__20"></div>
+                </div>
+                                        <div class="white-ground-emphasis">Have a question?</div>
+            <div class="consultant-block">
+                <div class="wrapper">
+                    <div class="consultant"><img src="images/consultant-612x612.jpg" alt="consultant"></div>
+                    <div class="copy">Customized market research services</div>
+                    <div class="service-desc">We can customize the research to meet your specific needs, helping you
+                        make strategic and profitable business decisions.
+                    </div>
+                </div>
+            </div>
+            <a class="request-samples" href="/reportdownload/index.asp?category=FR" target=_blank>Sample reports</a>
+            <div class="empty empty__10"></div>
+            <a class="inquire-before-buying" href="mailto:subscription@digitimes.com?subject=DIGITIMES%20Research%20and%20services">Connect with a consultant</a>
+        </div>
+    </div>
+</div>
+
+<div class="empty empty__20"></div>
+<div class="you-may-also-interested-in">
+    <div class="container">
+        <div class="wrapper">
+            <div id="cx-content-for-you"></div>
+        </div>
+    </div>
+</div>
+<script language="JavaScript" type="text/javascript">
+    $(function(){
+        //check scrollTop
+        if($(window).scrollTop() <= 150){
+            $('#artcount').addClass("navbar-hide");
+        }else{
+            $('#artcount').removeClass("navbar-hide");
+        }
+        //on scroll functions
+        $(window).scroll(function(e){
+            var scroll = $(window).scrollTop();
+            if(scroll <= 150){
+                $('#artcount').addClass("navbar-hide");
+            }else{
+                $('#artcount').removeClass("navbar-hide");
+            }
+        });
+    })
+</script>
+<style>
+.navbar-hide {pointer-events: none; opacity: 0;}
+.gotop{z-index:11;}
+.cta-link{box-shadow:2px -2px 30px rgba(0,0,0,.2); z-index:10;}
+.cta-frame,.cta-link{border-top-left-radius:24px;border-bottom-left-radius:24px}
+.cta-frame{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:#fff}
+.cta-link{position:fixed;right:0;bottom:17px;width:310px;height:45px;text-decoration:none;background:0 0;cursor:pointer;}
+.cta-frame .cta-frame-text{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding-left:10px;font-size:14px;font-weight:700;text-align:left;letter-spacing:1px;color:#333; text-transform:uppercase}
+</style>
+<div id="artcount" class="navbar-hide">
+    <a href="/register/setprofile.asp?pkg=1&dt_ref=2025100700400" target="_blank" class="cta-link">
+        <div class="cta-frame">
+            <div style="margin-top:3px;margin-left:3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+                    <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" fill="#CC191E"/>
+                </svg>
+            </div>
+            <div class="cta-frame-text">Join our mailing list</div>
+        </div>
+    </a>
+</div>
+
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-6 col-sm-12 col-lg-3 col-xl-3">
@@ -859,7 +1010,10 @@
       </div>
     </div>
   </div>
-</div><!-- Google Tag Manager -->
+</div><script type="text/javascript" src="https://img.digitimes.com/script/js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="yssgmyb9"></script>
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -1002,54 +1156,13 @@ function GetJWT()
 </script>
 <div class="col-12 pno-wrap"><div id="pno-promotion"></div></div>
 
-    <div class="modal fade" id="dialog" tabindex="-1" role="dialog" aria-labelledby="Dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Members only</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="alert alert-warning" role="alert"> Sorry, the page you are trying to open is available only for our paid subscribers. <ul class="list-arrow">
-                <li>
-                  <svg class="icon">
-                    <use xlink:href="#arrow-icon-black"></use>
-                  </svg> Please <a href="/newregister/join.asp" class="uln">login</a> to read more
-                </li>
-                <li>
-                  <svg class="icon">
-                    <use xlink:href="#arrow-icon-black"></use>
-                  </svg> New users, please <a href="/register/" class="uln">register</a> first
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="col-12 article-wrap" style="z-index:99;"><div id="pno-article" class="tp-banner"></div></div>
 
-    <div class="modal fade" id="pno-dialog" tabindex="-1" role="dialog" aria-labelledby="Dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Notification</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 pno-wrap">
-      <div id="pno-promotion"></div>
-    </div>
-
-    <script src="../Include/assets/js/core.js"></script>
-    <script src="js/research.js"></script>
-        <img src="/Include/session/session_log.asp" width="1" height="1" style="display:none">
-  </body>
+<script>
+    tp = window['tp'] || [];
+            tp.push(["setTags", ["IsPremium","IsResearch","AMD","CPU","global server","global server research","server shipments","shipments"]]);
+                tp.push(["setContentSection", ["Research"]]);
+    </script>
+    <img src="https://www.digitimes.com/Include/session/session_log.asp" width="1" height="1" style="display:none">   
+</body>
 </html>
