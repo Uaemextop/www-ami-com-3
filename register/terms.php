@@ -1,161 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta http-equiv="Pragma" content="no_cache"/>
-<meta name="Distribution" content="Global"/>
-<meta name="Robots" content="index,follow"/>
-<meta name="Revisit-After" content="1 Days"/>
-<meta name="Copyright" content="&copy; 2026 DIGITIMES Inc."/>
-<meta name="Publisher" content="DIGITIMES Inc."/>
-<meta name="Content-language" content="EN-US"/>
-<meta name="Author" content="DIGITIMES"/>
-<meta name="Description" content="Innovations at Computex"/>
-<meta name="Keywords" content="DIGITIMES, Asia, IT, Information Technology, Biz Focus, Supply chain, Computex, Computex 2025"/>
-<meta name="Pragma" content="no_cache"/>
-<title>DIGITIMES Biz Focus - Computex</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://img.digitimes.com">
-<link rel="dns-prefetch" href="https://img.digitimes.com">
-<link rel="preconnect" href="//ad.digitimes.com.tw">
-<link rel="dns-prefetch" href="//ad.digitimes.com.tw">
-<link rel="preload" href="https://img.digitimes.com/ad/en_20260201_veeam_leaderboard.jpg" as="image">
-<link rel="preload" href="https://img.digitimes.com/ad/en_20250923_b2b3_button336x90.jpg" as="image">
-<link rel="preload" href="https://img.digitimes.com/ad/en_20250923_b2b2_bigbutton.jpg" as="image">
-<link rel="preload" href="https://img.digitimes.com/newsshow/20250710pr200_files/1_b.jpg" as="image">
-<link rel="preload" href="https://img.digitimes.com/script/js/jquery-1.10.2.min.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/jquery.bez.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/swiper-3.4.2.min.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/bootstrap.bundle-4.0.0.min.js" as="script">
-<link rel="preload" href="/script/js/site.v1.js?cb=198.1&v=20230207001" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/normalize.css" as="style" />
-<link rel="preload" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" as="style" />
-<link rel="preload" href="https://img.digitimes.com/script/bootstrap-4.0.0.min.css" as="style" />
-<link rel="preload" href="/script/site.v1.css?cb=3&v=20230207001" as="style" />
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" />
-<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.bez.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/swiper-3.4.2.min.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/bootstrap.bundle-4.0.0.min.js"></script>
-<script type="text/javascript" src="/script/js/site.v1.js?cb=198.1&v=20230207001"></script>
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/normalize.css" />
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/bootstrap-4.0.0.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3&v=20230207001" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preload" href="/script/rtnews.css" as="style" /><link rel="stylesheet" type="text/css" media="all" href="/script/rtnews.css" />
-<script language="JavaScript" type="text/javascript">
-    $(function () {
-        $("#sfrm input[name='ch']").val("9");
-        $("#sfrmmob input[name='ch']").val("9");
-        $('.main-nav-frame a[href$="/biz/"]:first').addClass("focus");
-        var topicSwiper = new Swiper (".video-container", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            breakpoints: { 
-                767: {
-                    slidesPerView: 1,
-                },
-                820: {
-                    slidesPerView: 2,
-                },
-                991: {
-                    slidesPerView: 3,
-                },
-                1200: {
-                    slidesPerView: 2,
-                }
-            },
-            nextButton: '.topic.navi-btn.next',
-            prevButton: '.topic.navi-btn.pre'
-        });
-        $('.navi-btn').click(function () {
-            $('.lazy').lazy();
-        });
-    });
-</script>
-<style>
-.pagination .navdots{padding-left:3px!important; padding-right:3px!important; background-color:#f0f0f0!important; cursor:auto!important;}
-.pagination{font-family: "Open Sans", sans-serif;font-weight: 600; margin-right:5px;}
-.mainnav{margin-bottom:10px;}
-.mainnav .label.label-info {background-color: #5bc0de;margin:0 5px 0 -1px;line-height: inherit; padding: 7px 12px;font-size:1em;}
-.mainnav .label.label-info span {font-size:1em;}
-.pager {list-style: none;text-align: center;}
-.pager li {display: inline;}
-.pager a {display: inline-block;padding: 9px 14px 5px 14px;background-color: #fff;border: 1px solid #ddd;-webkit-border-radius: 15px; -moz-border-radius: 15px;border-radius: 15px;}
-.pager a:hover {text-decoration: none;background-color: #f5f5f5;}
-.pager .icon {width: 18px;height: 18px;}
-.pager .nav-left .icon {transform: rotate(180deg);}
-#scw .main-title {font-size: 28px;font-weight: 600;}
-@media screen and (min-width: 768px) {#scw .main-title {font-size: 34px;}}
-#scw .abstract-frame a:not(.select-btn){color: #007bff;font-weight:600;text-decoration:underline;}
-#scw .abstract-frame a:hover:not(.select-btn){color: #F49C00!important;text-decoration:underline;}
-#scw .abstract{font-family: "Open Sans", sans-serif;font-weight: 400;font-size: 14px;line-height: 21px;margin-top: 15px;margin-bottom: 5px;}
-#scw .abstract-frame {background-color: #f0f0f0;padding: 15px;border-radius: var(--border-radius);margin-top:10px;}
-#scw .abstract-frame .select-btn {
-    box-shadow: var(--photo-shadow);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    background-color: #000000;
-    color: #ffffff;
-    width: 280px;
-    height: 45px;
-    font-size:14px;
-    text-transform:uppercase;
-}
-#scw .abstract-frame .select-btn {margin-top: 10px;}
-#startupnav{font-family:"Open Sans", sans-serif;margin-top:30px;padding:15px;}
-#startupnav .itemhdl{font-size:1.1em;padding-bottom:3px;font-weight:400}
-#startupnav .startupbtn{margin-top:10px; text-align:center;}
-#startupnav .infostr{font-size: .9em;padding-top:5px;padding-bottom:0;margin:0;line-height:1.2em}
-#scw .swiper-related-frame {position: relative;margin-bottom:0}
-#scw .swiper-related-frame .navi-btn {outline: none;position: absolute;top: 50%;margin-top: -20px;background-color: #ffffff;border-radius: 100%;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;z-index: 9;cursor: pointer;box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);transition: transform 400ms cubic-bezier(0.25, 0.8, 0.25, 1);}
-#scw .swiper-related-frame .navi-btn:hover {transform: scale(1.2);}
-#scw .swiper-related-frame .navi-btn.pre {left: -15px;}
-#scw .swiper-related-frame .navi-btn.pre .icon {transform: rotate(180deg);}
-#scw .swiper-related-frame .navi-btn.next {right: -15px;}
-#scw .swiper-related-frame .navi-btn .icon {width: 15px;height: 15px;}
-#scw .swiper-related-frame .swiper-button-prev, #scw .swiper-related-frame .swiper-button-next {background-image: none;}
-#scw .swiper-related-frame .swiper-button-next.swiper-button-disabled, #scw .swiper-related-frame .swiper-button-prev.swiper-button-disabled {display: none;}
-@media screen and (min-width: 768px) {
-  .display-5 .right .title {
-    -webkit-line-clamp: 2;
-  }
-}
-.event-container {position: relative;}
-.event-tag {float: right; position: absolute; right: 0px; top: 0px; z-index: 3; background-color: #027320; color: #FFFFFF; font-weight: 400; opacity: .9; box-shadow: #000 -2px 2px 5px; padding: .5em 1em;  border-top-right-radius: 3px; box-sizing: content-box; font-size:15px;}
-.play-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
-    z-index: 2;
-    width: 56px;
-    height: 56px;
-    background-color: rgba(244, 156, 0, 0.9);
-    border-radius: 100%;
-}
-.play-wrapper .icon {width: 20px;height: 20px;}
-.play-wrapper:hover {
-    background:linear-gradient(to right, #E2231A, #FF5C61);
-}
-.topic-main {position: relative;border-radius: var(--border-radius);overflow: hidden;background: #000;margin-top: 25px;}@media screen and (min-width: 768px) {.topic-main {display: flex;align-items: center;justify-content: space-between;height: 400px;}}.topic-main .topic-bg-wrapper {position: relative;z-index: 0;width: 100%;padding-bottom: 66.6666666667%;height: 0px;}.topic-main .topic-bg-wrapper:before {content: "";position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%);}@media screen and (min-width: 768px) {.topic-main .topic-bg-wrapper {position: absolute;left: 0px;top: 0px;min-width: 600px;width: 600px;height: 100%;padding-bottom: 0px;}.topic-main .topic-bg-wrapper:before {content: "";position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%);}}.topic-main .topic-bg-wrapper img {position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;z-index: -1;}.topic-main .title-wrapper {width: 100%;height: 100%;position: relative;}@media screen and (min-width: 768px) {.topic-main .title-wrapper {min-width: 55%;width: 55%;}}.topic-main .title-wrapper .text-frame {position: absolute;padding-left: 15px;bottom: 25px;}@media screen and (min-width: 768px) {.topic-main .title-wrapper .text-frame {padding-left: 25px;padding-right: 25px;bottom: 25px;}}@media screen and (min-width: 992px) {.topic-main .title-wrapper .text-frame {padding-left: 40px;padding-right: 30px;bottom: 30px;}}.topic-main .title-wrapper .text-frame .topic-title {position: relative;color: #ffffff;font-size: 26px;font-weight: 500;padding-left: 15px;transition: color 800ms cubic-bezier(0.25, 0.8, 0.25, 1);}@media screen and (min-width: 768px) {.topic-main .title-wrapper .text-frame .topic-title {padding-left: 20px;font-size: 32px;}}@media screen and (min-width: 992px) {.topic-main .title-wrapper .text-frame .topic-title {font-size: 36px;}}.topic-main .title-wrapper .text-frame .topic-title:before {content: "";position: absolute;display: block;height: 100%;width: 4px;background: #F49C00;border-radius: 10px;left: 0px;}.topic-main .title-wrapper .text-frame .topic-title:hover {color: #F49C00;}.topic-main .title-wrapper .text-frame .topic-description {color: #ffffff;font-size: 16px;font-weight: 400;margin-top: 30px;line-height: 1.4;}@media screen and (min-width: 768px) {.topic-main .title-wrapper .text-frame .topic-description {font-size: 20px;}}.topic-main .topic-relative-wrapper {width: 100%;position: relative;z-index: 1;padding: 0px 20px;padding-bottom: 15px;}@media screen and (min-width: 768px) {.topic-main .topic-relative-wrapper {width: 45%;padding-left: 0px;padding-right: 25px;padding-bottom: 0px;}}@media screen and (min-width: 992px) {.topic-main .topic-relative-wrapper {padding-right: 40px;}}.topic-main .topic-relative-wrapper li {border-bottom: 1px solid rgba(255, 255, 255, 0.7);padding: 15px 0px;}@media screen and (min-width: 768px) {.topic-main .topic-relative-wrapper li {padding: 25px 0px;}}.topic-main .topic-relative-wrapper li:last-child {border-bottom: none;}.topic-main .topic-relative-wrapper .more {color: #ffffff;font-size: 14px;font-weight: 500;display: inline-block;text-align: right;border-bottom: 1px solid transparent;}.topic-main .topic-relative-wrapper .more:hover {border-bottom: 1px solid #ffffff;}.topic-main .topic-relative-news-frame {display: flex;align-items: center;}.topic-main .topic-relative-news-frame .photo-wrapper {position: relative;min-width: 100px;width: 100px;padding-bottom: 66.6666666667px;border-radius: var(--border-radius);overflow: hidden;margin-right: 15px;}@media screen and (min-width: 768px) {.topic-main .topic-relative-news-frame .photo-wrapper {min-width: 85px;width: 85px;padding-bottom: 56.6666666667px;}}@media screen and (min-width: 992px) {.topic-main .topic-relative-news-frame .photo-wrapper {min-width: 90px;width: 90px;padding-bottom: 60px;}}.topic-main .topic-relative-news-frame .photo-wrapper img {position: absolute;width: 100%;height: 100%;object-fit: cover;object-position: center;transition: transform 400ms cubic-bezier(0.25, 0.8, 0.25, 1);}.topic-main .topic-relative-news-frame .news-title {color: #ffffff;font-size: 18px;font-weight: 400;line-height: 1.6;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;transition: color 800ms cubic-bezier(0.25, 0.8, 0.25, 1);}@media screen and (min-width: 768px) {.topic-main .topic-relative-news-frame .news-title {font-size: 16px;}}@media screen and (min-width: 992px) {.topic-main .topic-relative-news-frame .news-title {font-size: 18px;}}.topic-main .topic-relative-news-frame:hover img {transform: scale(1.1);}.topic-main .topic-relative-news-frame:hover .news-title {color: #F49C00;}@media screen and (min-width: 992px) {.topic-main.channel-home .text-frame {padding-left: 30px;padding-right: 30px;}}@media screen and (min-width: 992px) {.topic-main.channel-home .text-frame .topic-title {font-size: 28px;}}@media screen and (min-width: 992px) {.topic-main.channel-home .text-frame .topic-description {font-size: 18px;}}@media screen and (min-width: 992px) {.topic-main.channel-home .topic-relative-wrapper {padding-right: 30px;}}@media screen and (min-width: 992px) {.topic-main.channel-home .topic-relative-news-frame .photo-wrapper {min-width: 85px;width: 85px;padding-bottom: 56.6666666667px;}}
-</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Pragma" content="no_cache"/>
+    <meta name="Distribution" content="Global"/>
+    <meta name="Robots" content="index,follow"/>
+    <meta name="Copyright" content="&copy; 2026 DIGITIMES Inc."/>
+    <meta name="Publisher" content="DIGITIMES Inc."/>
+    <meta name="Content-language" content="EN-US"/>
+    <meta name="Author" content="DIGITIMES"/>
+    <meta name="Description" content="DIGITIMES English-Language News Service (the Service)"/>
+    <meta name="Keywords" content="DIGITIMES, Taiwan, daily news, information, technology, terms, privacy policy, registration, subscription, publication, Asia, Chinese, English"/>
+    <meta name="Pragma" content="no_cache"/>
+    <title>DIGITIMES English-Language News Service ("the Service")</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://img.digitimes.com">
+    <link rel="dns-prefetch" href="https://img.digitimes.com">
+    <link rel="preload" href="https://img.digitimes.com/ad/en_20250923_b2b3_leaderboard.jpg" as="image">
+<link rel="preload" href="https://img.digitimes.com/ad/en_20260210_asia_button336x90.gif" as="image">
+    <link rel="preload" href="https://img.digitimes.com/script/js/jquery-3.6.0.min.js" as="script">
+    <link rel="preload" href="https://img.digitimes.com/script/js/jquery.bez.js" as="script">
+    <link rel="preload" href="https://img.digitimes.com/script/js/swiper-3.4.2.min.js" as="script">
+    <link rel="preload" href="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js" as="script">
+    <link rel="preload" href="/script/js/site.v1.js" as="script">
+    <link rel="preload" href="https://img.digitimes.com/script/normalize.css" as="style" />
+    <link rel="preload" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" as="style" />
+    <link rel="preload" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" as="style" />
+    <link rel="preload" href="/script/site.v1.css?cb=3&v=2023022001" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" />
+    <script type="text/javascript" src="https://img.digitimes.com/script/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.bez.js"></script>
+    <script type="text/javascript" src="https://img.digitimes.com/script/js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js"></script>
+    <script type="text/javascript" src="/script/js/site.v1.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        #serviceterms ul {padding:0 0 0 35px;margin:0;}
+        #serviceterms ul li {margin:0;padding:0 0 10px 0;}
+        #serviceterms .img-responsive {margin: 0 auto;}
+        .CenterText {font-size:.9em; color:#333;font-style:italic; font-weight:300; text-align:right}
+        .CenterTextHead {font-size: 1.1em; font-weight: bold; padding:0; margin:0; color:#333}
+        #serviceterms .img-responsive {margin: 0 auto;}
+        .anchor{font-weight: 700;}
+        .subscri{margin-bottom: 30px;}
+        /*information css*/
+        .information-frame {
+          margin-top: 40px;
+          width: 100%;
+          max-width: 1024px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media screen and (min-width: 500px) {
+          .information-frame {
+            background-color: #ffffff;
+            padding: 20px 20px;
+            box-shadow: var(--frame-shadow);
+            border-radius: var(--border-radius);
+          }
+        }
+        @media screen and (min-width: 768px) {
+          .information-frame {
+            padding: 40px 40px;
+          }
+        }
+        @media screen and (min-width: 992px) {
+          .information-frame {
+            padding: 30px 30px;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          .information-frame {
+            padding: 40px 40px;
+          }
+        }
+        .information-frame .main-title {
+          font-size: 28px;
+          font-weight: 600;
+          text-align: center;
+          position: relative;
+        }
+        @media screen and (min-width: 768px) {
+          .information-frame .main-title {
+            font-size: 34px;
+          }
+        }
+        .information-frame .main-title::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 50px;
+          height: 5px;
+          background-color: #333333;
+          bottom: -17px;
+          left: 50%;
+          margin-left: -25px;
+        }
+        .information-frame .content {
+          margin-top: 45px;
+          width: 100%;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+          line-height: 1.4;
+        }
+        .information-frame .content ul {
+          list-style: disc;
+          margin-bottom: 16px;
+          margin-left: 20px;
+        }
+        .information-frame .content a {
+          text-decoration: underline;
+          font-weight: 600;
+        }
+        .information-frame .content a:hover {
+          color: #F49C00;
+        }
+        .anchor{
+          display: block;
+          position: relative;
+          top: -75px;
+          visibility: hidden;
+        }
+        .toc-up{text-transform: uppercase;font-weight:700;}
+        .toc-l1 {font-weight:700}
+        .a{font-weight:700;}
+        .box-bot{margin-bottom: 24px;}
+        .sub-box{margin-bottom: 10px;}
+        .custom-list{
+          margin-bottom: 30px!important;
+        }
+        .subhead{font-weight: 700;}
+        hr.dashed {
+            width:60%;
+            align-content:center;
+          border-top: 1px dashed #bbb;
+        }
+    </style>
 <meta name='cXenseParse:pageclass' content='frontpage' />
 </head>
 <body>
-    <svg width="0" height="0" style="display: block">
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.861 163.861" style="enable-background:new 0 0 512 512" xml:space="preserve" id="video-play"><path d="M34.857,3.613C20.084-4.861,8.107,2.081,8.107,19.106v125.637c0,17.042,11.977,23.975,26.75,15.509L144.67,97.275   c14.778-8.477,14.778-22.211,0-30.686L34.857,3.613z" fill="#ffffff"/></symbol></svg>
     <svg width="0" height="0" style="display: block">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 47" id="digitimes-logo-white">
         <path d="M283.44 37.4c-4.45 0-9.52-.98-12.67-1.86-.12.52-1.65 7.57-1.74 8.01 4.02 1.68 9.33 2.69 14.26 2.69 13.84 0 16.47-4.51 16.47-12.83 0-7.33-.58-9.97-11.87-11.98-6.83-1.22-7.53-1.65-7.53-4.62 0-2.61 1.27-3.08 4.86-3.08 3.63 0 7.85.47 12.18 1.35.07-.52 1.16-8.08 1.23-8.54-3.93-1.06-9.83-1.64-13.49-1.64-11.15 0-15.69 3.33-15.69 11.51 0 6.87.77 11.18 11.39 12.9 7.35 1.17 7.99 1.82 7.99 4.62.01 2.71-1.2 3.47-5.39 3.47zM172.84 5.69h-10.92v39.77h10.92V5.69zM86.89 46.24c5.32 0 11.03-.76 16.09-2.12V24.55h-9.83v12.06l-.25.03c-2.12.26-4.04.39-6.01.39-3.94 0-5.7-1.54-5.7-5.01V19.06c0-3.39 1.66-4.78 5.7-4.78 3.82 0 9.63.57 13.96 1.06.06-.52.97-8.59 1.02-9.07-5.14-.91-10.04-1.36-14.98-1.36-11.18 0-16.63 4.04-16.63 12.37v16.51c0 8.38 5.45 12.45 16.63 12.45zM62.03 5.69H51.11v39.77h10.92V5.69zm74.98 40.14h10.32V9.15h11.1V0H125.9v9.15h11.11v36.68zM.98 27.78c.66.13 6.97.97 6.97.97l.8 4.86h8.62v-9.15H.98c-.46 0-.98.31-.98 1.61.01 1.3.31 1.58.98 1.71zm7.77 18.05h19.18c11.29 0 15.49-5.78 15.49-11.9V11.91C43.42 5.72 39.22 0 27.93 0H.98C.52 0 0 .3 0 1.61c0 1.3.3 1.58.98 1.71.66.12 6.97.97 6.97.97l.8 4.85h17.94c5.16 0 6.41 2 6.41 5.58v16.37c0 3.58-1.24 5.58-6.41 5.58H.98c-.46 0-.98.31-.98 1.61 0 1.31.3 1.59.98 1.71.66.13 6.97.98 6.97.98l.8 4.86zm-.8-29.3l.8 4.85h8.62v-9.14H.98c-.46 0-.98.3-.98 1.61 0 1.3.3 1.59.98 1.71.66.12 6.97.97 6.97.97zm207.88 9.42l.76 19.51h10.52c-.02-.57-2.03-39.25-2.05-39.77h-10.65c-.14.34-10.19 24.02-10.19 24.02S194.18 6.03 194.03 5.69h-10.64c-.03.52-2.03 39.2-2.07 39.77h10.54l.75-19.43.55-.11s6.22 14.24 6.36 14.57h9.42c.13-.33 6.37-14.64 6.37-14.64l.52.1zm47.26 10.92H245.4v-7.31h16.29v-8.6H245.4v-6.68h17.69V5.69h-28.6v39.77h28.6v-8.59zM121.88 5.69h-10.91v39.77h10.91V5.69z" fill="#fff"></path>
@@ -667,213 +658,267 @@
       </div>
       	  </div>
   </div>
-</header>
-        <div id="adspace">
+</header>    <div id="adspace">
 	    <div class="my-container">
 	    	<div class="adrow">
-                <div id="banner" class="adcol-8"><div class="text-center"><div class="clclgjs" rel="96494"><a href='/webad/cnv.asp?Seq=96494' target='_blank'><img src="https://img.digitimes.com/ad/en_20260201_veeam_leaderboard.jpg" class="awh" style="max-width:728px;" border="0" alt="�iMetric�jVeeam Q1 Content Syndication E2E Cyber�V ANZ" /></a></div></div></div><div id="banner_mid" class="adcol-4"><div class="text-center"><div class="clclgjs" rel="95210"><a href='/webad/cnv.asp?Seq=95210' target='_blank'><img src="https://img.digitimes.com/ad/en_20250923_b2b3_button336x90.jpg" class="awh" style="max-width:336px;" border="0" alt="marketing" /></a></div></div></div>	    	</div>
+                <div id="banner" class="adcol-8"><div class="text-center"><div class="clclgjs" rel="95208"><a href='/webad/cnv.asp?Seq=95208' target='_blank'><img src="https://img.digitimes.com/ad/en_20250923_b2b3_leaderboard.jpg" class="awh" style="max-width:728px;" border="0" alt="marketing" /></a></div></div></div><div id="banner_mid" class="adcol-4"><div class="text-center"><div class="clclgjs" rel="93183"><a href='/webad/cnv.asp?Seq=93183' target='_blank'><img src="https://img.digitimes.com/ad/en_20260210_asia_button336x90.gif" class="awh" style="max-width:336px;" border="0" alt="Asia" /></a></div></div></div>	    	</div>
 	    </div>
     </div>
-    
-    <div class="gotop">
+        <div class="gotop">
 	    <svg class="icon"><use xlink:href="#arrow-icon-white"></use></svg>
     </div>
 
-    <div class="my-container">
-	    <script type="text/javascript">
-$(function () {
-  var mySwiper = new Swiper(".realtime-container", {
-    direction: 'vertical',
-    loop: true,
-    autoplay: 5000,
-    autoplayDisableOnInteraction: false
-  });
-  $("#realtime-list").click(function () {
-    length = $(".realtime-container .news-list").length - 1;
-    for (var i = 1; i < length; i++) {
-      var html = $(".realtime-container .news-list").eq(i).clone();
-      $(".realtime-news .list-frame .list").append(html);
-    }
-    $(".realtime-news .list-frame").show();
-    $('.memonly').click(function () { $('#dialog').modal();});
-  })
-  $("#realtime-list-close").click(function () {
-    $(".realtime-news .list-frame .list").empty();
-    $(".realtime-news .list-frame").hide();
-  })
-})
-</script>
-<div class="realtime-news">
-  <label class="realtime-label">
-    <svg class="icon"><use xlink:href="#flash-icon"></use></svg>
-    <span class="text">REALTIME NEWS</span>
-  </label>
-  <svg class="list-icon" id="realtime-list">
-    <use xlink:href="#list-icon"></use>
-  </svg>
-  <div class="list-frame">
-    <div class="wrapper">
-      <svg class="close-icon" id="realtime-list-close">
-        <use xlink:href="#close-icon"></use>
-      </svg>
-      <div class="list"></div>
-    </div>
-  </div>
-  <div class="swiper-container realtime-container">
-    <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">Former TSMC exec theft highlights IP security</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-              <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">Alibaba and Baidu price hikes reveal AI token economy shift</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-              <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">HiSilicon unveils first self-developed high-end CIS chip, challenging Sony and Samsung</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-              <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">Commentary: Groq 3 LPU and Rubin rack deployment seen as interim solution for Nvidia</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-              <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">Samsung foundry sees rebound down the corner with Nvidia Groq orders despite market share decline</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-              <div class="swiper-slide">
-          <a
-            href="javascript:void(0)"
-            class="news-list memonly"
-          >
-            <div class="title">Nvidia's Vera Rubin server drives surge in liquid cooling demand</div>
-            <label class="label grey">Tomorrow's Headlines</label>
-            <div class="date">
-              <svg class="icon"><use xlink:href="#clock-icon"></use></svg>
-              Mar 19, 18:32
-            </div>
-          </a>
-        </div>
-      
-    </div>
-  </div>
-</div>
-	    <div class="row">
-	    	<div class="col-12 col-lg-8" id="scw">
-                                                        <div class="row mt-4">
-                        <div class="col-12">
-                            <div class="biz-category-banner">
-                                <img src="https://img.digitimes.com/en/images/biz/computex.jpg" aria-label="Computex Exhibition Hub" style="width:100%;">                            </div>
-                        </div>
-                    </div>
-                                        <div class="breadcrumbs dash"><a href="/index.asp" class="link">Home</a><svg class="icon"><use xlink:href="#arrow-icon"></use></svg><a href="/biz/" class="link">Biz Focus</a><svg class="icon"><use xlink:href="#arrow-icon"></use></svg><a href=''/biz/index.php?cat=61 class='link current'>COMPUTEX</a></div><div class="row"><div class="col-12 col-md-7"><div class="display-3-frame heavy mb-20"><a href="/news/a20250710PR200.html?chid=9"><img class="photo" src="https://img.digitimes.com/newsshow/20250710pr200_files/1_b.jpg"></a><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 10 July 2025</div><a href="/news/a20250710PR200/asus-data-center-infrastructure-management-2025.html?chid=9" class="title">ASUS expands AI infrastructure solutions, showcasing AI factory vision at Computex 2025</a><div class="abstract">At COMPUTEX 2025, ASUS showcased its comprehensive AI infrastructure solutions, targeting the computing needs of data centers, edge computing, and a wide range of intelligent applications. With a robust product portfolio, ASUS brings to life the NVIDIA AI Factory vision, illustrating how AI will be deeply embedded into enterprise IT infrastructure. This evolution continues to drive forward applications and services that shape the future of AI and high-performance computing</div></div></div><div class="col-12 col-md-5"><div class="text-news"><a class="title" href="/news/a20250609PR200/iot-design-technology.html?chid=9">Linxens teams up with Dracula Technologies to develop battery-free smart labels for next-gen sustainable IoT</a><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Monday 9 June 2025</div></div><div class="text-news"><a class="title" href="/news/a20250604PR200/2025-industrial-intel-amd.html?chid=9">BIOSTAR concludes COMPUTEX 2025 on a high note with the debut of Edge-Comp series and edge AI platforms</a><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 5 June 2025</div></div><div class="text-news"><a class="title" href="/news/a20250529PR202/pegatron-ar-reference-design-smart-glasses-2025.html?chid=9">Pegatron unveiled Verge: Cutting-edge AI hardware-ready AR smart glasses reference design at COMPUTEX 2025</a><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 29 May 2025</div></div><div class="text-news"><a class="title" href="/news/a20250529PR201/gtc-taipei-2025-manufacturing-design.html?chid=9">PEGATRON unveils groundbreaking AI and digital transformation initiatives at GTC Taipei 2025</a><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 29 May 2025</div></div></div></div><div class="subject-title"><a class="text" href="/multimedia/video.php?cat=152" target="_blank">VIDEOS</a></div><div class="swiper-related-frame"><div class="swiper-container video-container"><div class="swiper-wrapper"><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=7kzJlQw29Gs" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/7kzJlQw29Gs/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">Straight from COMPUTEX 2025－PEGATRON Leads the Way</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=NLeWMdB1Ey0" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/NLeWMdB1Ey0/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">COMPUTEX 2025 Exclusive Interview AI at the Edge: Creating an Autonomous Future with NXP</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=4puRfq_nmas" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/4puRfq_nmas/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">Straight from COMPUTEX 2025 Highlights from Innodisk, TrendMicro, SiliconMotion & Advantech !!</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=Eg13ZMQn15Y" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/Eg13ZMQn15Y/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">Straight from COMPUTEX 2025 – Highlights from PEGATRON, Apacer, Schneider Electric, CHENBRO, BIOSTAR</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=JG74ulVutgg" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/JG74ulVutgg/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">Straight from COMPUTEX 2025 –  Highlights from MSI, Infineon, Skymizer & Alif Semiconductor!!</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=kqsjQK_VLh8" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/kqsjQK_VLh8/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">Straight from COMPUTEX 2025 – How Silicon Motion Enables AI from Edge Devices to Data Centers</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=PJ4SznL27oM" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/PJ4SznL27oM/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">COMPUTEX 2025 Exclusive – DIGITIMES unveils Apacer’s AI-ready storage!</div></a></div></div><div class="swiper-slide"><div class="row" style="margin-left:5px;margin-right:5px"><a class="display-3-frame mb-30 vclick" href="https://www.youtube.com/watch?v=kO_inFLHgtE" target=_blank><div style="position:relative"><img class="photo lazy" data-src="https://i.ytimg.com/vi/kO_inFLHgtE/hqdefault.jpg"><div class="play-wrapper"><svg class="icon"><use xlink:href="#video-play"></use></svg></div></div><div class="title">《2025 COMPUTEX Exclusive Interview》Silicon Motion’s AI & Automotive Storage Innovations</div></a></div></div></div></div><div class="topic swiper-button-prev navi-btn pre"><svg class="icon"><use xlink:href="#arrow-icon"></use></svg></div><div class="topic swiper-button-next navi-btn next"><svg class="icon"><use xlink:href="#arrow-icon"></use></svg></div></div><div class="row"><div class="col-12"><div class="subject-title"><div class="text">LATEST STORIES</div></div><div class="display-5"><a href="/news/a20251215PR202/dimerco-taipei.html?chid=9" class="photo" style="background-image: url(https://img.digitimes.com/newsshow/20251215pr202_files/1_r.jpg)"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Tuesday 16 December 2025</div><a class="title" href="/news/a20251215PR202/dimerco-taipei.html?chid=9">Dimerco leverages Asia logistics expertise to navigate complex 2026 freight market</a><div class="abstract">Taipei, December 11, 2025: Dimerco Express Group ("Dimerco") has announced that it is strengthening its integrated, Asia-focused logistics solutions to help customers capture growth from AI and "Taiwan+, China+" manufacturing while managing risks from congestion, regulatory changes and shifting capacity.Air cargo shipment reflects growing Asia-to-US/EU demand.Credit: Dimerco"In 2026, the overall market outlook will be cautiously optimistic," said Catherine Chien, Chairwoman of Dimerco Express Group. "Ocean freight will not be driven by a sudden surge in demand, but rather by capacity imbalances and regional differences. At the same time, demand for high-tech, AI-related, and e-commerce shipments continues to drive growth in air freight from the Asia-Pacific region to North America and Europe. Our role is to integrate our ocean and air freight, contract logistics, and brokage and compliance resources to help customers build supply chains that are both secure and resilient."Freight market outlook: capacity is back, but complexity is higherOn the ocean side, new vessel deliveries and relatively stable bunker prices are being offset by structural bottlenecks. Major European hubs continue to face congestion, while Red Sea and Suez diversions still disrupt rotations and tie up ships and equipment.Regional tariff and carbon schemes are fragmenting cost structures. As a result, some Asia&#8211;Europe services have seen rates rebound from unsustainably low levels, even as several Transpacific lanes face softer demand and continued rate pressure. Global schedule reliability has recovered to around 65 percent but remains below pre-pandemic levels; for many shippers, booking at least three weeks in advance on key trades has become standard risk management. Overall, the 2026 ocean freight market is not defined by a demand boom, but by capacity often being in the wrong places and by strong regional differences.Airfreight tells a different story. Demand is driven by AI servers and semiconductor equipment, communications and electronic components, and resilient cross-border ecommerce. "Taiwan+, China+" manufacturing strategies are shifting production toward Southeast Asia and India, driving strong growth in air volumes from these origins-as well as from Taiwan-into North America and Europe. Following changes to US de minimis rules, some direct China&#8211;US e-commerce flows have decreased, but more cargo is now&#160;routed via alternative hubs and forward-stocking models, making trade lanes more diversified. Shippers that can flex between multiple lanes, multiple modes and multiple origin countries will be better positioned than those relying on a single country or mode.China+, Taiwan+ and tariffs: four logistics pain pointsManufacturers extending production from China into Southeast Asia, India or Mexico typically face four major challenges: Inadequate capacity at critical times, as port congestion, diversions and blank sailings reduce effective ocean supply even when the global fleet is large; Difficulty choosing a second warehouse or hub outside China that truly optimizes total landed cost-combining transport, duties, inventory and lead time with available government incentive schemes at each location; Limited knowledge of local regulations, customs requirements and tradecompliance rules; and Lack of practical experience managing complex factory relocations involving used machinery and oversized equipment.Dimerco's solutions: from capacity to complianceTo close capacity and lead-time gaps as more freight shifts from Southeast Asia to North America and Europe, Dimerco combines multi-modal options with consolidation through selected Asia gateways. This approach helps secure uplift for high-value cargo when local air capacity is tight, while preserving flexibility on routing and transit time.For manufacturers searching for a "second hub" outside China, Dimerco applies a structured assessment tool to compare locations across Southeast Asia. The analysis covers service levels, duties and taxes, regulatory and investment environment (including incentive schemes), transport infrastructure and labor. Using this framework, Dimerco has helped global customers select and launch warehouse hubs in markets such as Singapore, Malaysia, Thailand and Vietnam, enabling more flexible inventory deployment between China and secondary locations and giving shippers more routing options as conditions change.Dimerco also supports complex factory and line relocations. In one case, a data-center and IT equipment manufacturer planned to move a production site from Singapore to Malaysia in 48 weeks; Dimerco completed the relocation in just 36 weeks by coordinating government liaison, customs-compliance advisory for used machinery and heavy-lift transport using a combination of low-bed and open trucks.With more than 45 years of operational experience in Southeast Asia, Dimerco helps foreign manufacturers navigate customs and regulatory environments through FTZ and bonded warehouses across Mainland China, Hong Kong, Taiwan, India, Southeast Asia, Mexico and the US. Dimerco's Expand to India Advisory Service allows customers to implement phased "Test &#8211; Trade &#8211; Manufacture" models, utilize FTZ and bonded policies to optimize duties and inventory placement, and reduce compliance risks in multi-country, multi-node supply chains.Building for AI-driven growth in 2026Dimerco's differentiation is centered on three areas: deep Asia presence, with around 130 owned offices across the region; a focus on high-value, time-critical freight in sectors such as semiconductors, electronics and aerospace; and consistent systems and quality, enabled by a secure, cloud-based global operating platform that connects air, ocean, customs, warehousing and distribution services."For our customers, 2026 is not about whether they will grow, but about how to grow safely under new tariff, compliance and capacity constraints," added Catherine Chien."By combining flexible multi-modal options-such as switching from sea to air for urgent shipments, or from air to sea for cost-sensitive cargo with controlled lead times-with strategic charter flight services, deep Asia expertise, integrated warehousing solutions and strong compliance advisory, Dimerco is ready to help customers turn AI, Taiwan+, China+ from buzzwords into real, executable opportunities."Catherine Chien, Dimerco Chairwoman.Credit: Dimerco</div></div></div><div class="display-5"><a href="/news/a20250529PR203/brand-computex-2025-design-manufacturing-pegatron-smart-manufacturing.html?chid=9" class="photo" style="background-image: url(https://img.digitimes.com/newsshow/20250529pr203_files/1_r.jpg)"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 29 May 2025</div><a class="title" href="/news/a20250529PR203/brand-computex-2025-design-manufacturing-pegatron-smart-manufacturing.html?chid=9">Pegatron debuted independently at Computex 2025,<br />showcasing AI and smart manufacturing capabilities to establish itself as a leading design and manufacturing services brand</a><div class="abstract">Pegatron Corporation made its first-ever independent appearance at COMPUTEX 2025, held in Taipei, Taiwan. The opening ceremony was hosted by Chairman T.H. Tung and was attended by leading figures from the tech industry, including Chia Chung-Yung, General Manager of Chunghwa Telecom's Network Technology Branch; Ken Lin, Senior Vice President of AMD Taiwan; Tasha Chuang, Vice President of Intel's Sales and Marketing Group and General Manager of Intel Taiwan; and Ying Yin Shih, Global Director of Data Center Products at NVIDIA.Historically, traditional Electronic Manufacturing Service (EMS) providers have often played a behind-the-scenes role for brand clients, with their own brand value receiving less prominence. However, with the evolution of the industrial ecosystem, Pegatron deeply recognizes that its outstanding professional manufacturing and design capabilities inherently constitute significant core brand value. By exhibiting independently at COMPUTEX 2025, Pegatron aims to demonstrate its profound strength and core competitiveness in areas such as design, precision manufacturing, and smart factories to the global industry. This move also underscores Pegatron's leadership as a Design and Manufacturing Service (DMS) provider and its crucial role in the current wave of technological innovation, actively seeking to establish deeper strategic partnerships with global brand clients.This year's exhibition is themed "TECH MAKER," closely aligning with the "AI Next" era. The booth is meticulously planned around four main thematic areas: "High-Performance AI Computing," "E-Mobility &amp; Car Computing," "Telecommunication &amp; Network Solutions," and "Consumer, Aesthetic &amp; Assisted Living," comprehensively presenting Pegatron's latest R&amp;D achievements and innovative solutions in these fields. Notably, Chairman T.H. Tung announced at the opening ceremony that robotics will continue to be a key R&amp;D focus for Pegatron, demonstrating its proactive approach in the realms of smart automation.Credit: PegatronProminent highlights showcased by Pegatron at COMPUTEX 2025 include:High-Performance AI ComputingPegatron showcased cutting-edge liquid-cooled servers developed in collaboration with NVIDIA, alongside high-density servers equipped with the latest technologies from AMD and Intel. Furthermore, Pegatron will prominently feature its independently developed AI platform (PEGAAi) and digital student platform (PEGAVERSE). Through these two platforms, Pegatron empowers enterprises to enhance their autonomous operational capabilities, thereby enabling a more agile response to the evolving industrial landscape.E-Mobility &amp; Car ComputingPegatron is actively advancing the development of safe autonomous driving technologies, having independently designed and manufactured Taiwan's first long-range automotive high-precision LiDAR optical sensing module. Building on this solid foundation, Pegatron is charting the future blueprint for next-generation smart cockpits. By leveraging the latest-generation TEEA (presumably referring to a specific Electrical/Electronic Architecture) and integrating zonal architecture with specialized Scalable Central Compute Resource (SCCR) modules, Pegatron further enhances vehicles' real-time computing capabilities and overall system efficiency. Moreover, Pegatron has developed "Simba," a highly integrated robotic dog designed for wide-ranging applications in demanding environments, such as disaster relief and battlefield scenarios.Telecommunication &amp; Network SolutionsPegatron continues to aggressively expand its presence in the 5G domain, deeply integrating AI technologies to deliver several key innovative networking solutions. These include a 5G enterprise private network solution enabling rapid deployment and efficient management; real-time intelligent surveillance through its Nura 4K camera and MG54AX router; and the development of high-performance indoor and outdoor small cell base stations. These base stations excel in bandwidth utilization, low power consumption, and wide temperature range operation, and can be powered by standard voltage mobile power sources, ensuring stable and efficient 5G connectivity even in demanding environments.Consumer, Aesthetic &amp; Assisted LivingIn the "Beauty Tech &amp; Health" sector, Pegatron is targeting the vast potential of the beauty tech industry with the launch of the "PRIIO" facial beauty device. This device allows consumers to enjoy professional-grade deep cleansing, skincare product infusion, and facial muscle toning at an affordable price. Furthermore, Pegatron has developed Taiwan's first multi-wavelength picosecond laser machine, capable of addressing deep skin issues and delivering high-density energy to the skin, thereby reducing the number of treatments and promoting rapid skin recovery. Pegatron holds multiple patents in this area, ushering in a new era for Taiwan's medical aesthetics industry.To create a better future, Pegatron demonstrates its commitment to technological innovation and social responsibility. Leveraging its own technology, the company has developed several universally designed products to benefit the public, such as the DRP retinal projection device and the Tenor 2 Bluetooth hearing aids. These aim to enable individuals with low vision and hearing impairments to enjoy life more freely, embodying the warmth and inclusivity of technology.Through its independent exhibition at COMPUTEX 2025, Pegatron successfully showcases its exceptional capabilities and innovation in key technology areas including artificial intelligence, high-performance computing, and smart manufacturing, as well as its dedication to a better future. Pegatron will continue to deepen its collaborative relationships with global technology leaders such as NVIDIA, AMD, and Intel, striving to promote the widespread application of AI technology across various industries and resolutely advancing towards a new future of digital and intelligent manufacturing. We invite you to continue following Pegatron and witness more world-changing innovations together!Pegatron Corporation Website: https://www.Pegatroncorp.com/Pegatron SVR Website: https://svr.Pegatroncorp.com/Pegatron 5G Website: https://5g.Pegatroncorp.com/Credit: Pegatron</div></div></div><div class="display-5"><a href="/news/a20250529PR200/2025-gaming-mobile-ssd-hardware.html?chid=9" class="photo" style="background-image: url(https://img.digitimes.com/newsshow/20250529pr200_files/1_r.jpg)"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 29 May 2025</div><a class="title" href="/news/a20250529PR200/2025-gaming-mobile-ssd-hardware.html?chid=9">DATOTEK showcases AI-era memory &amp; storage at COMPUTEX 2025, featuring immersive design and Switch 2-ready innovations</a><div class="abstract">At COMPUTEX 2025, DATOTEK revealed its forward-looking "AI Star Voyage" product lineup, delivering cutting-edge solutions for AI computing, gaming hardware, and mobile content creation. The booth combined innovation with visual storytelling to stand out as one of the most immersive experiences at the show.Featured products included:CUdimm and CSOdimm Memory Modules: High-speed, stable performance tailored for AI edge computing and industrial deployments.PCIe Gen5 SSD: Blazing-fast storage engineered for next-gen gaming and AI processing workloads.2230 SSDs: Compact form factor drives optimized for handheld gaming devices and mini PCs.Portable SSD Series:Q Model: Enables instant mobile recording and backup for high-resolution content creators.Amber Shield: IP68 waterproof and showcased inside a jellyfish-themed tank to demonstrate rugged reliability.Quantum PSSD: Supports simultaneous charging and file transfer&mdash;ideal for creators on the move.MicroSD Express Card: Specifically designed for the upcoming Nintendo Switch 2, this card meets the microSD Express standard and delivers near-SSD performance&mdash;significantly accelerating game loading and data access.The booth featured immersive sci-fi-inspired d&eacute;cor, including a jellyfish aquarium and a space explorer figure&mdash;not as product demos, but as symbolic elements representing DATOTEK's mission to guide users into the AI-powered digital future.</div></div></div><div class="display-5"><a href="/news/a20250522PR202/deepx-aic-ai-server-computex-2025-taipei.html?chid=9" class="photo" style="background-image: url(https://img.digitimes.com/newsshow/20250522pr202_files/2_r.jpg)"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 22 May 2025</div><a class="title" href="/news/a20250522PR202/deepx-aic-ai-server-computex-2025-taipei.html?chid=9">DEEPX and AIC sign strategic MOU at Computex Taipei 2025 to accelerate AI server innovation for physical security and edge applications</a><div class="abstract">DEEPX, an innovator at the forefront of ultra-efficient on-device AI semiconductor technology, has announced a strategic partnership with AIC Inc., a global leader specializing in enterprise storage and server solutions. The partnership, formalized through a Memorandum of Understanding (MoU) at Computex Taipei 2025, is set to redefine AI capabilities in edge computing markets.The official signing ceremony on May 21 at AIC's booth unveiled ambitious plans to integrate DEEPX's advanced Neural Processing Units (NPUs) with AIC's robust industrial-grade server platforms. This collaboration aims to deliver unprecedented computational power combined with significant energy efficiency and compact form factors tailored specifically for edge environments. Notably, the jointly developed servers&mdash;such as the AIC CB201-CP model equipped with eight DEEPX DX-H1 AI accelerators&mdash;have already met the stringent specifications required by major enterprise customers in the technology sector. This particular solution is currently undergoing verification as an on-premise AI server in collaboration with a leading South Korean IT conglomerate, demonstrating readiness for deployment in demanding commercial environments.Through close collaboration, DEEPX and AIC will develop innovative AI-optimized hardware solutions, including reference architectures and demonstrative systems. These offerings will cater directly to global system integrators and OEM partners demanding reliable, scalable, and economically viable AI solutions at the edge. Target applications include smart retail analytics, industrial automation processes, intelligent surveillance systems, and edge data center operations. Additionally, this partnership enables DEEPX to enter new markets such as Media &amp; Entertainment, broadening its reach and creating new growth opportunities.This partnership aligns strategically with DEEPX's ongoing global expansion and ecosystem-building efforts. By leveraging AIC's deep-rooted expertise in system integration and its extensive global manufacturing capabilities, DEEPX is positioned to further democratize access to high-performance AI solutions, ensuring their applicability and practicality across diverse real-world scenarios.Immediate plans involve rapid validation of integrated systems and accelerated joint engagements with key international customers. The combined strengths of DEEPX's semiconductor innovation and AIC's server expertise promise transformative AI solutions that respond directly to the surging demand for secure, scalable, and power-conscious AI deployments in surveillance, industrial, and edge computing environments. To stay updated on the latest from DEEPX, follow the official DEEPX LinkedIn page.About DEEPXFounded in anticipation of an era when artificial intelligence will be as pervasive as electricity and Wi-Fi, DEEPX develops core technology for high-performance AI semiconductors and computing solutions that bring intelligence to electronic devices. DEEPX currently holds over 326 patents pending in the U.S., China, and Korea&mdash;one of the largest patent portfolios in the world for on-device AI chip development.DEEPX's AI semiconductors are optimized for various applications, improving energy efficiency while enabling advanced AI functionality. The company is collaborating with customers such as Hyundai Kia Motors Robotics Lab, POSCO DX, Jahwa Electronics, LGU+, and Inventec on mass-production developments. In addition, DEEPX works with more than 120 global organizations in areas like smart cameras, surveillance systems (AI NVR), smart factories, robotic platforms, and AI servers, and conducts strategic global promotions in the United States, China, Taiwan, and Europe.About AICAIC Inc. is a global leader in the design and manufacturing of high-performance server and storage solutions. With nearly 30 years of expertise, AIC is renowned for its high-density storage servers, storage server barebones, and AI storage solutions. The company operates globally, with offices in the United States, Asia, and Europe, and is committed to driving innovation across various industries.</div></div></div><div class="display-5"><a href="/news/a20250522PR201/2025-innovations-mobile-microsd-portable.html?chid=9" class="photo" style="background-image: url(https://img.digitimes.com/newsshow/20250522pr201_files/2_r.jpg)"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Thursday 22 May 2025</div><a class="title" href="/news/a20250522PR201/2025-innovations-mobile-microsd-portable.html?chid=9">DATOTEK unveils high-performance storage and memory innovations under AI star voyage theme at Computex 2025</a><div class="abstract">At COMPUTEX 2025, DATOTEK INTERNATIONAL CO., LTD. launches its latest innovations under the theme "AI Star Voyage", representing creators and gamers navigating a limitless digital universe. Visit us at Booth J0327a for an immersive experience in next-generation storage.One key highlight is the Quantum MagSafe Portable SSD, featuring USB4.0 and dual Type-C ports that allow simultaneous video recording and charging&mdash;solving mobile creators' biggest pain points. The booth also presents CUDIMM and CSODIMM memory modules, equipped with onboard clock drivers for signal integrity and stability, enabling speeds of up to 8000MHz.Making its debut is the DATO microSD Express card, specially designed for Switch 2. This high-speed storage solution is also compatible with a wide range of mobile and gaming devices&mdash;delivering the perfect blend of speed, flexibility, and portability for power users.Find us at Booth J0327a, 3rd Floor, Hall 1, Nangang Exhibition Center. Industry professionals, gamers, and creators are welcome to stop by and explore our latest storage breakthroughs.Since its founding, DATOTEK has focused on high-performance storage and memory innovations. With product lines including USB4 devices, MagSafe-compatible SSDs, and now the Switch 2&ndash;ready microSD Express card, the company continues to push the boundaries of portable data technology.</div></div></div><div class="display-5"><a href="/news/a20250521PR204/on-device-ai-nota-ai-ceo-market-taipei.html?chid=9" class="photo lazy" data-src="https://img.digitimes.com/newsshow/20250521pr204_files/4_r.jpg"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Wednesday 21 May 2025</div><a class="title" href="/news/a20250521PR204/on-device-ai-nota-ai-ceo-market-taipei.html?chid=9">DEEPX and Nota AI sign MOU at Computex Taipei to lead the on-device AI market</a><div class="abstract">DEEPX (CEO Lokwon Kim), a leading developer of ultra-low-power on-device AI semiconductors, and Nota AI (CEO Myungsu Chae), an expert in AI model optimization and on-device generative AI, have signed a strategic Memorandum of Understanding (MOU) at Computex Taipei 2025, the world's largest ICT exhibition. This partnership aims to strengthen their global position in the rapidly growing on-device AI market.Under the agreement, the two companies will co-develop AI solutions that combine DEEPX's advanced Neural Processing Units (NPUs) with Nota's lightweight AI models, enabling high-performance AI functionality even in ultra-compact, power-constrained devices. These joint solutions will serve as proof-of-concept models for applications in industrial robotics, smart appliances, security systems, mobility platforms, and more&mdash;accelerating market penetration both in Korea and globally.As part of the collaboration, DEEPX will provide its NPU SDKs and development kits to support the optimized integration of lightweight AI models. Nota AI will design and fine-tune application-specific models to meet diverse industry requirements. The partnership also includes co-marketing efforts, joint participation in global trade shows, and active engagement with B2B customers worldwide through proof-of-concept deployments."This agreement will be an important collaboration to expand the on-device AI ecosystem," said Lokwon Kim, CEO of DEEPX. "By combining the strengths of both on-device AI hardware and software, we will strive to bring competitive AI solutions to the global market.""Our strategic partnership with DEEPX combines Nota AI's proprietary AI optimization technologies with DEEPX's world-class AI hardware innovation, positioning us as leaders in the global on-device AI market," said Nota AI CEO Myungsu Chae. "Together, we will accelerate the deployment of optimized AI across a range of industrial applications."This MOU highlights the growing global recognition of Korean innovation in on-device AI technology, signaling a new phase of international expansion for domestically developed AI solutions.About DEEPXFounded in anticipation of an era when artificial intelligence will be as pervasive as electricity and Wi-Fi, DEEPX develops core technology for high-performance AI semiconductors and computing solutions that bring intelligence to electronic devices. DEEPX currently holds over 326 patents pending in the U.S., China, and Korea&mdash;one of the largest patent portfolios in the world for on-device AI chip development.DEEPX's AI semiconductors are optimized for various applications, improving energy efficiency while enabling advanced AI functionality. The company is collaborating with customers such as Hyundai Kia Motors Robotics Lab, POSCO DX, Jahwa Electronics, LGU+, and Inventec on mass-production developments. In addition, DEEPX works with more than 120 global organizations in areas like smart cameras, surveillance systems (AI NVR), smart factories, robotic platforms, and AI servers, and conducts strategic global promotions in the United States, China, Taiwan, and Europe.About Nota AINota AI (Nota Inc.) is a leading on-device AI company specializing in AI model optimization and on-device generative AI. Leveraging its proprietary NetsPresso&reg; platform, Nota AI delivers high-performance AI capabilities across various industries, including transportation, automotive, mobile, IoT, and beyond. The company maintains strategic collaborations with global semiconductor leaders and Fortune 100 corporations such as NVIDIA, ARM, Qualcomm, Sony, and Samsung Electronics. With established entities in the U.S. and Germany, Nota AI is actively expanding its global presence, notably into key markets in the Middle East and Southeast Asia. The company's technological leadership has been globally recognized, most recently by its inclusion in CB Insights' '100 Most Innovative AI Startups'.For more information, visit www.nota.ai.From left: Lokwon Kim, CEO of DEEPX, and Myungsu Chae, CEO of Nota AIFrom left: Myungsu Chae, CEO of Nota AI, and Lokwon Kim, CEO of DEEPX</div></div></div><div class="display-5"><a href="/news/a20250521PR203/2025-ceo-computex-2025-on-device-ai-semiconductors-taipei.html?chid=9" class="photo lazy" data-src="https://img.digitimes.com/newsshow/20250521pr203_files/3_r.jpg"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Wednesday 21 May 2025</div><a class="title" href="/news/a20250521PR203/2025-ceo-computex-2025-on-device-ai-semiconductors-taipei.html?chid=9">DEEPX showcases mass-production AI solutions with 11 leading Taiwanese companies at Computex Taipei 2025</a><div class="abstract">DEEPX (CEO Lokwon Kim), a pioneer in ultra-low-power on-device AI semiconductors, is demonstrating its mass-production-ready product lineup in collaboration with 11 leading Taiwanese industrial PC and server companies at Computex Taipei 2025, held from May 20&ndash;23. Participating partners include MSI, IBASE, Inventec, Biostar, Portwell, AIC, Jetone, Mitwell, AAEON, DFI, and Zotac. This extensive collaboration solidifies DEEPX's position as a global AI semiconductor company with the most active local ecosystem network in Taiwan&mdash;one of the world's foremost hardware hubs.During the exhibition, DEEPX operates its own booth while also showcasing its NPUs live at partner booths. Global buyers and visitors can experience DEEPX's production-ready AI accelerators integrated into industrial PCs, workstations, and servers, including:&bull; DX-M1 M.2 module for sub-3W ultra-low-power inference,&bull; DX-H1 PCIe accelerator for high-performance, multi-channel AI processing,&bull; DX-AiBOX, an edge system optimized for seamless deployment across customer platforms,&bull; DX-V3 SoC, dedicated to AI-powered smart cameras.These solutions are being validated across various use cases with partners in factory automation, surveillance systems, smart city infrastructure, and intelligent buildings.The first-generation DX Series delivers up to 20x higher power efficiency and one-tenth the heat and total cost of ownership (TCO) compared to conventional AI accelerators. These advantages are setting new standards for fanless edge system design and cost-efficient cloud infrastructure, especially within Taiwan's ecosystem, which accounts for over 80% of the world's IPC and server production."Taiwan is a global manufacturing hub with a complete AI value chain&mdash;from components to systems to end solutions," said Lokwon Kim, CEO of DEEPX. "By working closely with local partners, DEEPX is reshaping the high-cost, high-power GPGPU paradigm and enabling customers to build the most stable and efficient AI systems."Recently, DEEPX was named one of the "Top 100 AI Companies" by Business Next (�Ʀ�ɥN), a leading business and technology publication in Taiwan. The company has also established a Taipei branch office, localizing its customer support and logistics operations while accelerating partnerships with companies including Lanner, ASUS, ASRock, Supermicro, LEX, and Innodisk. To stay updated on the latest from DEEPX, follow the official DEEPX LinkedIn page.The DEEPX booth is located on the 4th floor of Nangang Exhibition Center Hall 2, in the AI &amp; Edge Computing Zone, with additional showcases available throughout the 1st to 4th floors at partner booths.</div></div></div><div class="display-5"><a href="/news/a20250520PR203/computex-2025-pegatron.html?chid=9" class="photo lazy" data-src="https://img.digitimes.com/newsshow/20250520pr203_files/3_r.jpg"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Tuesday 20 May 2025</div><a class="title" href="/news/a20250520PR203/computex-2025-pegatron.html?chid=9">Driving future of AI, Pegatron presents liquid-cooled, ultra high-density GPU rack solutions at Computex 2025</a><div class="abstract">PEGATRON, a globally recognized Design, Manufacturing, and Service (DMS) provider, is pleased to announce its participation in COMPUTEX 2025, where it will unveil a comprehensive portfolio of advanced rack-scale solutions designed to meet the increasing complexity and scale of AI and data center workloads. These solutions deliver exceptional compute density, energy efficiency, and scalability, aligned with open infrastructure standards.A major highlight of PEGATRON's COMPUTEX showcase is the introduction of the RA4802-72N2, a rack solution featuring the NVIDIA GB300 NVL72, which includes 72 NVIDIA Blackwell Ultra GPUs and 36 NVIDIA Grace CPUs. This system delivers up to a 50X increase in AI factory output with optimized inference capabilities. The rack integrates PEGATRON's in-house developed Coolant Distribution Unit (CDU) to enhance cooling efficiency in high-density environments. Equipped with redundant hot-swappable pumps and a cooling capacity of 310 kW, it ensures optimal performance and high reliability for mission-critical data center operations.Also debuting is the PEGATRON AS208-2A1, a 2U liquid-cooled server system accelerated by the NVIDIA HGX B300 system and dual AMD EPYC&trade; 9005 processors. Scaled to 48U NVIDIA MGX rack solution, it supports 128 GPUs and 32 CPUs within a high-efficiency, direct liquid cooling framework. This platform delivers exceptional compute density and thermal control while enabling efficient GPU utilization across the rack. Designed for the AI reasoning era with increased compute and expanded memory capacity, it offers breakthrough performance for complex workloads from agentic systems and reasoning to video generation, making it ideal for every data center.Additionally, PEGATRON will be offering NVIDIA RTX PRO 6000 Blackwell servers (AS400-2A1, AS205-2T1), which provide nearly universal acceleration for a broad range of enterprise AI workloads, from multimodal AI inference and physical AI to design, scientific computing, graphics and video applications.Pushing the boundaries of rack-scale compute performance even further, PEGATRON unveils AS501-4A1, the 5OU system features the latest AMD Instinct&trade; MI350 series GPUs and AMD EPYC&trade; 9005 processors. Scaled up to 51OU liquid-cooled rack solution, it integrates configuration of 128 AMD Instinct&trade; MI350 series GPUs and platforms. The solution employs direct-to-chip liquid cooling across both GPUs and CPUs, enabling sustained performance for generative AI, inference, training, and high performance computing&mdash;all within a compact, energy-optimized footprint."With the increasing scale and complexity of AI workloads, data center infrastructure must evolve to deliver higher performance, better efficiency, and thermal resilience," said Dr. James Shue, SVP &amp; CTO of PEGATRON. "Our latest liquid-cooled solutions reflect our commitment to enabling the next wave of AI innovation through scalable, ultra high-density systems optimized for real-world deployment."PEGATRON welcomes attendees to Booth #L0118, 4th Floor, Nangang Exhibition Center, Hall 1, from May 20&ndash;23, 2025, to explore its newest platforms and engage with the experts behind PEGATRON's breakthrough compute and cooling technologies.PEGATRON Liquid-Cooled Ultra High Density GPU RackPhoto: Company</div></div></div><div class="display-5"><a href="/news/a20250519PR202/computex-2025-ai-inference-development-launch-renesas-soc.html?chid=9" class="photo lazy" data-src="https://img.digitimes.com/newsshow/20250519pr202_files/3_r.jpg"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Tuesday 20 May 2025</div><a class="title" href="/news/a20250519PR202/computex-2025-ai-inference-development-launch-renesas-soc.html?chid=9">Retronix launches 2 AI edge platforms: Sparrow Hawk SBC and Raptor SoM, powered by Renesas R-Car V4H SoC</a><div class="abstract">Retronix Technologies Inc. announced the launch of two cutting-edge AI edge computing platforms, developed in collaboration with Renesas Electronics Corporation.The newly unveiled Sparrow Hawk Single Board Computer (SBC) and Raptor System on Module (SoM) are both powered by the latest Renesas R-Car V4H System-on-Chip (SoC), delivering up to 30 TOPS (Dense) of AI inference performance. These open platforms are designed to support a wide range of embedded edge AI applications and smart automotive solutions.Sparrow Hawk focuses on robotics, industrial automation, and rapid prototyping, offering a highly flexible and cost-effective development platform. Raptor, with its modular design and multi-camera processing capabilities, is engineered for commercial vehicles, advanced driver-assistance systems (ADAS), and autonomous guided vehicles (AGVs), meeting demanding requirements for reliability and AI edge computing.Product Highlight 1: Sparrow Hawk &mdash; A Versatile Platform for Edge AI ApplicationsSparrow Hawk is a compact and highly expandable edge AI development board featuring the Renesas R-Car V4H SoC. It offers up to 30 TOPS of dense AI inference performance and supports a fully open-source Linux environment, accelerating the development of industrial and embedded AI solutions.Key Features:*Optimized for Edge Intelligence: Designed for industrial robots, smart manufacturing, and autonomous control systems. *Raspberry Pi HAT Compatible: Easily integrates with popular modules and sensors to streamline development.*High AI Performance: Handles real-time image processing and AI workloads with ease thanks to 30 TOPS deep learning capabilities.*Open Development Environment: Built on an open-source Linux architecture with extensive community support.*Developer-Friendly Pricing: Campaign program at only USD 300, no paper contract required to get started.*Compact Design: Measures just 146mm x 90mm, ideal for embedded and terminal devices.Rich I/O and Expansion Interfaces:*8GB / 16GB LPDDR5 memory*Dual-camera interface and 40-pin GPIO header*1x DisplayPort, PCIe (4x USB3.0, 1x M.2 Key-M), 2x CAN-FD, Audio (2x In. 1x Out) and AVB Ethernet*Supports USB PD 20V power input and MicroSD removable storageRetronix Sparrow HawkPhoto: CompanyProduct Highlight 2: Raptor &mdash; Automotive-Grade AI SoM for Smart Vehicle Vision ProcessingRaptor is a high-performance SoM designed for automotive vision processing and edge AI computation. Powered by the Renesas R-Car V4H SoC, it supports multiple camera inputs, pre-processing, and AI inference. Raptor is ideal for applications including ADAS, smart cockpits, surround-view systems, and AGVs.Key Features: *Automotive-Grade Architecture: Built with safety-oriented design principles, long-term supply, and compliance with automotive standards.*Multi-Camera Support: Integrated ISP supports up to 8 video channels with synchronized vision processing.*Powerful AI and Specialized Automotive IP: Delivers 30 TOPS AI inference performance with integrated Image Rendering Unit, Dense Optical Flow, Structure from Motion, and CV/Deep Learning Engines.*Reference Carrier Design &amp; Custom Development: Retronix offers reference designs and engineering services to accelerate product development. *Comprehensive Software Resources: Compatible with Yocto Linux and includes the Renesas AI Hybrid Compiler toolkit.*High Reliability: Designed for high-temperature environments with optimized power efficiency for automotive use.Retronix RaptorPhoto: CompanyAvailability and Computex ShowcaseSparrow Hawk and Raptor are scheduled to sample in late Q2 2025, alongside the launch of a developer program and open-source community support platform to help users rapidly prototype and deploy AI applications.We warmly invite industry professionals to visit Retronix at Computex 2025 (Booth N0814 / B-4) to experience the capabilities of Sparrow Hawk and Raptor firsthand. Explore their architectures, image processing performance, and AI inference efficiency across smart manufacturing, robotics, unmanned vehicles, and intelligent automotive applications.</div></div></div><div class="display-5"><a href="/news/a20250514PR204/2025-technology-raid-hardware-jmicron.html?chid=9" class="photo lazy" data-src="https://img.digitimes.com/newsshow/20250514pr204_files/3_r.jpg"></a><div class="right"><div class="date"><svg class="icon"><use xlink:href="#clock-icon"></use></svg>Tuesday 20 May 2025</div><a class="title" href="/news/a20250514PR204/2025-technology-raid-hardware-jmicron.html?chid=9">JMicron x KaiKuTeK 2025 Computex showcase latest hardware RAID solution and AI sensing technology</a><div class="abstract">At the 2025 COMPUTEX Product Showcase, JMicron Technology Corp., a global leader in high-speed interface bridge controllers, alongside its wholly-owned subsidiary KaiKuTeK Inc., introduced a new line of ultra-fast storage bridge controller solutions. These advancements enable next-generation enclosure types and open the door to a wide range of new applications in data storage. In addition to the storage innovations, the companies also unveiled their latest breakthrough in smart sensing: a 60GHz millimeter-wave radar-based AI sensing technology, bringing exciting news for the smart home experience.JMicron demonstrated its latest high-speed bridge controller, highlighting the JMS591 and the JMB595 solution. The JMS591 (USB 3.2 Gen2 x2 &amp; eSATA 6Gb/s to 5 ports SATA 6Gb/s), a single-chip multi-bay hardware RAID solution which supports RAID 0/1/5/10/JBOD, demonstrated that sequential read/write performance can reach 2,000 MB/s, and it can also control computer fans and a liquid crystal display module (LCM). Compared to current solutions, the JMS591 upgrades data transfer speeds, improving the stability and effectiveness of hardware RAID functions. Moreover, it is expected that the JMS591 will be adopted widely across multi-bay application such as network-attached storage (NAS), direct-attached storage (DAS), network video recorder (NVR) and digital video recorder (DVR) markets by providing a high cost-effective multi-bay RAID storage solution, while the market will continue to keep an eye on the JMS591. On the other hand, the JMB595 (PCIe Gen4x4 to 16 ports SATA 6Gb/s), a multi-bay storage solution prototype, is not only suitable for high-end surveillance and private cloud applications, but also serves as another option in the entry-level server market. Hence, the industry shows high expectations on the JMB595."Through our accumulation of technical expertise and position as a market leader, we are creating a high-speed data transfer and storage application trend, collaborating with our key clients to develop the next-generation bridge controllers," said Tony Lin, JMicron's VP of Marketing &amp; Sales Center.KaiKuTeK unveiled its latest 60GHz mmWave radar AI sensing technology, which integrates a proprietary antenna design, advanced DSP and AI accelerators, and self-developed algorithms. This innovation brings precise target behavior tracking and positioning recognition. The breakthrough effectively addresses long-standing challenges in traditional smart home products related to human presence detection. For instance, smart electronic locks can detect an approaching person via mmWave radar and automatically activate facial recognition or other unlocking modes. Fans and air conditioners can detect user locations to adjust airflow dynamically, creating a "wind follows the person" effect or enabling personalized temperature control. Meanwhile, TVs can optimize sound staging based on viewer positioning, delivering an immersive experience. This innovation not only enables electronic devices such as electronic locks, fans, air conditioners, and TVs to interact with users more intelligently, but the streamlined design significantly reduces the Total Cost of Ownership (TCO) and delivers simultaneous benefits of energy conservation and carbon reduction, setting a new standard in the consumer electronics market."Our long-term focus is on integrating mmWave radar with DSP and AI to create more intuitive and intelligent human-machine interfaces," said Mike Wang, CEO of KaiKuTeK. "The adoption of 60GHz mmWave radar represents a breakthrough, not only solving smart home detection challenges but also introducing unprecedented convenience for users. We look forward to expanding this technology into industrial and IoT applications."With its leading expertise in DSP/ AI/ ML technologies and antenna design, KaiKuTeK continues to demonstrate its strong potential for technological innovation. The future of mmWave radar applications seems promising, a trend driven by rising demand for contactless technologies and intelligent automation. In response, KaiKuTeK is actively partnering with global technology leaders to fast-track commercialization efforts. The company plans to introduce a new wave of consumer products featuring this advanced radar technology in the second half of 2025. This innovation opens new growth opportunities across industries, setting the stage for the next generation of smart environments.We sincerely invite you to visit JMicron and KaiKuTeK at Courtyard by Marriott Taipei #Sea Hall during COMPUTEX.JMS591 multi-bay hardware RAID solution</div></div></div></div></div>
-<div class="row"><div class="col-12 mainnav"><div class="label label-info float-left"><span class="badge badge-dark">1/3</span> pages</div><nav><ul class="pagination d-none d-md-flex float-left"><li class="page-item active"><a class="page-link" href="index.php?cat=61&pg=1">1</a></li><li class="page-item"><a class="page-link" href="index.php?cat=61&pg=2">2</a></li><li class="page-item"><a class="page-link" href="index.php?cat=61&pg=3">3</a></li></ul><ul class="pager float-left"><li class="nav-right"><a href="index.php?cat=61&pg=2"><svg class="icon"><use xlink:href="#arrow-icon"></use></svg></a></li></ul></nav></div></div>	    			                                <div id="banner_mid-md" class="mid-ad tablet-show"></div>	    	</div>
-            	    	<div class="col-12 col-lg-4">
-                <div id="banner_mid-md" class="mid-ad tablet-show"></div>                                                                <div class="subject-title"><a class="text">COMPUTEX's Special Issue</a></div>
-                <a class="display-3-frame" style="padding-bottom:0;margin-bottom:0" href="https://www.digitimes.com.tw/tech/exhi_image/COMPUTEX2025/COMPUTEX_EN.pdf" target="_blank">
-                    <div class="yt-frame"><img src="/images/events/computex_2025_special_issue.jpg" class="photo lazy"></div>
-                </a>
-                                <div class="subject-title"><a class="text" href="/multimedia/">MULTIMEDIA</a></div><a class="display-3-frame mb-20 pb-10" href="https://www.youtube.com/watch?v=t5Fo9hZXsn8" target="_blank"><div class="yt-frame"><img src="https://img.youtube.com/vi/t5Fo9hZXsn8/hqdefault.jpg" class="photo lazy yt-crop"></div><div class="title">Trying the viral tech CEO chicken & beer meetup spot?! </div></a>                <ul class="nav nav-tabs tab-frame d-flex flex-nowrap"><li class="nav-item"><a class="nav-link text active" id="top-news" data-toggle="tab" href="#topnews" role="tab" aria-controls="topnews" aria-selected="true">MOST-READ</a></li><li class="nav-item"><a class="nav-link text" id="7-days" data-toggle="tab" href="#calendar" role="tab" aria-controls="calendar" aria-selected="true">7 DAYS NEWS</a></li></ul><div class="tab-content" id="topcontent"><div class="tab-pane fade show active" id="topnews" role="tabpanel" aria-labelledby="topnews-tab"><div class="range-news"><ul><li class="item"><a class="link" href="/news/a20260304PD230/tsmc-price-profit-semiconductor-industry-cost.html">TSMC leads foundry price hikes as second-tier firms see profit rebound</a></li><li class="item"><a class="link" href="/news/a20260310PD225/packaging-pcb-nvidia-capacity-development.html">Nvidia narrows CoWoP PCB partners to three amid advanced packaging crunch</a></li><li class="item"><a class="link" href="/news/a20260303PD201/dram-hbm-expansion-nvidia-gtc-2026.html">DRAM prices to surge up to 70% in 2Q26; Nvidia GTC 2026 ignites AI memory rally</a></li><li class="item"><a class="link" href="/news/a20260226PD210/nvidia-gpu-gtc-3d-ic-sk-hynix.html">Is Nvidia's GTC mystery chip a 3D IC with memory stacked on the GPU?</a></li><li class="item"><a class="link" href="/news/a20260306PD218/intel-ic-substrate-investment-tsmc-capacity.html">Intel&rsquo;s EMIB gains traction as CoWoS alternative, reviving IC substrate investment</a></li></ul></div></div><div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab"><div class="range-news"><ul><li class="item"><a class="link" href="/news/a20260319PD216/packaging-intel-ai-chip-tsmc-samsung.html">Intel pushes large-area AI packaging to close foundry gap</a></li><li class="item"><a class="link" href="/news/a20260317VL211/technology-photonics-infrastructure-ceo.html">Lumotive creates world's first 2D photonic beamforming chip</a></li><li class="item"><a class="link" href="/news/a20260319PD202/price-supply-chain-market-demand-retail.html">Analysis: Memory price swings leave e-reader supply chain in the red</a></li><li class="item"><a class="link" href="/news/a20260319PD213/semiconductors-materials-gallium-gases-cost-middle-east.html">China curbs, Middle East tensions drive surge in chip material risks from gallium to helium</a></li><li class="item"><a class="link" href="/news/a20260319VL206/taiwan-taipei-hbm-war.html">The HBM paradox: why Taipei and Seoul can't afford a diplomatic cold war</a></li></ul><div class="wrapper"><a class="more-btn" href="/calendar.asp?d=7d&dt_ref=tabs">Full list</a></div></div></div></div>                <div class="subject-title"><a class="text" href="/biz/index.php?view=newsfeed">PRNEWSWIRE</a></div><div class="display-1"><div class="related-frame"><a class="item-frame" href="/biz/news.asp?feed=15877">
-            <div class="title" style="margin-top:0">HD Renewable Energy Showcases 3GW Japan Pipeline and Power Trading Strategy at Tokyo Smart Energy Week 2026</div></a>
-<a class="item-frame" href="/biz/news.asp?feed=15883">
-            <div class="title" style="margin-top:0">UNIBIRD Launches N200M Visual Navigation Module for GPS-Denied Environments</div></a>
-<a class="item-frame" href="/biz/news.asp?feed=15899">
-            <div class="title" style="margin-top:0">Tencent Cloud Redefines Innovation: AI Coding Boot Camp Concluded Successfully in Hong Kong</div></a>
-<a class="item-frame" href="/biz/news.asp?feed=15869">
-            <div class="title" style="margin-top:0">51WORLD Becomes NVIDIA's Global L4 Simulation Partner to Accelerate Reasoning-Based Autonomous Driving Development!</div></a>
-</div></div>	    		<div id="BAd" class="square-ad"><div class="text-center"><div class="clclgjs" rel="95212"><a href='/webad/cnv.asp?Seq=95212' target='_blank'><img src="https://img.digitimes.com/ad/en_20250923_b2b2_bigbutton.jpg" class="awh" style="max-width:336px;" border="0" alt="biz" /></a></div></div></div>                <div class="subject-title"><a class="text" href="/reports/index.asp?view=0">RESEARCH INSIGHTS</a></div><a class="display-3-frame mb-20 pb-10" href="/news/a20260113VL209.html?chid=2"><img class="photo lazy" data-src="https://img.digitimes.com/newsshow/20260113vl209_files/4_r.jpg"><div class="title">Weekly research roundup: Qualcomm's AI strategy, memory giants and updated 2026 smartphone outlook</div></a>            	    	</div>
-	    </div>
-    </div>
-
-    <script>
-        $(document).ready(function(){
-            $('.vclick').click(function () {
-                var url=$(this).attr('data-src');
-                //$('#myVideo').modal();
-                $("#myVideo").on('show.bs.modal', function(){
-                    $("#EventVideo").attr('src', url);
-                });
-            });
-        });
-    </script>
-    <style>
-        #myVideo .modal-dialog{
-            max-width: 990px;
-            margin: 50px auto;
-            padding-right:40px;
-            padding-left:30px;
-        }
-        #myVideo .close{
-            position:absolute;
-            right:-30px;
-            top:0;
-            z-index:999;
-            font-size:2rem;
-            font-weight: normal;
-            color:#fff;
-            opacity:1;
-        }
-        #myVideo .modal-body{
-            position: relative;
-            padding: 0;
-        }
-    </style>
-    <div id="myVideo" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="EventVideo" class="embed-responsive-item" src="" allowfullscreen></iframe>
-                    </div>
+    <div class="my-container">	
+    	<div class="information-frame" id="serviceterms">
+            <div class="main-title">The Terms of Service Agreement</div>
+    		<div class="content">
+                <p class="CenterText">Last updated: March 19, 2025</p>
+                <p>Thank you for visiting DIGITIMES Asia's website (hereinafter referred to as "the Website"), which is managed by DIGITIMES Inc. (hereinafter referred to as "DIGITIMES"). Any use of the Website, including but not limited to text, data, software, audio, videos, graphics, or any other materials provided on it, as well as any accompanying services, falls under this Service Agreement ("the Agreement"). The Website's services, inclusive of all information and offerings, also adhere to the Agreement. To safeguard your rights, we recommend thoroughly reading and understanding the terms outlined here.</p>
+                <p class="toc-up">Terms of Service</p>
+                <div>
+                    <ul class="custom-list" style="margin-bottom:0!important;padding-bottom:10px!important">
+                        <li><a href="#acceptance">Acceptance of the Terms of Service Agreement</a></li>
+                        <li><a href="#privacy">Privacy Protection</a></li>
+                        <li><a href="#intellectual">Intellectual Property</a></li>
+                        <li><a href="#registration">Registration and Account Security</a></li>
+                        <li><a href="#services">Services Changes</a></li>
+                        <li><a href="#subscription">Subscription</a></li>
+                        <li><a href="#prohibited">Prohibited Activities</a></li>
+                        <li><a href="#userGenerated">User-Generated Contributions</a></li>
+                        <li><a href="#contribution">Contribution License</a></li>
+                        <li><a href="#third-party-web">Third-Party Websites and Content</a></li>
+                        <li><a href="#advertisements">Advertisements</a></li>
+                        <li><a href="#web-management">Website Management</a></li>
+                        <li><a href="#links">Links</a></li>
+                        <li><a href="#disclosure">Information Disclosure and Termination</a></li>
+                        <li><a href="#interruptions">Modifications and Interruptions</a></li>
+                        <li><a href="#jurisdiction">Legal Jurisdiction</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                        <li><a href="#userData">User Data</a></li> 
+                        <li><a href="#signatures">Electronic Communication, Transactions, and Signatures</a></li> 
+                        <li><a href="#contact">Contact</a></li> 
+                    </ul>
                 </div>
-            </div>
-        </div>
+                <p class="toc-up">Paid Content Service</p>
+                <div>
+                    <ul class="custom-list">
+                        <li><a href="#subscription-payment">Subscription and Payment</a></li>
+                        <li><a href="#subscription-plans">Subscription Plans and Refund Policy</a></li>
+                        <!-- <li><a href="#subscription-price">Price Guarantee</a></li> -->
+                        <li><a href="#taiwan-users">Subscribers from Taiwan</a></li>
+                        <li><a href="#limitation">Limitation of Liability</a></li>
+                    </ul>
+                </div>
+                <div class="box-bot">
+                    <a id="acceptance" name="acceptance" class="anchor"></a>           
+                    <p class="a">1. Acceptance of the Terms of Service Agreement</p>
+                    <ul>
+                        <li>By visiting or using this Website, you agree to the terms laid out in the Agreement. Be aware that some services have additional rules and policies that also apply when you use them. These additional terms are part of this Agreement. If there are any differences between the Agreement and other rules or usage terms, those rules/terms will have precedence.</li>
+                        <li>The Website may update this agreement at any time. You are required to check for updates regularly. Any modifications and updates will be provided in the <a href="/backgrounders/features/sitenote.asp">Notes & Corrections</a> section. If you continue to use the Website after changes have been made, you accept these changes and agree to abide by them.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="privacy" name="privacy" class="anchor"></a>           
+                    <p class="a">2.	Privacy Protection</p>
+                    <div>DIGITIMES deeply respects and is committed to protecting your privacy. By providing your personal information to use our Services, you signify your agreement to our Privacy Policy. For more information, please refer to our <a href="/register/privacypolicy.asp">Privacy Policy</a>.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="intellectual" name="intellectual" class="anchor"></a>           
+                    <p class="a">3.	Intellectual Property</p>
+                    <ul>
+                        <li>All content posted on the DIGITIMES website, including but not limited to articles, photos, images, illustrations, audio, video, documents, website layout, and design are protected by the copyright laws of the Republic of China (Taiwan), international copyright laws, as well as other relevant and other related intellectual property laws.</li>
+                        <li>Users are only permitted to use the content or services provided on this website for personal non-commercial purposes. Any form of transmission, copying, dissemination, or public display of such content is not allowed. Users must comply with all relevant copyright regulations when using this content.</li>
+                        <li>For more information, please refer to our <a href="https://apps.digitimes.com/register/copyrightpolicy.asp">Copyright Policy</a>.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="registration" name="registration" class="anchor"></a>           
+                    <p class="a">4.	Registration and Account Security</p>
+                    <ul>
+                        <li>You are required to register and create an account to access certain parts of our website. During the registration process, you must provide information that is accurate, truthful, and up-to-date information.</li>
+                        <li>You are responsible for keeping your password confidential and for notifying us immediately upon discovering or suspecting any unauthorized use or security breaches of your account.</li>
+                        <li>By using our services, you affirm that: (1) all registration information is true, accurate, current, and complete; (2) you have the capacity to comply with these Terms and Conditions; (3) you will not access the services through automated or non-human means; (4) you will not use the services for any illegal or unauthorized purpose; and (5) your use of the services will not violate any applicable laws or regulations.</li>
+                        <li>If you become aware of any unlawful or unauthorized use of our services or any violation of our security policies, you must notify us immediately.</li>
+                        <li>Each registered account, whether it is a paid or free subscription, is for individual use only. You may not share your account password or allow others to use your account. If you share your account password, we reserve the right to restrict or suspend your account and access to the services.</li>
+                        <li>If you experience any issues receiving our emails, such as consecutive bounce-backs or failure to receive our emails, we may remove your address from our mailing list after ten (10) unsuccessful delivery attempts. To resolve this, you can either adjust your email settings for successful delivery or reapply for our email services through <a href="https://apps.digitimes.com/register/account.asp?view=alert">My Account</a>.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="services" name="services" class="anchor"></a>           
+                    <p class="a">5.	Services Changes</p>
+                    <div>By accessing and using any part of the Website, including any services provided therein (hereinafter referred to as the "Services"), you unconditionally agree to accept and comply with these Terms and Conditions, as well as all other operational rules, policies, and procedures published by DIGITIMES from time to time on the Website (hereinafter referred to as "Operational Rules and Policies"), each of which is incorporated by reference and may be revised and amended from time to time without prior notice to you. It is your responsibility to regularly check for changes to these Terms and Conditions and the Operational Rules and Policies. If you do not agree to these Terms and Conditions and the Operational Rules and Policies, please refrain from accessing the Website or using any services provided therein.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="subscription" name="subscription" class="anchor"></a>           
+                    <p class="a">6.	Subscription</p>
+                    <div>The Website only grants you a limited, personal, non-commercial, non-exclusive, and non-transferable right to use this service, subject to the constraints outlined in the Agreement.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="prohibited" name="prohibited" class="anchor"></a>           
+                    <p class="a">7.	Prohibited Activities</p>
+                    <div class="sub-box">You may not access or use the website for any purpose other than those expressly provided by us. The website may not be linked to any commercial endeavors that are not specifically endorsed or approved by us. As a user of the website, you agree not to:</div>
+                    <ul>
+                        <li>Retrieve data or content from the website without permission to create aggregations or databases.</li>
+                        <li>Mislead or attempt to gather sensitive information.</li>
+                        <li>Interfere with security-related features of the website.</li>
+                        <li>Misuse support services or submit false reports.</li>
+                        <li>Use the website in a manner inconsistent with applicable laws or regulations.</li>
+                        <li>Upload or transmit viruses, spam, or disrupt the use of the website.</li>
+                        <li>Engage in any automated use of systems or data mining.</li>
+                        <li>Impersonate another user or attempt to bypass website measures.</li>
+                        <li>Replicate or modify the website's content or structure. Using standard browser functionalities to view or cache the website for personal use is not considered a violation. Use the website for profit or commercial purposes.</li>
+                        <li>Advertise or offer to sell goods and services.</li>
+                        <li>Sell or transfer your personal information.</li>
+                        <li>You agree that if DIGITIMES determines, in its sole discretion and without prior notice, that you have violated these prohibited activities or violated any applicable laws or regulations, DIGITIMES reserves the right to terminate, restrict your access, or suspend your account.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="userGenerated" name="userGenerated" class="anchor"></a>           
+                    <p class="a">8.	User-Generated Contributions</p>
+                    <div>The website provides the functionality to submit user-generated content. The content you provide may be viewed by others, so please avoid sharing confidential information. By submitting content, you acknowledge compliance with these Terms and Conditions and grant us the license outlined in Section 9. The website provides the functionality to submit user-generated content. The content you provide may be viewed by others, so please avoid sharing confidential information. It's crucial that user submissions do not infringe on the copyright, trademark, patent, or other intellectual property rights of others. By submitting content, you acknowledge compliance with these Terms and Conditions and grant us the license outlined in Section 9.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="contribution" name="contribution" class="anchor"></a>           
+                    <p class="a">9.	Contribution License</p>
+                    <div>By submitting your contributions (Works), you provide us a broad license to utilize, distribute, and derive from your Works. However, we will not sell your contributions to third parties. While you retain ownership and are accountable for your Works, you assure the lawfulness of your contributions and assume any liability for rights infringements. You agree to protect us from all damages, losses, and expenses (including reasonable attorney fees) related to any violation of these terms or claims of rights infringement. We retain the right to modify or remove contributions as needed.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="third-party-web" name="third-party-web" class="anchor"></a>           
+                    <p class="a">10. Third-Party Websites and Content</p>
+                    <div>The website may contain links to third-party websites and content. While we provide these links for your convenience, please be aware that we do not endorse them, nor are we responsible for their accuracy or appropriateness. We advise you to exercise caution and discretion when visiting these third-party websites. We bear no liability for any loss or damage resulting from the use of these third-party websites.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="advertisements" name="advertisements" class="anchor"></a>           
+                    <p class="a">11. Advertisements</p>
+                    <div>We allow advertisers to display their advertisements and other information in certain areas of the website, such as sidebar ads or banner ads. If you are an advertiser, you are solely responsible for the advertisements you place on the website and any services or products sold through those advertisements. Furthermore, as an advertiser, you guarantee and represent that you have all rights and authority to advertise on the website, including but not limited to intellectual property, publicity rights, and contractual rights. We only provide space for such advertisements and have no other relationship with advertisers.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="web-management" name="web-management" class="anchor"></a>           
+                    <p class="a">12. Website Management</p>
+                    <div>We reserve the following rights: (1) Monitor the website for compliance with the terms of use; (2) Take legal action against violators; (3) Refuse, restrict, or disable any contribution at our discretion; (4) Remove or disable excessive or burdensome content; and (5) Manage the website to protect our rights and ensure its proper operation.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="links" name="links" class="anchor"></a>           
+                    <p class="a">13. Links</p>
+                    <div>All links provided on the Website or related web pages for all of DIGITIMES's services may link to websites of other individuals, companies, or organizations. DIGITIMES does not guarantee the truthfulness, completeness, timeliness, or credibility of the products, services, or information provided on the websites of such individuals, companies, or organizations being linked to. Furthermore, such individuals, companies, or organizations do not necessarily have any employment, delegation, agency, partnership, or similar relationship with DIGITIMES.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="disclosure" name="disclosure" class="anchor"></a>           
+                    <p class="a">14. Information Disclosure and Termination</p>
+                    <ul>
+                        <li>You acknowledge that DIGITIMES may need to access, store, and disclose your account information if required by law, to address infringement claims regarding user-generated content, to protect the rights, property, and safety of employees, users, and the public, or to comply with legal processes.</li>
+                        <li>DIGITIMES will not share your account information for commercial purposes unless explicit consent is obtained from you.</li>
+                        <li>You can request the termination of your account by sending an email requesting termination to <a href="mailto:subscription@digitimes.com">subscription@digitimes.com</a>.</li>
+                        <li>After the termination or suspension of your account, creating a new account under any name is prohibited. We reserve the right to take legal action, including civil, criminal, and injunctive remedies.</li>
+                        <li>Upon account termination, you will lose access to all data within your account, and your subscription will cease immediately.</li>
+                        <li>DIGITIMES may, without prior notice, restrict your access or terminate your account if you violate the terms or applicable laws. Should DIGITIMES discover an attempt to create a new account after a previous account has been terminated, appropriate actions will be taken, and potential legal consequences may arise.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="interruptions" name="interruptions" class="anchor"></a>           
+                    <p class="a">15. Modifications and Interruptions</p>
+                    <div>We reserve the right to change, modify, or remove website content, or modify or discontinue the website without prior notice. However, we will make reasonable efforts to notify you of any significant changes or downtime. In no event shall we be liable for any loss, damage, or inconvenience resulting from your inability to access the website during downtime or disabled periods.</div>            
+                </div>
+                <div class="box-bot">
+                    <a id="jurisdiction" name="jurisdiction" class="anchor"></a>           
+                    <p class="a">16. Legal Jurisdiction</p>
+                    <div>The establishment, enforcement, interpretation, and resolution of disputes under these terms of the Agreement will be governed by the laws of the Republic of China (Taiwan). The Taipei District Court in Taipei City, the Republic of China (Taiwan), will be the court of competent jurisdiction of first instance.</div> 
+                </div>
+                <div class="box-bot">
+                    <a id="disclaimer" name="disclaimer" class="anchor"></a>           
+                    <p class="a">17. Disclaimer</p>
+                    <ul>
+                        <li>DIGITIMES does not warrant or guarantee the continuous availability of content and services on the website, or that the content and services on the website will be error-free, uninterrupted, free of viruses or malicious software, or that any defects will be corrected or that your use of the website and services will result in specific outcomes to meet your needs.</li>
+                        <li>DIGITIMES website is optimized for the latest versions of Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari. While we strive for broad compatibility, older browsers such as Internet Explorer may not display content correctly. For the best experience, we recommend keeping your browser updated.</li>
+                        <li>DIGITIMES reserves the right to delete, edit, modify, or otherwise manipulate any content and to remove or block any content from the services without notice, for any reason or no reason at all.</li>
+                    </ul>            
+                </div>
+                <div class="box-bot">
+                    <a id="userData" name="userData" class="anchor"></a>           
+                    <p class="a">18. User Data</p>
+                    <div>We retain the data you transmit to the website for performance management and data related to your website usage. While we perform regular backups, you are responsible for the data you transmit, and activities related to it. We may use this data in accordance with our <a href="https://apps.digitimes.com/register/privacypolicy.asp">Privacy Policy</a>. We are not liable for data loss or damage, and you waive any claims or lawsuits against us for such events.</div> 
+                </div>
+                <div class="box-bot">
+                    <a id="signatures" name="signatures" class="anchor"></a>
+                    <p class="a">19. Electronic Communication, Transactions, and Signatures</p>
+                    <div>For online subscribers, by accessing our website for online subscriptions, sending emails, or completing online forms, you agree to receive our electronic communications. You acknowledge that all agreements, notices, disclosures, and other communications provided to you electronically satisfy any legal requirements that such communication be in writing. You also agree to the electronic delivery of notices, policies, and records related to transactions initiated or completed through the website. You waive any requirements for original signatures or non-electronic records for delivery or retention or for the granting of credit by any means other than electronic.</div>
+                </div>
+                <div class="box-bot">
+                    <a id="contact" name="contact" class="anchor"></a>
+                    <p class="a">20. Contact</p>
+                    <div>Should you have any inquiries or comments regarding this agreement or the website, please contact us at <a href="mailto:subscription@digitimes.com">subscription@digitimes.com</a>.</div>
+                </div>
+    		</div>
+            <div class="page-break" style="margin-top:70px;margin-bottom:40px;"><hr class="dashed"></div>
+            <div class="main-title">Terms and Conditions for Using Paid Content Service</div>
+    		<div class="content">
+                <p class="CenterText">Last updated: December 2, 2024</p>
+                <p class="subscri">Before confirming a subscription to the Paid Content Service provided by DIGITIMES Inc. (hereinafter referred to as "DIGITIMES") through a website operated by DIGITIMES Asia (hereinafter referred to as "the Website"), please read the following terms and conditions carefully. When you become a member and begin using the Paid Content Service, you indicate that you have read, understood, and agreed to the following terms and conditions.</p>
+                  <ul>
+                    <li>
+                      <p>DIGITIMES reserves the right to modify the paid content service at any time without notice. Please regularly visit the Website to view the latest information about the terms and conditions of the Paid Content Service. The newly revised terms and conditions will take effect immediately upon announcement on the Website and will replace the previous version. If you continue to use the Paid Content Service after the revision and announcement, you indicate that you have accepted the revised terms and conditions and agreed to be bound by them.</p>
+                    </li>
+                    <li>
+                      <p>When purchasing services from the Website, you must pay in full. By ordering and authorizing payment for a service, you are completing a single transaction. During the service or subscription period, you have the right to access the subscribed content online. This right to online access will terminate when the service period ends.</p>
+                    </li>
+                    <li>
+                        <a id="subscription-payment" name="subscription-payment" class="anchor"></a>
+                      <p class="subhead">Subscription and Payment</p>
+                      <p>You agree that DIGITIMES' paid content service is governed by the 'Regulations on Reasonable Matters as Exceptions to Rescind Distance Sales' and is not subject to Taiwan's Consumer Protection Act (Article 19) and The Regulations on Reasonable Matters as Exceptions to Rescind the Distance Sales (Article 2)</p>
+                      <ol>
+                        <li><p>There's no unconditional right to cancel or refund within seven days, so evaluate thoroughly before subscribing or purchasing. Cancellation requests aren't eligible for refunds. Specific terms of DIGITIME's paid service are outlined in each plan.</p></li>
+                        <li><p>DIGITIMES reserves the right to impose charges for some or all of its services, and we retain the right to adjust these fees (including but not limited to increases). Any fee adjustments will be announced on our website and will take effect from the date of such announcement. Existing paid members will not be affected by these adjustments. New members and those opting for a one-time annual subscription will be billed based on the rates advertised on the website at the time of their subscription. You are obligated to cover all charges generated within your account for each billing cycle, which may include prepaid amounts, taxes, and other associated fees.</p></li>
+                      </ol>
+                    </li>
+                    <li>
+                      <a id="subscription-plans" name="subscription-plans" class="anchor"></a>
+                      <p class="subhead">Subscription Plans and Refund Policy</p>
+                      <ol>
+                        <li><p><span class="subhead">News Membership Plans:</span> DIGITIMES offers multiple subscription plans to suit various needs, including but not limited to quarterly auto-renewal, annual auto-renewal, and one-time annual subscription options. Comprehensive details and any updates to these plans can be found on our website.</p></li>
+                        <li><p><span class="subhead">Cancellation of Subscription:</span> To cancel your subscription, you can log in to your account and choose "Cancel" on the <a href="/register/account.asp">My Account</a> Services page, or send an email with the subject "Cancellation of Subscription" to <a href="mailto:subscription@digitimes.com">subscription@digitimes.com</a> using your registered email address. Please allow up to 7 business days for your cancellation request to be processed.</p></li>
+                        <li><p>DIGITIMES does not offer refunds or accept returns for completed transactions, but you have the right to cancel your subscription.  If you cancel your subscription, you still can continue accessing the subscription content for the remaining subscription period.</p></li>
+                        <li><p><span class="subhead">Canceling Auto-Renewal Plans:</span> To cancel the auto-renewal, please submit the cancellation request at least 7 business days before the next billing date to prevent the next payment deduction. When you cancel the subscription, only charges associated with future subscription fees will be canceled. The cancellation will take effect at the end of the current subscription period.</p></li>
+                        <li><p>The subscription to "News" which is a Paid Content Service of DIGITIMES Asia and provided through the Website is automatically renewed. After you as a member have confirmed your purchase of a News membership subscription, the payment for the subscription will be made using the personal credit card information that you have provided. By confirming the purchase, you also agree that you will use the same credit card information for the payments for the automatic renewals of the subscription in the future. You can log in and go to <a href="/register/account.asp">My account</a> to send request to end automatic subscription renewal, cancel the subscription, or change the plan.</p></li>
+                        <li><p>If you choose to upgrade or downgrade the existing plan, the change will take effect on the next payment date; and the existing plan will be maintained until the next payment date.</p></li>
+                        <li><p><span class="subhead">Research Report Membership Subscription:</span> We offer one-time annual subscriptions and single-article purchases, and a no-refund policy is in place.</p></li>
+                        <li><p><span class="subhead">Enterprise Subscription Plans:</span> Our online auto-renewal service is primarily designed for individual users. If you are a business or organization, please contact us directly to inquire about suitable enterprise subscription plans and prices.</p></li>
+                        <li><p><span class="subhead">Refunds or Points Issuance:</span> We reserve the right to determine whether to issue refunds or points. If you make a subscription purchase through a third-party payment platform, please refer to any terms and conditions associated with the purchase.</p></li>
+                        <li><p>We may periodically offer first-time subscription or referral promotions. These offers are only applicable to first-time subscribers of DIGITIMES ASIA. If you do not meet the eligibility criteria for these offers, we reserve the right to reject your order at the current subscription price.</p></li>
+                      </ol>
+                    </li>
+                    <!-- <li>
+                        <a id="subscription-price" name="subscription-price" class="anchor"></a>
+                      <p class="subhead">Price Guarantee</p>
+                      <p>As an auto-renewal subscriber of DIGITIMES ASIA, we guarantee that you will enjoy the original subscription price. If you choose to cancel and re-subscribe, you will need to pay the price applicable to new subscribers at that time.</p>
+                    </li> -->
+                    <li>
+                        <a id="taiwan-users" name="taiwan-users" class="anchor"></a>
+                      <p class="subhead">Subscribers from Taiwan</p>
+                      <p>According to local tax regulations, subscribers from Taiwan are subject to a 5% value-added tax (VAT) for the purchase of digitimes.com subscriptions. When payment is made through credit cards issued in Taiwan or Taiwanese bank accounts, it will be considered a subscription from Taiwan.</p>
+                    </li>
+                    <li>
+                      <p>If you as a member cannot accept the existing plan, the notified or potential future changes to the plan, or these terms and conditions, you may cancel your subscription in accordance with the related provisions outlined herein. The subscription can be canceled by logging in to your member account and canceling the subscription to the Paid Content Service. Once the cancellation is confirmed, your membership status will change to "free member" at the end of the current service period.</p>
+                    </li>
+                    <li>
+                      <p>You as a member agree to use the Paid Content Service only for personal use and will not transfer the right to use it to any third party without express prior written consent from the Website or DIGITIMES. You are not permitted to electronically disseminate the paid content from the Website, or the other affiliated websites operated by DIGITIMES through email, electronic bulletin board, or any other form of communication. If you provide the Paid Content Service to a third party for private use, DIGITIMES has the right to immediately terminate your subscription.</p>
+                    </li>
+                    <li>
+                      <p>DIGITIMES reserves the right to intermittently modify the features and products included in the Paid Content Service, including but not limited to adding new features or products and modifying existing ones. Any newly added features or products will also be subject to these terms and conditions. You as a member acknowledge and agree that the Paid Content Service includes features such as advertising and notifications that are necessary for the provision and maintenance of the service.</p>
+                    </li>
+                    <li>
+                      <p>DIGITIMES ensures every transaction is documented with an invoice, proof of purchase, or receipt, abiding by all relevant laws. Once an order is placed, expect an invoice in your mailbox within 7 business days. For Taiwan-based citizens and organizations, E-uniform invoices will be issued. To get an invoice with tax identification (unified business number), input the needed details during purchase or in 'My Account'. No physical copies are provided. For special invoicing needs, including a (triplicate) uniform invoice or cash register receipt, reach out to <a href="mailto:subscription@digitimes.com">subscription@digitimes.com</a>.</p>
+                    </li>
+                    <li>
+                      <p>If you have any questions about the plan, fees, payment mechanism, payment account, or other information related to the Paid Content Service you have purchased, please first confirm your account information, and refer to the Terms of Service Agreement for guidance. If you still have concerns, please contact our customer service email at <a href="mailto:subscription@digitimes.com">subscription@digitimes.com</a>, and we will reply to you as soon as possible.</p>
+                    </li>
+                    <li>
+                        <a id="limitation" name="limitation" class="anchor"></a>
+                      <p class="subhead">Limitation of Liability</p>
+                      <p>To the maximum extent permitted by applicable law, DIGITIMES (including its directors, employees, agents, partners, or content providers) shall not be liable for any direct damages exceeding 500 USD incurred by you or any third party. Furthermore, DIGITIMES shall not be responsible for any indirect, incidental, special, or consequential damages, including but not limited to the cost of procurement of substitute products or services, loss of profits or revenue, or loss of data or use. Therefore, DIGITIMES' liability for damages is limited, and it does not encompass direct damages exceeding 500 USD.</p>
+                    </li>
+                  </ul>
+                <div id="banner_mid-md" class="mid-ad tablet-show"></div>    		</div>
+    	</div>
     </div>
     <footer class="footer">
 	<div class="container">
