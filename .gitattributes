@@ -1,0 +1,2 @@
+hubfs/9443417/Support/NwJsBin/NwJsBinWin64.zip filter=lfs diff=lfs merge=lfs -text
+hubfs/9443417/Support/NwJsBin/NwJsBinLnx64.zip filter=lfs diff=lfs merge=lfs -text
