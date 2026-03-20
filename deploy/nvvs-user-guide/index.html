@@ -1,0 +1,1965 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript"
+  data-document-language="true" charset="UTF-8" data-domain-script="3e2b62ff-7ae7-4ac5-87c8-d5949ecafff5">
+</script>
+<script type="text/javascript">
+  function OptanonWrapper() {
+    var event = new Event('bannerLoaded');
+    window.dispatchEvent(event);
+  }
+</script>
+<script src="https://images.nvidia.com/aem-dam/Solutions/ot-js/ot-custom.js" type="text/javascript">
+</script>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      <meta name="DC.Type" content="concept"></meta>
+      <meta name="DC.Title" content="Overview"></meta>
+      <meta name="DC.Format" content="XHTML"></meta>
+      <meta name="DC.Identifier" content="overview"></meta>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/commonltr.css"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/site.css"></link>
+      <title>NVIDIA Validation Suite User Guide :: GPU Deployment and Management Documentation</title>
+      <!--[if lt IE 9]>
+      <script src="../common/formatting/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.ba-hashchange.min.js"></script>
+      <script type="text/javascript" src="../search/htmlFileList.js"></script>
+      <script type="text/javascript" src="../search/htmlFileInfoList.js"></script>
+      <script type="text/javascript" src="../search/nwSearchFnt.min.js"></script>
+      <script type="text/javascript" src="../search/stemmers/en_stemmer.min.js"></script>
+      <script type="text/javascript" src="../search/index-1.js"></script>
+      <script type="text/javascript" src="../search/index-2.js"></script>
+      <script type="text/javascript" src="../search/index-3.js"></script>
+      <link rel="canonical" href="http://docs.nvidia.com/deploy/nvvs-user-guide/index.html"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/qwcode.highlight.css"></link>
+   <link rel="stylesheet" href="/common-libs/common.css">
+<script src="/common-libs/common.js"></script>
+<script src="//assets.adobedtm.com/5d4962a43b79/c1061d2c5e7b/launch-191c2462b890.min.js"></script>
+</head>
+   <body>
+      
+      <article id="contents">
+         <div id="release-info">NVIDIA Validation Suite User Guide
+            (<a href="../pdf/NVIDIA_Validation_Suite_User_Guide.pdf">PDF</a>)
+            -
+            
+            vR525
+            (<a href="">older</a>)
+            -
+            Last updated March 15, 2023
+            -
+            <a href="mailto:cudatools@nvidia.com?subject=GPU Deployment and Management Documentation Feedback: NVIDIA Validation Suite User Guide">Send Feedback</a></div>
+         <div class="topic nested0" id="overview"><a name="overview" shape="rect">
+               <!-- --></a><h2 class="title topictitle1"><a href="#overview" name="overview" shape="rect">Overview</a></h2>
+            <div class="body conbody">
+               <p class="p">The NVIDIA Validation Suite (NVVS) is the system administrator and cluster manager's tool for detecting
+                  and troubleshooting common problems affecting NVIDIA<sup>®</sup>
+                  Tesla™ GPUs in a high performance 
+                  computing environments. NVVS focuses on software and system configuration
+                  issues, diagnostics, topological concerns, and relative performance.
+               </p>
+            </div>
+            <div class="topic concept nested1" id="nvidia-validation-suite-goals"><a name="nvidia-validation-suite-goals" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#nvidia-validation-suite-goals" name="nvidia-validation-suite-goals" shape="rect">NVVS Goals</a></h3>
+               <div class="body conbody">
+                  <div class="p">The NVIDIA Validation Suite is designed to:
+                     <ol class="ol">
+                        <li class="li">Provide a system-level tool, in production environments, to assess cluster
+                           readiness levels before a workload is deployed.
+                        </li>
+                        <li class="li">Facilitate multiple run modes:
+                           <ul class="ul">
+                              <li class="li">Interactive via an administrator or user in plain text.</li>
+                              <li class="li">Scripted via another tool with easily parseable output.</li>
+                           </ul>
+                        </li>
+                        <li class="li">Provide multiple test timeframes to facilitate different preparedness or failure conditions:
+                           <ul class="ul">
+                              <li class="li">Quick tests to use as a readiness metric</li>
+                              <li class="li">Medium tests to use as an epilogue on failure</li>
+                              <li class="li">Long tests to be run by an administrator as post-mortem</li>
+                           </ul>
+                        </li>
+                        <li class="li">Integrate the following concepts into a single tool to discover deployment,
+                           system software and hardware configuration issues, basic diagnostics, integration
+                           issues, and relative system performance.
+                           <ul class="ul">
+                              <li class="li">Deployment and Software Issues
+                                 <ul class="ul">
+                                    <li class="li">NVML library access and versioning</li>
+                                    <li class="li">CUDA library access and versioning</li>
+                                    <li class="li">Software conflicts</li>
+                                 </ul>
+                              </li>
+                              <li class="li">Hardware Issues and Diagnostics
+                                 <ul class="ul">
+                                    <li class="li">Pending Page Retirements</li>
+                                    <li class="li">PCIe interface checks</li>
+                                    <li class="li">NVLink interface checks</li>
+                                    <li class="li">Framebuffer and memory checks</li>
+                                    <li class="li">Compute engine checks</li>
+                                 </ul>
+                              </li>
+                              <li class="li">Integration Issues
+                                 <ul class="ul">
+                                    <li class="li">PCIe replay counter checks</li>
+                                    <li class="li">Topological limitations</li>
+                                    <li class="li">Permissions, driver, and cgroups checks</li>
+                                    <li class="li">Basic power and thermal constraint checks</li>
+                                 </ul>
+                              </li>
+                              <li class="li">Stress Checks
+                                 <ul class="ul">
+                                    <li class="li">Power and thermal stress</li>
+                                    <li class="li">Throughput stress</li>
+                                    <li class="li">Constant relative system performance</li>
+                                    <li class="li">Maximum relative system performance</li>
+                                    <li class="li">Memory Bandwidth</li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="li">Provide troubleshooting help</li>
+                        <li class="li">Easily integrate into <dfn class="term">Cluster Scheduler</dfn> and <dfn class="term">Cluster
+                              Management</dfn> applications
+                        </li>
+                        <li class="li">Reduce downtime and failed GPU jobs</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="beyond-scope-of-nvidia-healthmon"><a name="beyond-scope-of-nvidia-healthmon" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#beyond-scope-of-nvidia-healthmon" name="beyond-scope-of-nvidia-healthmon" shape="rect">Beyond the Scope of the NVIDIA Validation Suite</a></h3>
+               <div class="body conbody">
+                  <div class="p">NVVS is not designed to:<a name="beyond-scope-of-nvidia-healthmon__ol_z23_n3z_cj" shape="rect">
+                        <!-- --></a><ol class="ol" id="beyond-scope-of-nvidia-healthmon__ol_z23_n3z_cj">
+                        <li class="li">Provide comprehensive hardware diagnostics</li>
+                        <li class="li">Actively fix problems</li>
+                        <li class="li">Replace the field diagnosis tools.  Please refer to  <a class="xref" href="http://docs.nvidia.com/deploy/hw-field-diag/index.html" target="_blank" shape="rect">http://docs.nvidia.com/deploy/hw-field-diag/index.html</a> for
+                           that process.
+                        </li>
+                        <li class="li">Facilitate any RMA process.  Please refer to <a class="xref" href="http://docs.nvidia.com/deploy/rma-process/index.html" target="_blank" shape="rect">http://docs.nvidia.com/deploy/rma-process/index.html</a> for those procedures.
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="dependencies"><a name="dependencies" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#dependencies" name="dependencies" shape="rect">Dependencies</a></h3>
+               <div class="body conbody">
+                  <div class="p">
+                     <ul class="ul">
+                        <li class="li">NVVS requires a NVIDIA Linux driver to be installed. Both the standard display driver and Tesla Recommended Driver will work.
+                           You can obtain a driver from <a class="xref" href="http://www.nvidia.com/object/unix.html" target="_blank" shape="rect">http://www.nvidia.com/object/unix.html</a>.
+                        </li>
+                        <li class="li">NVVS requires the standard C++ runtime library with GLIBCXX of at least version 3.4.5 or greater.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="supported-products"><a name="supported-products" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#supported-products" name="supported-products" shape="rect">Supported Products</a></h3>
+               <div class="body conbody">
+                  <p class="p">The NVIDIA Validation Suite supports Tesla GPUs running on 64-bit Linux (bare metal) operating systems. NVIDIA<sup>®</sup> Tesla™ Line:
+                  </p>
+                  <ul class="ul">
+                     <li class="li">All Kepler, Maxwell, Pascal, and Volta architecture GPUs</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="topic concept nested0" id="usage"><a name="usage" shape="rect">
+               <!-- --></a><h2 class="title topictitle1"><a href="#usage" name="usage" shape="rect">Using NVVS</a></h2>
+            <div class="body conbody">
+               <p class="p">The various command line options of NVVS are designed to control general execution parameters, whereas detailed changes to
+                  execution behavior are contained within the configuration files detailed in the next chapter.
+               </p>
+            </div>
+            <div class="topic concept nested1" id="clusage"><a name="clusage" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#clusage" name="clusage" shape="rect">Command line options</a></h3>
+               <div class="body conbody">
+                  <p class="p">The various options for NVVS are as follows:</p>
+                  <div class="tablenoborder">
+                     <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                        <thead class="thead" align="left">
+                           <tr class="row">
+                              <th class="entry" valign="top" id="d54e259" rowspan="1" colspan="1">Short option</th>
+                              <th class="entry" valign="top" id="d54e262" rowspan="1" colspan="1">Long option</th>
+                              <th class="entry" valign="top" id="d54e265" rowspan="1" colspan="1">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i"></em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--statspath</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Write the plugin statistics to a given path rather than the current directory.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-a</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--appendLog</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">When generating a debug logfile, do not overwrite the contents of a current log.  Used in conjuction with the -d and -l options.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-c</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--config</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Specify the configuration file to be used.  The default is <samp class="ph codeph">/etc/nvidia-validation-suite/nvvs.conf</samp></td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--configless</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Run NVVS in a configless mode.  Executes a "long" test on all supported GPUs.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-d</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--debugLevel</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Specify the debug level for the output log.  The range is 0 to 5 with 5 being the most verbose.  Used in conjunction with
+                                 the -l flag.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-g</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--listGpus</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">List the GPUs available and exit.  This will only list GPUs that are supported by NVVS.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-i</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--indexes</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Comma separated list of indexes to run NVVS on.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-j</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--jsonOutput</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Instructs nvvs to format the output as JSON.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-l</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--debugLogFile</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Specify the logfile for debug information.  This will produce an encrypted log file intended to be returned to NVIDIA for
+                                 post-run analysis after an error.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--quiet</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">No console output given.  See logs and return code for errors.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-p</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--pluginpath</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Specify a custom path for the NVVS plugins.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-s</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--scriptable</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Produce output in a colon-separated, more script-friendly and parseable format.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i"></em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--specifiedtest</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Run a specific test in a configless mode.  Multiple word tests should be in quotes, and if more than one test is specified
+                                 it should be comma-separated.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i"></em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--parameters</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Specify test parameters via the command-line. For example: --parameters "sm stress.test_duration=300" would set the test duration
+                                 for the SM Stress test to 300 seconds.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i"></em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--statsonfail</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Output statistic logs only if a test failure is encountered.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-t</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--listTests</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">List the tests available to be executed through NVVS and exit.  This will list only the readily loadable tests given the current
+                                 path and library conditions.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-v</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--verbose</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Enable verbose reporting.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">&nbsp;</td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--version</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Displays the version information and exits.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">-h</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1"><em class="ph i">--help</em></td>
+                              <td class="entry" valign="top" headers="d54e259 d54e262 d54e265" rowspan="1" colspan="1">Display usage information and exit.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="usage-examples"><a name="usage-examples" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#usage-examples" name="usage-examples" shape="rect">Usage Examples</a></h3>
+               <div class="body conbody">
+                  <p class="p">To display the list of GPUs available on the system.</p><pre class="pre screen" xml:space="preserve">user@hostname
+$ nvvs -g
+			
+NVIDIA Validation Suite (version 352.00)
+
+Supported GPUs available:
+	[0000:01:00.0] -- Tesla K40c
+	[0000:05:00.0] -- Tesla K20c
+	[0000:06:00.0] -- Tesla K20c
+		</pre><p class="p">An example "quick" test (explained later) using a custom configuration file.</p><pre class="pre screen" xml:space="preserve">user@hostname
+$ nvvs -c Tesla_K40c_quick.conf
+			
+NVIDIA Validation Suite (version 352.00)
+
+	Software
+		Blacklist ......................................... PASS
+		NVML Library ...................................... PASS
+		CUDA Main Library ................................. PASS
+		CUDA Toolkit Libraries ............................ PASS
+		Permissions and OS-related Blocks ................. PASS
+		Persistence Mode .................................. PASS
+		Environmental Variables ........................... PASS			
+		</pre><p class="p">To output an encrypted debug file at the highest debug level to send to NVIDIA for analysis after a problem.</p><pre class="pre screen" xml:space="preserve">user@hostname
+$ nvvs -c Tesla_K40c_medium.conf -d 5 -l debug.log
+
+NVIDIA Validation Suite (version 352.00)
+
+	Software
+		Blacklist ......................................... PASS
+		NVML Library ...................................... PASS
+		CUDA Main Library ................................. PASS
+		CUDA Toolkit Libraries ............................ PASS
+		Permissions and OS-related Blocks ................. PASS
+		Persistence Mode .................................. PASS
+		Environmental Variables ........................... PASS
+	Hardware
+		Memory GPU0 ....................................... PASS
+	Integration
+		PCIe .............................................. FAIL
+           *** GPU 0 is running at PCI link width 8X, which is below the minimum allowed link width of 16X (parameter: 
+min_pci_width)"			
+		</pre><p class="p">The output file, debug.log would then be returned to NVIDIA.</p>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="usage-configfile"><a name="usage-configfile" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#usage-configfile" name="usage-configfile" shape="rect">Configuration file</a></h3>
+               <div class="body conbody">
+                  <p class="p">The NVVS configuration file is a <a class="xref" href="http://www.yaml.org" target="_blank" shape="rect">YAML</a>-formatted (e.g. human-readable JSON) text file with three main stanzas controlling the various tests and their execution.
+                  </p>
+                  <p class="p">The general format of a configuration file consists of:</p><pre class="pre screen" xml:space="preserve">
+%YAML 1.2
+---
+      
+globals:
+  key1: value
+  key2: value
+      
+test_suite_name:
+- test_class_name1:
+    test_name1:
+      key1: value
+      key2: value
+      subtests:
+        subtest_name1:
+          key1: value
+          key2: value
+    test_name2:
+      key1: value
+      key2: value
+-test_class_name2:
+    test_name3:
+      key1: value
+      key2: value
+      
+gpus:
+- gpuset: name
+  properties:
+    key1: value
+    key2: value
+  tests:
+    name: test_suite_name
+    </pre><p class="p">There are three distinct sections: <em class="ph i">globals</em>, <em class="ph i">test_suite_name</em>, <em class="ph i">and gpus</em> each with its own subsection of parameters and as is with any YAML document, <strong class="ph b">indentation is important</strong> thus if errors are generated from your own configuration files please refer to this example for indentation reference.
+                  </p>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="usage-configfile-global"><a name="usage-configfile-global" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#usage-configfile-global" name="usage-configfile-global" shape="rect">Global parameters</a></h3>
+               <div class="body conbody">
+                  <div class="tablenoborder">
+                     <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                        <thead class="thead" align="left">
+                           <tr class="row">
+                              <th class="entry" valign="top" id="d54e623" rowspan="1" colspan="1">Keyword</th>
+                              <th class="entry" valign="top" id="d54e626" rowspan="1" colspan="1">Value Type</th>
+                              <th class="entry" valign="top" id="d54e629" rowspan="1" colspan="1">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">logfile</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">String</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">The prefix for all detailed test data able to be used for post-processing.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">logfile_type</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">String</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Can be <em class="ph i">json</em>, <em class="ph i">text</em>, or <em class="ph i">binary</em>.  Used in conjunction with the logfile global parameter.  Default is JSON.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">scriptable</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Boolean</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Accepts <em class="ph i">true</em>, or <em class="ph i">false</em>.  Produces a script-friendly, colon-separated output and is identical to the <em class="ph i">-s</em> command line parameter.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">serial_override</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Boolean</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Accepts <em class="ph i">true</em>, or <em class="ph i">false</em>.  Some tests are designed to run in parallel if multiple GPUs are given.  This parameter overrides that behavior serializing
+                                 execution across all tests.
+                              </td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">require_persistence_mode</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Boolean</td>
+                              <td class="entry" valign="top" headers="d54e623 d54e626 d54e629" rowspan="1" colspan="1">Accepts <em class="ph i">true</em>, or <em class="ph i">false</em>.  Persistence mode is a prerequisite for some tests, this global overrides that requirement and should only be used if it
+                                 is not possible to activate persistence mode on your system.
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="usage-configfile-gpus"><a name="usage-configfile-gpus" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#usage-configfile-gpus" name="usage-configfile-gpus" shape="rect">GPU parameters</a></h3>
+               <div class="body conbody">
+                  <p class="p">The <em class="ph i">gpus</em> stanza may consist of one or more <em class="ph i">gpusets</em> which will each match zero or more GPUs on the system based on their <em class="ph i">properties</em>(a match of zero will produce an error).
+                  </p>
+                  <div class="p">GPUs are matched based on the following criteria with their configuration file keywords in parenthesis:
+                     
+                     <ul class="ul">
+                        <li class="li">Name of the GPU, i.e. Tesla K40c (<em class="ph i">name</em>)
+                        </li>
+                        <li class="li">Brand of the GPU, i.e. Tesla (<em class="ph i">brand</em>)
+                        </li>
+                        <li class="li">A comma separated list of indexes (<em class="ph i">index</em>)
+                        </li>
+                        <li class="li">The GPU UUID (<em class="ph i">uuid</em>)
+                        </li>
+                        <li class="li">or the PCIe Bus ID (<em class="ph i">busid</em>)
+                        </li>
+                     </ul>
+                  </div>
+                  <p class="p">The matching rules are based off of exclusion.  First, the list of supported GPUs is taken and if no <em class="ph i">properties</em> tag is given then all GPUs will be used in the test.  Because a UUID or PCIe Bus ID can only match a single GPU, if those
+                     properties are given then only that GPU will be used if found.  The remaining properties, <em class="ph i">index</em>, <em class="ph i">brand</em>, and <em class="ph i">name</em> work in an "AND" fashion such that, if specified, the result must match at least one GPU on the system for a test to be performed.
+                  </p>
+                  <p class="p">For example, if <em class="ph i">name</em> is set to "Tesla K40c" and <em class="ph i">index</em> is set to "0" NVVS will error if index 0 is not a Tesla K40c.  By specifying both <em class="ph i">brand</em> and <em class="ph i">index</em> a user may limit a test to specific "Tesla" cards for example.  <strong class="ph b">In this version of NVVS, all matching GPUs must be homogeneous.</strong></p>
+                  <p class="p">The second identifier for a <em class="ph i">gpuset</em> is <em class="ph i">tests</em>.  This parameter specifies either the suite of tests that a user wishes to run or the test itself.
+                  </p>
+                  <p class="p">At present the following suites are available:</p>
+                  <div class="p">
+                     <ul class="ul">
+                        <li class="li"><em class="ph i">Quick</em> -- meant as a pre-run sanity check to ensure that the GPUs are ready for a job.  Currently runs the Deployment tests described
+                           in the next chapter.
+                        </li>
+                        <li class="li"><em class="ph i">Medium</em> -- meant as a quick, post-error check to make sure that nothing very obvious such as ECC enablement or double-bit errors
+                           have occurred on a GPU.  Currently runs the Deployment, Memory/Hardware, and PCIe/Bandwidth tests. The Hardware tests are
+                           meant to be relatively short to find obvious issues.
+                        </li>
+                        <li class="li"><em class="ph i">Long</em> -- meant as a more extensive check to find potential power and/or performance problems within a cluster.  Currently runs
+                           an extensive test that involves Deployment, Memory/Hardware, PCI/Bandwidth, Power, Stress, and Memory Bandwidth. The Hardware
+                           tests will run in a longer-term iterative mode that are meant to try and capture transient failures as well as obvious issues.
+                        </li>
+                     </ul>
+                  </div>
+                  <p class="p">An individual test can also be specified.  Currently the keywords are: <em class="ph i">Memory</em>, <em class="ph i">Diagnostic</em>, <em class="ph i">Targeted Stress</em>, <em class="ph i">Targeted Power</em>, <em class="ph i">PCIe</em>, <em class="ph i">SM Stress</em>, and <em class="ph i">Memory Bandwidth</em>.  Please see the "custom" section in the next subchapter to configure and tweak the parameters when this method is used.
+                  </p>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="usage-configfile-tests"><a name="usage-configfile-tests" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#usage-configfile-tests" name="usage-configfile-tests" shape="rect">Test Parameters</a></h3>
+               <div class="body conbody">
+                  <p class="p">The format of the NVVS configuration file is designed for extensibility.  Each test suite above can be customized in a number
+                     of ways described in detail in the following chapter for each test.  Individual tests belong to a specific class of functionality
+                     which, when wanting to customize specific parameters, must also be specified.
+                  </p>
+                  <p class="p">The classes and the respective tests they perform are as follows:</p>
+                  <div class="tablenoborder">
+                     <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                        <thead class="thead" align="left">
+                           <tr class="row">
+                              <th class="entry" valign="top" id="d54e904" rowspan="1" colspan="1">Class name</th>
+                              <th class="entry" valign="top" id="d54e907" rowspan="1" colspan="1">Tests</th>
+                              <th class="entry" valign="top" id="d54e910" rowspan="1" colspan="1">Brief description</th>
+                           </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e904" rowspan="1" colspan="1">Software</td>
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">Deployment</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Checks for various runtime libraries, persistence mode, permissions, environmental variables, and blacklisted drivers.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e904" rowspan="1" colspan="1">Hardware</td>
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">Diagnostic</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Execute a series of hardware diagnostics meant to exercise a GPU or GPUs to their factory specified limits.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e904" rowspan="1" colspan="1">Integration</td>
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">PCIe</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Test host to GPU, GPU to host, and P2P (if possible) bandwidth. P2P between GPUs occurs over NvLink (if possible) or PCIe.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" rowspan="4" valign="top" headers="d54e904" colspan="1">Stress</td>
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">Targeted Stress</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Sustain a specific targeted stress level for a given amount of time.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">Targeted Power</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Sustain a specific targeted power level for a given amount of time.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">SM Stress</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Sustain a workload on the Streaming Multiprocessors (SMs) of the GPU for a given amount of time.</td>
+                           </tr>
+                           <tr class="row">
+                              <td class="entry" valign="top" headers="d54e907" rowspan="1" colspan="1">Memory Bandwidth</td>
+                              <td class="entry" valign="top" headers="d54e910" rowspan="1" colspan="1">Verify that a certain memory bandwidth can be achieved on the framebuffer of the GPU.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <p class="p">Some tests also have subtests that can be enabled by using the <em class="ph i">subtests</em> keyword and then hierarchically adding the subtest parameters desired beneath.  An example would be the PCIe Bandwidth test
+                     which may have a section that looks similar to this:
+                  </p><pre class="pre screen" xml:space="preserve">
+long:
+- integration:
+    pcie:
+      test_unpinned: false
+      subtests:
+        h2d_d2h_single_pinned:
+          min_bandwidth: 20
+          min_pci_width: 16
+        </pre><p class="p">When only a specific test is given in the GPU set portion of the configuration file, both the suite and class of the test
+                     are <em class="ph i">custom</em>.  For example:
+                  </p><pre class="pre screen" xml:space="preserve">
+%YAML 1.2 
+---
+
+globals:
+  logfile: nvvs.log
+
+custom:
+- custom:
+    targeted stress:
+      test_duration: 60
+
+gpus:
+- gpuset: all_K40c
+  properties:
+    name: Tesla K40c
+  tests: 
+    - name: targeted stress
+        </pre></div>
+            </div>
+         </div>
+         <div class="topic concept nested0" id="unique_906358727"><a name="unique_906358727" shape="rect">
+               <!-- --></a><h2 class="title topictitle1"><a href="#unique_906358727" name="unique_906358727" shape="rect">Overview of Plugins</a></h2>
+            <div class="body conbody">
+               <p class="p">The NVIDIA Validation Suite consists of a series of plugins that are each designed to accomplish a different goal. </p>
+            </div>
+            <div class="topic concept nested1" id="software-plugin"><a name="software-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#software-plugin" name="software-plugin" shape="rect">Deployment Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The deployment plugin's purpose is to verify the compute environment is ready to run Cuda applications and is able to load
+                     the NVML library. 
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <div class="p">
+                        <ul class="ul">
+                           <li class="li">LD_LIBRARY_PATH must include the path to the cuda libraries, which for version X.Y of Cuda is normally /usr/local/cuda-<em class="ph i">X.Y</em>/lib64, which can be set by running <em class="ph i">export LD_LIBRARY_PATH=/usr/local/cuda-X.Y/lib64</em></li>
+                           <li class="li">The linux nouveau driver must not be running, and should be blacklisted since it will conflict with the nvidia driver </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <p class="p"><em class="ph i">None at this time.</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <p class="p"><em class="ph i">None at this time.</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The corresponding device nodes for the target GPU(s) are being blocked by the operating system (e.g. cgroups) or exist without
+                              r/w permissions for the current user.
+                           </li>
+                           <li class="li">The NVML library libnvidia-ml.so cannot be loaded</li>
+                           <li class="li">The Cuda runtime libraries cannot be loaded</li>
+                           <li class="li">The <strong class="ph b">nouveau</strong> driver is found to be loaded
+                           </li>
+                           <li class="li">Any pages are pending retirement on the target GPU(s)</li>
+                           <li class="li">Any other graphics processes are running on the target GPU(s) while the plugin runs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="hardware-plugin"><a name="hardware-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#hardware-plugin" name="hardware-plugin" shape="rect">Hardware Disagnostic Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The HW Diagnostic Plugin is designed to identify HW failures on GPU silicon and board-level components, extending out to the
+                     PCIE and NVLINK interfaces. It is not intended to identify HW or system level issues beyond the NVIDIA-provided HW. Nor is
+                     it intended to identify SW level issues above the HW, e.g. in the NVIDIA driver stack. The plugin runs a series of tests that
+                     target GPU computational correctness, GDDR/HBM memory resiliency, GPU and SRAM high power operation, SM stress and NVLINK/PCIE
+                     correctness. The plugin can run with several combinations of tests corresponding to medium and long NVVS operational modes.
+                     This plugin will take about three minutes to execute.
+                  </p>
+                  <p class="p">The plugin produces a simple pass/fail output. A failing output means that a potential HW issue has been found. However, the
+                     NVVS HW Diagnostic Plugin is not by itself a justification for GPU RMA. Any failure in the plugin should be followed by execution
+                     of the full NVIDIA Field Diagnostic after the machine has been taken offline. Only a failure of the Field Diagnostic tool
+                     constitutes grounds for RMA. Since the NVVS HW Diagnostic Plugin is a functional subset of the Field Diagnostic a failure
+                     in the plugin is a strong indicator of a future Field Diagnostic failure.
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <div class="p">
+                        <ul class="ul">
+                           <li class="li">No other GPU processes can be running. </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1154" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e1157" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e1160" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" id="d54e1163" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" id="d54e1166" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">test_duration</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">180.0</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">30.0 - 3600.0</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">How long the performance test should run for in seconds. It is recommended to set this to at least 30 seconds to make sure
+                                    you actually get some stress from the test.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">use_doubles</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">Boolean</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">False</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">True or False</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">If set to true, tells the test to use double-point precision in its calculations. By default, it is false and the test will
+                                    use floating point precision.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">temperature_max</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">100.0</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">30.0 - 120.0</td>
+                                 <td class="entry" valign="top" headers="d54e1154 d54e1157 d54e1160 d54e1163 d54e1166" rowspan="1" colspan="1">The maximum temperature in C that the card is allowed to reach during the test. Use nvidia-smi -q to see the normal temperature
+                                    limits of your device.
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1244" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e1247" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e1250" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e1253" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">power_usage</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Per second power usage of each GPU in watts. Note that for multi-GPU boards, each GPU gets a fraction of the power budget
+                                    of the board.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">graphics_clock</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Per second clock rate of each GPU in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">memory_clock</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Per second clock rate of the GPU’s memory in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">nvml_events</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Int64</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Any events that were read with nvmlEventSetWait - including single or double bit errors or XID errors - during the test.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">power_violation</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Percentage of time this GPU was violating power constraints.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">gpu_temperature</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Per second temperature of the GPU in degrees C</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">thermal_violation</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Percentage of time this GPU was violating thermal constraints.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">perf_gflops</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">Time Series Float</td>
+                                 <td class="entry" valign="top" headers="d54e1244 d54e1247 d54e1250 d54e1253" rowspan="1" colspan="1">The per second reading of average gflops since the test began.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The corresponding device nodes for the target GPU(s) are being blocked by the operating system (e.g. cgroups) or exist without
+                              r/w permissions for the current user.
+                           </li>
+                           <li class="li">Other GPU processes are running</li>
+                           <li class="li">A hardware issue has been detected.  <em class="ph i">This is not an RMA actionable failure but rather an indication that more investigation is required.</em></li>
+                           <li class="li">The temperature reaches unacceptable levels during the test.</li>
+                           <li class="li">If GPU double bit ECC errors occur or the configured amount of SBE errors occur.</li>
+                           <li class="li">If a critical XID occurs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="gpubandwidth-plugin"><a name="gpubandwidth-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#gpubandwidth-plugin" name="gpubandwidth-plugin" shape="rect">PCIe - GPU Bandwidth Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The GPU bandwidth plugin's purpose is to measure the bandwidth and latency to and from the GPUs and the host. </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <p class="p"><em class="ph i">None</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Sub Tests</h3>
+                     <p class="p">The plugin consists of several self-tests that each measure a different aspect of bandwidth or latency. Each subtest has either
+                        a  pinned/unpinned pair or a p2p enabled/p2p disabled pair of identical tests. Pinned/unpinned tests use either pinned or
+                        unpinned memory when copying data between the host and the GPUs.
+                     </p>
+                     <p class="p">This plugin will use NvLink to communicate between GPUs when possible. Otherwise, communication between GPUs will occur over
+                        PCIe
+                     </p>
+                     <p class="p">Each sub test is represented with a tag that is used both for specifying configuration parameters for the sub test and for
+                        outputting stats for the sub test. P2p enabled/p2p disabled tests enable or disable GPUs on the same card talking to each
+                        other directly rather than through the PCIe bus.
+                     </p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1464" rowspan="1" colspan="1">Sub Test Tag</th>
+                                 <th class="entry" valign="top" id="d54e1467" rowspan="1" colspan="1">Pinned/Unpinned<br clear="none"></br>P2P Enabled/P2P Disabled
+                                 </th>
+                                 <th class="entry" valign="top" id="d54e1472" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_single_pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Host Bandwidth, one GPU at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_single_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Host Bandwidth, one GPU at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_concurrent_pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Host Bandwidth, all GPUs concurrently</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_concurrent_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Host Bandwidth, all GPUs concurrently</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_latency_pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Host Latency, one GPU at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">h2d_d2h_latency_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Host Latency, one GPU at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_bw_p2p_enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device  &lt;-&gt; Device bandwidth one GPU pair at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_bw_p2p_disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device  &lt;-&gt; Device bandwidth one GPU pair at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_bw_concurrent_p2p_enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Device bandwidth, concurrently, focusing on bandwidth between GPUs between GPUs likely to be directly connected
+                                    to each other -&gt; for each (index / 2) and (index / 2)+1
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_bw_concurrent_p2p_disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Device bandwidth, concurrently, focusing on bandwidth between GPUs between GPUs likely to be directly connected
+                                    to each other -&gt; for each (index / 2) and (index / 2)+1
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">1d_exch_bw_p2p_enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Device bandwidth, concurrently, focusing on bandwidth between gpus, every GPU either sending to the gpu with the
+                                    index higher than itself (l2r) or to the gpu with the index lower than itself (r2l)
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">1d_exch_bw_p2p_disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt; Device bandwidth, concurrently, focusing on bandwidth between gpus, every GPU either sending to the gpu with the
+                                    index higher than itself (l2r) or to the gpu with the index lower than itself (r2l)
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_latency_p2p_enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Enabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Device Latency, one GPU pair at a time</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">p2p_latency_p2p_disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">P2P Disabled</td>
+                                 <td class="entry" valign="top" headers="d54e1464 d54e1467 d54e1472" rowspan="1" colspan="1">Device &lt;-&gt;  Device Latency, one GPU pair at a time</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters- Global</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1666" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e1669" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e1672" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" id="d54e1675" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" id="d54e1678" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">test_pinned</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Bool</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True/False</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Include subtests that test using pinned memory.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">test_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Bool</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True/False</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Include subtests that test using unpinned memory.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">test_p2p_on</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Bool</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True/False</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Include subtests that require peer to peer (P2P) memory transfers between cards to occur.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">test_p2p_off</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Bool</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">True/False</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Include subtests that do not require peer to peer (P2P) memory transfers between cards to occur.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">max_pcie_replays</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">80.0</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">1.0 - 1000000.0</td>
+                                 <td class="entry" valign="top" headers="d54e1666 d54e1669 d54e1672 d54e1675 d54e1678" rowspan="1" colspan="1">Maximum number of PCIe replays to allow per GPU for the duration of this plugin. This is based on an expected replay rate
+                                    &lt;8 per minute for PCIe Gen 3.0, assuming this plugin will run for less than a minute and allowing 10x as many replays before
+                                    failure.
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters- Sub Test</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1792" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e1795" rowspan="1" colspan="1">Default (Range)</th>
+                                 <th class="entry" valign="top" id="d54e1798" rowspan="1" colspan="1">Affected Sub Tests</th>
+                                 <th class="entry" valign="top" id="d54e1801" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">min_bandwidth</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1"><em class="ph i">Null<br clear="none"></br>(0.0 - 100.0)</em></td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">h2d_d2h_single_pinned, h2d_d2h_single_unpinned, h2d_d2h_concurrent_pinned, h2d_d2h_concurrent_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">Minimum bandwidth in GB/s that must be reached for this sub-test to pass.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">max_latency</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">100,000.0<br clear="none"></br>(0.0 - 1,000,000.0)
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">h2d_d2h_latency_pinned, h2d_d2h_latency_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">Latency in microseconds that cannot be exceeded for this sub-test to pass.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">min_pci_generation</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">1.0<br clear="none"></br>(1.0 - 3.0)
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">h2d_d2h_single_pinned, h2d_d2h_single_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">Minimum allowed PCI generation that the GPU must be at or exceed for this sub-test to pass.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">min_pci_width</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">1.0<br clear="none"></br>(1.0 - 16.0)
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">h2d_d2h_single_pinned, h2d_d2h_single_unpinned</td>
+                                 <td class="entry" valign="top" headers="d54e1792 d54e1795 d54e1798 d54e1801" rowspan="1" colspan="1">Minimum allowed PCI width that the GPU must be at or exceed for this sub-test to pass. For example, 16x = 16.0.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs - Global</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1895" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e1898" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e1901" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e1904" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1895 d54e1898 d54e1901 d54e1904" rowspan="1" colspan="1">pcie_replay_count</td>
+                                 <td class="entry" valign="top" headers="d54e1895 d54e1898 d54e1901 d54e1904" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e1895 d54e1898 d54e1901 d54e1904" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1895 d54e1898 d54e1901 d54e1904" rowspan="1" colspan="1">The per second reading of PCIe replays that have occurred since the start of the GPU Bandwidth plugin. </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs -Sub Test</h3>
+                     <p class="p">Stats for the GPU Bandwidth test are also output on a test by test basis, using the sub test name as the group name key. The
+                        following stats sections are organized by sub test.
+                     </p>
+                     <p class="p"><strong class="ph b"><u class="ph u">h2d_d2h_single_pinned/h2d_d2h_single_unpinned</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e1951" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e1954" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e1957" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1"><em class="ph i">N</em>_h2d
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Average bandwidth from host to device for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1"><em class="ph i">N</em>_d2h
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Average bandwidth from device to host for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1"><em class="ph i">N</em>_bidir
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e1951 d54e1954 d54e1957" rowspan="1" colspan="1">Average bandwidth from device to host and host to device at the same time for device <em class="ph i">N</em></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">h2d_d2h_concurrent_pinned/h2d_d2h_concurrent_unpinned</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2029" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2032" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2035" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1"><em class="ph i">N</em>_h2d
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Average bandwidth from host to device for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1"><em class="ph i">N</em>_d2h
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Average bandwidth from device to host for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1"><em class="ph i">N</em>_bidir
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Average bandwidth from device to host and host to device at the same time for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">sum_bidir</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Sum of the average bandwidth from device to host and host to device for all devices.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">sum_h2d</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Sum of the average bandwidth from host to device for all devices.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">sum_d2h</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2029 d54e2032 d54e2035" rowspan="1" colspan="1">Sum of the average bandwidth from device to host for all devices.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">h2d_d2h_latency_pinned/h2d_d2h_latency_unpinned</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2143" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2146" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2149" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1"><em class="ph i">N</em>_h2d
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Average latency from host to device for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1"><em class="ph i">N</em>_d2h
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Average latency from device to host for device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1"><em class="ph i">N</em>_bidir
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2143 d54e2146 d54e2149" rowspan="1" colspan="1">Average latency from device to host and host to device at the same time for device <em class="ph i">N</em></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">p2p_bw_p2p_enabled/p2p_bw_p2p_disabled</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2220" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2223" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2226" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1"><em class="ph i">N</em>_<em class="ph i">M</em>_onedir
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">N</em> to device <em class="ph i">M</em>, copying one direction at a time.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1"><em class="ph i">N</em>_<em class="ph i">M</em>_bidir
+                                 </td>
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2220 d54e2223 d54e2226" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">N</em> to device <em class="ph i">M</em>, copying both directions at the same time.
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">p2p_bw_concurrent_p2p_enabled/p2p_bw_concurrent_p2p_disabled</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2296" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2299" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2302" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">l2r_<em class="ph i">N</em>_<em class="ph i">M</em></td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">N</em> to device <em class="ph i">M</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">r2l_<em class="ph i">N</em>_<em class="ph i">M</em></td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">M</em> to device <em class="ph i">N</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">bidir_<em class="ph i">N</em>_<em class="ph i">M</em></td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">M</em> to device <em class="ph i">N</em>, copying concurrently
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">r2l_sum</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Sum of average bandwidth for all right (<em class="ph i">M</em>) to left (<em class="ph i">N</em>) copies
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">r2l_sum</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2296 d54e2299 d54e2302" rowspan="1" colspan="1">Sum of average bidirectional bandwidth for all right (<em class="ph i">M</em>) to left (<em class="ph i">N</em>) and left to right copies copies
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">1d_exch_bw_p2p_enabled/1d_exch_bw_p2p_disabled</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2428" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2431" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2434" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">l2r_<em class="ph i">N</em></td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">N</em> to device <em class="ph i">N+1</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">r2l_<em class="ph i">N</em></td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Average bandwidth from device <em class="ph i">N</em> to device <em class="ph i">N-1</em></td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">l2r_sum</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Sum of all l2r average bandwidth stats</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">r2l_sum</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2428 d54e2431 d54e2434" rowspan="1" colspan="1">Sum of all l2r average bandwidth stats</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p class="p"><strong class="ph b"><u class="ph u">p2p_latency_p2p_enabled/p2p_latency_p2p_disabled</u></strong></p>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2519" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2522" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2525" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2519 d54e2522 d54e2525" rowspan="1" colspan="1"><em class="ph i">N</em>_<em class="ph i">M</em></td>
+                                 <td class="entry" valign="top" headers="d54e2519 d54e2522 d54e2525" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2519 d54e2522 d54e2525" rowspan="1" colspan="1">Average latency from device <em class="ph i">N</em> to device <em class="ph i">M</em></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The latency exceeds the configured threshold for relevant tests.</li>
+                           <li class="li">The bandwidth cannot exceed the configured threshold for relevant tests.</li>
+                           <li class="li">If the number of PCIe retransmits exceeds a user-provided threshold.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="power-plugin"><a name="power-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#power-plugin" name="power-plugin" shape="rect">Memory Bandwidth Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The purpose of the Memory Bandwidth plugin is to validate that the bandwidth of the framebuffer of the GPU is above a preconfigured
+                     threshold.
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <p class="p"><em class="ph i">This plugin only runs on GV100 GPUs at this time.</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" width="27.999999999999996%" id="d54e2626" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" width="12%" id="d54e2629" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" width="20%" id="d54e2632" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" width="20%" id="d54e2635" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" width="20%" id="d54e2638" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" width="27.999999999999996%" headers="d54e2626" rowspan="1" colspan="1">minimum_bandwidth</td>
+                                 <td class="entry" valign="top" width="12%" headers="d54e2629" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" width="20%" headers="d54e2632" rowspan="1" colspan="1">Differs per GPU</td>
+                                 <td class="entry" valign="top" width="20%" headers="d54e2635" rowspan="1" colspan="1">1.0 - 1000000.0</td>
+                                 <td class="entry" valign="top" width="20%" headers="d54e2638" rowspan="1" colspan="1">Minimum framebuffer bandwidth threshold that must be achieved in order to pass this test in MB/sec.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2680" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2683" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e2686" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2689" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">power_usage</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Per second power usage of each GPU in watts. Note that for multi-GPU boards, each GPU gets a fraction of the power budget
+                                    of the board.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">memory_clock</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Per second clock rate of the GPU’s memory in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">nvml_events</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Time series Int64</td>
+                                 <td class="entry" valign="top" headers="d54e2680 d54e2683 d54e2686 d54e2689" rowspan="1" colspan="1">Any events that were read with nvmlEventSetWait during the test and the timestamp it was read it.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">the minimum bandwidth specified in <em class="ph i">minimum_bandwidth</em> cannot be achieved.
+                           </li>
+                           <li class="li">If GPU double bit ECC errors occur or the configured amount of SBE errors occur.</li>
+                           <li class="li">If a critical XID occurs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="sm-performance-plugin"><a name="sm-performance-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#sm-performance-plugin" name="sm-performance-plugin" shape="rect">SM Stress Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The SM performance plugin’s purpose is to bring the Streaming Multiprocessors (SMs) of the target GPU(s) to a target performance
+                     level in gigaflops by doing large matrix multiplications using cublas. Unlike the Targeted Stress plugin, the SM stress plugin
+                     does not copy the source arrays to the GPU before every matrix multiplication. This allows the SM performance plugin's performance
+                     to not be capped by device to host bandwidth. The plugin calculates how many matrix operations per second are necessary to
+                     achieve the configured performance target and fails if it cannot achieve that target. 
+                  </p>
+                  <p class="p">This plugin should be used to watch for thermal, power and related anomalies while the target GPU(s) are under realistic load
+                     conditions. By setting the appropriate parameters a user can ensure that all GPUs in a node or cluster reach desired performance
+                     levels. Further analysis of the generated stats can also show variations in the required power, clocks or temperatures to
+                     reach these targets, and thus highlight GPUs or nodes that are operating less efficiently.
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <p class="p"><em class="ph i">None</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2808" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e2811" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2814" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" id="d54e2817" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" id="d54e2820" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">test_duration</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">90.0</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">30.0 - 3600.0</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">How long the performance test should run for in seconds. It is recommended to set this to at least 30 seconds for performance
+                                    to stabilize.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">temperature_max</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1"><em class="ph i">Null</em></td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">30.0 - 120.0</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">The maximum temperature in C the card is allowed to reach during the test. Note that this check is disabled by default. Use
+                                    nvidia-smi -q to see the normal temperature limits of your device.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">target_stress</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1"><em class="ph i">Null</em></td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">SKU dependent</td>
+                                 <td class="entry" valign="top" headers="d54e2808 d54e2811 d54e2814 d54e2817 d54e2820" rowspan="1" colspan="1">The maximum relative performance each card will attempt to achieve.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e2900" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e2903" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e2906" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e2909" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">power_usage</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Per second power usage of each GPU in watts. Note that for multi-GPU boards, each GPU gets a fraction of the power budget
+                                    of the board.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">graphics_clock</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Per second clock rate of each GPU in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">memory_clock</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Per second clock rate of the GPU’s memory in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">nvml_events</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Int64</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Any events that were read with nvmlEventSetWait - including single or double bit errors or XID errors - during the test.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">power_violation</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Percentage of time this GPU was violating power constraints.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">gpu_temperature</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Per second temperature of the GPU in degrees C</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">perf_gflops</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">The per second reading of average gflops since the test began.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">flops_per_op</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Flops (floating point operations) per operation queued to the GPU stream. One operation is one call to cublasSgemm or cublasDgemm</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">bytes_copied_per_op</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">How many bytes are copied to + from the GPU per operation</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">num_cuda_streams</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">How many cuda streams were used per gpu to queue operations to the GPUs</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">try_ops_per_sec</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e2900 d54e2903 d54e2906 d54e2909" rowspan="1" colspan="1">Calculated number of ops/second necessary to achieve target gigaflops</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The GPU temperature exceeds a user-provided threshold.</li>
+                           <li class="li">If thermal violation counters increase </li>
+                           <li class="li">If the target performance level cannot be reached</li>
+                           <li class="li">If GPU double bit ECC errors occur or the configured amount of SBE errors occur.</li>
+                           <li class="li">If a critical XID occurs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="performance-plugin"><a name="performance-plugin" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#performance-plugin" name="performance-plugin" shape="rect">Targeted Stress Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The Targeted Stress plugin’s purpose is to bring the GPU to a target performance level in gigaflops by doing large matrix
+                     multiplications using cublas. The plugin calculates how many matrix operations per second are necessary to achieve the configured
+                     performance target and fails if it cannot achieve that target. 
+                  </p>
+                  <p class="p">This plugin should be used to watch for thermal, power and related anomalies while the target GPU(s) are under realistic load
+                     conditions. By setting the appropriate parameters a user can ensure that all GPUs in a node or cluster reach desired performance
+                     levels. Further analysis of the generated stats can also show variations in the required power, clocks or temperatures to
+                     reach these targets, and thus highlight GPUs or nodes that are operating less efficiently.
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <p class="p"><em class="ph i">None</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e3153" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e3156" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e3159" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" id="d54e3162" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" id="d54e3165" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">test_duration</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">120.0</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">30.0 - 3600.0</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">How long the Targeted Stress test should run for in seconds. It is recommended to set this to at least 30 seconds for performance
+                                    to stabilize.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">temperature_max</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1"><em class="ph i">Null</em></td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">30.0 - 120.0</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">The maximum temperature in C the card is allowed to reach during the test. Note that this check is disabled by default. Use
+                                    nvidia-smi -q to see the normal temperature limits of your device.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">target_stress</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1"><em class="ph i">Null</em></td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">SKU dependent</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">The maximum relative stress each card will attempt to achieve.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">max_pcie_replays</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">160.0</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">1.0 - 1000000.0</td>
+                                 <td class="entry" valign="top" headers="d54e3153 d54e3156 d54e3159 d54e3162 d54e3165" rowspan="1" colspan="1">Maximum number of PCIe replays to allow per GPU for the duration of this plugin. This is based on an expected replay rate
+                                    &lt;8 per minute for PCIe Gen 3.0, assuming this plugin will run for 2 minutes (configurable) and allowing 10x as many replays
+                                    before failure.
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e3263" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e3266" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e3269" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e3272" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">power_usage</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Per second power usage of each GPU in watts. Note that for multi-GPU boards, each GPU gets a fraction of the power budget
+                                    of the board.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">graphics_clock</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Per second clock rate of each GPU in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">memory_clock</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Per second clock rate of the GPU’s memory in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">nvml_events</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Int64</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Any events that were read with nvmlEventSetWait during the test and the timestamp it was read it.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">power_violation</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Percentage of time this GPU was violating power constraints.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">gpu_temperature</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Per second temperature of the GPU in degrees C</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">perf_gflops</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">The per second reading of average gflops since the test began.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">flops_per_op</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Flops (floating point operations) per operation queued to the GPU stream. One operation is one call to cublasSgemm or cublasDgemm</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">bytes_copied_per_op</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">How many bytes are copied to + from the GPU per operation</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">num_cuda_streams</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">How many cuda streams were used per gpu to queue operations to the GPUs</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">try_ops_per_sec</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Calculated number of ops/second necessary to achieve target gigaflops</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">pcie_replay_count</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3263 d54e3266 d54e3269 d54e3272" rowspan="1" colspan="1">The per second reading of PCIe replays that have occurred since the start of the Targeted Stress plugin. </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The GPU temperature exceeds a user-provided threshold.</li>
+                           <li class="li">If temperature violation counters increase </li>
+                           <li class="li">If the target stress level cannot be reached</li>
+                           <li class="li">If GPU double bit ECC errors occur or the configured amount of SBE errors occur.</li>
+                           <li class="li">If the number of PCIe retransmits exceeds a user-provided threshold.</li>
+                           <li class="li">A crtical XID occurs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="topic concept nested1" id="unique_1843099816"><a name="unique_1843099816" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#unique_1843099816" name="unique_1843099816" shape="rect">Power Plugin</a></h3>
+               <div class="body conbody">
+                  <p class="p">The purpose of the power plugin is to bring the GPUs to a preconfigured power level in watts by gradually increasing the compute
+                     load on the GPUs until the desired power level is achieved. This verifies that the GPUs can sustain a power level for a reasonable
+                     amount of time without problems like thermal violations arising. 
+                  </p>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Preconditions</h3>
+                     <p class="p"><em class="ph i">None</em></p>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Configuration Parameters</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e3533" rowspan="1" colspan="1">Parameter Name</th>
+                                 <th class="entry" valign="top" id="d54e3536" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e3539" rowspan="1" colspan="1">Default</th>
+                                 <th class="entry" valign="top" id="d54e3542" rowspan="1" colspan="1">Value Range</th>
+                                 <th class="entry" valign="top" id="d54e3545" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">test_duration</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">120.0</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">30.0 - 3600.0</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">How long the performance test should run for in seconds. It is recommended to set this to at least 60 seconds for performance
+                                    to stabilize.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">temperature_max</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1"><em class="ph i">Null</em></td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">30.0 - 120.0</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">The maximum temperature in C the card is allowed to reach during the test. Note that this check is disabled by default. Use
+                                    nvidia-smi -q to see the normal temperature limits of your device.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">target_power</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">Float</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">Differs per GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">Differs per GPU. Defaults to TDP - 1 watt.</td>
+                                 <td class="entry" valign="top" headers="d54e3533 d54e3536 d54e3539 d54e3542 d54e3545" rowspan="1" colspan="1">What power level in wattage we should try to maintain. If this is set to greater than the enforced power limit of the GPU,
+                                    then we will try to power cap the device
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Stat Outputs</h3>
+                     <div class="tablenoborder">
+                        <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+                           <thead class="thead" align="left">
+                              <tr class="row">
+                                 <th class="entry" valign="top" id="d54e3624" rowspan="1" colspan="1">Stat Name</th>
+                                 <th class="entry" valign="top" id="d54e3627" rowspan="1" colspan="1">Stat Scope</th>
+                                 <th class="entry" valign="top" id="d54e3630" rowspan="1" colspan="1">Type</th>
+                                 <th class="entry" valign="top" id="d54e3633" rowspan="1" colspan="1">Description</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">power_usage</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Per second power usage of each GPU in watts. Note that for multi-GPU boards, each GPU gets a fraction of the power budget
+                                    of the board.
+                                 </td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">graphics_clock</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Per second clock rate of each GPU in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">memory_clock</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Per second clock rate of the GPU’s memory in MHZ</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">nvml_events</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Int64</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Any events that were read with nvmlEventSetWait during the test and the timestamp it was read it.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">power_violation</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Percentage of time this GPU was violating power constraints.</td>
+                              </tr>
+                              <tr class="row">
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">gpu_temperature</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">GPU</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Time series Float</td>
+                                 <td class="entry" valign="top" headers="d54e3624 d54e3627 d54e3630 d54e3633" rowspan="1" colspan="1">Per second temperature of the GPU in degrees C</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <h3 class="title sectiontitle">Failure</h3>
+                     <div class="p">The plugin will fail if:
+                        <ul class="ul">
+                           <li class="li">The GPU temperature exceeds a user-provided threshold.</li>
+                           <li class="li">If temperature violation counters increase </li>
+                           <li class="li">If the target performance level cannot be reached</li>
+                           <li class="li">If GPU double bit ECC errors occur or the configured amount of SBE errors occur.</li>
+                           <li class="li">If a critical XID occurs</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="topic concept nested0" id="output"><a name="output" shape="rect">
+               <!-- --></a><h2 class="title topictitle1"><a href="#output" name="output" shape="rect">Test Output</a></h2>
+            <div class="body conbody">
+               <p class="p">The output of tests can be collected by setting the "logfile" global parameter which represents the prefix for the detailed
+                  outputs produced by each test.  The default type of output is JSON but text and binary outputs are available as well.  The
+                  latter two are meant more for parsing and direct reading by custom consumers respectively so this portion of the document
+                  will focus on the JSON output.
+               </p>
+            </div>
+            <div class="topic concept nested1" id="output-json"><a name="output-json" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#output-json" name="output-json" shape="rect">JSON Output</a></h3>
+               <div class="body conbody">
+                  <p class="p">The JSON output format is keyed based off of the "stats" keys given in each test overview from Chapter 3.  These standard
+                     JSON files can be processed in any number of ways but two example Python scripts have been provided to aid in visualization
+                     in the default installation directory..  The first is a JSON to comma-separated value script (json2csv.py) which can be used
+                     to import key values in to a graphing spreadsheet.  Proper usage would be:
+                  </p><pre class="pre screen" xml:space="preserve">
+user@hostname
+$ python json2csv.py -i stats_targeted_performance.json -o stats.csv -k gpu_temperature,power_usage
+    </pre><p class="p">Also provided is an example Python script that uses the <a class="xref" href="http://pygal.org" target="_blank" shape="rect">pygal</a> library to generate readily viewable scalar vector graphics charts (json2svg.py), able to be opened in any browser.  Proper
+                     usage would be:
+                  </p><pre class="pre screen" xml:space="preserve">
+user@hostname
+$ python json2svg.py -i stats_targeted_performance.json -o stats.svg -k gpu_temperature,power_usage
+    </pre></div>
+            </div>
+         </div>
+         <div class="topic concept nested0" id="notices-header"><a name="notices-header" shape="rect">
+               <!-- --></a><h2 class="title topictitle1"><a href="#notices-header" name="notices-header" shape="rect">Notices</a></h2>
+            <div class="topic reference nested1" id="notice"><a name="notice" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#notice" name="notice" shape="rect">Notice</a></h3>
+               <div class="body refbody">
+                  <div class="section">
+                     <p class="p">ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND
+                        SEPARATELY, "MATERIALS") ARE BEING PROVIDED "AS IS." NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE
+                        WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS
+                        FOR A PARTICULAR PURPOSE. 
+                     </p>
+                     <p class="p">Information furnished is believed to be accurate and reliable. However, NVIDIA Corporation assumes no responsibility for the
+                        consequences of use of such information or for any infringement of patents or other rights of third parties that may result
+                        from its use. No license is granted by implication of otherwise under any patent rights of NVIDIA Corporation. Specifications
+                        mentioned in this publication are subject to change without notice. This publication supersedes and replaces all other information
+                        previously supplied. NVIDIA Corporation products are not authorized as critical components in life support devices or systems
+                        without express written approval of NVIDIA Corporation.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="topic reference nested1" id="trademarks"><a name="trademarks" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#trademarks" name="trademarks" shape="rect">Trademarks</a></h3>
+               <div class="body refbody">
+                  <div class="section">
+                     <p class="p">NVIDIA and the NVIDIA logo are trademarks or registered trademarks of NVIDIA Corporation
+                        in the U.S. and other countries.  Other company and product names may be trademarks of
+                        the respective companies with which they are associated.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="topic reference nested1" id="copyright-past-to-present"><a name="copyright-past-to-present" shape="rect">
+                  <!-- --></a><h3 class="title topictitle2"><a href="#copyright-past-to-present" name="copyright-past-to-present" shape="rect">Copyright</a></h3>
+               <div class="body refbody">
+                  <div class="section">
+                     <p class="p">© <span class="ph">2014</span>-<span class="ph">2023</span> NVIDIA
+                        Corporation. All rights reserved.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <hr id="contents-end"></hr>
+         <div id="release-info">NVIDIA Validation Suite User Guide
+            (<a href="../pdf/NVIDIA_Validation_Suite_User_Guide.pdf">PDF</a>)
+            -
+            
+            vR525
+            (<a href="">older</a>)
+            -
+            Last updated March 15, 2023
+            -
+            <a href="mailto:cudatools@nvidia.com?subject=GPU Deployment and Management Documentation Feedback: NVIDIA Validation Suite User Guide">Send Feedback</a></div>
+         
+      </article>
+      
+      <header id="header"><span id="company">NVIDIA</span><span id="site-title">GPU Deployment and Management Documentation</span><form id="search" method="get" action="search">
+            <input type="text" name="search-text"></input><fieldset id="search-location">
+               <legend>Search In:</legend>
+               <label><input type="radio" name="search-type" value="site"></input>Entire Site</label>
+               <label><input type="radio" name="search-type" value="document"></input>Just This Document</label></fieldset>
+            <button type="reset">clear search</button>
+            <button id="submit" type="submit">search</button></form>
+      </header>
+      <nav id="site-nav">
+         <div class="category closed"><span class="twiddle">▷</span><a href="../index.html" title="The root of the site.">Docs Home</a></div>
+         <ul class="closed">
+            <li><a href="../cuda-compatibility/index.html" title="CUDA Compatibility document describes the use of new CUDA toolkit components on systems with older base installations.">CUDA Compatibility</a></li>
+            <li><a href="../mps/index.html" title="The Multi-Process Service (MPS) is an alternative, binary-compatible implementation of the CUDA Application Programming Interface (API). The MPS runtime architecture is designed to transparently enable co-operative multi-process CUDA applications, typically MPI jobs, to utilize Hyper-Q capabilities on the latest NVIDIA (Kepler-based) Tesla and Quadro GPUs">Multi-Process Service</a></li>
+            <li><a href="../driver-persistence/index.html" title="Any interactions with NVIDIA GPUs require that an instance of the kernel mode driver be running. This driver may be persistent in some environments and transient in others. This document describes the default driver behavior and options for modifying that behavior.">Driver Persistence</a></li>
+            <li><a href="../healthmon-user-guide/index.html" title="Nvidia-healthmon is the system administrator and cluster manager's tool for detecting and troubleshooting common problems affecting NVIDIATesla GPUs in a high performance computing environments. Nvidia-healthmon focuses on software and system configuration issues, with only limited hardware diagnostic capabilities.">Healthmon User Guide</a></li>
+            <li><a href="../nvvs-user-guide/index.html" title="NVVS is the system administrator and cluster manager's tool for detecting and troubleshooting common problems affecting NVIDIATesla GPUs in a high performance computing environments. NVVS focuses on software and system configuration issues, diagnostics, topological concerns, and relative performance.">NVIDIA Validation Suite User Guide</a></li>
+            <li><a href="../hw-field-diag/index.html" title="The HW field diag is the comprehensive tool for verifying GPU HW integrity in the field, and a required piece of the RMA process.">HW Field Diag</a></li>
+            <li><a href="../rma-process/index.html" title="A standardized process must be followed to identify products that qualify for RMA. This document provides an overview of that process.">RMA Process</a></li>
+            <li><a href="../dynamic-page-retirement/index.html" title="The NVIDIA driver supports &#34;retiring&#34; framebuffer pages that contain bad memory cells. This is called &#34;dynamic page retirement&#34; and is done automatically for cells that are degrading in quality. This feature can improve the longevity of an otherwise good board and and is thus an important resiliency feature on supported products, especially in HPC and enterprise environments.">Dynamic Page Retirement</a></li>
+            <li><a href="../xid-errors/index.html" title="This document explains what Xid messages are, and is intended to assist system administrators, developers, and FAEs in understanding the meaning behind these messages as an aid in analyzing and resolving GPU-related problems.">XID Errors</a></li>
+         </ul>
+         <div class="category"><span class="twiddle">▼</span><a href="index.html" title="NVIDIA Validation Suite User Guide">NVIDIA Validation Suite User Guide</a></div>
+         <ul>
+            <li><a href="#overview">1.&nbsp;Overview</a><ul>
+                  <li><a href="#nvidia-validation-suite-goals">1.1.&nbsp;NVVS Goals</a></li>
+                  <li><a href="#beyond-scope-of-nvidia-healthmon">1.2.&nbsp;Beyond the Scope of the NVIDIA Validation Suite</a></li>
+                  <li><a href="#dependencies">1.3.&nbsp;Dependencies</a></li>
+                  <li><a href="#supported-products">1.4.&nbsp;Supported Products</a></li>
+               </ul>
+            </li>
+            <li><a href="#usage">2.&nbsp;Using NVVS</a><ul>
+                  <li><a href="#clusage">2.1.&nbsp;Command line options</a></li>
+                  <li><a href="#usage-examples">2.2.&nbsp;Usage Examples</a></li>
+                  <li><a href="#usage-configfile">2.3.&nbsp;Configuration file</a></li>
+                  <li><a href="#usage-configfile-global">2.4.&nbsp;Global parameters</a></li>
+                  <li><a href="#usage-configfile-gpus">2.5.&nbsp;GPU parameters</a></li>
+                  <li><a href="#usage-configfile-tests">2.6.&nbsp;Test Parameters</a></li>
+               </ul>
+            </li>
+            <li><a href="#unique_906358727">3.&nbsp;Overview of Plugins</a><ul>
+                  <li><a href="#software-plugin">3.1.&nbsp;Deployment Plugin</a></li>
+                  <li><a href="#hardware-plugin">3.2.&nbsp;Hardware Disagnostic Plugin</a></li>
+                  <li><a href="#gpubandwidth-plugin">3.3.&nbsp;PCIe - GPU Bandwidth Plugin</a></li>
+                  <li><a href="#power-plugin">3.4.&nbsp;Memory Bandwidth Plugin</a></li>
+                  <li><a href="#sm-performance-plugin">3.5.&nbsp;SM Stress Plugin</a></li>
+                  <li><a href="#performance-plugin">3.6.&nbsp;Targeted Stress Plugin</a></li>
+                  <li><a href="#unique_1843099816">3.7.&nbsp;Power Plugin</a></li>
+               </ul>
+            </li>
+            <li><a href="#output">4.&nbsp;Test Output</a><ul>
+                  <li><a href="#output-json">4.1.&nbsp;JSON Output</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <nav id="search-results">
+         <h2>Search Results</h2>
+         <ol></ol>
+      </nav>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/formatting/common.min.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/omniture/s_code_us_dev_aut1-nolinktrackin.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/omniture/omniture.js"></script>
+      <noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://omniture.nvidia.com/b/ss/nvidiacudadocs/1/H.17--NS/0" height="1" width="1" border="0" alt=""></img></a></noscript>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-write.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-tracker.js"></script>
+      <script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>
