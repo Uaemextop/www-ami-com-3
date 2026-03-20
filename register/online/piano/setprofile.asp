@@ -1,263 +1,692 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="Pragma" content="no_cache"/>
 <meta name="Distribution" content="Global"/>
-<meta name="Robots" content="index, follow, max-image-preview:large, noarchive"/>
-<meta name="Revisit-After" content="1 Days"/>
 <meta name="Copyright" content="&copy; 2026 DIGITIMES Inc."/>
 <meta name="Publisher" content="DIGITIMES Inc."/>
-<meta name="Content-language" content="en"/>
-<meta name="Author" content="DIGITIMES Asia"/>
-<meta name="Date" content="Monday 5 January 2026"/>
-<meta name="Description" content=""/>
-<meta name="Keywords" content="Arm, ASIC, automotive, business, cloud AI, CPU, DIGITIMES, market, mobile, Oryon, Qualcomm, semiconductor, semiconductor research"/>
-<meta name="referrer" content="unsafe-url"/>
+<meta name="Content-language" content="EN-US"/>
+<meta name="Description" content="DIGITIMES registration for new users"/>
+<meta name="Keywords" content="DIGITIMES, Registration, Subscription, Membership, IT, Information Technology, News, Research, Taiwan, China, Asia"/>
 <meta name="Pragma" content="no_cache"/>
-<meta property="fb:pages" content="89446733162" />
-<meta property="og:site_name" content="DIGITIMES" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.digitimes.com/reports/item.php?id=20251216RS401" />
-<meta property="og:title" content="Qualcomm cloud AI ASIC business strategy" />
-<meta property="og:description" content="Introduction" />
-<meta name="thumbnail" content="https://img.digitimes.com/newsshow/2025121600401_files/12_s.jpg" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@DigitimesAsia" />
-<meta name="twitter:creator" content="@DigitimesAsia" />
-<meta property="og:image" content="https://img.digitimes.com/newsshow/2025121600401_files/_2b" />
-<link rel="canonical" href="https://www.digitimes.com/reports/item.php?id=20251216RS401">
-<title>Qualcomm cloud AI ASIC business strategy</title>
+<link rel="canonical" href="https://www.digitimes.com/register/setprofile.asp">
+<title>DIGITIMES user sign up</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="//connect.facebook.net">
-<link rel="dns-prefetch" href="//connect.facebook.net">
-    <link rel="preconnect" href="https://img.digitimes.com">
-    <link rel="dns-prefetch" href="https://img.digitimes.com">
-<link rel="preload" href="https://img.digitimes.com/script/js/jquery-3.6.0.min.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/jquery.bez.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/swiper-3.4.2.min.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/js/jquery.mark.min.js" as="script">
-<link rel="preload" href="/script/js/site.v1.js?cb=198.1&v=2023080701" as="script">
-<link rel="preload" href="https://img.digitimes.com/script/normalize.css" as="style" />
-<link rel="preload" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" as="style" />
-<link rel="preload" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" as="style" />
-<link rel="preload" href="/script/site.v1.css?cb=3&v=2023080701" as="style" />
+<link rel="preload" href="/script/js/jquery-1.10.2.min.js" as="script">
+<link rel="preload" href="/script/js/jquery.bez.js" as="script">
+<link rel="preload" href="/script/js/swiper-3.4.2.min.js" as="script">
+<link rel="preload" href="/script/js/bootstrap.bundle-4.3.1.min.js" as="script">
+<link rel="preload" href="/script/js/bootstrap-4-autocomplete.min.js?v=210526001" as="script">
+<link rel="preload" href="/script/js/site.v1.js?cb=198.1&v=210526001" as="script">
+<link rel="preload" href="/script/normalize.css" as="style" />
+<link rel="preload" href="/script/swiper-3.4.2.min.css" as="style" />
+<link rel="preload" href="/script/bootstrap-4.3.1.min.css?v=210526001" as="style" />
+<link rel="preload" href="/script/site.v1.css?cb=3&v=210526001" as="style" />
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" />
-<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.bez.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/jquery.mark.min.js"></script>
-<script type="text/javascript" src="/script/js/site.v1.js?cb=198.1&v=2023080701"></script>
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/normalize.css" />
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/swiper-3.4.2.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="https://img.digitimes.com/script/bootstrap-4.6.2.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3&v=2023080701" />
-<link rel="stylesheet" type="text/css" media="all" href="/reports/styles/style.css" />
+<script type="text/javascript" src="/script/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/script/js/jquery.bez.js"></script>
+<script type="text/javascript" src="/script/js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="/script/js/bootstrap.bundle-4.3.1.min.js?v=210526001"></script>
+<script type="text/javascript" src="/script/js/bootstrap-4-autocomplete.min.js"></script>
+<script type="text/javascript" src="/script/js/site.v1.js?cb=198.1&v=210526001"></script>
+<link rel="stylesheet" type="text/css" media="all" href="/script/normalize.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/script/swiper-3.4.2.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/script/bootstrap-4.3.1.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/script/site.v1.css?cb=3" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "url": "https://www.digitimes.com/reports/item.php?id=20251216RS401",
-    "datePublished": "2026-01-05T17:42:35+08:00",
-    "dateModified": "2026-01-05T17:42:35+08:00",
-    "headline": "Qualcomm cloud AI ASIC business strategy",
-    "mainEntityOfPage": "https://www.digitimes.com/reports/item.php?id=20251216RS401",
-    "publisher": {
-        "@type": "NewsMediaOrganization",
-        "name": "DIGITIMES Inc.",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.digitimes.com/images/logos/digitimes.jpg"
-        }
-    },
-    "author": {
-        "@type": "Thing",
-        "name": "DIGITIMES Asia"
-    },
-    "image": {
-        "@type": "ImageObject",
-        "url": "https://www.digitimes.com/newsshow/20251216RS401_files/12_2b.jpg"
-    },
-    "thumbnailUrl": "https://www.digitimes.com/newsshow/20251216RS401_files/12_s.jpg"
-}
-</script>    <script language="JavaScript" type="text/javascript">
-        $(function(){
-            $("#content a").not(".text a, .toc a").attr("target","_blank");
-        	$("#content img").addClass("img-fluid");
-        	$("#content table").wrap( "<div class='table-responsive borderless'></div>" );
-        	$("#content p.R1").wrap("<h2></h2>").contents().unwrap();
-        	$("#content p.R2").wrap("<h3></h3>").contents().unwrap();
-        	$("#sfrm input[name='ch']").val("2");
-        	$("#sfrmmob input[name='ch']").val("2");
-        	$('.main-nav-frame a[href$="/reports/"]:first').addClass("focus");
-                                    $('.link-group .link-item').hover(function () {
-                $('.link-group .link-item menu').addClass("show");
-        	}, function () {
-                $('.link-group .link-item menu').removeClass("show");
-        	});
-            //$('.follow-btn').on('click', function () {
-                //if ($(this).hasClass('btn-unfollow')) {
-                    //$(this).removeClass('btn-unfollow');
-                    //$(this).addClass('btn-follow');
-                    //$(this).children('.count').text('1');
-                //} else {
-                    //$(this).removeClass('btn-follow');
-                    //$(this).addClass('btn-unfollow');
-                    //$(this).children('.count').text('0');
-                //}
-            //});
-            //$('.package .option-block li').on('click', function () {
-                //if ($(this).hasClass('selected')) {
-                    //$(this).removeClass('active');
-                //} else {
-                    //$('.package .option-block li').removeClass('selected');
-                    //$(this).addClass('selected');
-                //}
-            //});
-            $('input[name="option"]').change(function() {
-                if ($('#option3').is(':checked')) {
-                    $('input[name="addon"]').prop('disabled', false);
-                } else {
-                    $('input[name="addon"]').prop('checked', false).prop('disabled', true);
-                }
-            });
-            if (!$('#option3').is(':checked')) {
-                $('input[name="addon"]').prop('disabled', true);
-            };
+<script language="JavaScript" type="text/javascript">
+$(function() {
+    $(".rsdlg").click(function () {
+        var rstid = $(this).attr('id').replace(/rs-/gi, '').replace(/rss-/gi, '');
+        $.ajax({
+            type: "get",
+            cache: false,
+            url: "/include/ajax/rsmore.asp?randomnumber=" + Math.floor(Math.random() * 100000),
+            dataType: "html",
+            success: rssuccess,
+            data: { sid: rstid }
         });
-    </script>
-    <style>
-    .trending-frame{display:none!important}
-    #content .warning{display:none}
-    .author-block{margin-bottom:25px!important}
-    .RAbs {font-size:1em; margin-top:0px; margin-right:0px; margin-bottom:5px; margin-left:1px;line-height:1.5}
-    .toc{padding-bottom:5px;}
-    .toc ul {padding:0;margin:0;list-style:none;}
-    .toc ul li {margin:0;padding:0;	display:block;border:none;}
-    .toc ul li p{margin-bottom:3px;}
-    .toc ul li p.l1 a{color:#333;text-decoration:underline;}
-    .dtoc{text-transform:uppercase;font-size:1em;padding-top:19px;padding-bottom:17px;font-weight:900}
-    .toc img{margin-left:10px; margin-right:10px; margin-bottom:10px;}
-    .toc ul li p.l2 a{color:#333;}
-    .toc ul li p.l3 a{color:#666;}
-    li p.l1 {font-size:1.2em;padding:0;margin:0;}
-    li p.l2 {font-size:1.1em;padding:0;margin:0 0 0 1em;}
-    li p.l3 {font-size:1em;font-style:italic;padding:0;	margin:0 0 0 2em;}
-    #content .toc p.R1{text-transform:none;	font-weight:bold;font-size:1em;	padding-top:0px;padding-bottom:9px;margin:0;}
-    .rsmore{font-size:.84em;line-height:normal;color:#eb4c07;margin-top:10px;margin-bottom:10px;padding:0 0 5px 10px;}
-    .rsmore a:hover, .rsmore a:visited, .rsmore a:active, .rsmore a:link {color:#eb4c07;}
-    .other-link:hover{color: #F49C00!important;text-decoration:underline;}
-    /*news mods*/
-    #content a:not(.toc a):not(.text a):not(.news-title a){color: #007bff;font-weight:600;text-decoration:underline;}
-    #content a:hover:not(.text a):not(.news-title a){color: #F49C00!important;text-decoration:underline;}
-    #content .p1,.P1,.p2,.P2,MsoNormal{font-size:1em;margin:0 1em 1em 0;}
-    #content .Video{font-size:1em;margin:0 0 1em 0;}
-    #content .TCap,.tCap{font-size:.95em;font-style:italic;margin:0 6em 12pt 0;}
-    #content .Image{page-break-after:avoid;font-size:1em;margin:6pt 0 0;}
-    #content .R1, #content h2 {font-size:1.2em;font-weight:bold;margin:20px 0 10px;}
-    #content .R2, #content h3{font-size:1.1em;font-weight:bold;color:#339;font-style:italic;margin:15px 0 10px;}
-    #content h2, #content h3 {line-height: 1.8}
-    #content .Chart{font-size:1em;font-weight:bold;color:#906;margin:15px 0 1px;}
-    #content .TH1{page-break-after:avoid;font-size:1.1em;font-weight:bold;margin:6pt 2.25pt;}
-    #content .TTopL{page-break-after:avoid;font-size:.95em;font-weight:bold;margin:4pt 0 4pt 2.25pt;}
-    #content .TTxtL{page-break-after:avoid;font-size:.95em;margin:3pt 0 3pt 2.25pt;}
-    #content .TTop{text-align:center;page-break-after:avoid;font-size:.95em;font-weight:bold;margin:4pt 0;}
-    #content .Plist{mso-style-name:Plist;mso-style-parent:P1;text-indent:-11.35pt;mso-pagination:none;mso-layout-grid-align:none;font-size:.9em;layout-grid-mode:line;margin:0 1cm 12pt 11.35pt;}
-    #content .TTxt,#content .TTopTxt{text-align:center;page-break-after:avoid;font-size:.95em;margin:3pt 0;}
-    #content .H2,#content .H3,#content .H4{font-size:.8em;font-weight:bold;margin:5px;}
-    #introimg{margin-left:10px; margin-right:10px; margin-bottom:10px;}
-    /*responsive content tables*/
-    #content .inbodytable > thead > tr > th,#content .inbodytable > tbody > tr > th,#content .inbodytable > tfoot > tr > th,#content .inbodytable > thead > tr > td,#content .inbodytable > tbody > tr > td,#content .inbodytable > tfoot > tr > td {padding:4px; margin:0}
-    #content .bottomzero{margin-bottom:0; margin-top:5px;}
-    #content .table-responsive{background:#fff; padding:0; margin-bottom:0;overflow-x: auto;overflow-y:hidden;-ms-overflow-y:hidden; scrollbar-color: #dedede transparent; scrollbar-width: thin;}
-    #content .table-responsive::-webkit-scrollbar { height: 6px;}
-    #content .table-responsive::-webkit-scrollbar-track { border-radius: 10px;}
-    #content .table-responsive::-webkit-scrollbar-thumb { background: #cccccc; border-radius: 10px;}
-    #content .table-responsive::-webkit-scrollbar-thumb:hover { background: #bebebe}
-    #content .table-responsive>.table {border: none;}
-    #content .table-nofluid {width: auto !important;}
-    #content .borderless {border: none;}
-    #content .highlight, h1 .highlight{color: #ff0000;}
-    .frmfld{margin-top:15px;font-size:1em;margin-bottom:40px;text-align:left;background-color: #f0f0f0;border: 1px solid #e9e9e9;padding: 15px;border-radius: var(--border-radius);}
-    .frmfld p{padding-bottom:7px;padding-top:0px;margin:0;}
-    .flist{margin-top:10px;margin-bottom:10px; background-color: #e6e6e6;border: 2px solid #ddd;padding: 15px; border-radius: var(--border-radius);}
-    .flist ul {padding:0;margin:0;list-style:none;}
-    .flist ul li {padding:2px;display:block;margin:0;}
-    .flist ul li.a1 {margin-top:8px;margin-bottom:0px;margin-left:0px;margin-right:0px;padding-bottom:0px}
-    /* styles content.css keep on page*/
-    .news-content-frame .info {display: flex;align-items: center;flex-wrap: wrap;font-size: 14px;font-family: "Open Sans", sans-serif;font-weight: 400;margin: 25px 0px;line-height: 1;}
-    @media screen and (min-width: 768px) {
-        .news-content-frame .info {flex-wrap: nowrap;}
+        function rssuccess(data) {
+            $('#dialog').find(".modal-body").html(data);
+            $('#dialog').modal('show');
+        }
+        return false;
+    });
+	$("#fcountry").change(function() {
+		var cidd=$("#fcountry").val();
+		if (cidd.length>=5){
+			if (cidd.substr(0,3)!="239"){
+				$("#fstateDiv").hide();
+			}else{
+				$("#fstateDiv").show();
+			}
+		}	
+	});
+	$("#fJobLevel").change(function() {
+		var jl=$("#fJobLevel").val();
+		if (jl=="1"){
+			$("#rjl").show();
+			setTimeout(function() { $("#fCompany_Title").focus();}, 50);
+			//$("#fCompany_Title").focus();
+		}else{
+			$("#rjl").hide();
+		}
+	});
+	$("#fJobFunction").change(function() {
+		var jf=$("#fJobFunction").val();
+		if (jf=="1"){
+			$("#rjf").show();
+			setTimeout(function() { $("#fOtherJobs").focus();}, 50);
+			//$("#fOtherJobs").focus();
+		}else{
+			$("#rjf").hide();
+		}
+	});
+	//$("#fIndustry").change(function() {
+		//var ji=$("#fIndustry").val();
+		//if (ji=="1"){
+			//$("#rind").show();
+			//setTimeout(function() { $("#fOtherIndustry").focus();}, 50);
+		//}else{
+			//$("#rind").hide();
+		//}
+	//});
+	
+		$("#fstateDiv").hide();
+	
+	$("#istateDiv").hide();
+	if ($("[name=fAgree]").prop('checked') == false) {
+	    $("#freeemail").addClass('disabled').prop('disabled', true);
+	};
+	$('[name=fAgree]').change(function() {
+	    if(this.checked) {
+	        $("#freeemail").removeClass('disabled').prop('disabled', false);
+	    }else{
+	        $("#freeemail").addClass('disabled').prop('disabled', true);
+	    }
+	});
+	$("#sprofile").submit(function() {
+	    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,})?$/;
+	    var formAction=$('#sprofile').attr('action');
+	    if (formAction.indexOf('?') == -1) {
+	        formAction = formAction+'?gol=nu'
+	    }else{
+	        formAction = formAction+'&gol=nu'
+	    }
+		if ((!emailReg.test($("[name=fEmail]").val())) || ($("[name=fEmail]").val().length == 0)){
+			if ($("[name=fEmail]").val().length == 0){
+				alert ("Email is required!");
+			}else{
+				alert("'"+$("[name=fEmail]").val()+"' entered has a problem. Please check it is correct and includes no spaces or special characters. If in doubt, please email 'subscription@digitimes.com'.");
+			}
+			$("[name=fEmail]").focus();
+			return false;		
+	    } else if ($("[name=fPassword]").val() == "" ) {
+			alert ("Password is missing!");
+			$("[name=fPassword]").focus();
+			return false;
+		} else if ($("[name=fPassword]").val().length<4 ) {
+			alert ("Password is too short (min 4 characters)!");
+			$("[name=fPassword]").focus();
+			return false;
+		} else if ($("[name=fPassword]").val() != $("[name=fReEnter]").val()){
+			alert("Your password confirmation does not match!");
+			$("[name=fReEnter]").focus();
+			return false;
+		} else if ($("[name=fFirst_Name]").val() == "") {
+			alert ("Please input your first name!");
+			$("[name=fFirst_Name]").focus();
+			return false;
+		} else if ($("[name=fSurname]").val() == "") {
+			alert ("Please input your surname!");
+			$("[name=fSurname]").focus();
+			return false;
+		} else if ($("[name=fCompany]").val() == "") {
+		    alert ("Company name is required!");
+		    $("[name=fCompany]").focus();
+		    return false;
+		} else if ($("[name=fIndustry]").val() == "0") {
+		    alert ("Please select industry!");
+		    $("[name=fIndustry]").focus();
+		    return false;
+		} else if ($("[name=fJobFunction]").val() == "0") {
+		    alert ("Please select job title!");
+		    $("[name=fJobFunction]").focus();
+		    return false;
+		} else if ($("[name=fJobLevel]").val() == "0") {
+		    alert ("Please select position level!");
+		    $("[name=fJobLevel]").focus();
+		    return false;
+		} else if ($("[name=fCountry_Ref]").val() =="") {
+		    alert ("Country/region is required!");
+		    $("[name=fCountry_Ref]").focus();
+		    return false;
+		} else if ($("[name=fAgree]").prop('checked') == false) {
+		        alert("You have not agreed to our Terms and Policy");
+		        $("[name=fAgree]").focus();
+		        return false;
+		}
+		//if ($("[name=fIndustry]").val() == "1") {
+		    //if ($("[name=fOtherIndustry]").val() == ""){
+		        //alert ("The primary industry is missing!!");
+		        //$("[name=fOtherIndustry]").focus();
+		        //return false;
+		    //}
+		//}
+		if ($("#fJobFunction").val() == "1") {
+			if ($("[name=fOtherJobs]").val() == ""){
+				alert ("The job title is missing!!");
+				$("[name=fOtherJobs]").focus();
+				return false;
+			}
+		}
+		if ($("#fJobLevel").val() == "1") {
+			if ($("[name=fCompany_Title]").val() == ""){
+				alert ("The position level is missing!!");
+				$("[name=fCompany_Title]").focus();
+				return false;
+			}
+		}
+		$('#sprofile').attr('action',formAction);
+		return true;
+		//$("span").text("Not valid!").show().fadeOut(1000);
+	});
+	$("#flog").submit(function() {
+	    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,})?$/;
+	    if ((!emailReg.test($("[name=EMail]").val())) || ($("[name=EMail]").val().length == 0)){
+	        if ($("[name=EMail]").val().length == 0){
+	            alert ("Email is missing!");
+	        }else{
+	            alert("'"+$("[name=EMail]").val()+"' entered has a problem. Please check it is correct and includes no spaces or special characters. If in doubt, please email 'zoran@digitimes.com'.");
+	        }
+	        $("[name=EMail]").focus();
+	        return false;		
+	    } else if ($("[name=Password]").val() == "") {
+	        alert ("Password is missing!");
+	        $("[name=Password]").focus();
+	        return false;
+	    } else if ($("[name=Password]").val().length < 4) {
+	        alert ("Password is too short (min 4 characters)!");
+	        $("[name=Password]").focus();
+	        return false;
+	    }
+	    return true;
+	});
+	$('.my-input input').filter(function() {
+	    return this.value;
+	}).addClass("hasDefault").parent().addClass("focus");
+	ShowHideInput();
+	function ShowHideInput() {
+	    $('[data-password]').closest('.password-frame').addClass('position-relative').append('<span class="form-password-icon"><svg class="material-icons"><use xlink:href="#visibility-off"></use></svg></span>');
+
+	    $('.form-password-icon').on('click', function() {
+	        var clicks = $(this).data('clicks');
+	        if (clicks) {
+	            $(this).html('<svg class="material-icons"><use xlink:href="#visibility-off"></use></svg>').prevAll(':input').attr('type', 'password');
+	        } else {
+	            $(this).html('<svg class="material-icons"><use xlink:href="#visibility"></use></svg>').prevAll(':input').attr('type', 'text');
+	        }
+	        $(this).data("clicks", !clicks);
+	    });
+	}
+	$('textarea[maxlength]').keyup(function(){  
+        var limit = parseInt($(this).attr('maxlength'));  
+        var text = $(this).val();  
+        var chars = text.length;
+        if(chars > limit){  
+            var new_text = text.substr(0, limit);  
+            $(this).val(new_text);  
+        }  
+	});
+	$.ajax({
+	    type: "get",
+	    cache: false,
+	    url: "/include/ajax/company.json?randomnumber=" + Math.floor(Math.random() * 100000),
+	    dataType: "json",
+	    success: delay(rssuccess,500),
+	    error: function (jqXHR, exception) {
+	        var msg = '';
+	        if (jqXHR.status === 0) {
+	            msg = 'Not connect.\n Verify Network.';
+	        } else if (jqXHR.status == 404) {
+	            msg = 'Requested page not found. [404]';
+	        } else if (jqXHR.status == 500) {
+	            msg = 'Internal Server Error [500].';
+	        } else if (exception === 'parsererror') {
+	            msg = 'Requested JSON parse failed.';
+	        } else if (exception === 'timeout') {
+	            msg = 'Time out error.';
+	        } else if (exception === 'abort') {
+	            msg = 'Ajax request aborted.';
+	        } else {
+	            msg = 'Uncaught Error.\n' + jqXHR.responseText;
+	        }
+	        //alert(msg);
+	    }
+	});
+	function rssuccess(data) {
+	    //alert("here");
+	    var companies = data;
+	    $('.autosuggest').autocomplete({
+	        source: companies,
+	        onSelectItem: onSelectItem,
+	        highlightClass: 'text-danger',
+	        treshold: 3,
+	        maximumItems: 0
+	    });
+	    $('.autosuggestinvoice').autocomplete({
+	        source: companies,
+	        highlightClass: 'text-danger',
+	        treshold: 3,
+	        maximumItems: 0
+	    });
+
+	    //console.log(data);
+	}
+	function delay(callback, ms) {
+	    var timer = 0;
+	    return function () {
+	        var context = this, args = arguments;
+	        clearTimeout(timer);
+	        timer = setTimeout(function () {
+	            callback.apply(context, args);
+	        }, ms || 0);
+	    };
+	}
+	function onSelectItem(item, element) {
+	    //$("input[name=fCompany_Web]").val(item.value);
+	}
+	ShowHideInput();
+	function ShowHideInput() {
+	    $('[data-password]').closest('.password-frame').addClass('position-relative').append('<span class="form-password-icon"><svg class="material-icons"><use xlink:href="#visibility-off"></use></svg></span>');
+	    $('.form-password-icon').on('click', function () {
+	        var clicks = $(this).data('clicks');
+	        if (clicks) {
+	            $(this).html('<svg class="material-icons"><use xlink:href="#visibility-off"></use></svg>').prevAll(':input').attr('type', 'password');
+	        } else {
+	            $(this).html('<svg class="material-icons"><use xlink:href="#visibility"></use></svg>').prevAll(':input').attr('type', 'text');
+	        }
+	        $(this).data("clicks", !clicks);
+	    });
+	}
+});
+</script>
+<style>
+.modal-body {position: relative;overflow-y: auto;padding: 15px;}
+.modal-dialog {overflow-y: initial!important;padding: 0;width: 98%;max-width: 1140px;}
+.itemsubhd:before {background-color:transparent;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 405.272 405.272' fill='black'%3E%3Cpath d='M393.401 124.425L179.603 338.208c-15.832 15.835-41.514 15.835-57.361 0L11.878 227.836c-15.838-15.835-15.838-41.52 0-57.358 15.841-15.841 41.521-15.841 57.355-.006l81.698 81.699L336.037 67.064c15.841-15.841 41.523-15.829 57.358 0 15.835 15.838 15.835 41.514.006 57.361z'%3E%3C/path%3E%3C/svg%3E");background-repeat: no-repeat;background-size: 14px 14px;background-position: center;}
+.itemsubhd:before { content: "";position: relative;display: inline-block;align-items: center;justify-content: center;width: 18px;height: 18px;margin-right:10px;top:2px;color: #000000;}
+.itemsubhd, .tbltxt, .rpublished, .info, .membership {font-size: .9em;}
+.itemsubhd {padding-left:0px;padding-top:0px;}
+.itemhdl{font-size:1.4em;color:#000;padding-bottom:3px;line-height:1.4em;}
+.itemhdl span {	color:#ff0000;display:inline;}
+.lab-p-sm {display: none;}
+.lab-l-sm {display: none;}
+.lab-t-sm {display: none;}
+.lab-br-sm{display:inline;}
+.fix-mg-1{margin:0 10px 10px 0!important;padding:0;}
+select, textarea, input {margin-bottom:3px}
+@media (max-width: 768px) {
+  .lab-p-sm {display: inline;}
+  .lab-br-sm {display:none;}
+  .lab-l-sm {display: inline;}
+  .lab-t-sm {display: inline;}
+  .fix-mg-1{margin:0 0 10px 0!important;padding:0;}
+  .b1{font-size:1.2em!important;}
+  input.form-control{width:auto!important; display:inline;}
+  .fix-mg-2{margin:0!important;padding:0!important;}
+  select, textarea{max-width:300px!important;}
+  .autofield{width:auto!important;}
+  .dspblock{display:block!important;}
+}
+.pd2 ul{padding:0;margin-right:0px;margin-left:5px;margin-top:0;margin-bottom:0;list-style:none;width:90%;}
+.pd2 ul li{font-size:1em;line-height:normal;font-style:italic;color:#666;padding-top:5px;}
+.pd2 ul li.pdsub{font-size:.9em;line-height:normal;font-style:italic;padding-left:15px;color:#666;padding-top:3px;}
+.toc ul {padding:0;margin:0;list-style:none;}
+.toc ul li {margin:0;padding:0;display:block;border:none;}
+.toc ul li p{margin-bottom:3px;}
+.toc ul li p.l1 a{color:#333;text-decoration:underline;}
+#article .Author{font-size:1.1em;font-style:italic;margin-top:0px;padding:6px 15px 7px 0px; color:#666;}
+#article .H1 {font-size:2.4em; line-height:1.2em; font-style:normal;font-weight:bold;color:#000;text-decoration:none;padding:0 5px 0 0;}
+#article .toc p.R1{text-transform:none;font-weight:bold;font-size:1em;padding-top:0px;padding-bottom:9px;margin:0;}
+.dtoc{color:#F49C00;text-transform:uppercase;font-size:.9em;padding-top:5px;padding-bottom:7px;}
+.toc ul li p.l2 a{color:#333;}
+.toc ul li p.l3 a{color:#666;}
+li p.l1 {font-size:1.2em;padding:0;margin:0;}
+li p.l2 {font-size:1em;padding:0;margin:0;}
+li p.l3 {font-size:1em;font-style:italic;padding:0;margin:0;}
+.RAbs { font-size: 1em; margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 1px}
+.toc ul li, .RAbs, .toc {width: 95%;}
+a:link, a:hover, a:visited{color:#000}
+a.rsdlg, a.dsdlg{text-decoration:underline;}
+a.rsdlg:hover, a.rsdlg:visited, a.dsdlg:hover, a.dsdlg:visited{color:#000;}
+.tblhd{font-size:.96em;color:#666;text-align:center;}
+.tbltxttop{color: #000; font-weight:500;}
+.shdl{padding-bottom:3px;font-size:1.4em;border-bottom: 3px solid #ddd;margin-right:15px;color:#F49C00;width:100%;}
+.shdl .icon{width: 24px;height: 24px; margin-right: 5px; margin-bottom:-5px;}
+.b2{margin-bottom:10px!important;margin-right:10px!important}
+.b3{text-align:right;padding-right:10px!important;}
+.shadow-d1{-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);-moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
+.pm-0 {padding: 0!important;margin: 0!important;}
+.lhd {padding-bottom: 3px;font-size: 1.5em; margin-right: 15px;color: #000;width: 100%; font-weight: 500;}
+.rfix-4{padding-left:15px!important;}
+@media screen and (max-width: 768px) {
+.rfix-1{margin-left:0px}
+.rfix-2{margin-top:15px!important}
+.rfix-4{padding-left:0!important}
+}
+.rfix-3{margin:10px 0px;}
+.b4{background-color:#fff;padding:15px;}
+#rjl, #rjf, #rind{display:none; margin:0; padding:0;}
+.regreq{font-size:1em; color:#F49C00;}
+.reginfo{font-size:0.9em; color:#999; padding:7px 0;}
+/*information css*/
+.information-frame {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 500px) {
+  .information-frame {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    box-shadow: var(--frame-shadow);
+    border-radius: var(--border-radius);
+  }
+}
+@media screen and (min-width: 500px) {
+  .my-container {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .information-frame {
+  }
+}
+@media screen and (min-width: 992px) {
+  .information-frame {
+  }
+}
+@media screen and (min-width: 1200px) {
+  .information-frame {
+  }
+}
+.information-frame .main-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .information-frame .main-title {
+    font-size: 34px;
+  }
+}
+.information-frame .main-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #333333;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -25px;
+}
+.information-frame .content {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.information-frame .content ul {
+}
+/* not to use
+.information-frame .content a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.information-frame .content a:hover {
+  color: #F49C00;*/
+
+/*information mods*/
+.information-frame .content a:hover:not(.btn) {
+  color: #F49C00;
+}
+.information-frame .content a.uln:hover {
+  color: #F49C00;
+  text-decoration:underline;
+}
+@media screen and (max-width: 500px) {
+    .information-frame {
+        background-color: #ffffff;
+        padding: 20px 20px;
     }
-    .news-content-frame .info .author, .news-content-frame .info .date {flex: 0 0 100%;max-width: 100%;margin-bottom: 10px;}
-    @media screen and (min-width: 768px) {
-        .news-content-frame .info .author, .news-content-frame .info .date {flex: 0 1 auto;max-width: none;margin-bottom: 0px;}
+}
+/*alert*/
+.information-frame .warning {
+  display: flex;
+  align-items: flex-start;
+  background-color: #DC3545;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin: 10px 0px;
+}
+.information-frame .warning .text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: -2px;
+}
+.information-frame .warning .text a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.information-frame .warning .text a:hover {
+  color: #ffffff;
+}
+.icon-plus {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z'%3E%3C/path%3E%3C/svg%3E");
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  margin-right:5px;
+}
+
+.icon-minus{
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M0 10h24v4h-24z'%3E%3C/path%3E%3C/svg%3E");
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  margin-right:5px;
+}
+.form-inline label{align-items:flex-end!important;justify-content:flex-end!important;text-align:end}
+@media screen and (max-width: 576px) {.form-inline label {text-align: start;} input.form-control.wauto, select.form-control.wauto{width:100%!important; display:inline;} select, textarea{max-width:280px!important;}
+}
+/*tabs mods*/
+.tab-frame{margin:0; width:auto}
+.tab-item-container{margin-left:10px;margin-right:10px; margin-top:5px;}
+.tab-frame .text {margin-bottom: -4px; font-size:20px;}
+/*subject mods*/
+.subject-title .text{font-size:16px;}
+.subject-title{margin-top:0;}
+.subject-title:before, .subject-title .text:before {
+  height: 1px;
+  background-color: #dee2e6;
+}
+/*dropdown mods*/
+.dropdown-item{text-decoration:none!important;font-weight: 400!important;}
+.dropdown-menu{transform: translate3d(5px, 35px, 0px)!important;z-index: 9;max-height: 400px; overflow-y: auto;}
+.callout {padding: 20px; margin: 20px 0; border: 1px solid #eee; border-left-width: 5px; border-radius: 3px;}
+.callout-danger {border-left-color: #d9534f;}
+.form-flex{display: flex;}
+/*login css*/
+.login-frame {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .login-frame {
+    display: flex;
+  }
+}
+.login-frame .main-title {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.login-frame .main-title .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.login-frame .sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.login-frame .login-form {
+  padding: 20px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+.login-frame .login-form .my-checkbox {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.login-frame .login-form .autologin-content .panel-body {
+  padding: 15px 15px 15px 15px;
+  font-size: 15px;
+  background-color: #f0f0f0;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+.login-frame .login-form .sign-in {
+  text-align: center;
+}
+.login-frame .login-form .sign-in .my-button {
+  width: 100%;
+}
+.login-frame .login-form .sign-in .my-button .icon {
+  position: absolute;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .login-frame .login-form .sign-in {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login-frame .info-frame {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top:0;
+    padding: 20px 20px;
+  }
+}
+.login-frame .info-frame {
+display:flex;
+margin-top:0;
+padding: 0px 20px;
+}
+
+.login-frame .info-frame .text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.login-frame .info-frame .other-action {
+        padding-top: 10px;
+        margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+    .login-frame .info-frame .other-action {
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 14px;
     }
-    .news-content-frame .info .separate {border-right: 2px solid #999999;height: 16px;margin: 0px 20px;display: none;}
-    @media screen and (min-width: 768px) {
-        .news-content-frame .info .separate {display: inline-block;}
-    }
-    .news-content-frame .warning {display: flex;align-items: flex-start;background-color: #DC3545;padding: 15px;border-radius: var(--border-radius);margin: 20px 0px;}
-    .news-content-frame .warning .text {color: #ffffff;font-size: 14px;font-family: "Open Sans", sans-serif;font-weight: 400;line-height: 1.4;margin-top: -2px;}
-    .news-content-frame .warning .text b {font-weight: 800;}
-    .news-content-frame .warning .text a {color: #2e2e2e!important;font-weight: 600;text-decoration: underline;}
-    .news-content-frame .warning .text a:hover {color: #ffffff!important;}
-    .news-content-frame .warning .icon {min-width: 16px;width: 16px;height: 16px;margin-right: 10px;}
-    .news-content-frame .main-title h1 {font-size: 28px;font-weight: 600;margin-bottom:30px;}
-    @media screen and (min-width: 768px) {
-        .news-content-frame .main-title h1 {font-size: 34px;}
-    }
-    .news-content-frame .content {margin-top: 20px;margin-bottom: 40px;width: 100%;font-size: 16px;font-family: "Open Sans", sans-serif;font-weight: 400;line-height: 1.8;}
-    /*range mod frome site css*/
-    .range-noborder{border:none; box-shadow:none;padding:5px 5px 5px 15px;margin-top:10px;}
-    /*text a mod frome content css*/
-    .news-content-frame .warning .text a {color: #ffffff!important;}
-    .news-content-frame .caption {font-size:.95em;font-style:italic;padding-bottom: 7px; margin: 6pt 0 12pt 0; text-align:right; border-bottom: 1px solid #e9e9e9; width:100%;}
-    #pno-promotion{position: fixed;right: 0px;bottom: 10px;width: 350px;z-index:9999!important;}
-    .sc-container {font-family: "Open Sans", sans-serif;font-size:1em;line-height:1.4;overflow: scroll;max-height:350px;}
-    /* custom scrollbar */
-    .sc-container::-webkit-scrollbar {width: 20px;}
-    .sc-container::-webkit-scrollbar-track {background-color: transparent;}
-    .sc-container::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;border: 6px solid transparent;background-clip: content-box;}
-    .sc-container::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}
-    .sc-max{height:70%}
-    .sh-height{height:320px}
-    @media screen and (max-width: 992px) {
-        .sc-max{height:150px}
-        .sc-container {margin-top:0px;margin-bottom:0px;}
-    }
-    /*toc mods*/
-    li p.l1, li p.l2, li p.l3{font-size:1em!important; margin-left:0!important;font-style:normal!important}
-    li p.l2 {font-size:0.9em!important;font-style:italic!important;padding-left:8px!important;}
-    .toc li{list-style:none!important; padding:3px}
-    .block{cursor:default!important}
-    .report-packages .container .packages-block .package .option-block .item {border-bottom:none!important;}
-    .report-packages .container .packages-block .package .option-block .item.pb {padding-bottom:12px;}
-    .report-packages .container .packages-block .package .option-block .sub-item {display: flex;align-items: center;justify-content: space-between;padding: 0 8px 12px 8px;}
-    .report-packages .container .packages-block .package .option-block .sub-item label {display: flex;align-items: center;justify-content: flex-start;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox] {cursor: pointer;appearance: none; -webkit-appearance: none;-moz-appearance: none;height: 20px;width: 20px;background-color: #ffffff;border-radius: 4px;border: 1px solid #D9D9D9;display: flex;align-items: center;justify-content: center;position: relative;}
-    .report-packages .container .packages-block .package .option-block .sub-item label .desc {margin-left: 8px;font-size: 13px;color: #7f7f7f;text-align: left;}
-    .report-packages .container .packages-block .package .option-block .sub-item .dollar {white-space: nowrap;font-size: 12px;}
-    .report-packages .container .packages-block .package .option-block .sub-item.selected .desc {color: #575757;font-weight: 700;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]::after {content: "";background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>');background-repeat: no-repeat;background-size: 20px;background-position: center;height: 12px;width: 12px;color: black;display: none;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked {background-color: white;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked:after {display: block;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:checked::before {background-color: #F49C00;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:disabled {background-color: #f0f0f0;border-color: #f0f0f0;cursor: not-allowed;}
-    .report-packages .container .packages-block .package .option-block .sub-item label input[type=checkbox]:disabled:checked::after {color: #f0f0f0;}
-    @media (max-width: 768px) {
-        .report-packages .container .report-block .main {padding:25px 25px;}
-    }
-    .uln:hover{color: #F49C00;}
-    </style>
-    <script defer type="text/javascript" src="/reports/js/bradcrumble.js"></script>
+}
+.login-frame .info-frame .other-action .wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.login-frame .info-frame .other-action .wrapper:last-child {
+  margin-bottom: 8px;
+}
+.login-frame .info-frame .other-action .wrapper .icon {
+  min-width: 15px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.login-frame a:hover {
+  color: #F49C00;
+}
+.password-frame.position-relative input {padding-right: 32px;}
+.form-text~.form-password-icon {bottom: calc(1rem + 18px);}
+.form-password-icon .material-icons {width: 17px;height: 17px;margin-left:-10px;margin-bottom:5px;margin-right:5px;margin-top:1px;}
+.form-password-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 8px;
+  color: rgba(0, 0, 0, .54);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  right: 0;
+  width: 24px;
+  z-index: 2;
+}
+</style>
 <meta name='cXenseParse:pageclass' content='frontpage' />
 </head>
 <body>
+<svg width="0" height="0" style="display: block">
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="visibility"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="#777"/></symbol>    
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="visibility-off"><path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z" fill="#777"/></symbol>
+</svg>
 <svg width="0" height="0" style="display: block">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 47" id="digitimes-logo-white">
         <path d="M283.44 37.4c-4.45 0-9.52-.98-12.67-1.86-.12.52-1.65 7.57-1.74 8.01 4.02 1.68 9.33 2.69 14.26 2.69 13.84 0 16.47-4.51 16.47-12.83 0-7.33-.58-9.97-11.87-11.98-6.83-1.22-7.53-1.65-7.53-4.62 0-2.61 1.27-3.08 4.86-3.08 3.63 0 7.85.47 12.18 1.35.07-.52 1.16-8.08 1.23-8.54-3.93-1.06-9.83-1.64-13.49-1.64-11.15 0-15.69 3.33-15.69 11.51 0 6.87.77 11.18 11.39 12.9 7.35 1.17 7.99 1.82 7.99 4.62.01 2.71-1.2 3.47-5.39 3.47zM172.84 5.69h-10.92v39.77h10.92V5.69zM86.89 46.24c5.32 0 11.03-.76 16.09-2.12V24.55h-9.83v12.06l-.25.03c-2.12.26-4.04.39-6.01.39-3.94 0-5.7-1.54-5.7-5.01V19.06c0-3.39 1.66-4.78 5.7-4.78 3.82 0 9.63.57 13.96 1.06.06-.52.97-8.59 1.02-9.07-5.14-.91-10.04-1.36-14.98-1.36-11.18 0-16.63 4.04-16.63 12.37v16.51c0 8.38 5.45 12.45 16.63 12.45zM62.03 5.69H51.11v39.77h10.92V5.69zm74.98 40.14h10.32V9.15h11.1V0H125.9v9.15h11.11v36.68zM.98 27.78c.66.13 6.97.97 6.97.97l.8 4.86h8.62v-9.15H.98c-.46 0-.98.31-.98 1.61.01 1.3.31 1.58.98 1.71zm7.77 18.05h19.18c11.29 0 15.49-5.78 15.49-11.9V11.91C43.42 5.72 39.22 0 27.93 0H.98C.52 0 0 .3 0 1.61c0 1.3.3 1.58.98 1.71.66.12 6.97.97 6.97.97l.8 4.85h17.94c5.16 0 6.41 2 6.41 5.58v16.37c0 3.58-1.24 5.58-6.41 5.58H.98c-.46 0-.98.31-.98 1.61 0 1.31.3 1.59.98 1.71.66.13 6.97.98 6.97.98l.8 4.86zm-.8-29.3l.8 4.85h8.62v-9.14H.98c-.46 0-.98.3-.98 1.61 0 1.3.3 1.59.98 1.71.66.12 6.97.97 6.97.97zm207.88 9.42l.76 19.51h10.52c-.02-.57-2.03-39.25-2.05-39.77h-10.65c-.14.34-10.19 24.02-10.19 24.02S194.18 6.03 194.03 5.69h-10.64c-.03.52-2.03 39.2-2.07 39.77h10.54l.75-19.43.55-.11s6.22 14.24 6.36 14.57h9.42c.13-.33 6.37-14.64 6.37-14.64l.52.1zm47.26 10.92H245.4v-7.31h16.29v-8.6H245.4v-6.68h17.69V5.69h-28.6v39.77h28.6v-8.59zM121.88 5.69h-10.91v39.77h10.91V5.69z" fill="#fff"></path>
@@ -628,7 +1057,8 @@
           </div>
           <form class="search-input-form" role="form" method="post" action="/search/results.asp" name="searchform" id="sfrm"><input type="hidden" name="h" value="0" /><input type="hidden" name="f" value="0" /><input type="hidden" name="s" value="18" /><input type="hidden" name="b" value="1" /><input type="hidden" name="a2" value="35" /><input type="hidden" name="b2" value="1" /><input type="hidden" name="s2" value="2" /><input type="hidden" name="a" value="" /><input type="hidden" name="o" value="4" /><input type="hidden" name="ch" value="18" /><input type="text" class="search-input" placeholder="Search" name="p" /><button type="submit" class="submit-btn"><svg><use xlink:href="#search-icon"></use></svg></button></form>
           <a class="subscribe" href="/register/"><svg><use xlink:href="#tap-icon"></use></svg> SUBSCRIBE</a>
-                    <div class="my-menu profile">
+          
+          <div class="my-menu profile">
             <svg><use xlink:href="#user-icon"></use></svg>
             <menu class="menu-frame">
               <li class="menu-item"><a class="link" href="/newregister/myaccount.asp?view=general">My account</a></li>
@@ -636,7 +1066,7 @@
               <li class="menu-item"><a class="link" href="/register/setprofile.asp?pkg=1" id="pno-signup">Sign up</a></li>		
             </menu>
           </div>
-               
+                    
         </section>
       </div>
     </div>
@@ -658,6 +1088,7 @@
                   <li class="item"><a class="link" href="/topic/displays/">Displays</a></li>
                   <li class="item"><a class="link" href="/topic/electric_vehicles/">Electric Vehicles</a></li>
                   <li class="item"><a class="link" href="/topic/sustainability/">Sustainability</a></li>
+                  <li class="item"><a class="link" href="/topic/aerospace/">Aerospace</a></li>
                 </ul>
               </menu>
             </li>
@@ -669,14 +1100,14 @@
                   <li class="item"><a class="link" href="/regions/index.php?cat=560">East Asia</a></li>
                   <li class="item"><a class="link" href="/regions/index.php?cat=561">Southeast Asia</a></li>
                   <li class="item"><a class="link" href="/regions/index.php?cat=562">South Asia</a></li>
-                  <li class="item"><a class="link" href="/regions/index.php?cat=705">Middle East</a></li>
+		  <li class="item"><a class="link" href="/regions/index.php?cat=705">Middle East</a></li>
                   <li class="item"><a class="link" href="/asia/asc100/">AsiaTech Frontier</a></li>
                 </ul>
               </menu>
             </li>
             <li class="main-link">
               <a href="/reports/" class="main-title">RESEARCH</a>
-            </li>
+            </li>            
             <li class="main-link">
               <a href="/opinions/" class="main-title">OPINIONS</a>
               <menu>
@@ -732,7 +1163,8 @@
 <a class="link" href="/reports/2025_ntn_convergence/">NTN Convergence</a>
 <a class="link" href="/reports/ai/2025_robots/">Robotics Report</a>
 <a class="link" href="/reports/ai/2025_ai_chip_packaging/">Advanced Packaging</a>
-</div>	<div class="mobile-header" id="mobile-header">
+</div>
+	<div class="mobile-header" id="mobile-header">
 		<span class="action-icon" id="menu-btn"><svg class="icon"><use xlink:href="#menu-icon"></use></svg></span>
 		<a class="brand-logo" href="/"><svg><use xlink:href="#digitimes-asia-logo-white"></use></svg></a>
 		<span class="action-icon search-btn" id="search-btn-mobile"><svg class="icon"><use xlink:href="#search-icon"></use></svg></span>
@@ -763,195 +1195,160 @@
           <a href="https://www.linkedin.com/company/digitimes/" target="_blank"><svg class="icon"><use xlink:href="#linkedin"></use></svg></a>
           <a href="https://twitter.com/DIGITIMESAsia" target="_blank"><svg class="icon"><use xlink:href="#twitter"></use></svg></a>
           <a href="https://www.instagram.com/DIGITIMESAsia/" target="_blank"><svg class="icon"><use xlink:href="#instagram"></use></svg></a>
-					<a href="https://www.youtube.com/@DigitimesAsia" target="_blank"><svg class="icon"><use xlink:href="#youtube"></use></svg></a>
-					<a href="mailto:subscription@digitimes.com" target="_blank"><svg class="icon"><use xlink:href="#mail"></use></svg></a>
+					<a href="https://www.youtube.com/@DIGITIMES" target="_blank"><svg class="icon"><use xlink:href="#youtube"></use></svg></a>
+					<a href="mailto:scription@digitimes.com" target="_blank"><svg class="icon"><use xlink:href="#mail"></use></svg></a>
         </div>
       </div>
-      	  </div>
+      
+	  </div>
   </div>
-</header><div class="research-submenu" id="research-submenu">
-        <div class="digitimes-research"></div>
-        <ul class="link-group">
-            <li>
-                <a href="/reports/">
-                    <div class="icon icon__home"></div> Home
-                </a>
-            </li>
-            <li class="link-item">
-                <a href="/reports/list.php?cat=0">Reports</a>
-                <menu>
-                    <ul class="block">
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=626">AIoT</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=36">Notebooks</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=606">Semiconductor</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=485">Servers</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=279">Smart Devices</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="/reports/list.php?cat=283">More Topics</a>
-                        </li>
-                    </ul>
-                </menu>
-            </li>
-
-            <li>
-                <a href="/reports/research.php">Meet the Analysts</a>
-            </li>
-            <li>
-                <a href="/reports/data/">TechStats</a>
-            </li>
-        </ul>
-    </div>
-    <style>.research-submenu .link-group .link-item menu .item .link {font-weight:400!important;}</style><div class="gotop">
+</header>
+<div class="gotop">
 	<svg class="icon"><use xlink:href="#arrow-icon-white"></use></svg>
 </div>
-<div class="reports-breadcrumbs">
-    <div class="container">
-        <ul>
-            <li class="item"><a class="link" href="/reports/">Home</a></li>
-            <li class="item"><a class="link" href="/reports/list.php?cat=0">Research</a></li>
-                        <li class="item"><a class="link" href="/reports/list.php?cat=606">Semiconductor</a></li>
-                    </ul>
-    </div>
-</div>
-
-<!--report-packages-block-->
-<div class="report-packages">
-    <div class="container">
-        <div class="report-block">
-            <div class="main">
-                <div class="wrapper news-content-frame">
-				    <div class="main-title"><h1>Qualcomm cloud AI ASIC business strategy</h1></div>
-                    <div class="author-block">
-                                                                                    <a href="/reports/analysts.php?rid=727"><img class="portrait" alt="Joyce Chen" src="https://img.digitimes.com/tw/x/img/viewpoint/orange/b21201a.jpg"></a><div class="author-name"><a class="uln underline" href="/reports/analysts.php?rid=727" style="color:#939090!important">Joyce Chen</a>, Analyst</div>
-                                                        <div class="social-media-group">
-                                <a class="link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.digitimes.com/reports/item.php?id=2025121600401" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#facebook-icon-squared"></use>
-                                    </svg>
-                                </a>
-                                <a class="link" href="https://twitter.com/intent/tweet?url=https://www.digitimes.com/reports/item.php?id=2025121600401&text=Qualcomm+cloud+AI+ASIC+business+strategy" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#twitter-icon-squared"></use>
-                                    </svg>
-                                </a>
-                                <a class="link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.digitimes.com/reports/item.php?id=2025121600401" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#linkedin-icon-squared"></use>
-                                    </svg>
-                                </a>
-                                <a class="link" href="/newsshow/emailnews.asp?datePublish=2025/12/16&pages=RS&seq=401">
-                                    <svg class="icon">
-                                        <use xlink:href="#mail-icon-squared"></use>
-                                    </svg>
-                                </a>
+<div class="my-container">	
+	<div class="information-frame" id=register>
+    	<div class="content">
+			
+                <ul class="nav nav-tabs tab-frame d-flex flex-nowrap"><li class="nav-item"><a class="nav-link text " id="logonid" data-toggle="tab" href="#logon" role="tab" aria-controls="logon" aria-selected="true">LOGIN</a></li><li class="nav-item"><a class="nav-link text  active" id="signupid" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="true">SIGN UP</a></li></ul>
+                <div class="tab-content" id="acountsignup">
+                <div class="tab-pane fade " id="logon" role="tabpanel" aria-labelledby="logon-tab"><div class="tab-item-container">
+				
+                        <div class="login-frame">
+                            <form name="flog" id="flog" class="login-form" method="post" action="setprofile.asp?tab=login" novalidate>
+		                        <div class="my-input">
+			                        <svg class="icon"><use xlink:href="#mail-icon"></use></svg>	
+			                        <input type="text" name="EMail" maxlength="60" value="" autocorrect="off" autocapitalize="off">
+			                        <label class="input-label">
+				                        Email address
+			                        </label>
+                                </div>
+                                <div class="my-input mt-15 password-frame">
+        	                        <svg class="icon"><use xlink:href="#password-icon"></use></svg>
+        	                        <input type="password" name="Password" maxlength="40" placeholder="●●●●●●●●" data-password>
+        	                        <label class="input-label">
+        		                        Password
+        	                        </label>
+                                </div>
+                                <div class="mt-15">
+        	                        <label class="my-checkbox">
+        		                        <a class="underline" href="javascript:void(0)" data-toggle="collapse" data-target="#autologin-panel">Save my User ID and Password</a>   		
+				                        <input type="checkbox" name="SaveID" value="1">
+				                        <span class="checkmark"></span>
+			                        </label>
+			                        <div id="autologin-panel" class="collapse autologin-content">
+	                                    <div class="panel panel-default">
+	                                        <div class="panel-body">
+	                	                        <p><b>Save my User ID and Password</b></p><p>Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Save my User ID and Password' box in the log-in section. This will save the password on the computer you're using to access the site.</p>
+	                	                        <div><b>Note:</b> <i>If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.</i></div>
+	                                        </div>
+	                                    </div>
+	                                </div>  	
+                                </div>
+                                <div class="sign-in">
+        	                        <button type="submit" name="btnaction"  value="Login" class="my-button round digi-color">
+        		                        SIGN IN
+        		                        <svg class="icon"><use xlink:href="#arrow-icon-tail-white"></use></svg>
+        	                        </button>
+                                </div>
+                            </form>
+                            <div class="info-frame">
+                                <div class="other-action">
+        	                        <div class="wrapper">
+        		                        <svg class="icon"><use xlink:href="#info-icon"></use></svg>
+        	 	                        <div class="text">NEW individual users please <b>SIGN UP</b> first.</div>
+        	                        </div>
+        	                        <div class="wrapper">
+        		                        <svg class="icon"><use xlink:href="#info-icon"></use></svg>
+        	 	                        <div class="text">Enterprise user first-time <a href="/register/enterprise.asp" class="underline" target="_blank"><b>LOGIN</b></a>.</div>
+        	                        </div>
+        	                        <div class="wrapper">
+        		                        <svg class="icon"><use xlink:href="#question-icon"></use></svg>
+        	 	                        <div class="text"><a href="/newregister/userinfo.asp" class="underline" target="_blank">What's my password?</a></div>
+        	                        </div>
+                                </div>       
+	                        </div>
+                        </div>
+				    
+                </div></div>
+                <div class="tab-pane fade  show active" id="signup" role="tabpanel" aria-labelledby="signup-tab"><div class="tab-item-container">
+				
+                    <div id="sprfl" class="form-horizontal" style="padding-top:25px;">
+                        <form name="sprofile" method="post" action="setprofile.asp?tab=signup" id="sprofile" style="margin:0; padding:0;">
+                        <div id="regtable">
+                            
+                            <div class="form-group form-inline">
+                                <label for="inputID" class="col-sm-3 col-md-3 control-label">User ID</label>
+                                <div class="col-sm-9 col-md-9"><input type="text" name="fEmail" size="30" maxlength="60" value="" class="form-control wauto" placeholder="Business email"></div>
                             </div>
-
-                                                        <div class="fb-like" data-href="https://www.digitimes.com/reports/item.php?id=2025121600401" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
-                                            </div>
-                    
-				    <div class="content" id="content">
-                        <div class="RAbs">Qualcomm advances from edge to cloud AI ASIC, challenging the existing cloud computing power supply chain landscape.</div><div class="toc"><div class="dtoc">Abstract</div><p class="P1">DIGITIMES observes that Qualcomm has strengthened its capabilities in self-developed CPUs, cross-platform integration, and cloud AI-oriented application-specific integrated circuits (ASICs) through a series of acquisitions. This strategy allows Qualcomm to gradually extend its AI deployments from the edge to the cloud, shifting from traditional system-on-chip (SoC) architectures toward more flexible, modular designs.</p><div id="article-lock-inline"></div>
-<p class="P1">Over the long term, this approach positions Qualcomm to challenge the high-end cloud AI accelerator market; however, whether it can penetrate the mainstream remains uncertain. Key determinants include the maturity of high-speed interconnect and chiplet integration technologies, as well as cloud service providers' (CSPs) willingness to adopt non-GPU and proprietary computing platforms.</p>
-<p class="P1">Although mobile business has long accounted for the majority of Qualcomm's revenue, slowing demand has prompted the company to actively pivot toward AI PCs, automotive, Internet of Things (IoT), and cloud AI ASIC deployments.</p></div><div class="clear-both"></div><div class="outnow" style="width:100%"><div class="dtoc">Table of contents</div><div class="outline sc-container"><div class="toc"><ul><li><p class=l1><a href="#1">Introduction</a></p></li><li><p class=l2><a href="#2">Qualcomm revenue structure</a></p></li><li><p class=l2><a href="#3">Chart 1: Qualcomm revenues by business, 1Q23-3Q25 (US$m)</a></p></li><li><p class=l2><a href="#4">Qualcomm acquisitions</a></p></li><li><p class=l2><a href="#5">Chart 2: Three key transformation strategies via six major acquisitions in five years</a></p></li><li><p class=l1><a href="#6">Qualcomm Oryon processor</a></p></li><li><p class=l2><a href="#7">In-house IP deployment</a></p></li><li><p class=l2><a href="#8">Chart 3: Four phases of Qualcomm in-house processor core development</a></p></li><li><p class=l2><a href="#9">Key factors driving Oryon development</a></p></li><li><p class=l2><a href="#10">Chart 4: Three key factors prompting Qualcomm to restart Oryon R&amp;D</a></p></li><li><p class=l2><a href="#11">Multi-platform architecture integration</a></p></li><li><p class=l2><a href="#12">Chart 5: Timeline of Qualcomm's Oryon multi-platform architecture integration</a></p></li><li><p class=l1><a href="#13">Acquisitions and deployment</a></p></li><li><p class=l2><a href="#14">Deployment of edge and cloud ASIC</a></p></li><li><p class=l2><a href="#15">Chart 6: Qualcomm from acquisitions to build edge devices and then CSP ASIC solutions</a></p></li><li><p class=l2><a href="#16">Cloud AI ASIC</a></p></li><li><p class=l2><a href="#17">Chart 7: Qualcomm acquisition of Alphawave for cloud AI ASIC</a></p></li><li><p class=l2><a href="#18">Cloud inference deployment</a></p></li><li><p class=l2><a href="#19">Chart 8: Qualcomm strategy for cloud inference market</a></p></li><li><p class=l2><a href="#20">Product lineup</a></p></li><li><p class=l2><a href="#21">Chart 9: Qualcomm product lineup for edge devices, inference and AI training ASIC</a></p></li><li><p class=l1><a href="#22">Summary</a></p></li><li><p class=l2><a href="#23">Chart 10: Summary of Qualcomm's strategies for AI</a></p></li></ul></div></div></div>				    </div>
-                </div>
-            </div>
-        </div>
-        <div class="packages-block">
-                            <p class="minor-title">
-                                                    <span class="icon icon__download"></span> Download full report (<a href="/newregister/join.asp" class="uln underline">subscription required</a>)
-                                </p>
-                <p class="minor-title">
-                    <span class="icon icon__gear"></span>
-                    Published: 
-                    January 5, 2026                </p>
-                                    <p class="center">Pick an option that is right for you</p>
-                                            <form name="checkout" method="post" action="/register/checkout.asp" id="checkout" style="margin:0; padding:0;">
-                        <div class="package package__single"><div class="block"><h5>Single Report</h5></div><ul class="option-block"><li class="item" style="padding-bottom:3px"><label for="option1"><input type="radio" name="option" value="rs-20251216RS401" id="option1"><div class="desc">Single user license</div></label><span class="dollar">US$700</span></li><li class="item" style="padding-bottom:3px"><label for="option2"><input type="radio" name="option" value="rs-20251216RS401-B" id="option2"><div class="desc">Team license</div></label><span class="dollar">US$1,050</span></li><li class="item" style="padding-bottom:15px"><label for="optiondisable"><input type="radio" name="optiondisable" value="rs-20251216RS401-C" id="optiondisable" disabled style="background-color:#ccc!important;"><div class="desc">Enterprise license</div></label><span class="dollar"><a href="/register/corporate.php" class="uln underline">Contact sales</a></span></li></ul></div>                        <div class="package package__recommended"><div class="recommended">Recommended</div><div class="block" id="tooltip-trigger"><h5>Annual Semiconductor subscription</h5></div><ul class="option-block"><li class="item pb"><label for="option3"><input type="radio" name="option" value="pid-10" id="option3" autocomplete="off"><div class="desc">Single user license</div></label><span class="dollar">US$5,700</span></li><li class="sub-item"><label for="option11"><input type="checkbox" name="addon" value="5" id="option11"><div class="desc">IC Manufacturing Database<br/>(add-on service)</div></label><span class="dollar">US$3,000</span></li><li class="sub-item"><label for="option12"><input type="checkbox" name="addon" value="4" id="option12"><div class="desc">Fabless Database<br/>(add-on service)</div></label><span class="dollar">US$3,000</span></li></ul></div>                        <button class="add-to-cart">Check out</button>
-                        <div class="empty empty__20"></div>
+                            <div class="form-group form-inline">
+                                <label for="inputPassword" class="col-sm-3 col-md-3 control-label">Password</label>
+                                <div class="col-sm-9 col-md-9 form-flex"><div class="password-frame"><input type="password" name="fPassword" size="20" maxlength="40" value="" class="form-control wauto" data-password></div> <span class="reginfo d-none d-md-block" style="padding-top:15px; padding-left:5px;">(min&nbsp;4&nbsp;characters)</span></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputReenter" class="col-sm-3 col-md-3 control-label">Re-enter</label>
+                                <div class="col-sm-9 col-md-9 form-flex"><div class="password-frame"><input type="password" name="fReEnter" size="20" maxlength="40" value="" class="form-control wauto" data-password></div></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputName" class="col-sm-3 col-md-3 control-label">Name</label>
+                                <div class="col-sm-9 col-md-9"><input type="text" name="fFirst_Name" size="10" maxlength="30" placeholder="First/Given" value="" class="form-control" style="margin-right:10px;"><input type="text" name="fSurname" size="10" maxlength="20" value="" class="form-control" placeholder="Surname"></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputCompany" class="col-sm-3 col-md-3 control-label">Company</label>
+                                <div class="col-sm-9 col-md-9"><input type="text" name="fCompany" size="20" maxlength="100" value="" class="form-control dspblock wauto autosuggest"></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputIndustry" class="col-sm-3 col-md-3 control-label">Industry</label>
+                                <div class="col-sm-9 col-md-9"><select name="fIndustry" id="fIndustry" class="form-control wauto"><option value="0">Select</option><optgroup label="Technology"><option value=11>Software & Cloud/IT/ Info. Security Services</option><option value=8>Telecommunication Services</option><option value=12>Tech Products and Equipments</option><option value=6>Tech Product Distributors</option><option value=18>Consumer Electronics</option><option value=15>Semiconductors</option><option value=16>Semiconductor Equipment</option><option value=20>Display/Optoelectronic Materials & Components</option><option value=21>Passive Components</option><option value=22>PCB</option><option value=46>Other Electronic Components</option><option value=7>Semiconductor & Electronic Components Distributors</option><option value=23>Electronics Instruments</option></optgroup><optgroup label="Vehicle"><option value=24>Automobile Manufacturers</option><option value=25>Motorcycle Manufacturers</option><option value=5>Automobile & Motorcycle Parts & Equipment</option></optgroup><optgroup label="Industry"><option value=26>Industrial Machinery</option><option value=4>Health Care Equipment</option><option value=27>Health Care Materials</option><option value=28>Pharmaceuticals & Biotechnology</option><option value=29>Aerospace & Defense</option><option value=30>Metals</option><option value=31>Chemicals</option><option value=32>Textiles & Apparel</option><option value=33>Food & Beverage</option><option value=34>Consumer Staples</option><option value=10>Energy & Power</option><option value=1>Other Industries</option></optgroup><optgroup label="Argiculture"><option value=45>Agricultural Products</option><option value=35>Agricultural Machinery/Technology</option></optgroup><optgroup label="Service"><option value=2>Media</option><option value=36>Entertainment</option><option value=19>Financials</option><option value=37>Education & Research Institutes</option><option value=17>Professional Services/Market Research</option><option value=38>Health Care Services</option><option value=39>Transportation & Logistics</option><option value=40>Wholesale & Retail</option><option value=41>Hotels, Restaurants & Leisure</option><option value=42>Real Estate</option><option value=43>Other Services</option><option value=3>Government</option><option value=44>Associations/Foundations</option></optgroup></select></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputJob" class="col-sm-3 col-md-3 control-label">Job title</label>
+                                <div class="col-sm-9 col-md-9"><select name="fJobFunction" id="fJobFunction" class="form-control wauto"><option value="0">Select</option><option value=3>Executive</option><option value=4>Sales&Marketing</option><option value=13>Software programmer</option><option value=2>Engineer</option><option value=12>Product manager</option><option value=8>Procurement</option><option value=14>Finance/Accounting</option><option value=16>HR/Training</option><option value=7>Legal</option><option value=10>Editor/Reporter</option><option value=15>Analyst</option><option value=11>Consultant</option><option value=5>Investment professional</option><option value=6>Student/Teacher/Researcher</option><option value=9>Not working</option><option value=17>Retired</option><option value=1>Other</option></select> <span id="rjf" ><input type="text" name="fOtherJobs" size="20" maxlength="60" value="" id="fOtherJobs" class="form-control wauto"></span></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputPosition" class="col-sm-3 col-md-3 control-label">Position</label>
+                                <div class="col-sm-9 col-md-9"><select name="fJobLevel" id="fJobLevel" class="form-control wauto"><option value="0">Select</option><option value=3>CEO/President/Chairman</option><option value=5>Founder</option><option value=6>CxO</option><option value=7>VP</option><option value=8>Director/Dept head</option><option value=2>Manager/Supervisor</option><option value=4>Professional</option><option value=9>Government</option><option value=10>Academic</option><option value=11>Private investor</option><option value=12>Owner/Partner/Proprietor</option><option value=1>Other</option></select> <span id="rjl" ><input type="text" name="fCompany_Title" size="20" maxlength="30" value="" id="fCompany_Title" class="form-control wauto"></span></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputCountry" class="col-sm-3 col-md-3 control-label">Country</label>
+                                <div class="col-sm-9 col-md-9"><select name="fCountry_Ref" id="fcountry" class="form-control wauto"><option value="">Select</option><option value="001#93"> Afghanistan</option><option value="002#355"> Albania</option><option value="003#213"> Algeria</option><option value="004#684"> American Samoa</option><option value="005#376"> Andorra</option><option value="006#244"> Angola</option><option value="007#1"> Anguilla</option><option value="008#672"> Antarctica</option><option value="009#1"> Antigua</option><option value="010#54"> Argentina</option><option value="011#374"> Armenia</option><option value="012#297"> Aruba</option><option value="013#247"> Ascension Island</option><option value="014#61"> Australia</option><option value="015#43"> Austria</option><option value="016#994"> Azerbaijan</option><option value="017#1"> Bahamas</option><option value="018#973"> Bahrain</option><option value="019#880"> Bangladesh</option><option value="020#1"> Barbados</option><option value="022#375"> Belarus</option><option value="023#32"> Belgium</option><option value="024#501"> Belize</option><option value="025#229"> Benin</option><option value="026#1"> Bermuda</option><option value="027#975"> Bhutan</option><option value="028#591"> Bolivia</option><option value="029#387"> Bosnia & Herzogovina</option><option value="030#267"> Botswana</option><option value="031#55"> Brazil</option><option value="032#1"> British Virgin Islands</option><option value="033#673"> Brunei</option><option value="034#359"> Bulgaria</option><option value="035#226"> Burkina Faso</option><option value="036#257"> Burundi</option><option value="037#855"> Cambodia</option><option value="038#237"> Cameroon</option><option value="039#1"> Canada</option><option value="040#238"> Cape Verde Islands</option><option value="041#1"> Cayman Islands</option><option value="042#236"> Central African Republic</option><option value="043#235"> Chad</option><option value="044#64"> Chatham Island (New Zealand)</option><option value="045#56"> Chile</option><option value="046#86"> China (PRC)</option><option value="047#61"> Christmas Island</option><option value="048#61"> Cocos-Keeling Islands</option><option value="049#57"> Colombia</option><option value="050#269"> Comoros</option><option value="051#242"> Congo</option><option value="052#243"> Congo, D.Rep (former Zaire)</option><option value="053#682"> Cook Islands</option><option value="054#506"> Costa Rica</option><option value="055#385"> Croatia</option><option value="056#53"> Cuba</option><option value="059#357"> Cyprus</option><option value="060#420"> Czech Republic</option><option value="061#45"> Denmark</option><option value="062#246"> Diego Garcia</option><option value="063#253"> Djibouti</option><option value="064#1"> Dominica</option><option value="065#1"> Dominican Republic</option><option value="068#56"> Easter Island</option><option value="067#670"> East Timor</option><option value="069#593"> Ecuador</option><option value="070#20"> Egypt</option><option value="071#503"> El Salvador</option><option value="072#240"> Equatorial Guinea</option><option value="073#291"> Eritrea</option><option value="074#372"> Estonia</option><option value="075#251"> Ethiopia</option><option value="076#298"> Faeroe Islands</option><option value="077#500"> Falkland Islands</option><option value="078#679"> Fiji Islands</option><option value="079#358"> Finland</option><option value="080#33"> France</option><option value="081#596"> French Antilles</option><option value="082#594"> French Guiana</option><option value="083#689"> French Polynesia</option><option value="084#241"> Gabon</option><option value="085#220"> Gambia</option><option value="086#995"> Georgia</option><option value="087#49"> Germany</option><option value="088#233"> Ghana</option><option value="089#350"> Gibraltar</option><option value="091#30"> Greece</option><option value="092#299"> Greenland</option><option value="093#1"> Grenada</option><option value="094#590"> Guadeloupe</option><option value="095#1"> Guam</option><option value="096#5399"> Guantanamo Bay</option><option value="097#502"> Guatemala</option><option value="099#245"> Guinea-Bissau</option><option value="098#224"> Guinea (PRP)</option><option value="100#592"> Guyana</option><option value="101#509"> Haiti</option><option value="102#504"> Honduras</option><option value="103#852"> Hong Kong</option><option value="104#36"> Hungary</option><option value="105#354"> Iceland</option><option value="106#91"> India</option><option value="107#62"> Indonesia</option><option value="113#98"> Iran</option><option value="114#964"> Iraq</option><option value="115#353"> Ireland</option><option value="118#972"> Israel</option><option value="119#39"> Italy</option><option value="120#225"> Ivory Coast (Cote d'Ivoire)</option><option value="121#1"> Jamaica</option><option value="122#81"> Japan</option><option value="123#962"> Jordan</option><option value="124#7"> Kazakhstan</option><option value="125#254"> Kenya</option><option value="126#686"> Kiribati</option><option value="127#850"> Korea (North)</option><option value="128#82"> Korea (South)</option><option value="129#965"> Kuwait</option><option value="130#996"> Kyrgyz Republic</option><option value="131#856"> Laos</option><option value="132#371"> Latvia</option><option value="133#961"> Lebanon</option><option value="134#266"> Lesotho</option><option value="135#231"> Liberia</option><option value="136#218"> Libya</option><option value="137#423"> Liechtenstein</option><option value="138#370"> Lithuania</option><option value="139#352"> Luxembourg</option><option value="140#853"> Macau</option><option value="141#389"> Macedonia (former Yugoslav R.)</option><option value="142#261"> Madagascar</option><option value="143#265"> Malawi</option><option value="144#60"> Malaysia</option><option value="145#960"> Maldives</option><option value="146#223"> Mali Republic</option><option value="147#356"> Malta</option><option value="148#692"> Marshall Islands</option><option value="150#222"> Mauritania</option><option value="151#230"> Mauritius</option><option value="152#269"> Mayotte Island</option><option value="153#52"> Mexico</option><option value="154#691"> Micronesia, Federal States of</option><option value="155#808"> Midway Island</option><option value="156#373"> Moldova</option><option value="157#377"> Monaco</option><option value="158#976"> Mongolia</option><option value="159#1"> Montserrat</option><option value="160#212"> Morocco</option><option value="161#258"> Mozambique</option><option value="162#95"> Myanmar</option><option value="164#264"> Namibia</option><option value="165#674"> Nauru</option><option value="166#977"> Nepal</option><option value="167#31"> Netherlands</option><option value="168#599"> Netherlands Antilles</option><option value="169#1"> Nevis</option><option value="170#687"> New Caledonia</option><option value="171#64"> New Zealand</option><option value="172#505"> Nicaragua</option><option value="173#227"> Niger</option><option value="174#234"> Nigeria</option><option value="175#683"> Niue</option><option value="163#1"> N.Marianas, Saipan/Rota/Tinian</option><option value="176#672"> Norfolk Island</option><option value="177#47"> Norway</option><option value="178#968"> Oman</option><option value="179#92"> Pakistan</option><option value="180#680"> Palau</option><option value="181#970"> Palestine</option><option value="182#507"> Panama</option><option value="183#675"> Papua New Guinea</option><option value="184#595"> Paraguay</option><option value="185#51"> Peru</option><option value="186#63"> Philippines</option><option value="187#48"> Poland</option><option value="188#351"> Portugal</option><option value="189#1"> Puerto Rico</option><option value="190#974"> Qatar</option><option value="191#262"> Reunion Island</option><option value="192#40"> Romania</option><option value="193#7"> Russia</option><option value="194#250"> Rwanda</option><option value="195#378"> San Marino</option><option value="196#239"> Sao Tome and Principe</option><option value="197#966"> Saudi Arabia</option><option value="198#221"> Senegal</option><option value="200#248"> Seychelles Islands</option><option value="201#232"> Sierra Leone</option><option value="202#65"> Singapore</option><option value="203#421"> Slovak Republic</option><option value="204#386"> Slovenia</option><option value="205#677"> Solomon Islands</option><option value="206#252"> Somalia</option><option value="207#27"> South Africa</option><option value="208#34"> Spain</option><option value="209#94"> Sri Lanka</option><option value="210#290"> St. Helena</option><option value="211#1"> St. Kitts/Nevis</option><option value="212#1"> St. Lucia</option><option value="213#508"> St. Pierre & Miquelon</option><option value="214#1"> St. Vincent & Grenadines</option><option value="215#249"> Sudan</option><option value="216#597"> Suriname</option><option value="217#268"> Swaziland</option><option value="218#46"> Sweden</option><option value="219#41"> Switzerland</option><option value="220#963"> Syria</option><option value="221#886"> Taiwan</option><option value="222#992"> Tajikistan</option><option value="223#255"> Tanzania</option><option value="224#66"> Thailand</option><option value="226#228"> Togo</option><option value="227#690"> Tokelau</option><option value="228#676"> Tonga Islands</option><option value="229#1"> Trinidad & Tobago</option><option value="230#216"> Tunisia</option><option value="231#90"> Turkey</option><option value="232#993"> Turkmenistan</option><option value="233#1"> Turks and Caicos Islands</option><option value="234#688"> Tuvalu</option><option value="235#256"> Uganda</option><option value="236#380"> Ukraine</option><option value="237#971"> United Arab Emirates</option><option value="238#44"> United Kingdom</option><option value="239#1"> United States of America</option><option value="242#598"> Uruguay</option><option value="240#1"> US Virgin Islands</option><option value="243#998"> Uzbekistan</option><option value="244#678"> Vanuatu</option><option value="245#39"> Vatican City</option><option value="246#58"> Venezuela</option><option value="247#84"> Vietnam</option><option value="248#808"> Wake Island</option><option value="249#681"> Wallis and Futuna Islands</option><option value="250#685"> Western Samoa</option><option value="251#967"> Yemen</option><option value="252#381"> Yugoslavia</option><option value="253#260"> Zambia</option><option value="254#255"> Zanzibar</option><option value="255#263"> Zimbabwe</option></select></div>
+                            </div>
+                            <div class="form-group form-inline" id="fstateDiv">
+                                <label for="inputState" class="col-sm-3 col-md-3 control-label">State</label>
+                                <div class="col-sm-9 col-md-9"><select name="fState_A" class="form-control wauto"><option value="00001"> Alabama</option><option value="00002"> Alaska</option><option value="00003"> Arizona</option><option value="00004"> Arkansas</option><option value="00005"> California</option><option value="00006"> Colorado</option><option value="00007"> Connecticut</option><option value="00008"> Delaware</option><option value="00009"> District Of Columbia</option><option value="00010"> Florida</option><option value="00011"> Georgia</option><option value="00012"> Hawaii</option><option value="00013"> Idaho</option><option value="00014"> Illinois</option><option value="00015"> Indiana</option><option value="00016"> Iowa</option><option value="00017"> Kansas</option><option value="00018"> Kentucky</option><option value="00019"> Louisiana</option><option value="00020"> Maine</option><option value="00021"> Maryland</option><option value="00022"> Massachusetts</option><option value="00023"> Michigan</option><option value="00024"> Minnesota</option><option value="00025"> Mississippi</option><option value="00026"> Missouri</option><option value="00027"> Montana</option><option value="00028"> Nebraska</option><option value="00029"> Nevada</option><option value="00030"> New Hampshire</option><option value="00031"> New Jersey</option><option value="00032"> New Mexico</option><option value="00033"> New York</option><option value="00034"> North Carolina</option><option value="00035"> North Dakota</option><option value="00036"> Ohio</option><option value="00037"> Oklahoma</option><option value="00038"> Oregon</option><option value="00039"> Pennsylvania</option><option value="00040"> Rhode Island</option><option value="00041"> South Carolina</option><option value="00042"> South Dakota</option><option value="00043"> Tennessee</option><option value="00044"> Texas</option><option value="00045"> Utah</option><option value="00046"> Vermont</option><option value="00047"> Virginia</option><option value="00048"> Washington</option><option value="00049"> West Virginia</option><option value="00050"> Wisconsin</option><option value="00051"> Wyoming</option></select></div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label for="inputAltemail" class="col-sm-3 col-md-3 control-label">Newsletters</label>
+                                <div class="col-sm-9 col-md-9"><input type="checkbox" name="fNewsletter"  checked> Daily news email</div>
+                                <div class="col-sm-9 col-md-9 offset-sm-3 offset-md-3"><input type="checkbox" name="fSnap"  checked> Tomorrow's Headlines daily email (<a href="/backgrounders/features/snapshots.asp?view=intro" target="_blank" class="uln">more about the service</a>)</div>
+                                <div class="col-sm-9 col-md-9 offset-sm-3 offset-md-3"><input type="checkbox" name="fEml_Rpt"  checked> DIGITIMES Research report updates</div>
+                                <div class="col-sm-9 col-md-9 offset-sm-3 offset-md-3"><input type="checkbox" name="fEml_Sponsor"  checked> Sponsors' news email</div>
+                                <div class="col-sm-9 col-md-9 offset-sm-3 offset-md-3"><input type="checkbox" name="fEml_Geo"  checked> GeoWatch weekly news email</div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <div class="col-sm-12 col-md-9 offset-md-3"><div class="alert alert-info" style="margin-bottom:15px; padding:10px!important"><input type="checkbox" name="fAgree" class="agreefree" > By submitting the form you agree to the <a href="/register/terms.asp" target="_blank" class="uln">Terms&nbsp;of&nbsp;service</a> and <a href="/register/privacypolicy.asp" target="_blank" class="uln">Privacy policy</a>.</div></div>
+                            <div class="col-sm-12 col-md-9 offset-md-3" style="margin-bottom:10px;"><input type="submit" name="btnaction" value="Sign up" class="btn btn-primary" style="min-width:145px" id="freeemail"></div>
+                        </div>
+                        </div>
                         </form>
-                                        <div class="package package__single">
-                    <div class="block">
-                        <h5>Team or Enterprise subscription</h5>
                     </div>
-                    <a class="connect-with-consultant"href="/register/corporate.asp" target="_blank">Inquire</a>
-                    <div class="empty empty__20"></div>
+				
+                </div></div>
                 </div>
-                                        <div class="white-ground-emphasis">Have a question?</div>
-            <div class="consultant-block">
-                <div class="wrapper">
-                    <div class="consultant"><img src="images/consultant-612x612.jpg" alt="consultant"></div>
-                    <div class="copy">Customized market research services</div>
-                    <div class="service-desc">We can customize the research to meet your specific needs, helping you
-                        make strategic and profitable business decisions.
-                    </div>
-                </div>
-            </div>
-            <a class="request-samples" href="/reportdownload/index.asp?category=FR" target=_blank>Sample reports</a>
-            <div class="empty empty__10"></div>
-            <a class="inquire-before-buying" href="mailto:subscription@digitimes.com?subject=DIGITIMES%20Research%20and%20services">Connect with a consultant</a>
+			
         </div>
     </div>
 </div>
-
-<div class="empty empty__20"></div>
-<div class="you-may-also-interested-in">
-    <div class="container">
-        <div class="wrapper">
-            <div id="cx-content-for-you"></div>
+<div id="dialog" title="Product info" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body"></div>
         </div>
     </div>
-</div>
-<script language="JavaScript" type="text/javascript">
-    $(function(){
-        //check scrollTop
-        if($(window).scrollTop() <= 150){
-            $('#artcount').addClass("navbar-hide");
-        }else{
-            $('#artcount').removeClass("navbar-hide");
-        }
-        //on scroll functions
-        $(window).scroll(function(e){
-            var scroll = $(window).scrollTop();
-            if(scroll <= 150){
-                $('#artcount').addClass("navbar-hide");
-            }else{
-                $('#artcount').removeClass("navbar-hide");
-            }
-        });
-    })
-</script>
-<style>
-.navbar-hide {pointer-events: none; opacity: 0;}
-.gotop{z-index:11;}
-.cta-link{box-shadow:2px -2px 30px rgba(0,0,0,.2); z-index:10;}
-.cta-frame,.cta-link{border-top-left-radius:24px;border-bottom-left-radius:24px}
-.cta-frame{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:#fff}
-.cta-link{position:fixed;right:0;bottom:17px;width:310px;height:45px;text-decoration:none;background:0 0;cursor:pointer;}
-.cta-frame .cta-frame-text{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding-left:10px;font-size:14px;font-weight:700;text-align:left;letter-spacing:1px;color:#333; text-transform:uppercase}
-</style>
-<div id="artcount" class="navbar-hide">
-    <a href="/register/setprofile.asp?pkg=1&dt_ref=2025121600401" target="_blank" class="cta-link">
-        <div class="cta-frame">
-            <div style="margin-top:3px;margin-left:3px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
-                    <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" fill="#CC191E"/>
-                </svg>
-            </div>
-            <div class="cta-frame-text">Join our mailing list</div>
-        </div>
-    </a>
-</div>
-
+</div>	
 <footer class="footer">
 	<div class="container">
 		<div class="row">
@@ -995,25 +1392,7 @@
 		</div>
 		<div class="warn">Please do not republish, publicly broadcast or publicly transmit content from this website without written permission from DIGITIMES Inc. Please contact us if you have any questions.</div>
 	</div>
-</footer><div class="modal fade" id="dialog" tabindex="-1" role="dialog" aria-labelledby="Dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Members only</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <div class="alert alert-warning" role="alert">Sorry, the page you are trying to open is available only for our paid subscribers.
-            <ul class="list-arrow"><li><svg class="icon"><use xlink:href="#arrow-icon-black"></use></svg>Please <a href="/newregister/join.asp" class="uln">login</a> to read more</li><li><svg class="icon"><use xlink:href="#arrow-icon-black"></use></svg>New users, please <a href="/register/" class="uln">register</a> first</li></ul></div>
-      </div>
-    </div>
-  </div>
-</div><script type="text/javascript" src="https://img.digitimes.com/script/js/swiper-3.4.2.min.js"></script>
-<script type="text/javascript" src="https://img.digitimes.com/script/js/bootstrap.bundle-4.6.2.min.js"></script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="yssgmyb9"></script>
-<!-- Google Tag Manager -->
+</footer><!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -1024,13 +1403,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKZHNR3"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<script> document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"; var setNptTechAdblockerCookie = function(adblocker) { var d = new Date(); d.setTime(d.getTime() + 60 * 5 * 1000); document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/"; }; var script = document.createElement("script"); script.setAttribute("async", true); script.setAttribute("src", "//www.npttech.com/advertising.js"); script.setAttribute("onerror", "setNptTechAdblockerCookie(true);"); document.getElementsByTagName("head")[0].appendChild(script); </script>
-<script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience-ap.piano.io/xbuilder/experience/load?aid=TNUzdCb3pj");</script>
 
-<script>
-function GetJWT()
-{
-    return false;}
+<script> document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"; var setNptTechAdblockerCookie = function(adblocker) { var d = new Date(); d.setTime(d.getTime() + 60 * 5 * 1000); document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/"; }; var script = document.createElement("script"); script.setAttribute("async", true); script.setAttribute("src", "//www.npttech.com/advertising.js"); script.setAttribute("onerror", "setNptTechAdblockerCookie(true);"); document.getElementsByTagName("head")[0].appendChild(script); </script>
+<script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience-ap.piano.io/xbuilder/experience/load?aid=TNUzdCb3pj");</script><script>
+function GetJWT() {
+    return false;
+}
 </script>
 <form name="form-pno-pay" id="form-pno-pay">
 <input type="hidden" name="ID" value="">
@@ -1040,17 +1418,17 @@ function GetJWT()
 <input type="hidden" name="Seq" value="">
 </form>
 <div class="modal fade" id="pno-dialog" tabindex="-1" role="dialog" aria-labelledby="Dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Notification</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body"></div>
-        </div>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Notification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"></div>
     </div>
+  </div>
 </div>	
 <script language="JavaScript" type="text/javascript">
     tp = window["tp"] || [];
@@ -1156,13 +1534,5 @@ function GetJWT()
 </script>
 <div class="col-12 pno-wrap"><div id="pno-promotion"></div></div>
 
-<div class="col-12 article-wrap" style="z-index:99;"><div id="pno-article" class="tp-banner"></div></div>
-
-<script>
-    tp = window['tp'] || [];
-            tp.push(["setTags", ["IsPremium","IsResearch","Arm","ASIC","automotive","business","cloud AI","CPU","DIGITIMES","market","mobile","Oryon","Qualcomm","semiconductor","semiconductor research"]]);
-                tp.push(["setContentSection", ["Research"]]);
-    </script>
-    <img src="https://www.digitimes.com/Include/session/session_log.asp" width="1" height="1" style="display:none">   
 </body>
 </html>
