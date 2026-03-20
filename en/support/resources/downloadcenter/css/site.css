@@ -1,0 +1,1151 @@
+#smc-software-download .doc-block {
+    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#smc-software-download .doc-row:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-bottom: 16px;
+}
+
+#smc-software-download .doc-row>div {
+    word-break: break-word;
+}
+
+#smc-software-download .doc-row>div:first-child {
+    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
+    flex: none;
+    font-weight: 700;
+}
+
+#smc-software-download .doc-spec {
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+    padding-left: 1rem;
+    padding-left: 16px;
+    padding-right: 1rem;
+    padding-right: 16px;
+    padding-top: 1rem;
+    padding-top: 16px;
+    padding-bottom: 1rem;
+    padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    #smc-software-download .doc-row {
+        display: flex;
+    }
+
+    #smc-software-download .doc-row>div {
+        flex: 1 1 auto;
+        padding-left: 0.75rem;
+        padding-left: 12px;
+        padding-right: 0.75rem;
+        padding-right: 12px;
+    }
+
+    #smc-software-download .doc-row>div:first-child {
+        text-align: right;
+    }
+}
+
+#smc-software-download .jumpstart .password-eye {
+    vertical-align: top;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-password {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-style: none;
+    background-color: transparent;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-password:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-display, #smc-software-download .jumpstart .password-eye .password-eye-copy {
+    font-size: 0.875rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    line-height: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(0 117 170 / var(--tw-text-opacity));
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-display:hover, #smc-software-download .jumpstart .password-eye .password-eye-copy:hover {
+    cursor: pointer;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-display {
+    padding-right: 0.5rem;
+    padding-right: 8px;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-copy {
+    position: relative;
+    display: none;
+    padding-left: 0.5rem;
+    padding-left: 8px;
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-copy::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin-top: -0.375rem;
+    margin-top: -6px;
+    display: block;
+    height: 0.75rem;
+    height: 12px;
+    width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(167 168 169 / var(--tw-bg-opacity));
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-copy.password-eye-copy--disabled {
+    --tw-text-opacity: 1;
+    color: rgb(167 168 169 / var(--tw-text-opacity));
+}
+
+#smc-software-download .jumpstart .password-eye .password-eye-copy.password-eye-copy--disabled:hover {
+    cursor: not-allowed;
+}
+
+/* Jumpstart File Upload */
+#smc-software-download .doc-block .doc-spec .btn--file-upload {
+	justify-content: center;
+}
+#smc-software-download .doc-block .doc-spec .doc-row .table--file-upload td {
+	vertical-align: middle;
+}
+#smc-software-download .doc-block #uploadFilesDialog .ui-dialog {
+	border-radius: 10px;
+	padding: 10px;
+	border: unset;
+	box-shadow: 5px 5px 3px #c4c4c4;
+	position: fixed !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%);
+}
+#smc-software-download .doc-block #uploadFilesForm {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector {
+	border-radius: 10px;
+	border: 3px dashed #c4c4c4;
+	flex-grow: 1;
+	text-align: center;
+	height: 100%;
+	padding: 5px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector>label {
+	margin-bottom: 0;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector.hover {
+	border-color: #312f2f;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 530px;
+	min-height: 250px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded {
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	justify-content: unset;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages {
+	align-self: start;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages ul {
+	margin-bottom: 0;
+	overflow-y: scroll;
+	height: 200px;
+	text-align: left;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages ul::-webkit-scrollbar {
+	width: 10px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages ul::-webkit-scrollbar * {
+	background: transparent;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages ul::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages ul::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages p#warning-text {
+	font-size: 12px;
+	color: #961919;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages li {
+	background-color: #e2e2e2;
+	padding: 3px 10px;
+	margin-bottom: 3px;
+	border-radius: 7px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #messages li i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block.uploaded #file-upload-btn {
+	justify-self: center;
+	align-self: end;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-selector .upload-block i {
+	font-size: 100px;
+}
+#smc-software-download .doc-block #uploadFilesForm .dest-options {
+	font-size: 14px;
+}
+#smc-software-download .doc-block #uploadFilesForm .dest-options>label:first-of-type {
+	display: block;
+}
+#smc-software-download .doc-block #uploadFilesForm .dest-options>label:nth-child(2) {
+	margin-right: 10px;
+}
+#smc-software-download .doc-block #uploadFilesForm .dest-options input {
+	margin-right: 5px;
+}
+#smc-software-download .doc-block #uploadFilesForm .file-upload {
+	display: flex;
+	justify-content: center;
+}
+#smc-software-download .doc-block #loading-cover {
+	background: #4b4b4b;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 102;
+	display: none;
+}
+#smc-software-download .doc-block #loading-cover .lds-ring {
+	display: inline-block;
+	position: relative;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+}
+#smc-software-download .doc-block #loading-cover .lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+#smc-software-download .doc-block #loading-cover .lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+#smc-software-download .doc-block #loading-cover .lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+#smc-software-download .doc-block #loading-cover .lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/* enterprise css overwrite */
+
+#smc-software-download .support-footer {
+    margin-top: 0px !important;
+}
+
+#smc-software-download .sm-fm-check {
+    font-weight: 400;
+    line-height: 24px;
+	margin-bottom: 20px;
+	padding-left: 34px;
+}
+
+#smc-software-download .sm-fm-check input {
+    margin-top: 0px;
+	border-color: rgba(34, 34, 34, 1);
+	border-width: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+#smc-software-download .sm-fm-check-input--radio:checked {
+	background-image: url('../img/radio-checked.svg');
+	border-width: 2px;
+}
+
+#smc-software-download .swd-main {
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(217 216 214 / var(--tw-border-opacity));
+}
+
+#smc-software-download .swd-header {
+    background-image: url('https://www.supermicro.com/sites/default/files/2020-05/systems-management-software-banner.jpg');
+	background: linear-gradient(270deg, rgba(0, 58, 112, 0.00) 0%, rgba(0, 58, 112, 0.70) 100%), url('https://www.supermicro.com/sites/default/files/2020-05/systems-management-software-banner.jpg') lightgray 50% / cover no-repeat;
+    height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#smc-software-download .swd-header h1{
+    max-width: 22em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.875rem;
+    font-size: 36px;
+    line-height: 2.25rem;
+    line-height: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media(min-width: 768px) {
+    #smc-software-download .swd-header .sm-container.sm-container--xl{
+        width:750px
+    }
+}
+
+@media(min-width: 992px) {
+    #smc-software-download .swd-header .sm-container.sm-container--xl{
+        width:970px
+    }
+}
+
+@media(min-width: 1200px) {
+    #smc-software-download .swd-header .sm-container.sm-container--xl {
+        width:1200px
+    }
+}
+
+@media (min-width: 576px) {
+    #smc-software-download .swd-header h1 {
+        line-height: 2.5rem;
+        line-height: 40px;
+    }
+}
+
+#smc-software-download .swd-title {
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 216 214 / var(--tw-bg-opacity));
+    padding-top: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 2.5rem;
+    padding-bottom: 40px;
+}
+
+#smc-software-download .swd-title h2 {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1.875rem;
+    font-size: 30px;
+    line-height: 2.25rem;
+    line-height: 36px;
+}
+
+#smc-software-download .swd-content {
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(234 234 232 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+#smc-software-download .sm-tabs {
+    margin-bottom: 0px;
+    justify-content: flex-start;
+    border-width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 216 214 / var(--tw-bg-opacity));
+}
+
+#smc-software-download .sm-tabs + .sm-container {
+    padding-top: 5rem;
+    padding-top: 80px;
+    padding-bottom: 5rem;
+    padding-bottom: 80px;
+}
+
+#smc-software-download .sm-tabs-item {
+    display: inline-block;
+    width: 100%;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    border-radius: 0px;
+    border-width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(84 86 90 / var(--tw-bg-opacity));
+    padding: 0px;
+    padding-top: 1rem;
+    padding-top: 16px;
+    padding-bottom: 1rem;
+    padding-bottom: 16px;
+    padding-left: 2rem;
+    padding-left: 32px;
+    padding-right: 2rem;
+    padding-right: 32px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    --tw-text-opacity: 0.3;
+}
+
+#smc-software-download .sm-tabs-item--active {
+    cursor: default;
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(84 86 90 / var(--tw-text-opacity));
+    filter: drop-shadow(-1px -1px 3px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: 576px) {
+    #smc-software-download .sm-tabs {
+        justify-content: center;
+    }
+    #smc-software-download .sm-tabs-item {
+        width: 15rem;
+        width: 240px;
+    }
+}
+
+#smc-software-download .ui-tabs-panel {
+    border-width: 0px;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+    --tw-text-opacity: 1;
+    color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+
+#smc-software-download .ui-tabs-panel .sm-container {
+    padding-top: 5rem;
+    padding-top: 80px;
+    padding-bottom: 5rem;
+    padding-bottom: 80px;
+}
+
+#smc-software-download .swd-product-resource-download .download-list {
+    --tw-text-opacity: 1;
+    color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+
+#smc-software-download .swd-product-resource-download .item-intro {
+	margin-bottom: 20px;
+}
+
+#smc-software-download .swd-product-resource-download .desc-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#smc-software-download .swd-product-resource-download .desc-list > div {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#smc-software-download .swd-product-resource-download .desc-list .desc-list-version {
+	margin-right: 40px;
+}
+
+#smc-software-download .swd-product-resource-download .desc-list dt {
+    float: left;
+    clear: left;
+    margin-right: 0.25rem;
+    margin-right: 4px;
+    margin-bottom: 0.25rem;
+    margin-bottom: 4px;
+    font-weight: 400;
+    line-height: 1rem;
+    line-height: 16px;
+}
+
+#smc-software-download .swd-product-resource-download .desc-list dd {
+    float: left;
+    margin-bottom: 0.25rem;
+    margin-bottom: 4px;
+    line-height: 1rem;
+    line-height: 16px;
+}
+
+#smc-software-download .swd-product-resource-download .item-row {
+    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(84 86 90 / var(--tw-border-opacity));
+    padding-top: 1rem;
+    padding-top: 16px;
+    padding-bottom: 1rem;
+    padding-bottom: 16px;
+    padding-left: 1rem;
+    padding-left: 16px;
+    padding-right: 1rem;
+    padding-right: 16px;
+}
+
+#smc-software-download .swd-product-resource-download .item-col {
+    flex: 1 1 0%;
+    overflow-wrap: break-word;
+	padding: 10px 16px;
+}
+
+#smc-software-download .swd-product-resource-download .item-col--fixed {
+    flex: none;
+}
+
+#smc-software-download .swd-product-resource-download .item-icon {
+    width: 100%;
+    flex: none;
+    text-align: center;
+}
+
+#smc-software-download .swd-product-resource-download .item-desc {
+    display: flex;
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+}
+
+#smc-software-download .swd-product-resource-download .item-desc .sm-fm-select {
+    margin-top: 0.5rem;
+    margin-top: 8px;
+}
+
+#smc-software-download .swd-product-resource-download .item-desc .sm-fm-check {
+    margin-left: 0px;
+}
+
+#smc-software-download .swd-product-resource-download .item-title {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.125rem;
+    font-size: 18px;
+    line-height: 1.75rem;
+    line-height: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#smc-software-download .swd-product-resource-download .item-intro {
+    font-size: 0.875rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    line-height: 20px;
+    line-height: 1.25;
+}
+
+#smc-software-download .swd-product-resource-download .item-action {
+    width: 100%;
+    text-align: right;
+}
+
+#smc-software-download .swd-product-resource-download .item-action .sm-btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #smc-software-download .swd-product-resource-download .item-icon {
+        width: 11rem;
+        width: 176px;
+    }
+}
+
+@media (min-width: 768px) {
+    #smc-software-download .swd-product-resource-download .item-action {
+        width: 14rem;
+        width: 224px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #smc-software-download .swd-product-resource-download .item-desc .sm-fm-select{
+        max-width: 400px;
+    }
+}
+
+/* ======= Revamped Management Software Tab ======= */
+
+#smc-software-download .sm-tabs {
+	background-color: #041E42;
+}
+
+#smc-software-download .sm-tabs .sm-tabs-item {
+	background-color: #041E42;
+	color: #FFF;
+	padding: 16px 52px;
+	font-size: 18px;
+	letter-spacing: 0.18px;
+	line-height: 100%;
+	margin: 0;
+	font-weight: 400;
+}
+
+#smc-software-download .sm-tabs .sm-tabs-item--active {
+	background-color: #f1f1f1;
+	color: #003A70;
+	font-weight: 600;
+}
+
+/* ======= Management Software Licenses section ======= */
+
+#sms_licenses_section {
+	background-color: #fff;
+	color: #222;
+}
+
+#sms_licenses_section .sm-container {
+	padding: 20px 0 10px !important;
+}
+
+#sms_licenses_section .sm-title {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 0.32px;
+	margin-bottom: 20px !important;
+}
+
+#sms_licenses_section .licenses-section-subtitle {
+	margin-bottom: 20px;
+}
+
+#sms_licenses_section .licenses-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 20px;
+}
+
+@media (min-width: 768px) {
+	#sms_licenses_section .licenses-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 992px) {
+	#sms_licenses_section .licenses-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+#sms_licenses_section .licenses-container .license-box-bg {
+	border-radius: 4px;
+	background: #F5F5F5;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+#sms_licenses_section .licenses-container:has(input:checked) .license-box-bg {
+	display: block;
+}
+
+#sms_licenses_section .licenses-container  .license-box-bg .license-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+#sms_licenses_section .licenses-container:has(input:checked)  .license-box-bg .license-box-content {
+	height: auto;
+}
+
+#sms_licenses_section .licenses-container .license-box-content .license-short-text .license-title {
+	color: #008ADB;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+}
+
+#sms_licenses_section .licenses-container .license-box-content .license-text {
+	color: #222;
+	line-height: 150%;
+	letter-spacing: 0.082px;
+}
+
+
+#sms_licenses_section .licenses-container .license-box-content .details-block .details-title {
+	color: #222;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0.082px;
+}
+
+#sms_licenses_section .licenses-container .license-box-content .details-block .details-notes {
+	font-size: 14px;
+}
+
+#sms_licenses_section .licenses-container label {
+	color: #971b1e;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	margin: 0;
+}
+
+#sms_licenses_section .licenses-container .license-box-content .details-block {
+	display: none;
+}
+
+#sms_licenses_section .licenses-container:has(input:checked) .license-box-content .details-block  {
+	display: block;
+}
+
+#sms_licenses_section .licenses-container .license-text-read-more {
+	display: inline-block;
+}
+
+#sms_licenses_section .licenses-container .license-text-read-less {
+	display: none;
+} 
+
+#sms_licenses_section .licenses-container:has(input:checked) .license-text-read-more {
+	display: none;
+}
+
+#sms_licenses_section .licenses-container:has(input:checked) .license-text-read-less {
+	display: inline-block;
+} 
+
+
+/* ======= Management Software Download section ======= */
+
+#sms_download_section .sm-container {
+	padding-top: 10px !important;
+}
+
+#sms_download_section .sm-title{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 0.32px;
+	margin-bottom: 20px !important;
+}
+
+#sms_download_section .download-section-line {
+	margin: 20px 0 10px;
+}
+
+#sms_download_section #sms_category_select {
+	border: 1px solid #A3A3A3;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+#sms_download_section .item-action .item-action-link {
+	text-align: left;
+}
+
+#sms_download_section .item-action .item-action-link span {
+	white-space: nowrap;
+}
+
+#smc-software-download .compare-grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#smc-software-download .compare-grid-cell {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-top: 1.5rem;
+    padding-top: 24px;
+    padding-bottom: 1.5rem;
+    padding-bottom: 24px;
+    padding-left: 1.5rem;
+    padding-left: 24px;
+    padding-right: 1.5rem;
+    padding-right: 24px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    line-height: 20px;
+    line-height: 1.25;
+    box-shadow: 2px 3px 4px 0 rgb(0,0,0,25%);;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+}
+
+#smc-software-download .compare-grid-cell::after {
+    content: '';
+    display: block;
+    background: white;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    height: 5px;
+    bottom: -2px;
+    z-index: 1;
+}
+
+#smc-software-download dl.compare-grid-cell::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 1.5rem;
+    left: 24px;
+    right: 1.5rem;
+    right: 24px;
+    height: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(150 25 25 / var(--tw-bg-opacity));
+    z-index: 2;
+}
+
+#smc-software-download dl.compare-grid-cell.desc::before{
+    height: 2px;
+}
+
+#smc-software-download .compare-grid-cell.type {
+    font-size: 1.25rem;
+    font-size: 20px;
+    line-height: 1.75rem;
+    line-height: 28px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#smc-software-download .compare-grid-cell.app {
+    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
+}
+
+#smc-software-download .compare-grid-cell dt {
+    margin-bottom: 0.75rem;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    #smc-software-download .compare-grid-cell {
+        width: 48%;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+1) {
+        order: 1;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+2) {
+        order: 2;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+3) {
+        order: 3;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+4) {
+        order: 4;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+9) {
+        order: 5;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+10) {
+        order: 6;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+11) {
+        order: 7;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+12) {
+        order: 8;
+    }
+}
+
+@media (min-width: 1280px) {
+    #smc-software-download .compare-grid-cell {
+        width: 23%;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+1) {
+        order: 1;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+2) {
+        order: 2;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+3) {
+        order: 3;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(4n+4) {
+        order: 4;
+    }
+    #smc-software-download .compare-grid-cell dt {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -100%;
+        margin-left: -1em;
+        width: 100%;
+        text-align: right;
+        display: none;
+    }
+    #smc-software-download .compare-grid-cell:nth-child(2) dt,#smc-software-download .compare-grid-cell:nth-child(3) dt,#smc-software-download .compare-grid-cell:nth-child(4) dt {
+        display: block;
+    }
+}
+
+#smc-software-download .smc-dialog-off-canvas {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: visibility 0.7s linear 0s, opacity 0.3s linear 0s, width 0.7s ease 0s;
+    z-index: 999999;
+    visibility: hidden;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 34 72 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(217 216 214 / var(--tw-text-opacity));
+    opacity: 1;
+}
+
+#smc-software-download .smc-dialog-off-canvas-main-canvas {
+    transition: padding-right .7s ease,padding-left .7s ease, margin-left .7s ease, margin-right .7s ease;
+}
+
+#smc-software-download .smc-dialog-off-canvas-body {
+    top:60px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: auto;
+    padding: 1.5rem;
+    padding: 24px;
+}
+
+#smc-software-download .smc-dialog-off-canvas-close {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 1rem;
+    margin-top: 16px;
+    margin-right: 1rem;
+    margin-right: 16px;
+    display: block;
+    height: 1.75rem;
+    height: 28px;
+    width: 1.75rem;
+    width: 28px;
+    background-color: transparent;
+}
+
+#smc-software-download .icon-close {
+    border: 0;
+    background: none;
+    display: block;
+}
+
+#smc-software-download .icon-close span {
+    display: none;
+}
+
+#smc-software-download .icon-close::before,#smc-software-download .icon-close::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: 0;
+}
+
+#smc-software-download .icon-close::before {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+#smc-software-download .icon-close::after {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+#smc-software-download .icon-close:hover,#smc-software-download .icon-close:focus {
+    border: 0;
+    background: none;
+}
+
+#smc-software-download .smc-dialog-off-canvas .sm-fm-label {
+    --tw-text-opacity: 1;
+    color: rgb(217 216 214 / var(--tw-text-opacity));
+}
+
+#smc-software-download .smc-dialog-off-canvas .sm-fm-input {
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
+#smc-software-download .smc-dialog-off-canvas .sm-fm-check-input:not(:checked) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
+#smc-software-download.js-smc-off-canvas-dialog-open .smc-dialog-off-canvas{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#smc-software-download.js-smc-off-canvas-dialog-open .smc-dialog-off-canvas-main-canvas{
+    /* padding-right: 500px; */
+    /* margin-left: -500px */
+    /* @apply pr-96; */
+}
+
+@media (min-width: 768px) {
+    #smc-software-download.js-smc-off-canvas-dialog-open .smc-dialog-off-canvas{
+        width: 500px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #smc-software-download.js-smc-off-canvas-dialog-open .smc-dialog-off-canvas-main-canvas{
+        padding-right: 500px;
+        margin-left: -500px
+        /* @apply pr-96; */
+    }
+}
+
+#smc-software-download .form-row {
+    margin-bottom: 1rem;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 0.5rem;
+    gap: 8px;
+}
+
+#smc-software-download .form-row:not(:last-of-type) {
+    margin-bottom: 1rem;
+    margin-bottom: 16px;
+}
+
+#smc-software-download .form-required {
+    margin-left: 0.5rem;
+    margin-left: 8px;
+    vertical-align: middle;
+    --tw-text-opacity: 1;
+    color: rgb(211 0 21 / var(--tw-text-opacity));
+}
+
+#smc-software-download .sm-modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 30px 20px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 2px 2px 5px 3px rgb(0 0 0 / 25%);
+}
+
+#smc-software-download .sm-modal-overlay {
+    padding: 20px;
+    z-index: 99999;
+}
+
+#smc-software-download .display,
+#smc-software-download .dataTables_wrapper {
+	display: unset;
+}
+
+#smc-software-download table.dataTable thead .sorting_asc,
+#smc-software-download table.dataTable thead .sorting {
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+#smc-software-download table.dataTable#certification_table *::before,
+#smc-software-download table.dataTable#certification_table *::after  {
+	content: none;
+}
+
+#smc-software-download .sm-container--lg {
+	max-width: 1200px;
+	padding: 0;
+}
+
+#smc-software-download .sm--ml-4,
+#smc-software-download .sm--mr-4 {
+	margin-left: 0;
+	margin-right: 0;
+}
+#smc-software-download .sm-fm-input-border-box {
+	box-sizing: border-box;
+}
+
+#smc-software-download .button_processing_container {
+    position: relative;
+}
+#smc-software-download .button_processing {
+    padding-left: 24px;
+}
+#smc-software-download .button_processing_icon {
+    position:absolute;
+    top: 12px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #a7a8a9;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotation 1.5s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
