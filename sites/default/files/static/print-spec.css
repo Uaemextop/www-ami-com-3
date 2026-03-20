@@ -1,0 +1,275 @@
+@media print {
+    @page {
+        min-width: 100% !important;
+    }
+
+    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+        display: none !important;
+    }
+
+    :root, html, body {
+        line-height: normal !important;
+        word-wrap: normal !important;
+        overflow: visible !important;
+        position: static !important;
+        transform: none !important;
+        font-size: 12px !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        width: auto !important;
+        float: none !important;
+    }
+
+    .bb-container.spec-container {
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        width: 100% !important;
+    }
+
+    .spec-main {
+        max-width: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    #o,
+    #opc,
+    .tab-menu,
+    .more .fa,
+    .row:after,
+    .row:before,
+    .more:after,
+    .more:before,
+    .part-list > a,
+    .show-block-kf,
+    .shop-systems-block,
+    .fotorama__nav-wrap,
+    .spec-main .print-btn,
+    .spec-main .print-btn2,
+    .spec-container .fotorama__nav-wrap,
+    .spec-main .more[rel="resources-more"],
+    .bb-container.spec-container .resources-row,
+    div.spec-container:not(.brochure-container) .part-list .scrollable-table {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        font-size: 0 !important;
+    }
+
+    .spec-main .open-tab {
+        text-decoration: none !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    .part-list,
+    .pl-cont-t a,
+    .spec-container,
+    .spec-main .row,
+    .spec-main .col,
+    .spec-main .more,
+    .spec-main .less,
+    .pl-cont-t strong,
+    .spec-product-image,
+    .spec-main .open-tab,
+    .part-list .pl-cat-title,
+    .pl-cont-block .pl-cont-tit,
+    .spec-container td.border_br,
+    .part-list td:not(.specHeader),
+    .bb-container.spec-container .part-list,
+    .bb-container.spec-container .sys-spec-table table[class^="spec-table-"] table td,
+    .bb-container.spec-container .part-list > div:not(.pl-cat-title):not(.pl-cont-block) {
+        line-height: normal !important;
+        word-wrap: normal !important;
+        overflow: visible !important;
+        font-size: 12px !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pl-cont,
+    .part-list,
+    .sys-spec-table,
+    .sys-spec-table table td,
+    .row ol.key-feature-list li,
+    .bb-container.spec-container .more,
+    .bb-container.spec-container .part-list > * {
+        display: block !important;
+    }
+
+    table tr,
+    table tr td {
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .bb-container.spec-container .more {
+        text-align: left !important;
+
+    }
+
+    td.feature,
+    td.border_b,
+    .pl-cont-t a,
+    .pl-cont-block .pl-cont-tit,
+    .part-list td:not(.specHeader),
+    .spec-main .sys-spec-table .description ul li.desc {
+        text-decoration: none !important;
+        font-size: 12px !important;
+        text-align: left !important;
+    }
+
+    .spec-main .open-tab {
+        font-size: 13px !important;
+        line-height: normal !important;
+    }
+
+    .part-list .pl-cat-title,
+    .spec-main .sys-spec-table td[class^="specHeader"] {
+        font-size: 17px !important;
+        padding: 2px 0 !important;
+        line-height: normal !important;
+    }
+
+    .spec-main .more span,
+    .row .tertiaryNavSection {
+        line-height: normal !important;
+        font-weight: 600 !important;
+        display: block !important;
+        font-size: 20px !important;
+        color: #003a70 !important;
+        padding: 3px 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .spec-main .more {
+        max-width: 100%;
+        min-width: 100%;
+        float: none;
+        clear: both;
+    }
+
+    .spec-main .sku.sku-model {
+        font-size: 26px !important;
+        vertical-align: top !important;
+    }
+
+    td.feature,
+    td.border_b,
+    .pl-cont-t strong, {
+        font-weight: 600 !important;
+    }
+
+    .part-list td:not(.specHeader) {
+        font-weight: 500 !important;
+    }
+
+    .pl-cont .pl-cont-leg {
+        width: 10% !important;
+    }
+
+    .part-list .pl-cont {
+        display: block !important;
+    }
+
+    .pl-cont .pl-cont-data {
+        display: inline-block !important;
+        padding: 2px !important;
+        width: 20% !important;
+    }
+
+    .fotorama__stage,
+    .fotorama__stage__shaft {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .fotorama__stage__frame {
+        display: none !important;
+    }
+
+    .fotorama__stage__frame:first-child {
+        display: block !important;
+    }
+
+    .fotorama__wrap--slide .fotorama__stage__frame {
+        left: 0 !important;
+    }
+
+    .part-list table,
+    table[class^="spec-table-"] table {
+        border-bottom: 1px solid rgba(83, 86, 90, 0.3) !important;
+        margin-bottom: 3px !important;
+        width: 100% !important;
+    }
+
+    table[class^="spec-table-"] > tbody > tr > td {
+        width: 95% !important;
+    }
+
+    .spec-main .col.col-xs-12.col-sm-7.col-md-8 {
+        width: 55% !important;
+    }
+
+    .spec-main .col.col-xs-12.col-sm-6.col-md-6 {
+        max-width: 49% !important;
+        width: 49% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .spec-main .col.col-xs-12.col-sm-5.col-md-4 {
+        width: 45% !important;
+    }
+
+    .scrollable-table,
+    .spec-main .col.col-xs-12.col-sm-5.col-md-5,
+    .spec-main .col.col-xs-12.col-sm-7.col-md-7 {
+        max-width: 100% !important;
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        flex: none !important;
+    }
+
+    .image-slider-version .new-icon {
+        color: #961919 !important;
+    }
+
+    .image-slider-version .coming-icon {
+        color: #003a70 !important;
+    }
+
+    .part-list td:not(.specHeader),
+    .spec-container td.border_br {
+        padding: 2px 3px !important;
+    }
+}
+
+/* ------------------------------------------ */
+
+/* for ie10 & ie11 */
+
+/* ------------------------------------------ */
+
+@media print and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .spec-main .keyFeatures {
+        line-height: 0.8em;
+    }
+
+    .spec-main .spec-product-image > tbody > tr > td {
+        line-height: 0.8em;
+    }
+
+    .spec-main .more {
+        page-break-before: auto;
+    }
+}
