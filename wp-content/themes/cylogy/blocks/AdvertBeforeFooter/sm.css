@@ -1,0 +1,29 @@
+body#layout .AdvertBeforeFooter picture.__img_xs,
+body#layout .AdvertBeforeFooter img.__img_xs,
+body#layout .AdvertBeforeFooter video.__img_xs,
+body#layout .AdvertBeforeFooter picture.__img_mds,
+body#layout .AdvertBeforeFooter img.__img_mds,
+body#layout .AdvertBeforeFooter video.__img_mds,
+body#layout .AdvertBeforeFooter picture.__img_md,
+body#layout .AdvertBeforeFooter img.__img_md,
+body#layout .AdvertBeforeFooter video.__img_md,
+body#layout .AdvertBeforeFooter picture.__img_lgs,
+body#layout .AdvertBeforeFooter img.__img_lgs,
+body#layout .AdvertBeforeFooter video.__img_lgs,
+body#layout .AdvertBeforeFooter picture.__img_lg,
+body#layout .AdvertBeforeFooter img.__img_lg,
+body#layout .AdvertBeforeFooter video.__img_lg,
+body#layout .AdvertBeforeFooter picture.__img_lgl,
+body#layout .AdvertBeforeFooter img.__img_lgl,
+body#layout .AdvertBeforeFooter video.__img_lgl,
+body#layout .AdvertBeforeFooter picture.__img_xxl,
+body#layout .AdvertBeforeFooter img.__img_xxl,
+body#layout .AdvertBeforeFooter video.__img_xxl {
+  display: none;
+}
+body#layout .AdvertBeforeFooter picture.__img_sm,
+body#layout .AdvertBeforeFooter img.__img_sm,
+body#layout .AdvertBeforeFooter video.__img_sm {
+  display: block;
+}
+/*# sourceMappingURL=sm.css.map */

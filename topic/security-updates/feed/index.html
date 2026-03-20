@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Security Updates Archives - AMI</title>
+	<atom:link href="https://www.ami.com/topic/security-updates/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.ami.com/topic/security-updates/</link>
+	<description>Trusted Leader in UEFI, BMC &#38; Open-Source Firmware</description>
+	<lastBuildDate>Fri, 09 Jan 2026 21:18:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.1</generator>
+
+<image>
+	<url>https://www.ami.com/wp-content/uploads/2025/09/cropped-AMI-Favicon-32x32.png</url>
+	<title>Security Updates Archives - AMI</title>
+	<link>https://www.ami.com/topic/security-updates/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>AMI Analysis and Response to CVE-2021-44228 Log4j Vulnerability</title>
+		<link>https://www.ami.com/resource/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/</link>
+					<comments>https://www.ami.com/resource/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/#respond</comments>
+		
+		<dc:creator><![CDATA[AMI Marketing]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2021 19:13:33 +0000</pubDate>
+				<guid isPermaLink="false">https://ami2025dev.wpenginepowered.com/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/</guid>
+
+					<description><![CDATA[<p>What is the CVE-2021-44228 vulnerability? CVE-2021-44228 (see CVE-2021-44228) is a zero-day exploit announced on December 9th 2021 that affects applications that leverage the ubiquitous log4j v2 library. It allows attackers to remotely execute code on the target system. CVE-2021-44228 is considered to be a rather easy vulnerability to exploit as all the attacker needs to [&#8230;]</p>
+<p>The post <a href="https://www.ami.com/resource/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/">AMI Analysis and Response to CVE-2021-44228 Log4j Vulnerability</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><strong>What is the CVE-2021-44228 vulnerability? </strong></p>
+<p>CVE-2021-44228 (see <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228" title="CVE-2021-44228" target="_blank" rel="noopener">CVE-2021-44228</a>) is a zero-day exploit announced on December 9<sup>th</sup> 2021 that affects applications that leverage the ubiquitous log4j v2 library. It allows attackers to remotely execute code on the target system.</p>
+<p>CVE-2021-44228 is considered to be a rather easy vulnerability to exploit as all the attacker needs to carry out a successful attack is the ability to interact with an affected target system remotely and to have that interaction result in having an attacker-controlled string written to the target system’s log files with an affected version of logj4. Affected versions of log4j include 2.0-beta9 to 2.14. Take note of the fact that version 2.15 was released as the intended fix for CVE-2021-44228 but it fell short as some attack vectors were not addressed (see <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-45046" target="_blank" rel="noopener">CVE-2021-45046</a>). Also, 2.16 was found to contain a vulnerability where resources could be exhausted (see <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-45046" target="_blank" rel="noopener">CVE-2021-45105</a>). It is recommended to upgrade to version 2.17 of Log4j as soon as possible.</p>
+<p>To better understand a scenario of how an exploit could be implemented, consider the <a href="https://www.govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/" target="_blank" rel="noopener">Swiss Government</a>&#8216;s illustration below, which details how the attack is made possible. In this example, the attacker sets the User-Agent field in the HTTP request to the address of the attacker’s LDAP server using syntax that will be recognized by log4j’s JNDI plugin. The value of the User-Agent field is something that is commonly logged. The syntax of this value, (${jndi:*}) triggers the log4j JNDI plugin implementation to perform a look-up. The look-up type is LDAP in this example but a look-up type of <a href="https://blogs.juniper.net/en-us/threat-research/log4j-vulnerability-attackers-shift-focus-from-ldap-to-rmi" target="_blank" rel="noopener">RMI has also been proven in a viable attack vector</a>.</p>
+<p><img loading="lazy" decoding="async" width="1204" height="814" src="https://www.ami.com/wp-content/uploads/2021/12/logj4-jndi-attack-1.jpg" alt="" title="logj4-jndi-attack" srcset="https://www.ami.com/wp-content/uploads/2021/12/logj4-jndi-attack-1.jpg 1204w, https://www.ami.com/wp-content/uploads/2021/12/logj4-jndi-attack-1-980x663.jpg 980w, https://www.ami.com/wp-content/uploads/2021/12/logj4-jndi-attack-1-480x325.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1204px, 100vw" class="wp-image-236985" /></p>
+<p><span>&#8220;The log4j JNDI Attack&#8221; log4j_attack.png. Zero-Day Exploit Targeting Popular Java Library Log4j. 2021, December 18. Swiss Government Computer Emergency Response Team (GovCERT.ch) <a href="https://govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/" target="_blank" rel="noopener">https://govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/ </a></span></p>
+<p>The ease with which the attacker’s code is executed on the target system (step 5) varies based on the version of Java used in the target system. Applications running versions of Java prior to 8u191, 7u201, 6u211, and 11.01 can easily be exploited as they load remote classes via JNDI by default; however, the exploit is still possible with these and subsequent versions of Java.</p>
+<p><strong>Why does CVE-2021-44228 matter? </strong></p>
+<p>CVE-2021-44228 has the highest possible <a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H" target="_blank" rel="noopener">CVSS score</a> associated with it. This means that it is easily exploitable by unsophisticated remote attackers and the effects of an exploit impact the target system’s (and possibly other adjacent system’s) confidentiality, integrity, and availability to the highest degree.</p>
+<p><strong> </strong><strong>How has AMI addressed Log4j2 vulnerability?</strong></p>
+<p>Immediately upon disclosure, AMI’s Product Security Incident Response Team (PSIRT) was activated and sent out internal disclosures of the vulnerability to AMI product teams situated in different geographic locations around the globe, each tasked to investigate whether their product was affected by CVE-2021-44228. Armed with <a href="https://github.com/lunasec-io/lunasec/releases/" target="_blank" rel="noopener">tools provided by the PSIRT</a> to automatically detect the vulnerability in their code, the product teams thoroughly completed their investigation and reported status back to the PSIRT. In parallel to the investigation into products affected, AMI’s MIS department set out to identify any internal systems that may be vulnerable. PSIRT collated the results from AMI product teams and the MIS team into advisory documents which were published to customers detailing the affected status of each project and AMI systems that they interact with for the purposes of accessing releases and product documentation.</p>
+<p><strong>AMI Unaffected by Log4j2 vulnerability</strong></p>
+<p>AMI is proud to announce that all products and customer-facing systems were not affected by CVE-2021-44228. AMI is committed to developing and maintaining industry leading SSDLC practices and processes. The result of this commitment is exemplified in AMI’s rapid response to CVE-2021-44228. AMI’s commitment to support regarding cybersecurity threats does not stop with the publication of advisories.</p>
+<p>If AMI customers have questions or concerns related to CVE-2021-44228, please reach out to AMI representatives in your local region.</p>
+<p>The post <a href="https://www.ami.com/resource/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/">AMI Analysis and Response to CVE-2021-44228 Log4j Vulnerability</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.ami.com/resource/ami-analysis-and-response-to-cve-2021-44228-log4j-vulnerability/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMI Statement in Response to “Meltdown” and “Spectre” Security Vulnerabilities</title>
+		<link>https://www.ami.com/resource/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/</link>
+					<comments>https://www.ami.com/resource/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/#respond</comments>
+		
+		<dc:creator><![CDATA[AMI Marketing]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2018 05:00:00 +0000</pubDate>
+				<guid isPermaLink="false">https://ami2025dev.wpenginepowered.com/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/</guid>
+
+					<description><![CDATA[<p>NORCROSS, GEORGIA, USA – AMI, a global leader in BIOS and UEFI firmware, server and remote management tools, data storage products and unique solutions based on the Linux® and Android™ operating systems, today released a statement in response to recent news of the security vulnerabilities known as Meltdown and Spectre. In short, AMI would like [&#8230;]</p>
+<p>The post <a href="https://www.ami.com/resource/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/">AMI Statement in Response to “Meltdown” and “Spectre” Security Vulnerabilities</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><strong>NORCROSS, GEORGIA, USA</strong> – AMI, a global leader in BIOS and UEFI firmware, server and remote management tools, data storage products and unique solutions based on the Linux® and Android™ operating systems, today released a statement in response to recent news of the security vulnerabilities known as Meltdown and Spectre.</p>
+<p>In short, AMI would like to reassure its valued partners, OEM and ODM customers and end users of AMI products that it continues to closely monitor the details of both the Meltdown and Spectre security vulnerabilities as they emerge. Naturally, AMI exercises the utmost vigilance with respect to security vulnerabilities and makes every effort to be proactive about security advisories from the moment details are disclosed.</p>
+<p>Most importantly, AMI is pleased to state that we have reviewed these security issues in detail and determined that Aptio®, our flagship UEFI BIOS Firmware, is not affected or compromised by either of these vulnerabilities in any way. AMI recommends that systems vulnerable to Meltdown and Spectre security vulnerabilities apply all appropriate operating system security patches, which can be obtained directly from the operating system vendor.</p>
+<p>However, AMI would also like to point out that for certain Intel® based products, mitigation of the Spectre CPU security vulnerability involves the application of a CPU microcode patch from Intel Corporation, along with any security patches obtained from the operating system vendor. Interested parties can rest assured that AMI is working closely with Intel to obtain all relevant CPU microcode patch updates. As a matter of course, AMI will provide these Intel CPU microcode patch updates to AMI OEM and ODM customers as soon as they become available from Intel.</p>
+<p>Subramonian Shankar, President, Founder and CEO of AMI, offered the following comments on the company’s recent activities and stance regarding these two security issues:</p>
+<p>“Over the years, AMI has come up with what we believe to be a robust security framework, which allows us to keep tabs on the security vulnerabilities that are relevant to AMI products, so we can take immediate action. AMI has been working on various mechanisms to simplify this entire process of creating and applying security fixes and patches to mitigate vulnerabilities. Additionally, we work closely with key industry partners on fixes, which AMI then distributes to our customers. Keeping in close coordination with our partners also makes it easy for AMI customers to apply the fixes that we have developed.</p>
+<p>“From our perspective, we don’t see the threat of security issues like Meltdown and Spectre going away in the future. Therefore, it is imperative that we work closely with Intel, AMD, Arm®-based silicon providers and others to continue to address them. We see ourselves as a partner with silicon manufacturers in many technical and strategic initiatives over the course of many years and we will continue to do so, to address security vulnerabilities in a timely, coordinated and effective manner.</p>
+<p>As such, it is important to AMI to continue working closely with all silicon providers on this issue now and in the future. From our perspective, this incident shows the complexity of the security paradigm in our industry, which requires the industry to work in close cooperation so that we can address these security issues collectively with the best possible response.”</p>
+<p>AMI will continue to monitor the security situation around Meltdown and Spectre closely as it evolves and make the public, as well as our valued partners, OEM and ODM customers and end users of AMI products, aware of any additional details that may emerge.</p>
+<p><em>Intel® is a registered trademark of Intel Corporation in the US and other countries. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.</em></p>
+<p>The post <a href="https://www.ami.com/resource/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/">AMI Statement in Response to “Meltdown” and “Spectre” Security Vulnerabilities</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.ami.com/resource/ami-statement-in-response-to-meltdown-and-spectre-security-vulnerabilities/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMI Response for Intel® Management Engine Security Bulletin</title>
+		<link>https://www.ami.com/resource/ami-response-for-intel-management-engine-security-bulletin/</link>
+					<comments>https://www.ami.com/resource/ami-response-for-intel-management-engine-security-bulletin/#respond</comments>
+		
+		<dc:creator><![CDATA[AMI Marketing]]></dc:creator>
+		<pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+				<guid isPermaLink="false">https://ami2025dev.wpenginepowered.com/ami-response-for-intel-management-engine-security-bulletin/</guid>
+
+					<description><![CDATA[<p>AMI response for the INTEL-SA-00086 Security Bulletin for Intel® Management Engine AMI is committed to providing the highest level of security in our firmware offerings. With our BIOS and BMC firmware offerings deployed on a majority of computing systems across the globe, we are deeply committed to our role as a leader in BIOS and [&#8230;]</p>
+<p>The post <a href="https://www.ami.com/resource/ami-response-for-intel-management-engine-security-bulletin/">AMI Response for Intel® Management Engine Security Bulletin</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h3>AMI response for the INTEL-SA-00086 Security Bulletin for Intel® Management Engine</h3>
+<p>AMI is committed to providing the highest level of security in our firmware offerings. With our BIOS and BMC firmware offerings deployed on a majority of computing systems across the globe, we are deeply committed to our role as a leader in BIOS and BMC firmware security. We have a long-established in-house firmware security team to enable us to rapidly respond to security issues as they arise and provide recommendations and mitigations to our OEM/ODM customers through our Security Advisories and Security Vulnerability patches.</p>
+<p>For our OEM/ODM customers, we recommend that they keep their <em>Security Contact</em> at their company up-to-date with their AMI Sales Representative. Customer <em>Security Contacts</em> have access to the latest Security Advisories and patches. When necessary, our Security Advisories provide mitigations or workarounds for potential vulnerabilities associated with our firmware products.</p>
+<p>If you have information about a security issue or vulnerability with our BIOS and BMC firmware offerings, please visit the following URLs:</p>
+<h4>For BIOS firmware</h4>
+<p><a href="/?page_id=173">BIOS Security Center</a></p>
+<h4>For BMC firmware</h4>
+<p><a href="/?page_id=173">MegaRAC Security Center</a></p>
+<p>In regards to the <a href="https://security-center.intel.com/advisory.aspx?intelid=intel-sa-00086&amp;languageid=en-fr" target="_blank" rel="noopener noreferrer">Intel® Management Engine (ME) vulnerability</a>, we have provided an advisory on October 27, 2017 to all our OEM and ODM customers including information about the mitigation availability. We highly recommend that you visit the manufacturer of your server or computer system for a firmware update.</p>
+<p>The post <a href="https://www.ami.com/resource/ami-response-for-intel-management-engine-security-bulletin/">AMI Response for Intel® Management Engine Security Bulletin</a> appeared first on <a href="https://www.ami.com">AMI</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.ami.com/resource/ami-response-for-intel-management-engine-security-bulletin/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
