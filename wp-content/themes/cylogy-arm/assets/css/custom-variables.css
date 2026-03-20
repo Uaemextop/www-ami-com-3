@@ -1,0 +1,288 @@
+/*
+ * Custom CSS Variables
+ * This file defines custom variables that override ARM Design System variables
+ * and introduces new variables for project-specific styling.
+ * Loads after ARM Design System but before custom-overrides.css
+ */
+
+:root {
+  /* =================================================================
+     Custom Gradient Colors - Override ARM variables for consistency
+     ================================================================= */
+
+ /* Colors */
+  --arm-black-text: #080225;
+  --arm-black-icon: var(--arm-black-text);  
+
+  /* Primary gradient colors used in titles and text effects */
+  --arm-gradient-start: #15eaea; /* Cyan/Turquoise - used in gradients */
+  --arm-gradient-end: #7133f8;   /* Purple - used in gradients */
+  
+  /* PostAnnounce metadata colors */
+  --arm-post-announce-metadata-color: #484848 !important; /* Color for date __short and author elements */
+   /* PostAnnounce title colors (context aware) */
+   --arm-post-announce-title-on-dark: #ffffff; /* Ensures readable contrast on dark backgrounds */
+   --arm-post-announce-title-on-light: #000000; /* Standard dark text for light backgrounds */
+  
+   /* Unified white & transparent fade tokens (avoid repeating #FFFFFF + rgba variants) */
+   --arm-white: #ffffff; /* canonical white */
+   --arm-white-fade-vertical: linear-gradient(180deg, var(--arm-white) 15.17%, rgba(255, 255, 255, 0) 100%);
+   /* Dual-spectrum horizontal brand gradient (Subscribe blocks) */
+   --arm-spectrum-horizontal: linear-gradient(90deg, #FCF8FF 0%, #E1D5FF 25%, #9FC9FF 49.52%, #96E3FF 75.48%, #53FDFF 100%);
+   /* Composite (horizontal under vertical) kept separate so layers can be ordered in CSS */
+   --arm-subscribe-gradient-horizontal: var(--arm-spectrum-horizontal);
+   --arm-subscribe-gradient-vertical: var(--arm-white-fade-vertical);
+  
+  /* Override ARM light blue to match gradient start color */
+  --arm-light-blue: #15eaea;
+  
+  /* =================================================================
+     CTA Button Color Overrides (Semantic Token Layer v1)
+     -----------------------------------------------------------------
+     New canonical naming schema (variant + role + state):
+       --arm-cta-<variant>-<role>-<state>
+       variant: primary | purple | mkto
+       role: bg | border | text
+       state: idle | hover | active (focus maps to hover unless specified)
+     -----------------------------------------------------------------
+     Backward compatibility: legacy variable names retained as aliases.
+     Remove legacy aliases after all templates/components are migrated.
+     ================================================================= */
+
+  /* Primary (Light) CTA Semantic Tokens */
+  --arm-cta-primary-bg-idle:   #f4f8ff;
+  --arm-cta-primary-bg-hover:  #E6EEFF;
+  --arm-cta-primary-bg-active: #EBF1FF;
+  --arm-cta-primary-border-idle:   #0057FF;
+  --arm-cta-primary-border-hover:  #0057FF;
+  --arm-cta-primary-border-active: #0057FF;
+  --arm-cta-primary-text-idle:   #0057FF;
+  --arm-cta-primary-text-hover:  #0057FF; /* stays blue, not white per latest spec */
+  --arm-cta-primary-text-active: #0057FF;
+  /* Optional focus ring color */
+  --arm-cta-primary-focus-ring: rgba(0,87,255,0.28);
+
+  /* Purple (Dark Context) CTA Semantic Tokens */
+  --arm-cta-purple-bg-idle:   #7233F7;
+  --arm-cta-purple-bg-hover:  #261a4f;
+  --arm-cta-purple-bg-active: #391a7c;
+  --arm-cta-purple-border-idle:   #7233F7;
+  --arm-cta-purple-border-hover:  #7233F7;
+  --arm-cta-purple-border-active: #7233F7;
+  --arm-cta-purple-text-idle:   #c8adfc;
+  --arm-cta-purple-text-hover:  #c8adfc;
+  --arm-cta-purple-text-active: #caa5fe;
+  --arm-cta-purple-focus-ring: #8047F8;
+
+  /* Marketo (Subscription) CTA Semantic Tokens */
+  --arm-cta-mkto-bg-idle:   #7233F7;
+  --arm-cta-mkto-bg-hover:  #6023DE;
+  --arm-cta-mkto-bg-active: #8047F8;
+  --arm-cta-mkto-border-idle:   #7233F7;
+  --arm-cta-mkto-border-hover:  #6023DE;
+  --arm-cta-mkto-border-active: #8047F8;
+  --arm-cta-mkto-text-idle:   #ffffff;
+  --arm-cta-mkto-text-hover:  #ffffff;
+  --arm-cta-mkto-text-active: #ffffff;
+  --arm-cta-mkto-focus-ring: #7233F7;
+
+
+
+  /* ---------------------------------------------------------------
+     Legacy Variable Aliases (to be deprecated)
+     --------------------------------------------------------------- */
+  /* Primary Legacy */
+  --arm-cta-primary-bg: var(--arm-cta-primary-bg-idle);
+  --arm-cta-primary-border: var(--arm-cta-primary-border-idle);
+  --arm-cta-primary-text: var(--arm-cta-primary-text-idle);
+  --arm-cta-primary-hover-bg: var(--arm-cta-primary-bg-hover);
+  --arm-cta-primary-hover-border: var(--arm-cta-primary-border-hover);
+  --arm-cta-primary-hover-text: var(--arm-cta-primary-text-hover);
+  --arm-cta-primary-active-bg: var(--arm-cta-primary-bg-active);
+  --arm-cta-primary-active-border: var(--arm-cta-primary-border-active);
+  --arm-cta-primary-active-text: var(--arm-cta-primary-text-active);
+
+  /* Purple Legacy */
+  --arm-cta-purple-bg: var(--arm-cta-purple-bg-idle);
+  --arm-cta-purple-border: var(--arm-cta-purple-border-idle);
+  --arm-cta-purple-text: var(--arm-cta-purple-text-idle);
+  --arm-cta-purple-hover-bg: var(--arm-cta-purple-bg-hover);
+  --arm-cta-purple-hover-border: var(--arm-cta-purple-border-hover);
+  --arm-cta-purple-hover-text: var(--arm-cta-purple-text-hover);
+  --arm-cta-purple-active-bg: var(--arm-cta-purple-bg-active);
+  --arm-cta-purple-active-border: var(--arm-cta-purple-border-active);
+  --arm-cta-purple-active-text: var(--arm-cta-purple-text-active);
+
+  /* Marketo Legacy */
+  --arm-mkto-button-bg: var(--arm-cta-mkto-bg-idle);
+  --arm-mkto-button-border: var(--arm-cta-mkto-border-idle);
+  --arm-mkto-button-text: var(--arm-cta-mkto-text-idle);
+  --arm-mkto-button-hover-bg: var(--arm-cta-mkto-bg-hover);
+  --arm-mkto-button-hover-border: var(--arm-cta-mkto-border-hover);
+  --arm-mkto-button-hover-text: var(--arm-cta-mkto-text-hover);
+  --arm-mkto-button-active-bg: var(--arm-cta-mkto-bg-active);
+  --arm-mkto-button-active-border: var(--arm-cta-mkto-border-active);
+  --arm-mkto-button-active-text: var(--arm-cta-mkto-text-active);
+  --arm-mkto-button-focus-ring: var(--arm-cta-mkto-focus-ring);
+  
+  /* =================================================================
+     Global CTA Button Dimensional Properties
+     ================================================================= */
+  
+  /* CTA Button Layout and Spacing */
+  --arm-cta-button-height: 40px;
+  /* Updated CTA spacing & shape (global) */
+  /* New pill style: 128px full pill radius, 18px vertical / 22px horizontal padding */
+  --arm-cta-button-padding: 18px 22px; /* top/bottom 18px, left/right 22px */
+  --arm-cta-button-padding-y: 18px;
+  --arm-cta-button-padding-x: 22px;
+  --arm-cta-button-border-radius: 128px; /* pill */
+  --arm-cta-button-border-width: 1px;
+  --arm-cta-button-opacity: 1;
+  --arm-cta-button-angle: 0deg;
+  
+      /* PrettySimpleHero top line typography */
+      --arm-hero-top-line-font-size: 12px; /* updated per latest request */
+   --arm-cta-button-font-size: 16px; /* unified button font size */
+  
+  /* =================================================================
+     Site Background and Text Colors
+     ================================================================= */
+  
+  /* Light mode colors (default) */
+  --arm-site-bg: #ffffff;
+  --arm-site-text: inherit; /* Use default text color */
+  /* Heading/Text color tokens for context-aware overrides */
+  --arm-heading-on-light: #000000;
+  --arm-heading-on-dark: #ffffff;
+  
+   /* RelatedPostsSlider dark background color */
+   --arm-slider-bg: #080225;
+  --arm-slider-text: #ffffff;
+  
+  /* Featured word styling */
+  --arm-featured-word-color: #ffffff;
+  
+  /* =================================================================
+     Secondary Text Color Token (requested as --text-secondary)
+     ================================================================= */
+  --text-secondary: #9C9AA8; /* Neutral secondary text tone */
+  /* Optional alias within arm naming scheme for future consistency */
+  --arm-text-secondary: var(--text-secondary);
+  
+  /* =================================================================
+     Navigation and Placeholder Colors
+     ================================================================= */
+  
+  /* Navigation placeholder background */
+  --arm-nav-placeholder-bg: #010101;
+  
+  /* =================================================================
+     Spacing and Layout Variables
+     ================================================================= */
+  
+  /* Slider arrow spacing */
+  --arm-slider-arrow-spacing: 140px;
+  --arm-slider-arrow-spacing-tablet: 120px;
+  --arm-slider-arrow-spacing-mobile: 90px;
+  
+  /* Arrow sizes */
+  --arm-arrow-size-desktop: 96px;
+  --arm-arrow-size-tablet: 80px;
+  --arm-arrow-size-mobile: 72px;
+  
+  /* Arrow icon sizes */
+  --arm-arrow-icon-desktop: 40px;
+  --arm-arrow-icon-tablet: 36px;
+  --arm-arrow-icon-mobile: 32px;
+
+  /* =================================================================
+     Heading Typography Variables (global)
+     ================================================================= */
+  --arm-heading-font-family: var(--font-family-aeonik, "Aeonik");
+  /* H1 */
+  --arm-heading-1-size: clamp(2.25rem, 3vw + 1rem, 3rem);
+  --arm-heading-1-weight: 400;
+  --arm-heading-1-line-height: 1.15;
+  --arm-heading-1-letter: 0;
+  /* H2 */
+  --arm-heading-2-size: 32px;
+  --arm-heading-2-weight: 400;
+  --arm-heading-2-line-height: 35px;
+  --arm-heading-2-letter: 0;
+  /* H3 */
+  --arm-heading-3-size: 24px;
+  --arm-heading-3-weight: 400;
+  --arm-heading-3-line-height: 26px;
+  --arm-heading-3-letter: 0;
+  /* H4 */
+  --arm-heading-4-size: clamp(1.25rem, 0.9vw + 0.85rem, 1.5rem);
+  --arm-heading-4-weight: 400;
+  --arm-heading-4-line-height: 1.3;
+  --arm-heading-4-letter: 0;
+  /* H5 */
+  --arm-heading-5-size: clamp(1.125rem, 0.6vw + 0.8rem, 1.25rem);
+  --arm-heading-5-weight: 400;
+  --arm-heading-5-line-height: 1.35;
+  --arm-heading-5-letter: 0;
+  /* H6 */
+  --arm-heading-6-size: clamp(1rem, 0.4vw + 0.8rem, 1.125rem);
+  --arm-heading-6-weight: 400;
+  --arm-heading-6-line-height: 1.4;
+  --arm-heading-6-letter: 0;
+
+  /* =================================================================
+     Body Typography Variables (global)
+     ================================================================= */
+  --arm-body-font-family: var(--font-family-aeonik, "Aeonik");
+  --arm-body-weight: 400;
+  --arm-body-lg-size: 16px;            /* 16px default */
+  --arm-body-lg-line-height: 24px;      /* 24px default */
+  --arm-body-md-size: 14px;        /* 14px default */
+  --arm-body-md-line-height: 20px;     /* 20px default */
+  --arm-body-letter: 0.02em;           /* approx 2% tracking */
+
+  /* =================================================================
+     Horizontal Tabs Navigation Typography Variables
+     ================================================================= */
+  --arm-tabs-nav-font-family: var(--font-family-aeonik, "Aeonik");
+  --arm-tabs-nav-weight: 500;           /* 'Medium' weight */
+  --arm-tabs-nav-size: 1rem;            /* 16px */
+  --arm-tabs-nav-line-height: 1.5;      /* 24px */
+  --arm-tabs-nav-letter: 0.02em;        /* ~2% tracking */
+
+  
+  /* =================================================================
+     Dark Mode Colors (Currently Commented Out)
+     ================================================================= */
+  
+  /* These would be used if dark mode is re-enabled
+  --arm-dark-cta-bg: #7233F7;
+  --arm-dark-site-bg: #211B3B;
+  --arm-dark-site-text: #E6E6E9;
+  --arm-dark-cta-hover-bg: #080225;
+  --arm-dark-cta-hover-text: #C7ADFC;
+  */
+}
+
+/* =================================================================
+   Responsive Variable Overrides
+   ================================================================= */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  :root {
+    --arm-slider-arrow-spacing: var(--arm-slider-arrow-spacing-tablet);
+    --arm-arrow-size-desktop: var(--arm-arrow-size-tablet);
+    --arm-arrow-icon-desktop: var(--arm-arrow-icon-tablet);
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  :root {
+    --arm-slider-arrow-spacing: var(--arm-slider-arrow-spacing-mobile);
+    --arm-arrow-size-desktop: var(--arm-arrow-size-mobile);
+    --arm-arrow-icon-desktop: var(--arm-arrow-icon-mobile);
+  }
+}

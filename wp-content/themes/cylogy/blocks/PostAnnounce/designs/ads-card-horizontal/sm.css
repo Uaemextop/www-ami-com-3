@@ -1,0 +1,13 @@
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounceContainer {
+  padding-bottom: 32px;
+}
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounceContainer:not(.__no_line) {
+  border-bottom: 1px solid var(--arm-black);
+}
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounceContainer .PostAnnounce {
+  --ads-card-image-min-height: 186px;
+}
+body#layout .PostAnnounce.__design-ads-card-horizontal {
+  --ads-card-content-padding: 0 0 0 24px;
+}
+/*# sourceMappingURL=sm.css.map */

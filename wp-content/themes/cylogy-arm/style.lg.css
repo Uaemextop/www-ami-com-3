@@ -1,0 +1,13 @@
+body#layout #layout__header {
+  height: 98px;
+}
+#layout .CCC .SectionTitle {
+  margin: 0 0 24px 0;
+  font-size: 44px;
+}
+#layout #cookie-notice {
+  max-width: 450px!important;
+  left: 30px!important;
+  transform: none!important;
+}
+/*# sourceMappingURL=style.lg.css.map */

@@ -1,0 +1,3649 @@
+/*
+ * Custom Overrides Stylesheet
+ * This file contains custom styles that override the ARM design system
+ * and other external stylesheets. It loads after all external styles
+ * to ensure proper cascading order.
+ */
+ html body {
+  overflow-x: hidden;
+  --font-family-aeonik: "Aeonik", sans-serif !important;
+  --arm-heading-font-family: var(--font-family-aeonik, "Aeonik", sans-serif);
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+body.u-font-family-body {
+  --ads-font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+/* Override Chrome input styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+    box-shadow: 0 0 0 1000px #ffffff inset;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* PostAnnounce Breadcrumb Items: force #9C9AA8 in horizontal dark gradient context */
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs.PostAnnounce__basic_text > ads-breadcrumb.PostAnnounce__post_type,
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs.PostAnnounce__basic_text > ads-breadcrumb[class^="PostAnnounce__post_type"],
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs.PostAnnounce__basic_text > ads-breadcrumb[class*=" PostAnnounce__post_type"],
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs.PostAnnounce__basic_text > [slot="breadcrumb"].PostAnnounce__post_type,
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs > [slot="breadcrumb"].PostAnnounce__date {
+  --ads-breadcrumbs-color: #9C9AA8 !important;
+  /* color: var(--text-secondary, #9C9AA8) !important; */
+}
+/* Part exposure fallback */
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-breadcrumbs.PostAnnounce__basic_text::part(breadcrumb) {
+  color: var(--text-secondary, #9C9AA8) !important;
+}
+
+body#layout .single_post__content h2 {
+  font-weight: normal;
+}
+
+/* ContactsList title emphasis (optional medium weight for visibility) */
+body#layout .single_post__content .ContactsList__item__title {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important; /* keep regular to match global heading override */
+}
+
+/* ads-horizontal-tabs */
+ads-horizontal-tabs {
+  --ads-horizontal-tabs-underline-color: #004EE6 !important;
+  --ads-horizontal-tabs-tab-color: #333E48 !important;
+  --ads-horizontal-tabs-tab-color-active: #004EE6 !important;
+  --ads-font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+
+/* =================================================================
+   RelatedPostsSlider Single Post Display Override
+   ================================================================= */
+
+/* Center the section title */
+.RelatedPostsSlider .RelatedPosts__title {
+  text-align: center !important;
+}
+
+/* Center the CTA button */
+.RelatedPostsSlider .RelatedPosts__cta {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/* Center CTA button and subscription subscribe wrapper within RelatedPosts CTA area */
+.RelatedPosts__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; /* vertical spacing between button and form */
+  text-align: center; /* ensure heading inside form centers */
+}
+
+.RelatedPosts__ctaButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.RelatedPosts__ctaButtonWrapper .c-cta-button.is-large.is-primary {
+  margin: 0 auto; /* explicit centering safety */
+}
+
+.RelatedPosts__subscribeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 760px; /* constrain form width */
+}
+.RelatedPosts__subscribeWrapper .RelatedPosts__subscribeTitle {
+  --ads-heading-color: #FFFFFF;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.RelatedPosts__subscribeWrapper .SubscribeOnBlog__mkForm form {
+  width: 100%;
+}
+
+/* Maintain underline suppression inside CTA wrapper */
+.RelatedPosts__ctaButtonWrapper a.c-cta-button,
+.RelatedPosts__ctaButtonWrapper a.c-cta-button:hover,
+.RelatedPosts__ctaButtonWrapper a.c-cta-button:focus,
+.RelatedPosts__ctaButtonWrapper a.c-cta-button:active { text-decoration: none !important; }
+
+/* Marketo Form #mktoForm_1706: Email & Country field styling */
+body#layout #mktoForm_1706 input#Email.mktoField,
+body#layout #mktoForm_1706 select#Country.mktoField {
+  width:300px !important;
+  height:48px !important;
+  min-height:48px !important;
+  padding:12px 16px !important;
+  box-sizing:border-box !important;
+  border:1px solid #A9A9A9 !important;
+  border-radius:8px !important;
+  background:#fff !important;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+  font-size:16px !important;
+  line-height:24px !important;
+  color:#080225 !important; /* primary text color */
+}
+
+/* Adjust label spacing */
+body#layout #mktoForm_1706 .mktoLabel.mktoHasWidth { margin-bottom:4px; }
+
+/* Marketo Form #mktoForm_1817: Email & Country field styling (dark surface variant) */
+body#layout .mkFormContainer.__custom_css .mktoForm .mktoFieldWrap .mktoField option {
+  --arm-dark-blue: #FFF !important;
+  color:#000 !important;
+}
+
+body#layout #mktoForm_1817 input#Email.mktoField,
+body#layout #mktoForm_1817 select#Country.mktoField {
+  width:300px !important;
+  height:48px !important;
+  min-height:48px !important;
+  padding:11px 16px !important;
+  box-sizing:border-box !important;
+  border-radius:8px !important;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+  font-weight:400 !important;
+  font-style:normal !important;
+  font-size:16px !important;
+  line-height:24px !important;
+  letter-spacing:1.6px !important;
+  opacity:1 !important;
+}
+
+/* Placeholder color */
+body#layout #mktoForm_1817 input#Email.mktoField::placeholder {
+  color:#656565  !important;
+  opacity:1 !important;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+  font-weight:400 !important;
+  font-size:16px !important;
+  line-height:24px !important;
+  letter-spacing:1.6px !important;
+}
+
+/* Browser-specific placeholder styles */
+body#layout #mktoForm_1817 input#Email.mktoField::-ms-input-placeholder { 
+  color:#656565  !important; 
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+}
+body#layout #mktoForm_1817 input#Email.mktoField:-ms-input-placeholder { 
+  color:#656565  !important;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+}
+body#layout #mktoForm_1817 input#Email.mktoField::-webkit-input-placeholder { 
+  color:#656565  !important;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+}
+body#layout #mktoForm_1817 input#Email.mktoField::-moz-placeholder { 
+  color:#656565  !important; 
+  opacity:1;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+}
+body#layout #mktoForm_1817 input#Email.mktoField:-moz-placeholder { 
+  color:#656565  !important; 
+  opacity:1;
+  font-family: var(--font-family-aeonik, "Aeonik", Arial, sans-serif) !important;
+}
+
+/* Country select "placeholder" (first empty option) styling */
+body#layout #mktoForm_1817 select#Country.mktoField option[value=""],
+body#layout #mktoForm_1817 select#Country.mktoField option:first-child {
+  color:#656565  !important;
+}
+
+/* Adjust label spacing */
+body#layout #mktoForm_1817 .mktoLabel.mktoHasWidth { margin-bottom:4px; }
+
+/* mktoForm_1817 First Row: vertical alignment lock */
+body#layout #mktoForm_1817 .mktoFormRow.mktoInlineFirstRow {
+  display:flex;
+  justify-content: center;
+  align-items: center; /* critical: prevents center/baseline shift */
+  gap:8px;
+  flex-wrap:nowrap;
+}
+
+/* Ensure each field container maintains consistent vertical positioning */
+body#layout #mktoForm_1817 .mktoFormRow.mktoInlineFirstRow .mktoFieldDescriptor.mktoFormCol,
+body#layout #mktoForm_1817 .mktoFormRow.mktoInlineFirstRow .mktoButtonWrap.mktoNative {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  position:relative;
+  margin:0;
+  padding:0;
+}
+
+/* Lock input/select elements to consistent height and remove margin variations */
+body#layout #mktoForm_1817 input#Email.mktoField,
+body#layout #mktoForm_1817 select#Country.mktoField {
+  margin:0 !important;
+  vertical-align:top !important;
+  align-self:flex-start !important;
+}
+
+/* Subscribe button alignment */
+body#layout #mktoForm_1817 .mktoButtonWrap.mktoNative {
+  margin-left:0 !important; /* override inline style */
+}
+
+body#layout #mktoForm_1817 .mktoButtonWrap.mktoNative button.mktoButton {
+  height:48px !important; /* match input height */
+  margin:0 !important;
+  padding:12px 24px !important;
+  vertical-align:top !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+/* Ensure error message appears below without affecting field position */
+body#layout #mktoForm_1817 .mktoFieldWrap {
+  position:relative !important;
+  display:flex !important;
+  flex-direction:column !important;
+}
+
+body#layout #mktoForm_1817 .mktoError {
+  position:absolute !important;
+  top:100% !important; /* position below the field */
+  left:0 !important;
+  right:auto !important;
+  bottom:auto !important;
+  margin-top:4px;
+  z-index:10 ;
+}
+
+@media (max-width: 768px) {
+  body#layout #mktoForm_1817 .mktoError {
+    position: relative !important;
+    bottom:auto !important;
+    top: auto !important;
+  }
+}
+
+
+/* Prevent mktoInvalid class from adding margins or padding that shift layout */
+body#layout #mktoForm_1817 input.mktoField.mktoInvalid,
+body#layout #mktoForm_1817 select.mktoField.mktoInvalid {
+  margin:0 !important;
+  padding:12px 16px !important; /* maintain consistent padding */
+}
+
+/* Lock all wrappers to prevent auto-margins */
+body#layout #mktoForm_1817 .mktoFieldWrap.mktoRequiredField {
+  margin:0 !important;
+  padding:0 !important;
+}
+
+body#layout #mktoForm_1817 .mktoOffset,
+body#layout #mktoForm_1817 .mktoGutter {
+  display:none !important; /* remove auto-generated spacing elements */
+}
+
+@media (max-width: 768px) {
+  body#layout #mktoForm_1817 .mktoFormRow.mktoInlineFirstRow {
+    flex-direction: column;
+  }
+  body#layout #mktoForm_1817 .mktoFormRow.mktoInlineFirstRow .mktoButtonWrap.mktoNative {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Horizontal RelatedPosts ads-card image sizing (318x185) */
+/* Ensure internal <img>/<picture> fill host for consistent crop */
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] ads-card-image img,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] ads-card-image picture,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] ads-card-image source,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] .c-card__image img,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] .c-card__image picture,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] .c-card__image source {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  display:block !important;
+}
+/* Neutralize transform scaling applied via --image-scale (Ken Burns or zoom effects) to preserve exact crop box */
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] ads-card-image[style*="--image-scale"] img,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal .PostAnnounce[orientation="horizontal"] .c-card__image[style*="--image-scale"] img {
+  transform:none !important;
+}
+
+/* =================================================================
+   Universal Breadcrumb Color Enforcement
+   Ensures all ads-breadcrumb and ads-breadcrumbs text renders in #484848.
+   Covers light DOM, descendants, and provides CSS variable override for shadow-hosted internals.
+   Placed late to override earlier context-specific color rules except where explicitly white for contrast.
+   If a component requires alternative contrast (e.g., dark slider design variant), add a more specific rule after this block.
+   ================================================================= */
+html body#layout ads-breadcrumbs,
+html body#layout ads-breadcrumbs *,
+html body#layout ads-breadcrumb,
+html body#layout ads-breadcrumb * {
+  --ads-breadcrumbs-text-decoration-hover: underline !important;
+  --ads-breadcrumbs-color: #484848 !important;
+  --ads-anchor-color: #484848 !important;
+  --ads-breadcrumbs-link-color-visited: #484848 !important;
+  --ads-breadcrumbs-link-color-hover: #484848 !important;
+}
+
+/* Blog - Breadcrumb */
+html body#layout .ads-news-intro-box ads-breadcrumbs ads-breadcrumb[slot="breadcrumb"],
+html body#layout .ads-news-intro-box ads-breadcrumbs ads-breadcrumb[slot="breadcrumb"] * {
+  --ads-breadcrumbs-color: #484848 !important;
+  --ads-anchor-color: #484848 !important;
+  --ads-breadcrumbs-link-color-visited: #484848 !important;
+  --ads-breadcrumbs-link-color-hover: #484848 !important;
+}
+
+/* Override component internal variable so shadow DOM uses desired color */
+html body#layout ads-breadcrumbs {
+  --ads-breadcrumbs-color: var(--arm-post-announce-metadata-color, #484848) !important;
+  --ads-breadcrumbs-link-color: var(--arm-post-announce-metadata-color, #484848) !important;
+}
+/* Related Posts Slider */
+/* Partner News */
+body#layout .RelatedPosts__slider ads-breadcrumbs.PostAnnounce__basic_text,
+body#layout .RelatedPosts__slider ads-breadcrumb.PostAnnounce__date,
+body#layout .RelatedPosts__slider ads-breadcrumb.PostAnnounce__post_type {
+  --ads-breadcrumbs-color: #E6E6E9 !important;
+}
+
+/* =================================================================
+   Archive Breadcrumbs Vertical Offset
+   Moves the breadcrumb row down by 10px without affecting adjacent spacing logic.
+   Uses padding-top primarily to avoid collapsing margins when parent has overflow behaviors.
+   Includes a margin-top fallback for legacy contexts where padding might be stripped.
+   ================================================================= */
+body#layout .archive__breadcrumbs,
+body#layout .search__breadcrumbs {
+  padding-top: 10px !important;
+  /* Fallback if an upstream reset nullifies padding */
+  margin-top: 10px; /* non-important: allows more specific layouts to override */
+}
+/* If breadcrumbs are first child of #archive container ensure container doesn't negate spacing */
+body#layout #archive > .archive__breadcrumbs:first-child,
+body#layout #search > .search__breadcrumbs:first-child { padding-top: 10px !important; }
+
+/* MediaInformation Item: title color, learn-more link styling */
+body#layout [class^="MediaInformationItem__title"],
+body#layout [class*=" MediaInformationItem__title"],
+body#layout .MediaInformationItem__title,
+body#layout h1.MediaInformationItem__title,
+body#layout h2.MediaInformationItem__title,
+body#layout h3.MediaInformationItem__title,
+body#layout h4.MediaInformationItem__title,
+body#layout h5.MediaInformationItem__title,
+body#layout h6.MediaInformationItem__title,
+body#layout [class^="MediaInformationItem__learn_more_text"],
+body#layout [class*=" MediaInformationItem__learn_more_text"],
+body#layout .MediaInformationItem__learn_more_text { color: #080225; }
+
+body#layout .MediaInformationItem__learn_more_row:hover .MediaInformationItem__learn_more_text,
+body#layout .MediaInformationItem__learn_more_row:hover .MediaInformationItem__learn_more_icon {
+  color: #0047d6 !important;
+}
+
+body#layout .MediaInformationItem__learn_more_icon {
+  transition: transform .3s ease;
+}
+
+body#layout .MediaInformation__item.__design-1 .MediaInformationItem__learn_more_icon {
+  transform: translateY(0px);
+}
+
+body#layout .MediaInformationItem__learn_more_row:hover .MediaInformationItem__learn_more_icon {
+  transform: translateX(4px);
+}
+
+/* Defensive: eliminate bottom gap under slider CTA */
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__cta { margin-bottom: 0 !important; display: block; }
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 { padding-bottom: 0.01px; /* create BFC to stop margin collapse (virtually zero visual impact) */ }
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__cta .c-cta-button { margin-bottom: 0 !important; }
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__cta a.c-cta-button { margin-bottom: 0 !important; display: inline-flex; }
+
+/* --------------------------------------------------------------
+   Featured Title Span Consistency
+   Ensure any <span> inside a RelatedPosts title (including .featured-title)
+   inherits identical Aeonik typography as direct heading text.
+   Covers utility spans like .featured-word-white and .gradient-word.
+   We preserve existing color/gradient styling; only enforce font inheritance.
+--------------------------------------------------------------- */
+.RelatedPosts__title.SectionTitle.c-heading-2 span,
+.RelatedPosts__title.SectionTitle.c-heading-2 span * {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+/* If .featured-title appears on a title ensure spans also inherit */
+h2.RelatedPosts__title.featured-title span { font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important; }
+
+/* Apply same styling to RelatedPosts__container that appears below slider */
+.RelatedPosts__container .RelatedPosts__title {
+  text-align: center !important;
+}
+
+.RelatedPosts__container .RelatedPosts__cta {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Prevent underline on hover for links inside RelatedPosts__cta */
+.RelatedPosts__cta a,
+.RelatedPosts__cta a:hover,
+.RelatedPosts__cta a:focus,
+.RelatedPosts__cta a:active,
+.RelatedPosts__cta a *,
+.RelatedPosts__cta a:hover *,
+.RelatedPosts__cta a:focus *,
+.RelatedPosts__cta a:active * {
+  text-decoration: none !important;
+}
+
+/* Add bottom padding to RelatedPosts title with SectionTitle class */
+.RelatedPosts__container .RelatedPosts__title.SectionTitle {
+  padding-bottom: 5px !important;
+}
+
+/* Remove top margin from RelatedPosts container */
+.RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  margin-top: 0px !important; /* reverted per updated request */
+  margin-bottom: 0px !important; /* enforce zero bottom margin */
+}
+
+/* Specific RelatedPosts CTA styling for lower padding */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 .RelatedPosts__cta {
+  padding-bottom: 20px !important;
+}
+
+/* Remove top padding from container inside RelatedPosts ads-card-horizontal with dark background */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  padding-top: 0 !important;
+}
+
+/* Specific RelatedPosts background color override */
+.RelatedPosts.partner-news-block {
+  background-color: #f0f0f0 !important;
+}
+
+body#layout .RelatedPosts.partner-news-block .PostAnnounce__image {
+  opacity: 1;
+}
+
+.RelatedPosts.partner-news-block .PostAnnounce__image::before  {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+body#layout .RelatedPosts.partner-news-block ads-breadcrumb[class^="PostAnnounce__date"],
+body#layout .RelatedPosts.partner-news-block ads-breadcrumb[class^="PostAnnounce__post_type"]  {
+  --ads-breadcrumbs-color: #FFFFFF !important;
+    color: var(--ads-breadcrumbs-color, #FFFFFF) !important;
+}
+
+/* Specific RelatedPostsSlider background color - Apply arm-slider-bg variable */
+.RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color {
+  background-color: var(--arm-slider-bg) !important;
+  margin-top: 0px !important;
+}
+
+/* Global Mobile (<=768px): single-column enforcement */
+@media (max-width: 768px) {
+  body#layout {
+    /* Generic grid containers: force single track */
+    /* Attribute & class patterns for grid-based components */
+    .u-display-grid,
+    [class*="u-display-grid"],
+    .RelatedPosts__posts,
+    .RelatedPostsSlider .RelatedPosts__posts,
+    .MediaInformation.custom_block.__mode_ .MediaInformation__items,
+    .ab-podcast-subscribe-block,
+    .single_post__after_top,
+    .SubscribeOnNews__container,
+    .search_filter_s,
+    .search__filter {
+      display: grid !important;
+      grid-auto-flow: row !important;
+      grid-template-columns: 1fr !important;
+    }
+
+    /* Any utility class declaring >1 columns: neutralize at mobile */
+    [class*="u-grid-columns-2"],
+    [class*="u-grid-columns-3"],
+    [class*="u-grid-columns-4"],
+    [class*="u-grid-columns-5"],
+    [class*="u-grid-columns-6"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    /* Flex row containers -> column */
+    .u-display-flex,
+    [class*="u-display-flex"],
+    .RelatedPosts__items_container,
+    .RelatedPosts__container,
+    .MediaInformation.custom_block.__mode_ .MediaInformation__items,
+    .ab-podcast-subscribe-block,
+    .single_post__after_top {
+      display: flex !important;
+      flex-direction: column !important;
+      flex-wrap: nowrap !important;
+    }
+
+    /* Child items: ensure full width and reset any fixed widths */
+    .RelatedPosts__posts > *,
+    .RelatedPosts__items_container > *,
+    .MediaInformation__items > .MediaInformation__item,
+    .ab-podcast-subscribe-block > *,
+    .single_post__after_top > * {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* MediaInformation design-1 previously centers stacked cards; keep vertical rhythm */
+    .MediaInformation.custom_block.__mode_ .MediaInformation__items { gap: 32px !important; }
+
+    /* RelatedPosts slider inner posts container spacing (avoid overly tight stacking) */
+    .RelatedPosts__posts { row-gap: 24px; }
+
+    /* ------------------------------------------------------------
+       Full-width + centered content blocks (mobile requirement)
+       Apply to common container and item patterns while avoiding
+       low-level structural/interactive elements (e.g. slider arrows).
+    ------------------------------------------------------------ */
+    .c-container,
+    .c-container > div,
+    [class*='__container'],
+    .RelatedPosts__posts > *,
+    .RelatedPosts__items_container > *,
+    .MediaInformation__items > *,
+    .SubscribeOnNews__container > *,
+    .single_post__after_top > *,
+    .search_filter_s > *,
+    .search__filter > * {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto; /* centers narrower children if they internally size down */
+    }
+
+    /* Utility class for any future element needing explicit mobile full-width */
+    .u-mobile-full { width: 100% !important; max-width: 100% !important; }
+  }
+}
+
+/* Remove top margin from container inside RelatedPosts with black background */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  margin-top: 0px !important;
+}
+
+/* Apply required 67px top padding to the container (not the title) for ads-card grid-2 variant */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-2.has--background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  padding-top: 67px !important;
+}
+
+/* Ensure zero top margin on the title inside the non-slider black background RelatedPosts */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  margin-top: 0 !important;
+  padding-top: 80px !important;
+}
+
+/* Force non-slider RelatedPosts (design-3, black bg) title to be black (no gradient fill) */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider)
+  .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1
+  .RelatedPosts__title.SectionTitle.c-heading-2,
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider)
+  .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1
+  .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: var(--arm-heading-on-light, #000) !important;
+  color: var(--arm-heading-on-light, #000) !important;
+}
+
+/* Sharing Buttons, Reading Time  */
+body #single_post .single_post__sharing_buttons {
+  color: var(--arm-black-text, #080225);
+}
+
+body #single_post .single_post__sharing_buttons .a2a_button_twitter,
+body #single_post .single_post__sharing_buttons .a2a_button_linkedin,
+body #single_post .single_post__sharing_buttons .a2a_button_facebook,
+body #single_post .single_post__sharing_buttons .a2a_button_email,
+body #single_post .single_post__sharing_buttons .a2a_button_copy_link,
+body #single_post .single_post__sharing_buttons .a2a_button_twitter:before,
+body #single_post .single_post__sharing_buttons .a2a_button_linkedin:before,
+body #single_post .single_post__sharing_buttons .a2a_button_facebook:before,
+body #single_post .single_post__sharing_buttons .a2a_button_email:before,
+body #single_post .single_post__sharing_buttons .a2a_button_copy_link:before {
+  color: var(--arm-black-icon, #080225);
+}
+
+body #single_post .single_post__sharing_buttons .a2a_button_twitter:before {
+  content: "\f099";
+}
+
+/* Author */
+body #single_post .single_post__final_box .single_post__author__info
+{
+  color: var(--arm-black-text, #080225);
+}
+
+
+body #single_post .single_post__title {
+  color: #080225;
+}
+body #single_post .single_post__site_name {
+  color: var(--arm-post-announce-metadata-color, #484848);
+}
+
+body #single_post .single_post__site_name a,
+body #single_post .single_post__final_box .single_post__author__info a {
+  color: #0047D6;
+}
+
+body #single_post .single_post__final_box .single_post__author__info a:hover,
+body #single_post .single_post__final_box .single_post__author__info a:focus,
+body #single_post .single_post__site_name a:hover,
+body #single_post .single_post__site_name a:focus {
+  color: #0047D6;
+  text-decoration: underline;
+}
+
+/* Single Post Editorial Contact Block */
+body#layout #single_post .single_post__content {
+  font-size: 18px;
+  color: var(--arm-black-text, #080225);
+}
+
+body#layout #single_post .single_post__content h2 {
+  font-size: 32px !important;
+  --arm-black-text: #080225;
+  color: var(--arm-black-text, #080225);
+}
+
+body#layout #single_post .single_post__content a {
+  color: #0047D6;
+}
+body#layout #single_post .single_post__content a:hover {
+  color: #0047D6;
+  text-decoration: underline;
+}
+
+body#layout #single_post .single_post__content p {
+  font-size: 18px;
+}
+
+body#layout .single_post__editorial_contact,
+body#layout .single_post__editorial_contact div,
+body#layout .single_post__editorial_contact h1,
+body#layout .single_post__editorial_contact h2,
+body#layout .single_post__editorial_contact h3,
+body#layout .single_post__editorial_contact h4,
+body#layout .single_post__editorial_contact h5,
+body#layout .single_post__editorial_contact h6 {
+  text-align: left !important;
+}
+
+body#layout .single_post__editorial_contact h2,
+body#layout .single_post__editorial_contact__contact.__name,
+body#layout .single_post__editorial_contact__contact.__position,
+body#layout .single_post__editorial_contact__contact.__email,
+body#layout .single_post__editorial_contact__contact.__phone
+{
+  color: #080225;
+}
+
+/* SubscribeOnBlog: dual-layer gradient background */
+/* Apply gradient ONLY to the outer section element so it can bleed edge-to-edge.
+   Inner constrained container stays transparent letting the gradient show through. */
+body#layout .SubscribeOnNews.has-arm-light-blue-gradient-background-color.has-black-color,
+body#layout .SubscribeOnBlog.has-arm-light-blue-gradient-background-color.has-black-color {
+  /* Clear any utility background color first */
+  background-color: transparent !important;
+  /* Mirror SubscribeOnNews: vertical fade on top of horizontal spectrum */
+  background: var(--arm-subscribe-gradient-vertical),
+              var(--arm-subscribe-gradient-horizontal);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-origin: border-box;
+}
+
+body#layout .SubscribeOnNews,
+body#layout .SubscribeOnBlog {
+  margin-top: 0px;
+}
+
+/* Ensure inner container does NOT paint over the gradient. */
+body#layout .SubscribeOnNews.has-arm-light-blue-gradient-background-color.has-black-color > .SubscribeOnNews__container,
+body#layout .SubscribeOnBlog.has-arm-light-blue-gradient-background-color.has-black-color > .SubscribeOnBlog__container,
+body#layout .SubscribeOnBlog.has-arm-light-blue-gradient-background-color.has-black-color > .SubscribeOnBlog__container.c-container.u-padding-right-1.u-padding-left-1 {
+  background: transparent !important;
+  max-width: none !important;
+}
+
+  
+/* ---------------------------------------------------------------
+   PostAnnounce Title Alignment
+   Ensure all PostAnnounce titles are left aligned, overriding any 
+   inherited centering from generic heading utilities.
+   Uses body#layout prefix to avoid admin overlap.
+--------------------------------------------------------------- */
+body#layout h3.PostAnnounce__title,
+body#layout .PostAnnounce__title.c-heading-2,
+body#layout .PostAnnounce__title.c-heading-3,
+body#layout .PostAnnounce__title.c-heading-4,
+body#layout .PostAnnounce__title.c-heading-5,
+body#layout .PostAnnounce__title.c-heading-6 { text-align:left !important; }
+
+/*Latest News specific */
+.latest-news-block .PostAnnounce__author, .latest-news-block .PostAnnounce__author span {
+  color: #898696 !important;
+}
+
+/* PostAnnounce__title: context-aware color rules (white on dark, navy on light) */
+/* Dark contexts (common background utility classes) -> use variable */
+body#layout .has-black-background-color h3.PostAnnounce__title,
+body#layout .has-black-background-color [class*="PostAnnounce__title"],
+body#layout .has-arm-light-blue-gradient-background-color h3.PostAnnounce__title,
+body#layout .has-arm-light-blue-gradient-background-color [class*="PostAnnounce__title"],
+/* Explicit design-3 slider/cards dark backgrounds */
+body#layout .RelatedPosts.__items_design-3.__grid-2.has-black-background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-3.__grid-2.has-black-background-color [class*="PostAnnounce__title"],
+body#layout .RelatedPosts.__items_design-3.__grid-2.has-arm-light-blue-gradient-background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-3.__grid-2.has-arm-light-blue-gradient-background-color [class*="PostAnnounce__title"],
+/* Existing ads-card dark backgrounds */
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has-black-background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has-black-background-color [class*="PostAnnounce__title"],
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has-arm-light-blue-gradient-background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has-arm-light-blue-gradient-background-color [class*="PostAnnounce__title"],
+html body#layout h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1.has-arm-light-blue-gradient-background-color,
+html body#layout .has-arm-light-blue-gradient-background-color .PostAnnounce__title[class*="c-heading"] { color: var(--arm-post-announce-title-on-dark, #FFFFFF) !important; }
+/* Light grid-2 ads-card context: restore black via variable */
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has--background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has--background-color [class*="PostAnnounce__title"],
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-2.has--background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-2.has--background-color [class*="PostAnnounce__title"] { color: var(--arm-post-announce-title-on-light, #000000) !important; }
+/* Horizontal ads-card variant: force white titles per spec (image overlay provides contrast even on light section background) */
+body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color [class*="PostAnnounce__title"],
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color h3.PostAnnounce__title,
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color [class*="PostAnnounce__title"] { color: var(--arm-post-announce-title-on-dark, #FFFFFF) !important; }
+/* Specificity escalation: target title when nested inside ads-card > ads-card-content for horizontal variant */
+body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card-horizontal[orientation="horizontal"] ads-card-content h3.PostAnnounce__title,
+body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card-horizontal[orientation="horizontal"] ads-card-content h3.PostAnnounce__title[class*="c-heading"],
+html body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card-horizontal[orientation="horizontal"] ads-card-content h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1 { color: #FFFFFF !important; }
+/* Defensive: attribute + class chain (orientation + design) ensures override wins against any internal ADS component rule */
+body#layout .RelatedPosts.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card-horizontal[orientation="horizontal"][style] ads-card-content h3.PostAnnounce__title { color: #FFFFFF !important; }
+
+/* PostAnnounce Title: c-heading-6 navy color in RelatedPosts grid */
+body#layout .RelatedPosts h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+html body#layout .RelatedPosts h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+body#layout .RelatedPosts .PostAnnounceContainer h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+html body#layout .RelatedPosts .PostAnnounceContainer h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1 {
+  color: #080225 !important;
+}
+
+/* PostAnnounce__date and PostAnnounce__post_type text capitalization rules */
+body#layout [class*="PostAnnounce__date"],
+body#layout [class*="PostAnnounce__post_type"],
+html body#layout [class*="PostAnnounce__date"],
+html body#layout [class*="PostAnnounce__post_type"],
+body#layout .PostAnnounce__date,
+body#layout .PostAnnounce__post_type,
+html body#layout .PostAnnounce__date,
+html body#layout .PostAnnounce__post_type { text-transform: uppercase !important; }
+
+/* Reinforce Aeonik font-family + uppercase for ANY date/post_type variant (prefix, substring, multiple classes).
+   Placed immediately after initial capitalization block to override any earlier non-Aeonik font injections.
+   Includes [style] attribute match to defeat inline font-family declarations. */
+html body#layout [class^="PostAnnounce__date"],
+html body#layout [class*=" PostAnnounce__date"],
+html body#layout [class^="PostAnnounce__post_type"],
+html body#layout [class*=" PostAnnounce__post_type"],
+html body#layout .PostAnnounce__date,
+html body#layout .PostAnnounce__post_type,
+html body#layout [class^="PostAnnounce__date"][style],
+html body#layout [class*=" PostAnnounce__date"][style],
+html body#layout [class^="PostAnnounce__post_type"][style],
+html body#layout [class*=" PostAnnounce__post_type"][style] {
+  font-family: var(--font-family-aeonik-fono, "Aeonik") !important;
+  text-transform: uppercase !important;
+}
+
+/* UPDATED: Force uppercase specifically for ads-breadcrumb elements whose class starts with PostAnnounce__date or PostAnnounce__post_type (light DOM coverage) */
+html body#layout ads-breadcrumb.PostAnnounce__date,
+html body#layout ads-breadcrumb.PostAnnounce__post_type,
+html body#layout ads-breadcrumb[class^="PostAnnounce__date"],
+html body#layout ads-breadcrumb[class^="PostAnnounce__post_type"],
+html body#layout ads-breadcrumb[class*=" PostAnnounce__date"],
+html body#layout ads-breadcrumb[class*=" PostAnnounce__post_type"],
+html body#layout ads-breadcrumb.PostAnnounce__date *,
+html body#layout ads-breadcrumb.PostAnnounce__post_type *,
+html body#layout ads-breadcrumb[class^="PostAnnounce__date"] *,
+html body#layout ads-breadcrumb[class^="PostAnnounce__post_type"] *,
+html body#layout ads-breadcrumb[class*=" PostAnnounce__date"] *,
+html body#layout ads-breadcrumb[class*=" PostAnnounce__post_type"] * {
+  text-transform: uppercase !important;
+}
+
+/* High-specificity override: remove inherited 32px/74px top margin from core RelatedPosts (xs/md) */
+#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider) > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  margin-top: 0 !important; /* beats #layout .RelatedPosts__container in md.css */
+  padding-top: 0 !important; /* ensure no padding added by background variants */
+  padding-bottom: 0 !important; /* enforce zero bottom padding per latest spec */
+}
+
+/* Specific RelatedPosts ads-card design background color */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-3.has--background-color:has(.RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1) {
+  background-color: #f9f9f9 !important;
+  /* Enforce uniform vertical padding for this block variant */
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
+}
+
+/* Specific RelatedPosts ads-card container spacing */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-3.has--background-color .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  /* Normalize inner container so outer block's 90px handles vertical rhythm */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove unintended top margin on title within ads-card grid-3 block */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-3.has--background-color .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  margin-top: 0 !important; /* ensure flush with container top */
+  padding-bottom: 0 !important; /* remove inherited bottom padding from generic SectionTitle rule */
+  margin-bottom: 32px !important; /* explicit spacing below title per spec */
+}
+
+/* ================================================================
+   Global Heading Overrides (c-heading-1..6)
+   Centralize heading typography using variables with safe fallbacks
+   ================================================================ */
+body#layout .c-heading-1 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-1-weight, 400) !important;
+  font-size: var(--arm-heading-1-size, clamp(2.25rem, 3vw + 1rem, 3rem)) !important;
+  line-height: var(--arm-heading-1-line-height, 1.15) !important;
+  letter-spacing: var(--arm-heading-1-letter, 0) !important;
+  font-style: normal;
+}
+
+/* RelatedPosts container: margin-top reset */
+#layout .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1,
+#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-3.has--background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  margin-top: 0 !important;
+}
+
+body#layout .c-heading-2 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-2-weight, 400) !important;
+  font-size: var(--arm-heading-2-size, 32px) !important;
+  line-height: var(--arm-heading-2-line-height, 1.2) !important;
+  letter-spacing: var(--arm-heading-2-letter, 0) !important;
+  font-style: normal;
+  text-align: center;
+}
+
+body#layout .c-heading-3 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-3-weight, 400) !important;
+  font-size: var(--arm-heading-3-size, 24px) !important;
+  line-height: var(--arm-heading-3-line-height, 1.25) !important;
+  letter-spacing: var(--arm-heading-3-letter, 0) !important;
+  font-style: normal;
+  text-align: center;
+}
+
+body#layout .c-heading-4 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-4-weight, 400) !important;
+  font-size: var(--arm-heading-4-size, clamp(1.25rem, 0.9vw + 0.85rem, 1.5rem)) !important;
+  line-height: var(--arm-heading-4-line-height, 1.3) !important;
+  letter-spacing: var(--arm-heading-4-letter, 0) !important;
+  font-style: normal;
+  text-align: center;
+}
+
+body#layout .c-heading-5 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-5-weight, 400) !important;
+  font-size: var(--arm-heading-5-size, clamp(1.125rem, 0.6vw + 0.8rem, 1.25rem)) !important;
+  line-height: var(--arm-heading-5-line-height, 1.35) !important;
+  letter-spacing: var(--arm-heading-5-letter, 0) !important;
+  font-style: normal;
+  text-align: center;
+}
+
+body#layout .c-heading-6 {
+  font-family: var(--arm-heading-font-family, var(--font-family-aeonik, "Aeonik")) !important;
+  font-weight: var(--arm-heading-6-weight, 400) !important;
+  font-size: var(--arm-heading-6-size, clamp(1rem, 0.4vw + 0.8rem, 1.125rem)) !important;
+  line-height: var(--arm-heading-6-line-height, 1.4) !important;
+  letter-spacing: var(--arm-heading-6-letter, 0) !important;
+  font-style: normal;
+  text-align: center;
+}
+
+/* Remove added top padding for non-slider RelatedPosts (ensures container sits flush) */
+.RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider)
+  .RelatedPosts__title.SectionTitle.c-heading-2 { padding-top: 0 !important; }
+
+/* =================================================================
+   Featured Podcast Slider - Keep "Featured" Word White
+   ================================================================= */
+
+/* Override gradient for Featured podcast titles - keep "Featured" white */
+.RelatedPostsSlider .RelatedPosts__title:has-text("Featured") {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: inherit !important;
+}
+
+/* Special styling for Featured podcast titles - "Featured" stays white, rest gets gradient */
+.RelatedPostsSlider .RelatedPosts__title.featured-title {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: white !important;
+}
+
+/* Featured Slider Title Spacing: padding-based spec */
+.RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color >
+  .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 >
+  .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2.lg\:u-margin-bottom-2.featured-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 98px !important;
+    padding-bottom: 27px !important;
+}
+
+/* Safety: generic selector also enforces paddings if DOM structure shifts slightly */
+.RelatedPostsSlider .RelatedPosts__title.featured-title {
+  padding-top: 98px !important;
+  padding-bottom: 27px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* The featured-word-white class will be applied to "Featured" word specifically */
+.featured-word-white {
+  color: var(--arm-featured-word-color) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* Ensure single post display with manual navigation */
+.RelatedPostsSlider .RelatedPosts__slider {
+  position: relative !important;
+  padding: 0 var(--arm-slider-arrow-spacing) !important; /* Add padding for larger arrow space */
+}
+
+.RelatedPostsSlider .splide__track,
+.RelatedPostsSlider .splide__list {
+  width: 100% !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+.RelatedPostsSlider .splide__slide {
+  width: calc(33.333% - 22px) !important; /* 3 slides per row with gap */
+  display: block !important; /* Ensure slides are visible; JS will hide non-active ones */
+  flex-shrink: 0 !important;
+  margin-right: 32px !important; /* Match the gap from slider options */
+}
+
+.RelatedPostsSlider .splide__slide:last-child { margin-right: 0 !important; }
+
+/* Removed first-child only visibility rule; visibility now handled by JS showSlide() */
+
+/* Style the navigation arrows */
+/* ---------------------------------------------------------------
+   Manual Slider Content Centering
+   Centers .splide__list inside .splide__track by letting the list
+   shrink to its visible slides (fit-content) and using flex gap
+   instead of per-slide margins to avoid trailing whitespace.
+   Applies only when .manual-slider-active is present.
+   --------------------------------------------------------------- */
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__track {
+  display: flex !important;
+  justify-content: center !important;
+  overflow: visible !important; /* allow arrows to sit outside */
+}
+
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__list {
+  display: flex !important;
+  width: fit-content !important;
+  gap: 32px !important; /* mirrors original margin-right spacing */
+  margin: 0 !important; /* remove horizontal auto margins */
+}
+
+/* Remove right margin on slides; rely on flex gap */
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__slide {
+  margin-right: 0 !important;
+}
+
+/* Legacy fallback where fit-content unsupported */
+@supports not (width: fit-content) {
+  .RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__list {
+    display: inline-flex !important;
+    width: auto !important;
+  }
+  .RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__track {
+    text-align: center !important;
+  }
+}
+/* Shrink entire manual slider wrapper & its inner track/list to intrinsic width */
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active {
+  width: fit-content !important;
+  max-width: 100% !important; /* prevent overflow on narrow screens */
+  display: block !important; /* block so margin auto centers */
+  /* Stack logical children naturally (track then arrows) */
+  position: relative !important; /* anchor absolutely positioned arrows */
+  /* Center the intrinsically sized slider beneath the centered title */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 1024px) {
+  .RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active {
+    width: auto !important;
+  }
+}
+
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__track,
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active .splide__list {
+  width: auto !important; /* override earlier 100% */
+}
+@supports not (width: fit-content) {
+  .RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active {
+    width: auto !important;
+    display: block !important; /* still allow auto margins */
+    margin-left: auto !important;
+    margin-right: auto !important; /* keep centered in fallback */
+  }
+}
+/* Slider Image Fixed Dimensions (Design 3): 310x228 frame with object-fit cover */
+/* Base frame override only inside the slider */
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 {
+  position: relative !important; /* ensure containing block for image */
+  width: 310px !important;
+  height: 228px !important; /* updated from 220px per latest spec */
+  overflow: hidden !important;
+}
+
+/* Remove intrinsic square ratio pseudo-element inside slider */
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3:before {
+  content: none !important;
+  display: none !important;
+  padding-top: 0 !important;
+}
+
+/* Image wrapper + media fill the fixed frame */
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image,
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image picture,
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image img {
+  position: absolute !important;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+/* Text overlay positioning remains, but constrain its padding if needed */
+.RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__text {
+  bottom: 16px !important;
+  left: 16px !important;
+  right: 16px !important;
+}
+
+/* Slide item width: ensure the slide itself shrinks to the frame width
+   (subtracting existing gutter already managed by margin-right) */
+.RelatedPostsSlider .RelatedPosts__slider.splide .splide__slide {
+  width: 310px !important;
+  height: 228px !important; /* match updated frame height */
+}
+
+/* Ultra-narrow viewport safeguard */
+@media (max-width: 400px) {
+  .RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3,
+  .RelatedPostsSlider .RelatedPosts__slider.splide .splide__slide {
+    width: 250px !important;
+    height: 180px !important; /* allow proportional scaling */
+  }
+  .RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image,
+  .RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image picture,
+  .RelatedPostsSlider .RelatedPosts__slider.splide .PostAnnounce.__design-3 .PostAnnounce__image img {
+    height: 180px !important; /* maintain updated intended height */
+  }
+}
+/* High-specificity margin-top reset for Splide arrows */
+#layout .RelatedPosts.RelatedPostsSlider.has-black-background-color.RelatedPostsSlider .RelatedPosts__container .splide__arrows,
+#layout .RelatedPosts.RelatedPostsSlider.has-black-background-color .RelatedPosts__container .splide__arrows.splide__arrows {
+  margin-top: 0 !important;
+  margin: 0 !important;
+}
+/* Splide Arrows: container margin reset */
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__slider.splide .splide__arrows,
+#layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows,
+#layout .RelatedPostsSlider .splide .splide__arrows,
+.RelatedPosts.RelatedPostsSlider .RelatedPosts__slider.splide .splide__arrows {
+  margin-top: 0 !important; /* eliminate injected vertical gap */
+  margin: 0 !important;      /* guard against shorthand overrides */
+  top: 0 !important;         /* counter upstream top:100% positioning */
+  position: absolute !important; /* ensure overlay instead of flow placement */
+  left: 0; right: 0;         /* span slider width for arrow absolute children */
+  pointer-events: none;      /* allow arrows (re-positioned) to handle clicks */
+}
+
+/* Restore arrow buttons absolute centering (in case upstream forced static) */
+#layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow,
+.RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  pointer-events: auto;
+}
+
+/* Horizontal offsets (outside content) */
+#layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow--prev { left: -20px !important; }
+#layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow--next { right: -20px !important; }
+
+@media (max-width: 768px) {
+  #layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow--prev { left: 4px !important; }
+  #layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows .splide__arrow--next { right: 4px !important; }
+}
+
+/* Debug helper – enable via body.debug-splide to visualize container */
+body.debug-splide #layout .RelatedPosts.RelatedPostsSlider .splide .splide__arrows { outline: 2px dashed magenta; background: rgba(255,0,255,0.08); }
+/* Slider Visibility Hotfix: force Splide elements visible after init */
+.RelatedPosts__slider.manual-slider-active {
+  visibility: visible !important; /* Override Splide's hidden pre-init state */
+}
+
+.RelatedPostsSlider .splide__arrows {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important; /* shorthand for top/left/right/bottom */
+  pointer-events: none; /* Container stays transparent */
+  margin-top: 0 !important;
+}
+
+/* Re-enable pointer events on the actual arrow buttons */
+.RelatedPostsSlider .splide__arrows .splide__arrow { pointer-events: auto !important; }
+
+/* SubscribeOnNews: Marketo submit button state overrides */
+/* SubscribeOnNews Marketo Submit Button (Original blue spec) */
+/* Marketo Form 1706 button (scoped only to this form instance) */
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton {
+  background: #0057FF !important; /* idle */
+  border: 1px solid #0057FF !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  line-height: 1.1;
+  transition: background .15s ease, border-color .15s ease, box-shadow .15s ease;
+  box-shadow: none;
+}
+
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:hover,
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:focus,
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:focus-visible {
+  background: #004EE6 !important; /* hover/focus */
+  border-color: #004EE6 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+  outline: none;
+}
+
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:active {
+  background: #0046CC !important; /* active */
+  border-color: #0046CC !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:active:focus,
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton:active:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Disabled state safeguard */
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton[disabled],
+#mktoForm_1706 .mktoButtonWrap.mktoSimple .mktoButton[aria-disabled="true"] {
+  opacity: .55;
+  cursor: not-allowed;
+  background: #0057FF !important; /* maintain brand color */
+  border-color: #0057FF !important;
+  box-shadow: none;
+}
+
+/* Field reordering for form 1706: swap Email and Country positions (Country first, Email second, button third) */
+#mktoForm_1706 .mktoInlineFirstRow { display: flex !important; }
+#mktoForm_1706 .mktoFieldDescriptor:has(#Email) { order: 2 !important; }
+#mktoForm_1706 .mktoFieldDescriptor:has(#Country) { order: 1 !important; }
+#mktoForm_1706 .mktoButtonWrap { order: 3 !important; }
+
+
+/* Consolidated Arrow Layout: 44x44 arrows, vertically centered */
+.RelatedPostsSlider .splide__arrow {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+  pointer-events: auto !important;
+}
+.RelatedPostsSlider .splide__arrow:disabled { opacity: .45 !important; cursor: not-allowed !important; }
+
+.RelatedPostsSlider .splide__arrow svg {
+  width: 44px !important;
+  height: 44px !important;
+  fill: #7233F7 !important;
+  transform: none !important;
+}
+.RelatedPostsSlider .splide__arrow--prev svg { transform: scaleX(-1) !important; }
+
+/* Standard outside offsets */
+.RelatedPostsSlider .splide__arrows .splide__arrow.splide__arrow--prev { left: -20px !important; }
+.RelatedPostsSlider .splide__arrows .splide__arrow.splide__arrow--next { right: -20px !important; }
+
+/* Ensure slider padding is 24px so offsets relate correctly */
+.RelatedPostsSlider .RelatedPosts__slider.splide.manual-slider-active {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-inline: 24px !important;
+}
+
+/* Global Marketo Form #mktoForm_1817 Styling */
+
+/* Default State */
+#mktoForm_1817 { 
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important; 
+}
+#mktoForm_1817 .mktoFieldWrap { position: relative; }
+#mktoForm_1817 input.mktoField,
+#mktoForm_1817 select.mktoField {
+  font: 400 14px/1.3 var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  color: #656565;
+  background: #FFFFFF;
+  border: 2px solid #A9A9A9;
+  border-radius: 6px;
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+/* Hover State */
+#mktoForm_1817 input.mktoField:hover,
+#mktoForm_1817 select.mktoField:hover {
+  color: #656565 !important;
+  border-color: #A9A9A9 !important;
+  background-color: #F2F2F2 !important;
+}
+
+/* Filled State */
+#mktoForm_1817 input.mktoField.mktoValid,
+#mktoForm_1817 input.mktoField.mktoValid option,
+#mktoForm_1817 select.mktoField.mktoValid {
+  color: #080225 !important;
+  border-color: #A9A9A9 !important;
+  background-color: #FFFFFF !important;
+}
+
+/* Error State */
+#mktoForm_1817 input.mktoField.mktoInvalid,
+#mktoForm_1817 select.mktoField.mktoInvalid {
+  color: #080225 !important;
+  border-color: #C60B0B !important; 
+}
+.mkFormContainer.__custom_css .mktoForm .mktoFieldWrap .mktoError .mktoErrorMsg {
+  color: #C60B0B !important;
+}
+
+/* Focus State */
+#mktoForm_1817 input.mktoField:focus,
+#mktoForm_1817 select.mktoField:focus {
+  outline: none !important;
+  color: #080225 !important;
+  border-color: #004EE6 !important;
+  background: #FFFFFF !important;
+  box-shadow: none;
+}
+
+#mktoForm_1817.mktoForm .mktoError .mktoErrorMsg,
+#mktoForm_1817.mktoForm .mktoError .mktoErrorMsg .mktoErrorDetail {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+#mktoForm_1817 .mktoError { font-size: 11px !important; color: #ff6b00 !important; margin-top:4px !important; }
+
+/* Placeholder / option colors */
+#mktoForm_1817 ::placeholder { color: #d5d5d5 !important; opacity: 1; }
+#mktoForm_1817 select.mktoField option { color: #FFF !important; } /* native dropdown text */
+
+/* Visually hidden labels (retain for a11y) */
+#mktoForm_1817 .mktoLabel { position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; clip:rect(0 0 0 0) !important; clip-path:inset(50%) !important; overflow:hidden !important; border:0 !important; }
+#mktoForm_1817 #LblEmail:before { content: 'Email'; }
+#mktoForm_1817 #LblCountry:before { content: 'Country'; }
+
+/* Field reordering: swap Email and Country positions (Country first, Email second, button third) */
+#mktoForm_1817 .mktoInlineFirstRow { display: flex !important; }
+#mktoForm_1817 .mktoFieldDescriptor:has(#Email) { order: 2 !important; }
+#mktoForm_1817 .mktoFieldDescriptor:has(#Country) { order: 1 !important; }
+#mktoForm_1817 .mktoButtonWrap { order: 3 !important; }
+
+
+/* Mobile: bring arrows inside to prevent clipping */
+@media (max-width: 640px) {
+  .RelatedPostsSlider .splide__arrows .splide__arrow.splide__arrow--prev { left: 4px !important; }
+  .RelatedPostsSlider .splide__arrows .splide__arrow.splide__arrow--next { right: 4px !important; }
+}
+
+/* =================================================================
+   CTA Button Overrides - High Specificity Targeting
+   ================================================================= */
+
+/* RelatedPosts__slider CTA Button - Custom Purple Styling */
+.RelatedPostsSlider .RelatedPosts__cta .c-cta-button,
+.RelatedPostsSlider .RelatedPosts__cta ads-cta-button,
+.RelatedPostsSlider .RelatedPosts__cta button,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button {
+  /* Default State - Purple background, white text */
+  --ads-cta-button-background-color-primary: var(--arm-cta-purple-bg, #7233F7) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-purple-border, #7233F7) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-purple-text, #FFFFFF) !important;
+  
+  /* Hover State - Dark purple background, light purple text, purple border */
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-purple-hover-bg, #6023DE) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-purple-hover-border, #6023DE) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-purple-hover-text, #ffffff) !important;
+  
+  /* Focus State - Same as hover */
+  --ads-cta-button-background-color-primary-focus: var(--arm-cta-purple-active-bg, #8047F8) !important;
+  --ads-cta-button-border-color-primary-focus: var(--arm-cta-purple-active-border, #8047F8) !important;
+  --ads-cta-button-color-primary-focus: var(--arm-cta-purple-active-text, #ffffff) !important;
+}
+
+/* Fallback direct CSS styling for RelatedPosts slider CTA buttons */
+.RelatedPostsSlider .RelatedPosts__cta button,
+.RelatedPostsSlider .RelatedPosts__cta .c-cta-button,
+.RelatedPostsSlider .RelatedPosts__cta ads-cta-button,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button {
+  background-color: transparent;
+  border: 1px solid var(--arm-cta-purple-border, #7233F7) !important;
+  color: var(--arm-cta-purple-text, #7233F7) !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  transition: all 0.3s ease !important;
+  /* No ring/glow in idle state */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Ensure no blue box-shadow in the INACTIVE state for these dark CTAs */
+.RelatedPostsSlider .RelatedPosts__cta button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]),
+.RelatedPostsSlider .RelatedPosts__cta .c-cta-button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]),
+.RelatedPostsSlider .RelatedPosts__cta ads-cta-button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]),
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]),
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]),
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button:not(:hover):not(:focus):not(:active):not([aria-pressed="true"]) {
+  /* No outer/inset glow in inactive state */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Icon Removal: hide copy icon inside CTA buttons */
+.fal.fa-light.fa-copy,
+.fa-light.fa-copy,
+.fal.fa-copy,
+img.fal.fa-light.fa-copy,
+img.fa-light.fa-copy,
+img.fal.fa-copy {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Collapse empty spans that only held the icon (modern :has support; safe to ignore if unsupported) */
+span:has(> .fal.fa-light.fa-copy),
+span:has(> .fa-light.fa-copy),
+span:has(> .fal.fa-copy) {
+  display: none !important;
+}
+body#layout .c-cta-button,
+body#layout ads-cta-button,
+body#layout button.c-cta-button,
+body#layout a.c-cta-button {
+  /* Primary CTA - Semantic Tokens */
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg-idle, var(--arm-cta-primary-bg)) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border-idle, var(--arm-cta-primary-border)) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text-idle, var(--arm-cta-primary-text)) !important;
+
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-bg-hover, var(--arm-cta-primary-hover-bg)) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-border-hover, var(--arm-cta-primary-hover-border)) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-text-hover, var(--arm-cta-primary-hover-text)) !important;
+
+  --ads-cta-button-background-color-primary-focus: var(--arm-cta-primary-bg-hover, var(--arm-cta-primary-hover-bg)) !important;
+  --ads-cta-button-border-color-primary-focus: var(--arm-cta-primary-border-hover, var(--arm-cta-primary-hover-border)) !important;
+  --ads-cta-button-color-primary-focus: var(--arm-cta-primary-text-hover, var(--arm-cta-primary-hover-text)) !important;
+
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-bg-active, var(--arm-cta-primary-active-bg)) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-border-active, var(--arm-cta-primary-active-border)) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-text-active, var(--arm-cta-primary-active-text)) !important;
+
+  /* Dimensional */
+  --ads-cta-button-height-large: 48px !important;
+}
+
+/* Fixed yellow box and Learn More button issue in CTA boxes */
+body#layout .CTA_box .ab-cta-card {
+  --arm-yellow: #0057FF !important;
+  --ads-card-border-color: #0057FF !important;
+}
+
+body#layout .CTA_box .c-cta-button.is-primary {
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-bg-hover, var(--arm-cta-primary-hover-bg)) !important;
+  --arm-yellow: var(--arm-cta-primary-bg-idle) !important;
+  border:  1px solid var( --ads-cta-button-border-color-primary) !important;
+  background-color: var(--arm-cta-primary-bg-idle) !important;
+}
+
+body#layout .CTA_box .c-cta-button.is-primary:hover {
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-bg-hover, var(--arm-cta-primary-hover-bg)) !important;
+  background-color: var(--ads-cta-button-background-color-primary-hover) !important;
+  text-decoration: none !important;
+}
+
+
+/* Direct active/pressed fallbacks to ensure visual feedback */
+body#layout .c-cta-button:active,
+body#layout a.c-cta-button:active,
+body#layout button.c-cta-button:active,
+body#layout ads-cta-button:active,
+body#layout .c-cta-button[aria-pressed="true"],
+body#layout a.c-cta-button[aria-pressed="true"],
+body#layout button.c-cta-button[aria-pressed="true"],
+body#layout ads-cta-button[aria-pressed="true"] {
+  background-color: var(--ads-cta-button-background-color-primary-active, #0046CC) !important;
+  box-shadow: inset 0 0 0 var(--ads-cta-button-border-width, 1px) var(--ads-cta-button-border-color-primary-active, #0046CC) !important;
+  color: var(--ads-cta-button-color-primary-active, #ffffff) !important;
+}
+
+/* Keep active state purple ONLY for dark button contexts in dark mode */
+@media (prefers-color-scheme: dark) {
+  /* Variable-based override so ADS buttons pick it up */
+  .RelatedPostsSlider .RelatedPosts__cta .c-cta-button,
+  .RelatedPostsSlider .RelatedPosts__cta ads-cta-button,
+  .RelatedPostsSlider .RelatedPosts__cta button,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button {
+    --ads-cta-button-background-color-primary-active: #8047F8 !important;
+    --ads-cta-button-border-color-primary-active: #8047F8 !important;
+    --ads-cta-button-color-primary-active: #ffffff !important;
+  }
+
+  /* Direct fallback for pressed state in those contexts */
+  .RelatedPostsSlider .RelatedPosts__cta button:active,
+  .RelatedPostsSlider .RelatedPosts__cta .c-cta-button:active,
+  .RelatedPostsSlider .RelatedPosts__cta ads-cta-button:active,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button:active,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button:active,
+  .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button:active {
+    background-color: #8047F8 !important;
+    border-color: #8047F8 !important;
+    color: #ffffff !important;
+  }
+
+  /* Any dark-background section (black or dark-grey) should use purple on active */
+  .has-black-background-color .c-cta-button,
+  .has-black-background-color ads-cta-button,
+  .has-black-background-color button.c-cta-button,
+  .has-black-background-color a.c-cta-button,
+  .has-arm-dark-grey-background-color .c-cta-button,
+  .has-arm-dark-grey-background-color ads-cta-button,
+  .has-arm-dark-grey-background-color button.c-cta-button,
+  .has-arm-dark-grey-background-color a.c-cta-button {
+    --ads-cta-button-background-color-primary-active: #8047F8 !important;
+    --ads-cta-button-border-color-primary-active: #8047F8 !important;
+    --ads-cta-button-color-primary-active: #ffffff !important;
+  }
+
+  /* Direct fallback for pressed state in those dark sections */
+  .has-black-background-color .c-cta-button:active,
+  .has-black-background-color ads-cta-button:active,
+  .has-black-background-color button.c-cta-button:active,
+  .has-black-background-color a.c-cta-button:active,
+  .has-arm-dark-grey-background-color .c-cta-button:active,
+  .has-arm-dark-grey-background-color ads-cta-button:active,
+  .has-arm-dark-grey-background-color button.c-cta-button:active,
+  .has-arm-dark-grey-background-color a.c-cta-button:active {
+    background-color: #8047F8 !important;
+    border-color: #8047F8 !important;
+    color: #ffffff !important;
+  }
+}
+
+/* =================================================================
+   Force light styling for any large primary CTA
+   Ensures .c-cta-button.is-large.is-primary always uses light colors
+   regardless of surrounding dark sections or slider-specific rules.
+   ================================================================= */
+body#layout .c-cta-button.is-large.is-primary,
+body#layout a.c-cta-button.is-large.is-primary,
+body#layout button.c-cta-button.is-large.is-primary {
+  /* Default via semantic sources */
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg-idle) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border-idle) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text-idle) !important;
+
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important;
+  letter-spacing: var(--arm-body-letter, 0.02em) !important;
+  font-style: normal !important;
+
+  /* Hover/Focus */
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-bg-hover) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-border-hover) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-text-hover) !important;
+  --ads-cta-button-background-color-primary-focus: var(--arm-cta-primary-bg-hover) !important;
+  --ads-cta-button-border-color-primary-focus: var(--arm-cta-primary-border-hover) !important;
+  --ads-cta-button-color-primary-focus: var(--arm-cta-primary-text-hover) !important;
+
+  /* Active */
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-bg-active) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-border-active) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-text-active) !important;
+}
+
+/* Ensure hover/focus use light styling for large primary */
+body#layout .c-cta-button.is-large.is-primary:hover,
+body#layout a.c-cta-button.is-large.is-primary:hover,
+body#layout button.c-cta-button.is-large.is-primary:hover,
+body#layout .c-cta-button.is-large.is-primary:focus,
+body#layout a.c-cta-button.is-large.is-primary:focus,
+body#layout button.c-cta-button.is-large.is-primary:focus {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #004EE6) !important;
+  color: var(--arm-cta-primary-hover-text, #ffffff) !important;
+}
+
+/* Direct pressed-state fallback to light active for large primary */
+body#layout .c-cta-button.is-large.is-primary:active,
+body#layout a.c-cta-button.is-large.is-primary:active,
+body#layout button.c-cta-button.is-large.is-primary:active,
+body#layout .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout button.c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  /* Use the designated light active state tokens so active background is #EBF1FF */
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+}
+
+/* Context-specific CTA colors: RelatedPosts button variants */
+/* Variable-based overrides so ADS components pick up desired states */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary {
+
+  --ads-cta-button-background-color-primary:  #7233F7 !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-purple-hover-border, #7233F7 ) !important;
+  --ads-cta-button-color-primary-hover: #ffffff !important;
+  --ads-cta-button-background-color-primary-active: #7233F7 !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-purple-active-border, #8047F8) !important;
+  --ads-cta-button-color-primary-active: #ffffff !important;
+  background-color: var(--ads-cta-button-background-color-primary, #7233F7) !important;
+  color: var( --ads-cta-button-color-primary-active, #ffffff) !important;
+}
+
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover, 
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:focus {
+  --ads-cta-button-border-color-primary-hover: #ffffff !important;
+  --ads-cta-button-background-color-primary-hover: #6023DE !important;
+  background-color: var(--ads-cta-button-background-color-primary-hover, #6023DE) !important;
+  color: var(--ads-cta-button-border-color-primary-hover, #ffffff) !important;
+  text-decoration: underline;
+}
+
+/* Direct fallbacks for those contexts */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary
+{
+  background-color:#7233F7 !important;
+  border-color: #6023DE !important;
+  color:  #ffffff !important;
+}
+
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover {
+  background-color: #6023DE !important;
+}
+
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  background-color: #8047F8 !important;
+  border-color: #8047F8 !important;
+  color:  #ffffff !important;
+}
+
+/* =================================================================
+   Site-Wide Theme Overrides - Background and Text Colors
+   ================================================================= */
+
+/* Light Mode (Default) - Site Background and Text */
+/* Restrict site background application to containers only (do not reapply to all descendants
+   so descendant buttons can show their own interactive background colors). */
+body#layout,
+body#layout > main,
+body#layout > #layout__main {
+  background-color: var(--arm-site-bg) !important; /* site chrome */
+}
+
+/* =================================================================
+   Archive Pages - News and Blog Tabs Theme Overrides
+   ================================================================= */
+
+/* Light Mode (Default) - Archive Tabs Background and Text */
+/* Tabs containers keep site background; remove descendant wildcard that was
+   forcing buttons inside tabs to inherit site background and masking states. */
+body#layout #news_tabs,
+body#layout #blog_tabs {
+  background-color: #484848 !important;
+}
+
+/* =================================================================
+   PostAnnounce Author & Basic Text Typography
+   - Implements requested styling with valid CSS and variables
+   - Targets classes containing the specified names
+   ================================================================= */
+/* Match elements whose class attribute contains the tokens */
+body#layout [class*="PostAnnounce__basic_text"] {
+  font-family: var(--arm-body-font-family, var(--font-family-aeonik, "Aeonik")) !important; /* type/font family/primary */
+  font-weight: var(--arm-body-weight, 400) !important; /* 400 */
+  font-style: normal !important; /* 'Regular' -> normal */
+  font-size: var(--arm-body-md-size, 14px) !important; /* fontsize/body/md */
+  line-height: var(--arm-body-md-line-height, 20px) !important; /* line height/body/md */
+  letter-spacing: var(--arm-body-letter, 0.02em) !important; /* 2% -> ~0.02em */
+  vertical-align: middle !important;
+}
+
+body#layout [class*="PostAnnounce__author"] {
+  font-family: var(--arm-body-font-family, var(--font-family-aeonik, "Aeonik")) !important; /* type/font family/primary */
+  font-weight: var(--arm-body-weight, 400) !important; /* 400 */
+  font-style: normal !important; /* 'Regular' -> normal */
+  font-size: var(--arm-body-lg-size, 16px) !important; /* fontsize/body/sm */
+  line-height: var(--arm-body-lg-line-height, 24px) !important; /* line height/body/sm */
+  letter-spacing: var(--arm-body-letter, 0.02em) !important; /* 2% -> ~0.02em */
+  vertical-align: middle !important;
+}
+
+/* CTA Buttons: mobile overrides (<=768px) */
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider) > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  /* Design-specified vertical rhythm */
+  padding-top: 45px !important;  /* override previous 80px */
+  margin-bottom: 0 !important;   /* neutralize utility u-margin-bottom-1-1/2 */
+  padding-bottom: 60px !important; /* provide space below heading before first row */
+}
+
+/* CTA Block Spacing: Design-3 black background variant */
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider) > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__cta {
+  padding-top: 61px !important;
+  padding-bottom: 61px !important;
+  margin-bottom: 0px !important; /* neutralize any utility margin */
+}
+
+/* MediaInformation: title spacing override */
+body#layout .MediaInformation.custom_block.alignfull.__mode_ > .MediaInformation__container.c-container.u-padding-right-1.u-padding-left-1 > .MediaInformation__title.SectionTitle.c-heading-2 {
+  margin-top: 45px !important;
+  margin-bottom: 45px !important;
+}
+
+/* Topics Page */
+.arhive-topics ads-card ads-card-content h2.c-paragraph {
+  --ads-paragraph-color: #080225 !important;  
+}
+
+.arhive-topics ads-card ads-card-content h2.c-paragraph:hover {
+  --ads-paragraph-color: #0047D6 !important;  
+}
+
+/* Archive Terms Tabs: force Aeonik font on all elements */
+body#layout .archive__terms_tabs,
+body#layout .archive__terms_tabs *,
+body#layout .archive__terms_tabs ads-card,
+body#layout .archive__terms_tabs ads-card *,
+body#layout .archive__terms_tabs ads-card-content,
+body#layout .archive__terms_tabs ads-card-content *,
+body#layout .archive__terms_tabs h1,
+body#layout .archive__terms_tabs h2,
+body#layout .archive__terms_tabs h3,
+body#layout .archive__terms_tabs h4,
+body#layout .archive__terms_tabs h5,
+body#layout .archive__terms_tabs h6,
+body#layout .archive__terms_tabs p,
+body#layout .archive__terms_tabs span,
+body#layout .archive__terms_tabs a,
+body#layout .archive__terms_tabs strong,
+body#layout .archive__terms_tabs em {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+/* Defensive: override any inline style font-family (style attribute match) */
+body#layout .archive__terms_tabs [style*="font-family"],
+body#layout .archive__terms_tabs ads-card[style*="font-family"],
+body#layout .archive__terms_tabs ads-card-content[style*="font-family"] {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+/* Ensure bold utility classes retain Aeonik while expressing weight */
+body#layout .archive__terms_tabs .u-text-bold,
+body#layout .archive__terms_tabs b,
+body#layout .archive__terms_tabs strong {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 500 !important; /* medium weight for emphasis */
+}
+/* Optional: Support an Aeonik Fono variant if global flag set (JS may toggle class .use-fono) */
+body#layout .archive__terms_tabs.use-fono h2,
+body#layout .archive__terms_tabs.use-fono .c-heading-2 {
+  font-family: var(--font-family-aeonik-fono, "Aeonik Fono", var(--font-family-aeonik, "Aeonik", sans-serif)) !important;
+  font-weight: 600 !important;
+}
+
+/* =================================================================
+  Horizontal Tabs Navigation Typography
+  ================================================================= */
+
+
+/* Target the exact RelatedPosts element with its computed classname */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color {
+  /* Apply the same dark background as RelatedPostsSlider (#010101) */
+  background-color: var(--arm-slider-bg) !important;
+  background-image: none !important;
+  background: var(--arm-slider-bg) !important;
+  color: var(--arm-slider-text) !important;
+}
+
+/* Remove top padding on the title within the ads-card-horizontal dark background variant */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Further tighten vertical spacing under the title for ads-card-horizontal gradient variant.
+   Requirement: bottom margin and padding must be 0. We explicitly reset both in case
+   utility class u-margin-bottom-1-1/2 or theme styles reassert spacing. */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Subscribe Block Heading: pseudo-element content injection */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__subscribe.u-margin-top-1 {
+  text-align: center !important;
+  position: relative;
+}
+/* Subscription heading element styling (replaces previous ::before) */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__subscribe.u-margin-top-1 .RelatedPosts__subscribeTitle {
+  display: block;
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 24px !important;
+  line-height: 26px !important; /* per spec */
+  letter-spacing: 0 !important;
+  margin: 0 0 12px 0 !important;
+  text-align: center !important;
+  color: var(--arm-slider-text, #fff) !important;
+}
+/* Enforce exact 138px vertical space between CTA button and subscribe block */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta > .RelatedPosts__subscribe.u-margin-top-1 {
+  margin-top: 138px !important; /* overrides utility spacing to meet spec */
+}
+/* Center the Marketo form container so heading sits directly above it */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__subscribe.u-margin-top-1 .SubscribeOnBlog__mkForm,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__subscribe.u-margin-top-1 .SubscribeOnBlog__mkForm {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Apply same CTA button centering as RelatedPostsSlider */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Stack the CTA button above the subscription form & keep everything centered (homepage variant) */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta {
+  flex-direction: column !important; /* vertical stack: button first, form below */
+  gap: 1rem; /* space between button and form */
+  width: 100%;
+}
+
+/* Ensure the embedded subscription form itself is centered */
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .RelatedPosts__subscribe,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .RelatedPosts__subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* stack heading above form */
+  align-items: center; /* center heading & form horizontally */
+  justify-content: flex-start; /* vertical flow starts at top */
+  gap: 0; /* spacing governed by heading's bottom margin */
+}
+
+/* =================================================================
+   RelatedPosts Marketo Form Styling
+   ================================================================= */
+
+/* Container for the Marketo form within RelatedPosts block */
+.RelatedPosts__marketo_form {
+  background-color: var(--arm-site-bg, #172b47);
+  color: var(--arm-site-text, #ffffff);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+}
+
+/* Ensure Marketo form fields inherit proper styling and colors */
+.RelatedPosts__marketo_form .mkFormContainer form,
+.RelatedPosts__marketo_form .mkFormContainer .mktoForm {
+  background: transparent !important;
+  color: var(--arm-site-text, #ffffff) !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+}
+
+/* Style form input fields */
+.RelatedPosts__marketo_form .mkFormContainer input[type="text"],
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"],
+.RelatedPosts__marketo_form .mkFormContainer select {
+  background-color: var(--arm-site-bg, #ffffff) !important;
+  color: var(--arm-site-text, #000000) !important;
+  border: 1px solid var(--arm-cta-primary-border, #0057FF) !important;
+  border-radius: 4px !important;
+  padding: 0.75rem !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-size: inherit !important;
+}
+
+/* Placeholder styling for all browsers */
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"]::placeholder {
+  color: #666666 !important;
+  opacity: 1 !important;
+  font-style: normal !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"]::-webkit-input-placeholder {
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"]::-moz-placeholder {
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"]:-ms-input-placeholder {
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer input[type="email"]:-moz-placeholder {
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+/* Special styling for select dropdown placeholder */
+.RelatedPosts__marketo_form .mkFormContainer select option[disabled] {
+  color: #666666 !important;
+  font-style: italic !important;
+}
+
+/* Style form labels */
+.RelatedPosts__marketo_form .mkFormContainer label {
+  color: var(--arm-site-text, #ffffff) !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: normal !important;
+}
+
+/* Style the submit button to match your CTA styling */
+.RelatedPosts__marketo_form .mkFormContainer button[type="submit"],
+.RelatedPosts__marketo_form .mkFormContainer input[type="submit"] {
+  /* Use light CTA palette tokens */
+  background-color: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  color: var(--arm-cta-primary-text, #0057FF) !important;
+  border: 1px solid var(--arm-cta-primary-border, #0057FF) !important;
+  border-radius: 4px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-size: inherit !important;
+  cursor: pointer !important;
+  transition: background-color .18s ease, box-shadow .18s ease, color .18s ease !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer button[type="submit"]:hover,
+.RelatedPosts__marketo_form .mkFormContainer input[type="submit"]:hover,
+.RelatedPosts__marketo_form .mkFormContainer button[type="submit"]:focus,
+.RelatedPosts__marketo_form .mkFormContainer input[type="submit"]:focus {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px var(--arm-cta-primary-focus-ring, rgba(0,87,255,0.28)) !important;
+}
+
+.RelatedPosts__marketo_form .mkFormContainer button[type="submit"]:active,
+.RelatedPosts__marketo_form .mkFormContainer input[type="submit"]:active,
+.RelatedPosts__marketo_form .mkFormContainer button[type="submit"][aria-pressed="true"],
+.RelatedPosts__marketo_form .mkFormContainer input[type="submit"][aria-pressed="true"] {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  box-shadow: 0 0 0 2px var(--arm-cta-primary-active-ring, rgba(0,87,255,0.22)) !important;
+}
+
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__author,
+.RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__meta {
+  color: var(--arm-slider-text) !important;
+}
+
+/* Force text color with CSS variables override */
+html body .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta button:hover,
+html body .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .c-cta-button:hover,
+html body .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta ads-cta-button:hover,
+html body .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta a:hover {
+  --ads-cta-button-color-primary-hover: #c8adfc !important;
+  --color: #c8adfc !important;
+  --text-color: #c8adfc !important;
+}
+
+/* =================================================================
+   Global CTA Button Styling - Site-wide Dimensional Properties
+   ================================================================= */
+
+/* Global dimensional styling for all CTA buttons */
+.c-cta-button,
+ads-cta-button,
+button.c-cta-button,
+a.c-cta-button,
+button.mktoButton,
+body .c-cta-button,
+body ads-cta-button,
+body button.c-cta-button,
+body a.c-cta-button,
+body button.mktoButton,
+.wp-site-blocks .c-cta-button,
+.wp-site-blocks ads-cta-button,
+.wp-site-blocks button.mktoButton {
+  height: var(--arm-cta-button-height, 40px) !important;
+  padding: var(--arm-cta-button-padding, 15px 19px) !important;
+  gap: var(--arm-cta-button-gap, 10px) !important;
+  border-radius: var(--arm-cta-button-border-radius, 1rem) !important;
+  border-width: var(--arm-cta-button-border-width, 1px) !important;
+  opacity: var(--arm-cta-button-opacity, 1) !important;
+  transform: rotate(var(--arm-cta-button-angle, 0deg)) !important;
+  display: inline-flex;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: var(--arm-cta-button-font-size, 16px) !important;
+  line-height: 130% !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* ================================================================
+   PrettySimpleHero Typography
+   Separate styles for top_line (small label) and title (large heading)
+   ================================================================ */
+
+/* PrettySimpleHero top line - Small semibold label */
+body .PrettySimpleHero__top_line {
+  font-family: "Aeonik Fono", "Aeonik", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  color: #E6E6E9 !important;
+  /* Experimental properties for future browser support */
+  leading-trim: cap-height;
+  text-edge: cap;
+}
+
+/* Links within PrettySimpleHero top line - inherit parent styling */
+body .PrettySimpleHero__top_line a,
+body .PrettySimpleHero__top_line a:visited,
+body .PrettySimpleHero__top_line a:hover,
+body .PrettySimpleHero__top_line a:focus,
+body .PrettySimpleHero__top_line a:active {
+  font-family: "Aeonik Fono", "Aeonik", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  color: #E6E6E9 !important;
+  text-decoration: none !important;
+}
+
+body .PrettySimpleHero__top_line a:hover {
+  text-decoration: underline !important;
+}
+
+/* PrettySimpleHero title - Large regular heading */
+body .PrettySimpleHero__title,
+body div[class*="PrettySimpleHero__title"] {
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 48px !important;
+  line-height: 53px !important;
+  letter-spacing: 0 !important;
+  color: #FFFFFF !important;
+  /* leading-trim & text-edge removed (unsupported) */
+}
+
+/* Links within PrettySimpleHero title - inherit parent styling and override fonts-error fallback */
+body .PrettySimpleHero__title a,
+body div[class*="PrettySimpleHero__title"] a,
+body .PrettySimpleHero__title a:visited,
+body .PrettySimpleHero__title a:hover,
+body .PrettySimpleHero__title a:focus,
+body .PrettySimpleHero__title a:active,
+.fonts-error body .PrettySimpleHero__title a,
+.fonts-error body div[class*="PrettySimpleHero__title"] a {
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 48px !important;
+  line-height: 53px !important;
+  letter-spacing: 0 !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+
+body .PrettySimpleHero__title a:hover,
+body div[class*="PrettySimpleHero__title"] a:hover {
+  text-decoration: underline !important;
+}
+
+/* PostAnnounce Metadata: date & post-type typography enforcement */
+body .PostAnnounce__date,
+body .PostAnnounce__post_type,
+ads-breadcrumb.PostAnnounce__date,
+ads-breadcrumb.PostAnnounce__post_type,
+ads-breadcrumbs .PostAnnounce__date,
+ads-breadcrumbs .PostAnnounce__post_type {
+  font-family: "Aeonik Fono", "Aeonik", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  letter-spacing: 1.2px !important; /* 10% of 12px font-size */
+}
+
+/* Override: grid-2 ads-card context - Regular Aeonik with specific typography */
+.RelatedPosts.__items_design-ads-card.__grid-2 .PostAnnounce__date,
+.RelatedPosts.__items_design-ads-card.__grid-2 .PostAnnounce__post_type,
+.RelatedPosts.__items_design-ads-card.__grid-2 ads-breadcrumb.PostAnnounce__date,
+.RelatedPosts.__items_design-ads-card.__grid-2 ads-breadcrumb.PostAnnounce__post_type {
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.28px !important;
+  vertical-align: middle !important;
+  color: var(--arm-post-announce-metadata-color, #484848) !important;
+  margin-bottom: 20px !important;
+  /* leading-trim & text-edge removed (unsupported) */
+}
+
+@media (max-width: 767px) {
+  .RelatedPosts.__items_design-ads-card.__grid-2 .PostAnnounce__date,
+  .RelatedPosts.__items_design-ads-card.__grid-2 .PostAnnounce__post_type,
+  .RelatedPosts.__items_design-ads-card.__grid-2 ads-breadcrumb.PostAnnounce__date,
+  .RelatedPosts.__items_design-ads-card.__grid-2 ads-breadcrumb.PostAnnounce__post_type {
+    margin-bottom: 15px !important;
+  }
+}
+
+/* Override: grid-3 ads-card context - Aeonik Fono Semibold with specific typography */
+.RelatedPosts.__items_design-ads-card.__grid-3 .PostAnnounce__date,
+.RelatedPosts.__items_design-ads-card.__grid-3 .PostAnnounce__post_type,
+.RelatedPosts.__items_design-ads-card.__grid-3 ads-breadcrumb.PostAnnounce__date,
+.RelatedPosts.__items_design-ads-card.__grid-3 ads-breadcrumb.PostAnnounce__post_type {
+  font-family: "Aeonik Fono", "Aeonik", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px !important;
+  vertical-align: middle !important;
+  text-transform: uppercase !important;
+  color: var(--arm-post-announce-metadata-color, #484848) !important;
+  /* leading-trim & text-edge removed (unsupported) */
+}
+
+/* Grid-2 context with design-3 in RelatedPostsSlider (light gray, Aeonik Fono Semibold) */
+.RelatedPosts.RelatedPostsSlider.__items_design-3.__grid-2 .PostAnnounce__date,
+.RelatedPosts.RelatedPostsSlider.__items_design-3.__grid-2 .PostAnnounce__post_type,
+.RelatedPosts.RelatedPostsSlider.__items_design-3.__grid-2 ads-breadcrumb.PostAnnounce__date,
+.RelatedPosts.RelatedPostsSlider.__items_design-3.__grid-2 ads-breadcrumb.PostAnnounce__post_type {
+  font-family: "Aeonik Fono", "Aeonik", sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px !important;
+  vertical-align: middle !important;
+  text-transform: uppercase !important;
+  color: #E6E6E9 !important;
+  /* leading-trim & text-edge removed (unsupported) */
+}
+
+/* Override ads-breadcrumbs CSS variable - this is what the shadow DOM uses internally */
+.RelatedPosts.RelatedPostsSlider.__items_design-3.__grid-2 .PostAnnounce.__design-3 ads-breadcrumbs.PostAnnounce__basic_text {
+  --ads-breadcrumbs-color: #E6E6E9 !important;
+  color: #E6E6E9 !important;
+}
+
+/* Override ads-breadcrumbs-color for PostAnnounce__date __short elements */
+ads-breadcrumb.PostAnnounce__date.__short,
+ads-breadcrumbs ads-breadcrumb.PostAnnounce__date.__short,
+.PostAnnounce__date.__short {
+  --ads-breadcrumbs-color: var(--arm-post-announce-metadata-color, #484848) !important;
+  color: var(--arm-post-announce-metadata-color, #484848) !important;
+}
+
+/* Override ads-breadcrumbs-color for PostAnnounce__author elements */
+.PostAnnounce__author,
+div[class*="PostAnnounce__author"],
+ads-card .PostAnnounce__author,
+ads-card-content .PostAnnounce__author {
+  --ads-breadcrumbs-color: var(--arm-post-announce-metadata-color, #484848) !important;
+  color: var(--arm-post-announce-metadata-color, #484848) !important;
+}
+
+
+/* Featured Blogs - Breadcrumbs */
+.RelatedPosts.featured-blogs-block ads-breadcrumbs ads-breadcrumb.PostAnnounce__post_type,
+.RelatedPosts.featured-blogs-block ads-breadcrumbs ads-breadcrumb.PostAnnounce__date
+{
+  --ads-breadcrumbs-color: #9C9AA8 !important;
+  color: var(--ads-breadcrumbs-color) !important;
+}
+
+/* =================================================================
+   PostAnnounce Author Styling
+   Consistent typography for author metadata across all contexts
+   ================================================================= */
+.PostAnnounce__author,
+div[class*="PostAnnounce__author"],
+ads-card .PostAnnounce__author,
+ads-card-content .PostAnnounce__author,
+.RelatedPosts .PostAnnounce__author {
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.02em !important; /* 2% = 0.02em */
+  vertical-align: middle !important;
+  /* leading-trim & text-edge removed (unsupported) */
+}
+
+/* Target span children within PostAnnounce__author */
+.PostAnnounce__author span,
+div[class*="PostAnnounce__author"] span,
+ads-card .PostAnnounce__author span,
+ads-card-content .PostAnnounce__author span {
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Override utility classes that may conflict */
+.PostAnnounce__author.u-text-bold,
+.PostAnnounce__author.u-text-bold span,
+div[class*="PostAnnounce__author"].u-text-bold,
+div[class*="PostAnnounce__author"].u-text-bold span {
+  font-weight: 400 !important; /* Remove bold */
+}
+
+.PostAnnounce__author.u-font-size-90\%,
+div[class*="PostAnnounce__author"].u-font-size-90\% {
+  font-size: 16px !important; /* Override 90% sizing */
+}
+
+/* =================================================================
+   Marketo Submit Buttons (.mktoButton) - Site-wide
+   Mirror primary CTA styles for consistent look and accessibility.
+   ================================================================= */
+/* Base (default) state */
+body#layout button.mktoButton[type="submit"],
+body#layout input.mktoButton[type="submit"] {
+  /* Marketo button uses dedicated tokens */
+  background-color: var(--arm-mkto-button-bg, #7233F7) !important;
+  border: 1px solid var(--arm-mkto-button-border, #7233F7) !important;
+  color: var(--arm-mkto-button-text, #ffffff) !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important; /* normalized per request */
+  font-style: normal !important;
+  height: 48px !important; /* match large primary CTA */
+  line-height: 48px !important; /* vertically center when not using flex */
+  /* Align spacing with global CTA buttons */
+  padding: var(--arm-cta-button-padding, 15px 19px) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  /* Align rounding with global CTA buttons */
+  border-radius: var(--arm-cta-button-border-radius, 1rem) !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease !important;
+  box-shadow: none !important; /* no idle ring */
+  outline: none !important;
+}
+
+/* Hover state */
+body#layout button.mktoButton[type="submit"]:hover,
+body#layout input.mktoButton[type="submit"]:hover {
+  /* Hover */
+  background-color: var(--arm-mkto-button-hover-bg, #6023DE) !important;
+  border-color: var(--arm-mkto-button-hover-border, #6023DE) !important;
+  color: var(--arm-mkto-button-hover-text, #ffffff) !important;
+  box-shadow: none !important; /* keep hover clean */
+}
+
+/* Remove default outline on plain :focus (mouse/pointer) */
+body#layout button.mktoButton[type="submit"]:focus,
+body#layout input.mktoButton[type="submit"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Accessible ring only on :focus-visible */
+body#layout button.mktoButton[type="submit"]:focus-visible,
+body#layout input.mktoButton[type="submit"]:focus-visible {
+  /* Accessible focus ring */
+  box-shadow: 0 0 0 2px var(--arm-mkto-button-focus-ring, #7233F7) !important;
+  outline: none !important;
+}
+
+/* Active/pressed state */
+body#layout button.mktoButton[type="submit"]:active,
+body#layout input.mktoButton[type="submit"]:active,
+body#layout button.mktoButton[type="submit"][aria-pressed="true"],
+body#layout input.mktoButton[type="submit"][aria-pressed="true"] {
+  /* Active */
+  background-color: var(--arm-mkto-button-active-bg, #8047F8) !important;
+  border-color: var(--arm-mkto-button-active-border, #8047F8) !important;
+  color: var(--arm-mkto-button-active-text, #ffffff) !important;
+  box-shadow: inset 0 0 0 1px var(--arm-mkto-button-active-border, #8047F8) !important;
+}
+
+/* Sub-page RelatedPosts CTA: ensure light primary palette */
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary {
+  /* Variable re-mapping (light primary) */
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border, #0057FF) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-active-border, #0057FF) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-active-text, #0057FF) !important;
+  /* Direct properties (idle) */
+  background-color: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  border-color: var(--arm-cta-primary-border, #0057FF) !important;
+  color: var(--arm-cta-primary-text, #0057FF) !important;
+}
+
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary:hover,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary:hover {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+}
+
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary:active,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary:active,
+body#layout [class~="u-padding-top-1-1/2"][class~="u-padding-bottom-1-1/2"] .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+}
+
+/* Archive Terms Tabs: CTA context override for active tab slot */
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary {
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border, #0057FF) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-active-border, #0057FF) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-active-text, #0057FF) !important;
+  background-color: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  border-color: var(--arm-cta-primary-border, #0057FF) !important;
+  color: var(--arm-cta-primary-text, #0057FF) !important;
+}
+
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary:hover,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary:hover,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:hover {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+}
+
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary:active,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary:active,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta button.c-cta-button.is-large.is-primary[aria-pressed="true"],
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:active,
+#archive__terms_tabs .RelatedPosts__container .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+}
+
+/* Tabbed RelatedPosts (ads-card): light palette CTA override for tab slot containers */
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta a.c-cta-button.is-large.is-primary,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta button.c-cta-button.is-large.is-primary {
+  /* Variable remap (defensive, if component consumes them) */
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border, #0057FF) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-active-border, #0057FF) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-active-text, #0057FF) !important;
+  /* Direct properties (idle) */
+  background-color: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  border-color: var(--arm-cta-primary-border, #0057FF) !important;
+  color: var(--arm-cta-primary-text, #0057FF) !important;
+  border-width: var(--arm-cta-button-border-width, 1px) !important;
+  border-style: solid !important;
+}
+
+/* AdvertBeforeFooter: permanent hide */
+body#layout .AdvertBeforeFooter.custom_block.alignfull.__mode_ {
+  display: none !important;
+  visibility: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+}
+body#layout .AdvertBeforeFooter.custom_block.alignfull.__mode_.__show_advert_before_footer {
+  display: block !important;
+  visibility: visible !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Utility: Hidden Marketo pruned rows (applies to any pruned descriptor rows) */
+.mktoHiddenRow, #mktoForm_1706 .mktoHtmlText.mktoHasWidth.mktoHiddenRow, #mktoForm_1817 .mktoHtmlText.mktoHasWidth.mktoHiddenRow {
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+/* Defensive: collapse hidden html text rows (even if width style persists) */
+#mktoForm_1817 .mktoHtmlText.mktoHiddenRow { visibility:hidden !important; height:0!important; margin:0!important; padding:0!important; overflow:hidden!important; }
+
+/* MediaInformation Design-1: responsive resizing with aspect-ratio */
+body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image,
+body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image img,
+body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image picture {
+  width: auto;
+} 
+
+/* Medium breakpoint: keep three across unless truly constrained */
+@media (max-width: 1260px) {
+  body#layout .MediaInformation.custom_block.__mode_ .MediaInformation__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   }
+}
+/* Small breakpoint: stack */
+@media (max-width: 640px) {
+  body#layout .MediaInformation.custom_block.__mode_ .MediaInformation__items {
+    flex-direction: column;
+    justify-content: center;
+   }
+  body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image,
+  body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image img,
+  body#layout .MediaInformation__item.__design-1 .MediaInformationItem__image picture {
+  width: 100%;
+} 
+}
+
+/* =============================================================
+   Search Filter Font Enforcement
+   Ensure any search filter UI using classes .search_filter_s or .search__filter
+   (and their descendants) inherit Aeonik consistently even if third-party
+   widget CSS injects another family. Shadow DOM injection handled separately.
+   ============================================================= */
+.search_filter_s, .search_filter_s *,
+.search__filter, .search__filter * {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Light DOM fallback: ensure the visible label inside the filter bar (e.g., the literal word "Filter")
+   and any immediate textual children adopt Aeonik even if component upgrades late */
+.search__filter > span, .search__filter > span *,
+.search__filter > div > span, .search__filter > div > span * {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+/* =============================================================
+   Search Results Title Font Enforcement
+   Ensure ANY div.search__title (and descendants) uses Aeonik regardless of
+   upstream ADS / legacy styles that may reintroduce Lato or a system stack.
+   We include several specificity variants and !important to out‑compete
+   potential later-loaded rules (e.g., aggregated/minified plugin CSS).
+   ============================================================= */
+body#layout .search__title,
+body#layout #search .search__title,
+body#layout .search__title *,
+body#layout #search .search__title * {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Breadcrumb Typography: ads-breadcrumbs/ads-breadcrumb font enforcement */
+ads-breadcrumbs, ads-breadcrumbs *,
+ads-breadcrumb, ads-breadcrumb * {
+  font-family: var(--font-family-aeonik-fono, "Aeonik Fono", "Aeonik", sans-serif) !important;
+  font-weight: 600 !important;
+  font-style: normal !important; /* SemiBold realized via weight */
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+}
+
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta a.c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta button.c-cta-button.is-large.is-primary:hover {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+}
+
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta a.c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta button.c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta button.c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+}
+
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:focus-visible,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta a.c-cta-button.is-large.is-primary:focus-visible,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.has--background-color.aligncenter:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta button.c-cta-button.is-large.is-primary:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--arm-cta-primary-border, #0057FF) !important;
+}
+
+/* Disabled state */
+body#layout button.mktoButton[type="submit"][disabled],
+body#layout input.mktoButton[type="submit"][disabled] {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+}
+
+/* Clickable Tags: Shadow DOM variable bridge + parent hover */
+
+#layout__main #single_post .single_post__reading_time ads-tag {
+  --arm-web-safe-dark-grey: #656565 !important;
+  --ads-tag-color: #656565 !important;
+  --ads-tag-border-color: transparent !important;
+}
+
+body#layout #single_post .single_post__terms ads-tag,
+body#layout #single_post .single_post__terms ads-tag:hover,
+body#layout #single_post .single_post__terms ads-tag:focus,
+body#layout #single_post .single_post__terms ads-tag:hover .c-tag.is-clickable:hover,
+body#layout #single_post .single_post__terms ads-tag:hover .c-tag.is-clickable:focus,
+body#layout #single_post .single_post__terms ads-tag .c-tag.is-clickable:hover {
+  --ads-tag-border-color: transparent !important;
+  --ads-tag-border-color-hover:  transparent !important;
+  --ads-tag-background-color-hover:  transparent !important;
+  --ads-font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+}
+
+/* =================================================================
+   CTA PARITY FOR CLICKABLE TAGS
+   Ensure clickable tags EXACTLY mirror primary CTA color tokens so
+   that hover/active/focus states match buttons pixel-for-pixel.
+   We map tag variables to CTA button variables and also enforce
+   direct properties for hosts & internal parts.
+   ================================================================= */
+body .c-tag.is-clickable,
+body ads-tag[is-clickable],
+body ads-tag[is-Clickable] {
+  /* Map tag vars directly to CTA vars */
+  --ads-tag-background-color: var(--arm-cta-primary-bg) !important;
+  --ads-tag-color: var(--arm-cta-primary-text) !important;
+  --ads-tag-background-color-hover: var(--arm-cta-primary-hover-bg) !important;
+  --ads-tag-border-color-hover: var(--arm-cta-primary-hover-border) !important;
+  --ads-tag-color-hover: var(--arm-cta-primary-hover-text) !important;
+  --ads-tag-background-color-focus: var(--arm-cta-primary-hover-bg) !important;
+  --ads-tag-border-color-focus: var(--arm-cta-primary-hover-border) !important;
+  --ads-tag-color-focus: var(--arm-cta-primary-hover-text) !important;
+  --ads-tag-background-color-active: var(--arm-cta-primary-active-bg) !important;
+  --ads-tag-border-color-active: var(--arm-cta-primary-active-border) !important;
+  --ads-tag-color-active: var(--arm-cta-primary-active-text) !important;
+  background-color: var(--ads-tag-background-color) !important;
+  color: var(--ads-tag-color) !important;
+  border: 1px solid var(--ads-tag-border-color) !important;
+}
+
+body .c-tag.is-clickable:hover,
+body ads-tag[is-clickable]:hover,
+body ads-tag[is-Clickable]:hover {
+  background-color: var(--ads-tag-background-color-hover) !important;
+  border-color: var(--ads-tag-border-color-hover) !important;
+  color: var(--ads-tag-color-hover) !important;
+}
+
+body .c-tag.is-clickable:active,
+body .c-tag.is-clickable[aria-pressed="true"],
+body ads-tag[is-clickable]:active,
+body ads-tag[is-clickable][aria-pressed="true"],
+body ads-tag[is-Clickable]:active,
+body ads-tag[is-Clickable][aria-pressed="true"] {
+  background-color: var(--ads-tag-background-color-active) !important;
+  border-color: var(--ads-tag-border-color-active) !important;
+  color: var(--ads-tag-color-active) !important;
+}
+
+body .c-tag.is-clickable:focus-visible,
+body ads-tag[is-clickable]:focus-visible,
+body ads-tag[is-Clickable]:focus-visible {
+  box-shadow: 0 0 0 2px var(--arm-cta-primary-hover-border, #004EE6) !important;
+  outline: none !important;
+}
+
+/* If component exposes parts, sync parts with mapped vars */
+ads-tag::part(base) {
+  background-color: var(--ads-tag-background-color) !important;
+  color: var(--ads-tag-color) !important;
+  border: 1px solid var(--ads-tag-border-color) !important;
+}
+ads-tag::part(base):hover { background-color: var(--ads-tag-background-color-hover) !important; border-color: var(--ads-tag-border-color-hover) !important; color: var(--ads-tag-color-hover) !important; }
+ads-tag::part(base):active { background-color: var(--ads-tag-background-color-active) !important; border-color: var(--ads-tag-border-color-active) !important; color: var(--ads-tag-color-active) !important; }
+
+
+/* =================================================================
+   DIMENSIONAL PARITY (Spacing / Border / Radius) FOR CLICKABLE TAGS
+   Mirror .c-cta-button sizing tokens so tags visually align with CTAs.
+   Uses min-height instead of fixed height to allow graceful wrapping
+   if a taxonomy term is unusually long.
+   ================================================================= */
+body .c-tag.is-clickable,
+body ads-tag[is-clickable],
+body ads-tag[is-Clickable],
+body ads-tag[is-clickable]::part(base),
+body ads-tag[is-Clickable]::part(base) {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--arm-cta-button-gap, 10px) !important;
+  height: var(--arm-cta-button-height, 40px) !important; /* exact match to CTA height */
+  padding: var(--arm-cta-button-padding, 15px 19px) !important; /* match CTA internal spacing */
+  border-radius: var(--arm-cta-button-border-radius, 1rem) !important;
+  border-width: var(--arm-cta-button-border-width, 1px) !important;
+  border-style: solid !important;
+  box-sizing: border-box !important;
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important; /* normalized per request */
+  font-size: var(--ads-cta-button-font-size-medium, 16px) !important; /* mirror CTA font sizing */
+  line-height: 1 !important; /* CTA buttons render single-line; ensure perfect vertical centering in fixed height */
+  letter-spacing: var(--arm-body-letter, 0.02em) !important; /* match global body / CTA tracking */
+  text-decoration: none !important;
+  white-space: nowrap !important; /* keep consistent button silhouette */
+}
+
+/* Opt-out utility if wrapping is desired in specific contexts */
+body .c-tag.is-clickable.c-tag--allow-wrap,
+body ads-tag[is-clickable].c-tag--allow-wrap,
+body ads-tag[is-Clickable].c-tag--allow-wrap {
+  white-space: normal !important;
+  height: auto !important; /* allow growth */
+  min-height: var(--arm-cta-button-height, 40px) !important; /* maintain minimum silhouette */
+  align-items: flex-start !important; /* multi-line alignment */
+  line-height: 1.25 !important; /* comfortable multi-line reading */
+}
+
+/* =============================================================
+   ACTIVE STATE JS BRIDGING
+   When JS helper adds .is-active (or attribute aria-pressed="true")
+   to <ads-tag>, force active color tokens to ensure visual parity.
+   ============================================================= */
+body ads-tag[is-clickable].is-active,
+body ads-tag[is-Clickable].is-active {
+  --ads-tag-background-color: var(--arm-cta-primary-active-bg) !important;
+  --ads-tag-border-color: var(--arm-cta-primary-active-border) !important;
+  --ads-tag-color: var(--arm-cta-primary-active-text) !important;
+  background-color: var(--arm-cta-primary-active-bg) !important;
+  border-color: var(--arm-cta-primary-active-border) !important;
+  color: var(--arm-cta-primary-active-text) !important;
+}
+
+/* =============================================================
+   SINGLE POST CONTEXT RE-ASSERTION
+   Some earlier component CSS (xs.css / lgs.css) freezes hover/active
+   variables for tags inside .single_post__terms / .single_post__reading_time.
+   Re-assert the interactive palette with higher specificity here.
+   ============================================================= */
+#single_post .single_post__terms ads-tag[is-clickable],
+#single_post .single_post__terms ads-tag[is-Clickable],
+#single_post .single_post__reading_time ads-tag[is-clickable],
+#single_post .single_post__reading_time ads-tag[is-Clickable] {
+  --ads-tag-background-color: #EBF1FF !important;
+  --ads-tag-border-color: #99BCFF !important;
+  --ads-tag-color: #080225 !important;
+  --ads-tag-background-color-hover: var(--arm-cta-primary-hover-bg) !important;
+  --ads-tag-border-color-hover: var(--arm-cta-primary-hover-border) !important;
+  --ads-tag-color-hover: var(--arm-cta-primary-hover-text) !important;
+  --ads-tag-background-color-active: var(--arm-cta-primary-active-bg) !important;
+  --ads-tag-border-color-active: var(--arm-cta-primary-active-border) !important;
+  --ads-tag-color-active: var(--arm-cta-primary-active-text) !important;
+  --ads-tag-border-color-focus: transparent !important;
+}
+
+#single_post .single_post__terms ads-tag[is-clickable]:hover,
+#single_post .single_post__terms ads-tag[is-Clickable]:hover,
+#single_post .single_post__reading_time ads-tag[is-clickable]:hover,
+#single_post .single_post__reading_time ads-tag[is-Clickable]:hover {
+ 
+  background-color: var(--arm-cta-primary-hover-bg) !important;
+  border-color: var(--arm-cta-primary-active-border) !important;
+  color: var(--arm-cta-primary-hover-text) !important;
+}
+
+#single_post .single_post__terms ads-tag[is-clickable]:active,
+#single_post .single_post__terms ads-tag[is-Clickable]:active,
+#single_post .single_post__terms ads-tag[is-clickable].is-active,
+#single_post .single_post__terms ads-tag[is-Clickable].is-active,
+#single_post .single_post__reading_time ads-tag[is-clickable]:active,
+#single_post .single_post__reading_time ads-tag[is-Clickable]:active,
+#single_post .single_post__reading_time ads-tag[is-clickable].is-active,
+#single_post .single_post__reading_time ads-tag[is-Clickable].is-active {
+  background-color: var(--arm-cta-primary-active-bg) !important;
+  border-color: var(--arm-cta-primary-active-border) !important;
+  color: var(--arm-cta-primary-active-text) !important;
+}
+
+/* PostAnnounce Basic Text: 12px/14px micro typography in horizontal/grid variants */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold.hydrated,
+body#layout .RelatedPosts__posts.__grid-3.u-display-grid.u-gap-2.xs\:u-grid-columns-1.md\:u-grid-columns-2.lg\:u-grid-columns-3 .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold,
+body#layout .RelatedPosts__posts.__grid-3.u-display-grid.u-gap-2.xs\:u-grid-columns-1.md\:u-grid-columns-2.lg\:u-grid-columns-3 .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold.hydrated,
+body#layout .RelatedPosts__posts.__grid-2.u-display-grid.u-gap-2.xs\:u-grid-columns-1.lg\:u-grid-columns-2 .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold,
+body#layout .RelatedPosts__posts.__grid-2.u-display-grid.u-gap-2.xs\:u-grid-columns-1.lg\:u-grid-columns-2 .PostAnnounce__basic_text.u-text-uppercase.u-letter-spacing-3.u-text-bold.hydrated {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  font-weight: 600 !important; /* ensure boldness retained */
+  letter-spacing: 1.2px !important; /* 10% of 12px font-size */
+  text-transform: uppercase !important; /* maintain uppercase */
+}
+
+/* PostAnnounce Author: secondary gray text color */
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .PostAnnounce__author,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__author {
+  color: var(--text-secondary, #9C9AA8) !important;
+  fill: var(--text-secondary, #9C9AA8) !important;
+}
+
+/* If any spans inside author container are force-colored, reassert secondary */
+body#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color .PostAnnounce__author span,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__author span {
+  color: inherit !important;
+  fill: inherit !important;
+}
+
+/* PostAnnounce Title: left alignment override */
+body#layout h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+body h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+html body h3.PostAnnounce__title.c-heading-6.u-margin-top-1.u-margin-bottom-1,
+body#layout h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1,
+body h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1,
+html body h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1 {
+  text-align: left !important;
+}
+
+body#layout h3.PostAnnounce__title.c-heading-3 {
+  margin-top: 0px;
+}
+
+/* Safety Reassertion: tabbed RelatedPosts CTA large primary palette */
+/* Idle (strict + relaxed) */
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary {
+  --arm-cta-primary-hover-border: #99BCFF;
+  background-color: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  border-color: var(--arm-cta-primary-border, #99BCFF) !important;
+  color: var(--arm-cta-primary-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary: var(--arm-cta-primary-bg, #f4f8ff) !important;
+  --ads-cta-button-border-color-primary: var(--arm-cta-primary-border, #99BCFF) !important;
+  --ads-cta-button-color-primary: var(--arm-cta-primary-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-hover: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  --ads-cta-button-border-color-primary-hover: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  --ads-cta-button-color-primary-hover: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  --ads-cta-button-background-color-primary-active: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  --ads-cta-button-border-color-primary-active: var(--arm-cta-primary-active-border, #0057FF) !important;
+  --ads-cta-button-color-primary-active: var(--arm-cta-primary-active-text, #0057FF) !important;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+
+/* Hover */
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base):hover,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base):hover {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #99BCFF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+}
+
+/* Active / Pressed */
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base):active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card.aligncenter.has--background-color:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base)[aria-pressed="true"],
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base):active,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base)[aria-pressed="true"] {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #99BCFF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+}
+
+/* Focus-visible (keyboard) */
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta .c-cta-button.is-large.is-primary:focus-visible,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary:focus-visible,
+body#layout [data-id^="slot-"] .RelatedPosts.__items_design-ads-card:not(.RelatedPostsSlider):not(.has-black-background-color) .RelatedPosts__cta ads-cta-button.c-cta-button.is-large.is-primary::part(base):focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--arm-cta-primary-hover-border, #0057FF) !important;
+}
+
+/* Global CTA: font-weight 400 normalization */
+body [class*="c-cta-button"],
+body [class*="cta-button"],
+body [class*="c-cta-button"] *,
+body [class*="cta-button"] * {
+  font-weight: 400 !important;
+}
+
+/* PrettySimpleHero: image brightness fix & height constraints */
+
+/* Desktop: Set main container height to 600px */
+@media (min-width: 769px) {
+  body#layout .PrettySimpleHero.custom_block.alignfull.__mode_.__has_bg {
+    height: 600px !important;
+    min-height: 600px !important;
+    max-height: 600px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+body#layout .PrettySimpleHero .PrettySimpleHero__background {
+  opacity: 1 !important; /* restore original image contrast */
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure background image fills the entire background container */
+body#layout .PrettySimpleHero .PrettySimpleHero__background img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+}
+/* Optional gradient helper (apply by adding PrettySimpleHero--hasGradient to root hero div) */
+body#layout .PrettySimpleHero.PrettySimpleHero--hasGradient .PrettySimpleHero__background:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+  pointer-events: none;
+}
+/* Ensure stacking context so pseudo-element sits above image but below content */
+body#layout .PrettySimpleHero .PrettySimpleHero__background,
+body#layout .PrettySimpleHero .PrettySimpleHero__background:after {
+  z-index: 0;
+}
+body#layout .PrettySimpleHero .PrettySimpleHero__container {
+  position: relative;
+  z-index: 1; /* keep text above gradient */
+}
+
+/* PrettySimpleHero: container text alignment override */
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 {
+  text-align: left !important; /* base */
+  /* Add internal left padding for top line & title without disturbing global container padding utilities */
+  --ps-hero-left-offset: 32px; /* custom variable for potential reuse */
+  padding-top: 0 !important; /* enforce zero top padding per spec */
+}
+/* Apply the 32px left padding to the specific hero textual elements */
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .PrettySimpleHero__top_line.u-text-uppercase.u-letter-spacing-3.u-text-bold,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .PrettySimpleHero__title.c-heading-1 {
+  padding-left: var(--ps-hero-left-offset, 32px) !important;
+}
+
+@media (max-width: 768px) {
+  body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .PrettySimpleHero__top_line.u-text-uppercase.u-letter-spacing-3.u-text-bold {
+    padding-left: 0px !important;
+    text-align: center;
+  }
+}
+
+
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h1,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h2,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h3,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h4,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h5,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h6,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-1,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-2,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-3,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-4,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-5,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-6,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 p,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 li,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 span {
+  text-align: left;
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 h1,
+  body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 .c-heading-1 {
+    text-align: center;
+  }
+}
+
+/* Ensure all text elements and their children within PrettySimpleHero__container are white */
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 *,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 a,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 a:visited,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 a:hover,
+body#layout .PrettySimpleHero__container.c-container.u-padding-right-1.u-padding-left-1 a:active {
+  color: #ffffff !important;
+}
+
+/* Final Override: RelatedPosts CTA container spacing */
+#layout .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__cta {
+  margin-top: 0 !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/* Variant reinforcement for slider contexts (ensure not overridden by slider-specific spacing rules) */
+#layout .RelatedPosts.RelatedPostsSlider .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__cta {
+  margin-top: 0 !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/* Final safety: ensure no bottom margin on the padded RelatedPosts container variants */
+#layout .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1,
+#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1,
+#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-3.has--background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1,
+#layout .RelatedPosts.RelatedPostsSlider.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 {
+  margin-bottom: 0 !important;
+}
+
+/* Final Font Enforcement: c-cta-button -> Aeonik with descendants */
+html body [class^="c-cta-button"],
+html body [class*=" c-cta-button"],
+html body [class^="c-cta-button"] *,
+html body [class*=" c-cta-button"] * {
+  font-family: var(--font-family-aeonik, "Aeonik", "Aeonik Fono", "Aeonik Fono", sans-serif) !important;
+}
+/* Transparency overrides: ads-card-horizontal on dark gradient */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color > .RelatedPosts__container,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__items_container,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__posts,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-card.PostAnnounce,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-card.PostAnnounce[orientation="horizontal"],
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .RelatedPosts__subscribe,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__cta .SubscribeOnBlog__mkForm.mkFormContainer.__custom_css {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* If any card host sets its own box/background via shadow root, try forcing inherit */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color ads-card.PostAnnounce {
+  --card-background: transparent !important;
+}
+
+/* Prevent unintended solid backgrounds on headings in this block */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .RelatedPosts__title.SectionTitle,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color h3.PostAnnounce__title {
+  background: none !important;
+}
+
+/* Defensive: remove any semi-opaque overlay utilities that might appear */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color [class*="u-bg-"],
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color [class*="u-background-"] {
+  background: transparent !important;
+}
+
+/* ADS-CARD-HORIZONTAL: per-card vertical spacing override */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer {
+  margin-top: 31px !important;
+  padding-bottom: 34px !important;
+}
+
+
+/* Vertical padding (45px) for ads-card-horizontal dark gradient */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color {
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+  /* Bottom-aligned full-width background image (stretches vertically if container height differs) */
+  background-color: var(--arm-slider-bg) !important; /* fallback color */
+  background-image: url('/wp-content/themes/cylogy-arm/assets/img/bottomGradient.png') !important; /* placed in existing img folder */
+  background-repeat: no-repeat !important;
+  background-position: bottom center !important; /* keep bottom of image anchored */
+  background-size: 100% 100% !important; /* always touch left/right edges; allow vertical stretch */
+  /* If you later prefer preserving aspect ratio with cropping, replace the line above with: background-size: cover !important; */
+}
+
+/* Marketo Email + Country fields: border, color, and typography */
+body#layout .RelatedPosts__cta .mktoForm input#Email,
+body#layout .RelatedPosts__cta .mktoForm input#email,
+body#layout .RelatedPosts__cta .mktoForm select#Country,
+body#layout .RelatedPosts__cta .mktoForm select#country {
+  border-width: 1px !important;
+  border-style: solid;
+  border-radius: 8px !important;
+  border-color: #848192 !important;
+  color: #6B677C !important;
+  -webkit-text-fill-color: #6B677C;
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.02em !important;
+}
+
+body#layout .RelatedPosts__cta .mktoForm input#Email::placeholder,
+body#layout .RelatedPosts__cta .mktoForm input#email::placeholder {
+  color: #6B677C !important;
+  opacity: 1 !important;
+  letter-spacing: 0.02em !important;
+}
+
+body#layout .RelatedPosts__cta .mktoForm select#Country option,
+body#layout .RelatedPosts__cta .mktoForm select#country option {
+  color: #6B677C !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* SubscribeOnNews Email field: border, color, and typography */
+body#layout .SubscribeOnNews__mkForm .mktoForm input#Email,
+body#layout .SubscribeOnNews__mkForm .mktoForm input#email {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 8px !important;
+  border-color: #848192 !important;
+  color: #6B677C !important;
+  -webkit-text-fill-color: #6B677C !important;
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.02em !important;
+}
+
+body#layout .SubscribeOnNews__mkForm .mktoForm .mktoInlineFirstRow .mktoButtonWrap {
+  align-self: flex-start;
+}
+
+/* Placeholder color + letter-spacing */
+body#layout .SubscribeOnBlog__mkForm .mktoForm .mktoField::placeholder,
+body#layout .SubscribeOnNews__mkForm .mktoForm .mktoField::placeholder {
+  color: #7D7D7D !important;
+  opacity: 1 !important;
+  letter-spacing: 0.02em !important;
+}
+
+body#layout .mktoForm .mktoError .mktoErrorMsg {
+  font-size: 11px;
+}
+
+body#layout .SubscribeOnBlog .SubscribeOnBlog__title,
+body#layout .SubscribeOnBlog .SubscribeOnBlog__subtitle,
+body#layout .SubscribeOnNews .SubscribeOnNews__title,
+body#layout .SubscribeOnNews .SubscribeOnNews__subtitle {
+  color: #080225;
+}
+
+/* IF dark background variant is used, ensure text is white */
+body#layout .SubscribeOnNews.has-arm-dark-blue-background-color.has-white-color .SubscribeOnNews__title,
+body#layout .SubscribeOnNews.has-arm-dark-blue-background-color.has-white-color .SubscribeOnNews__subtitle {
+  color: #FFFFFF;
+}
+
+
+/* SubscribeOnNews: dark blue gradient */
+body#layout .SubscribeOnNews.__news.custom_block.alignfull.__mode_.has-arm-light-blue-gradient-background-color.has-black-color {
+  /* Vertical fade layered atop horizontal spectrum using shared tokens */
+  background: var(--arm-subscribe-gradient-vertical),
+              var(--arm-subscribe-gradient-horizontal);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+/* Ensure inner container doesn't override outer gradient (if it previously had background). */
+body#layout .SubscribeOnNews.__news.custom_block.alignfull.__mode_.has-arm-light-blue-gradient-background-color.has-black-color > .SubscribeOnNews__container.c-container.u-padding-right-1.u-padding-left-1 {
+  background: transparent !important;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body#layout .SubscribeOnNews.__news.custom_block.alignfull.__mode_.has-arm-light-blue-gradient-background-color.has-black-color {
+    background: linear-gradient(90deg, #FCF8FF 0%, #E1D5FF 30%, #9FC9FF 60%, #96E3FF 80%, #53FDFF 100%);
+  }
+}
+
+/* SubscribeOnNews: title & subtitle typography override */
+/* Title */
+body#layout .SubscribeOnNews__title.c-heading-2 {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 32px !important;
+  line-height: 35px !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  /* color: #080225 !important;Adjust if original spec typo intended different shade */
+  margin: 0 0 12px 0; /* retain some separation from subtitle; adjust as needed */
+}
+
+/* Subtitle */
+body#layout .SubscribeOnNews__subtitle.c-heading-3 {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  letter-spacing: 1.8px !important;
+  text-align: center !important;
+  /* color: #484848 !important; */
+  margin: 0 0 24px 0; /* space below subtitle before form/content */
+}
+
+/* Hide Marketo Email + Country labels */
+body#layout .RelatedPosts__cta .mktoForm label#LblEmail,
+body#layout .RelatedPosts__cta .mktoForm label#lblemail,
+body#layout .RelatedPosts__cta .mktoForm label#LblCountry,
+body#layout .RelatedPosts__cta .mktoForm label#lblcountry,
+body#layout .RelatedPosts__cta .mktoForm label[for="Email"],
+body#layout .RelatedPosts__cta .mktoForm label[for="Country"] {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important; /* modern browsers */
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Single Post Terms: ads-tag variable fallback */
+body#layout .single_post__terms ads-tag,
+body#layout .single_post__terms ads-tag *,
+body#layout .single_post__terms ads-tag::part(base) {
+  font-family: var(--font-family-aeonik, "Aeonik", sans-serif) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.24px !important;
+  vertical-align: middle !important;
+  text-transform: capitalize !important;
+  border: 1px solid #99BCFF  !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 999px !important; /* pill appearance (optional, remove if not desired) */
+  padding: 0 6px !important; /* slight horizontal padding so border doesn't hug text */
+}
+body#layout .single_post__terms ads-tag a,
+body#layout .single_post__terms ads-tag a:link,
+body#layout .single_post__terms ads-tag a:visited,
+body#layout .single_post__terms ads-tag a:active,
+body#layout .single_post__terms ads-tag::part(base) a {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 4px; /* retain horizontal breathing room if component strips it */
+}
+body#layout .single_post__terms ads-tag a:focus-visible,
+body#layout .single_post__terms ads-tag::part(base) a:focus-visible {
+  outline: 2px solid var(--arm-cta-primary-focus-ring, rgba(0,87,255,0.28)) !important;
+  outline-offset: 2px;
+}
+
+/* PostAnnounceContainer: grid-2 desktop sizing (637x461) */
+@media (min-width: 768px) {
+  /* Set CSS custom property for c-card-content padding to 31px */
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer {
+    --ads-card-content-padding: 31px;
+  }
+  
+  /* ads-card-content padding reset */
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer ads-card-content {
+    --ads-card-content-padding: 32px 0px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 1 auto !important; /* allow natural height, not forced fill */
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+  
+  /* ads-breadcrumbs: zero out ALL spacing so it takes no vertical space */
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer ads-card-content ads-breadcrumbs,
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer ads-breadcrumbs {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  
+  /* PostAnnounce__title: 31px top margin creates the gap from ads-card-image */
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer .PostAnnounce__title,
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer h3.PostAnnounce__title,
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer .PostAnnounce__title.c-heading-3,
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer [class*="PostAnnounce__title"] {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important; /* allow full title height */
+    display: block !important; /* revert from -webkit-box clamp */
+  }
+  
+  /* PostAnnounce__author: 31px top margin creates gap from title */
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer .PostAnnounce__author,
+  body#layout .RelatedPosts__posts.__grid-2.u-display-grid.md\:u-grid-columns-2 .PostAnnounceContainer div.PostAnnounce__author {
+    margin-top: 31px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important; /* show full author text */
+    text-overflow: initial !important;
+    white-space: normal !important;
+  }
+}
+
+/* =================================================================
+   WordPress Block File Button Styling
+   Match wp-block-file__button to c-cta-button.is-large.is-primary
+   ================================================================= */
+
+/* Style WordPress file block download buttons to match primary CTA buttons */
+body#layout .wp-block-file__button.wp-element-button,
+body#layout a.wp-block-file__button.wp-element-button {
+  /* Dimensional properties - match global CTA button styling */
+  height: var(--arm-cta-button-height, 40px) !important;
+  padding: var(--arm-cta-button-padding, 15px 19px) !important;
+  gap: var(--arm-cta-button-gap, 10px) !important;
+  border-radius: var(--arm-cta-button-border-radius, 1rem) !important;
+  border-width: var(--arm-cta-button-border-width, 1px) !important;
+  border-style: solid !important;
+  opacity: var(--arm-cta-button-opacity, 1) !important;
+  transform: rotate(var(--arm-cta-button-angle, 0deg)) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  
+  /* Typography - match CTA button font styling */
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: var(--arm-cta-button-font-size, 16px) !important;
+  line-height: 130% !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  
+  /* Color scheme - match c-cta-button.is-large.is-primary */
+  background-color: var(--arm-cta-primary-bg-idle, #f4f8ff) !important;
+  border-color: var(--arm-cta-primary-border-idle, #0057FF) !important;
+  color: var(--arm-cta-primary-text-idle, #0057FF) !important;
+  
+  /* Transitions for smooth interactions */
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease !important;
+  
+  /* Remove any default WordPress button styling */
+  cursor: pointer !important;
+}
+
+/* Hover state for WordPress file block buttons */
+body#layout .wp-block-file__button.wp-element-button:hover,
+body#layout a.wp-block-file__button.wp-element-button:hover {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  text-decoration: none !important;
+}
+
+/* Focus state for WordPress file block buttons */
+body#layout .wp-block-file__button.wp-element-button:focus,
+body#layout a.wp-block-file__button.wp-element-button:focus {
+  background-color: var(--arm-cta-primary-hover-bg, #E6EEFF) !important;
+  border-color: var(--arm-cta-primary-hover-border, #0057FF) !important;
+  color: var(--arm-cta-primary-hover-text, #0057FF) !important;
+  outline: 2px solid var(--arm-cta-primary-focus-ring, rgba(0,87,255,0.28)) !important;
+  outline-offset: 2px !important;
+  text-decoration: none !important;
+}
+
+/* Active/pressed state for WordPress file block buttons */
+body#layout .wp-block-file__button.wp-element-button:active,
+body#layout a.wp-block-file__button.wp-element-button:active {
+  background-color: var(--arm-cta-primary-active-bg, #EBF1FF) !important;
+  border-color: var(--arm-cta-primary-active-border, #0057FF) !important;
+  color: var(--arm-cta-primary-active-text, #0057FF) !important;
+  text-decoration: none !important;
+}
+
+/* =================================================================
+   ADS CTA Button Primary Level + Medium Size Styling
+   Match ads-cta-button[level="primary"][size="medium"] to c-cta-button.is-large.is-primary appearance
+   ================================================================= */
+
+body#layout ads-cta-button[level="primary"][size="medium"] {
+  /* Typography matching c-cta-button.is-large.is-primary */
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: var(--arm-body-letter, 0.02em) !important;
+
+  /* Primary CTA Colors - Same as c-cta-button.is-large.is-primary */
+  --ads-cta-button-background-color-primary: #f4f8ff !important;
+  --ads-cta-button-border-color-primary: #0057FF !important;
+  --ads-cta-button-color-primary: #0057FF !important;
+
+  /* Hover States */
+  --ads-cta-button-background-color-primary-hover: #E6EEFF !important;
+  --ads-cta-button-border-color-primary-hover: #0057FF !important;
+  --ads-cta-button-color-primary-hover: #0057FF !important;
+
+  /* Focus States */
+  --ads-cta-button-background-color-primary-focus:  #E6EEFF !important;
+  --ads-cta-button-border-color-primary-focus: #0057FF !important;
+  --ads-cta-button-color-primary-focus: #0057FF !important;
+
+  /* Active States */
+  --ads-cta-button-background-color-primary-active: #EBF1FF !important;
+  --ads-cta-button-border-color-primary-active: #0057FF !important;
+  --ads-cta-button-color-primary-active: #0057FF !important;
+
+  /* Size - Large button dimensions */
+  --ads-cta-button-height-large: 48px !important;
+}
+
+/* Hide the copy icon inside ads-cta-button (matches existing icon removal rules) */
+body#layout ads-cta-button[level="primary"][size="medium"] .fal.fa-light.fa-copy,
+body#layout ads-cta-button[level="primary"][size="medium"] .fa-light.fa-copy,
+body#layout ads-cta-button[level="primary"][size="medium"] .fal.fa-copy,
+body#layout ads-cta-button[level="primary"][size="medium"] i.fal.fa-light.fa-copy,
+body#layout ads-cta-button[level="primary"][size="medium"] i.fa-light.fa-copy,
+body#layout ads-cta-button[level="primary"][size="medium"] i.fal.fa-copy {
+  display: none !important;
+}
+
+/* Prevent ads-cta-button ID containers from inheriting interactive styling */
+body#layout [id^="ads-cta-button"]:active,
+body#layout [id^="ads-cta-button"]:focus {
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+/* =================================================================
+   SubscribeOnNews CTA Button Styling - Solid Blue Variant
+   Override default light primary styling for buttons within SubscribeOnNews blocks
+   ================================================================= */
+/* Target c-cta-button.is-large.is-primary specifically within SubscribeOnNews */
+body#layout .SubscribeOnNews .c-cta-button.is-large.is-primary,
+body#layout .SubscribeOnNews a.c-cta-button.is-large.is-primary,
+body#layout .SubscribeOnNews button.c-cta-button.is-large.is-primary,
+body#layout .SubscribeOnNews__button_container .c-cta-button.is-large.is-primary,
+body#layout .SubscribeOnNews__button_container a.c-cta-button.is-large.is-primary,
+body#layout .SubscribeOnNews__button_container button.c-cta-button.is-large.is-primary {
+  /* Inactive state - solid blue background with white text */
+  background-color: #0057FF !important;
+  border-color: #0057FF !important;
+  color: #ffffff !important;
+  
+  /* Typography consistency */
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important;
+  letter-spacing: var(--arm-body-letter, 0.02em) !important;
+  font-style: normal !important;
+}
+
+/* Hover state for SubscribeOnNews buttons */
+body#layout .SubscribeOnNews .c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews a.c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews button.c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews__button_container .c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews__button_container a.c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews__button_container button.c-cta-button.is-large.is-primary:hover,
+body#layout .SubscribeOnNews .c-cta-button.is-large.is-primary:focus,
+body#layout .SubscribeOnNews a.c-cta-button.is-large.is-primary:focus,
+body#layout .SubscribeOnNews button.c-cta-button.is-large.is-primary:focus,
+body#layout .SubscribeOnNews__button_container .c-cta-button.is-large.is-primary:focus,
+body#layout .SubscribeOnNews__button_container a.c-cta-button.is-large.is-primary:focus,
+body#layout .SubscribeOnNews__button_container button.c-cta-button.is-large.is-primary:focus {
+  background-color: #004EE6 !important;
+  border-color: #004EE6 !important;
+  color: #ffffff !important;
+}
+
+/* Active state for SubscribeOnNews buttons */
+body#layout .SubscribeOnNews .c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews a.c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews button.c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews__button_container .c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews__button_container a.c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews__button_container button.c-cta-button.is-large.is-primary:active,
+body#layout .SubscribeOnNews .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .SubscribeOnNews a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .SubscribeOnNews button.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .SubscribeOnNews__button_container .c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .SubscribeOnNews__button_container a.c-cta-button.is-large.is-primary[aria-pressed="true"],
+body#layout .SubscribeOnNews__button_container button.c-cta-button.is-large.is-primary[aria-pressed="true"] {
+  background-color: #0046CC !important;
+  border-color: #0046CC !important;
+  color: #ffffff !important;
+}
+
+/* =================================================================
+   Marketo Form Button Styling - Solid Blue Variant (mktoForm_1817)
+   Apply same solid blue styling to Marketo submit buttons within forms
+   ================================================================= */
+/* Target Marketo submit buttons specifically within form 1817 and related forms */
+body#layout form#mktoForm_1817 .mktoButton,
+body#layout form#mktoForm_1817 button.mktoButton,
+body#layout form#mktoForm_1817 button[type="submit"],
+body#layout .RelatedPosts .mktoButton,
+body#layout .RelatedPosts button.mktoButton,
+body#layout .RelatedPosts button[type="submit"],
+body#layout .SubscribeOnNews .mktoButton,
+body#layout .SubscribeOnNews button.mktoButton,
+body#layout .SubscribeOnNews button[type="submit"] {
+  /* Inactive state - solid blue background with white text */
+  background-color: #0057FF !important;
+  border: 1px solid #0057FF !important;
+  color: #ffffff !important;
+  
+  /* Typography consistency */
+  font-family: var(--font-family-aeonik, "Aeonik") !important;
+  font-weight: 400 !important;
+  letter-spacing: var(--arm-body-letter, 0.02em) !important;
+  font-style: normal !important;
+  
+  /* Button styling to match ARM CTA buttons */
+  height: 48px !important;
+  padding: 0 1.5rem !important;
+  border-radius: 1.5rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+/* Hover state for Marketo submit buttons */
+body#layout form#mktoForm_1817 .mktoButton:hover,
+body#layout form#mktoForm_1817 button.mktoButton:hover,
+body#layout form#mktoForm_1817 button[type="submit"]:hover,
+body#layout .RelatedPosts .mktoButton:hover,
+body#layout .RelatedPosts button.mktoButton:hover,
+body#layout .RelatedPosts button[type="submit"]:hover,
+body#layout .SubscribeOnNews .mktoButton:hover,
+body#layout .SubscribeOnNews button.mktoButton:hover,
+body#layout .SubscribeOnNews button[type="submit"]:hover,
+body#layout form#mktoForm_1817 .mktoButton:focus,
+body#layout form#mktoForm_1817 button.mktoButton:focus,
+body#layout form#mktoForm_1817 button[type="submit"]:focus,
+body#layout .RelatedPosts .mktoButton:focus,
+body#layout .RelatedPosts button.mktoButton:focus,
+body#layout .RelatedPosts button[type="submit"]:focus,
+body#layout .SubscribeOnNews .mktoButton:focus,
+body#layout .SubscribeOnNews button.mktoButton:focus,
+body#layout .SubscribeOnNews button[type="submit"]:focus {
+  background-color: #004EE6 !important;
+  border-color: #004EE6 !important;
+  color: #ffffff !important;
+}
+
+/* Active state for Marketo submit buttons */
+body#layout form#mktoForm_1817 .mktoButton:active,
+body#layout form#mktoForm_1817 button.mktoButton:active,
+body#layout form#mktoForm_1817 button[type="submit"]:active,
+body#layout .RelatedPosts .mktoButton:active,
+body#layout .RelatedPosts button.mktoButton:active,
+body#layout .RelatedPosts button[type="submit"]:active,
+body#layout .SubscribeOnNews .mktoButton:active,
+body#layout .SubscribeOnNews button.mktoButton:active,
+body#layout .SubscribeOnNews button[type="submit"]:active {
+  background-color: #0046CC !important;
+  border-color: #0046CC !important;
+  color: #ffffff !important;
+}
+
+/* =================================================================
+   PostAnnounce__title Color Override - #080225
+   ================================================================= */
+/* High specificity rules to override existing gradient background rules */
+html body#layout [class*="PostAnnounce__title"],
+html body#layout .PostAnnounce__title,
+html body#layout h1.PostAnnounce__title,
+html body#layout h2.PostAnnounce__title,
+html body#layout h3.PostAnnounce__title,
+html body#layout h4.PostAnnounce__title,
+html body#layout h5.PostAnnounce__title,
+html body#layout h6.PostAnnounce__title,
+html body#layout .PostAnnounce__title.c-heading-1,
+html body#layout .PostAnnounce__title.c-heading-2,
+html body#layout .PostAnnounce__title.c-heading-3,
+html body#layout .PostAnnounce__title.c-heading-4,
+html body#layout .PostAnnounce__title.c-heading-5,
+html body#layout .PostAnnounce__title.c-heading-6,
+/* Target specific RelatedPosts contexts */
+html body#layout .RelatedPosts [class*="PostAnnounce__title"],
+html body#layout .RelatedPosts .PostAnnounce__title,
+html body#layout .RelatedPosts h3.PostAnnounce__title,
+html body#layout .RelatedPosts .PostAnnounce__title.c-heading-3,
+/* Override gradient background rules specifically */
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__title,
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounce__title,
+html body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color h3.PostAnnounce__title,
+/* Target ads-card contexts */
+html body#layout .RelatedPosts.__items_design-ads-card .PostAnnounce__title,
+html body#layout .RelatedPosts.__items_design-ads-card h3.PostAnnounce__title,
+html body#layout .RelatedPosts.__grid-2 .PostAnnounce__title,
+html body#layout .RelatedPosts.__grid-2 h3.PostAnnounce__title {
+  color: #080225 !important;
+}
+
+/* Vertical ads-card title (c-heading-3): navy color enforcement */
+html body#layout .RelatedPosts.__items_design-ads-card.__grid-2.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card[orientation="vertical"] ads-card-content h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1,
+html body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-ads-card.__grid-2.has--background-color .PostAnnounceContainer ads-card.PostAnnounce.__design-ads-card[orientation="vertical"] ads-card-content h3.PostAnnounce__title.c-heading-3.u-margin-top-1.u-margin-bottom-1 {
+  color: #080225 !important;
+}
+
+/* Featured Blogs divider line color */
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color .PostAnnounceContainer:not(.__no_line) {
+  border-bottom: 1px solid #393550;
+}
+
+/* Universal Section Title: navy color enforcement */
+body#layout h2.RelatedPosts__title.SectionTitle.c-heading-2,
+body#layout .RelatedPosts__title.SectionTitle.c-heading-2,
+body#layout .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2,
+body#layout h2.MediaInformation__title.SectionTitle.c-heading-2,
+body#layout .MediaInformation__title.SectionTitle.c-heading-2,
+body#layout h2.Twi__title.SectionTitle.c-heading-2,
+body#layout .Twi__title.SectionTitle.c-heading-2,
+body#layout .Twi__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  color: #080225 !important;
+}
+
+/* Gradient Word: scoped visibility fix for gradient text spans */
+body#layout .RelatedPosts.RelatedPostsSlider.__items_design-3.has-black-background-color .RelatedPosts__title .gradient-word {
+  /* Updated requirement: render solid white just like .featured-word-white */
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: #ffffff !important;
+  font-weight: 400; /* match surrounding heading weight for visual consistency */
+}
+
+/* High contrast mode / forced colors: ensure text remains visible */
+@media (forced-colors: active) {
+  body#layout .RelatedPosts.RelatedPostsSlider.__items_design-3.has-black-background-color .RelatedPosts__title .gradient-word {
+    background: none !important;
+    -webkit-text-fill-color: ButtonText !important;
+    color: ButtonText !important;
+  }
+}
+
+/* Contrast Restore: RelatedPosts titles on dark/gradient backgrounds */
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider) > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__title.SectionTitle.c-heading-2,
+body#layout .RelatedPosts.custom_block.alignfull.__mode_.__items_design-3.__grid-2.has-black-background-color:not(.RelatedPostsSlider) > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__title.SectionTitle.c-heading-2,
+body#layout .RelatedPosts.__has_custom_background.__custom_gradient-1.alignfull.__mode_.__items_design-ads-card-horizontal.__grid-2-horizontal.has--background-color > .RelatedPosts__container.c-container.u-padding-right-1.u-padding-left-1 > .RelatedPosts__title.SectionTitle.c-heading-2.u-margin-bottom-1-1\/2 {
+  color: var(--arm-slider-text, #fff) !important;
+}
+
+
+/* Custom Twitter Feeds by Smash Balloon Ovverrides */
+#ctf:not(.ctf_palette_dark) .ctf-tweet-actions .arm-social-icon svg path {
+    fill: var(--ads-color, #000);
+}

@@ -1,0 +1,10 @@
+body#layout .PostAnnounce.__design-ads-card {
+  --ads-card-image-min-height: calc(365px * var(--image-scale, 1));
+}
+body#layout .RelatedPosts__posts.__grid-2 .PostAnnounce.__design-ads-card {
+  --ads-card-image-min-height: 304px;
+}
+body#layout .RelatedPosts__posts.__grid-3 .PostAnnounce.__design-ads-card {
+  --ads-card-image-min-height: 225px;
+}
+/*# sourceMappingURL=lgs.css.map */

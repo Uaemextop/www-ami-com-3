@@ -1,0 +1,28 @@
+#layout .RelatedPosts .RelatedPosts__container {
+  margin-top: 0;
+}
+#layout .archive__title {
+  margin-top: 96px!important;
+}
+#layout .archive__title + .archive__terms_tabs {
+  margin-top: 16px!important;
+}
+#layout .archive__intro {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 152px 1fr;
+}
+#layout .archive__intro .archive__image {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+#layout .archive__intro .archive__title {
+  margin-top: 0!important;
+  grid-column: 2;
+  grid-row: 1;
+}
+#layout .archive__intro .archive__excerpt {
+  grid-column: 2;
+  grid-row: 2;
+}
+/*# sourceMappingURL=lgs.css.map */

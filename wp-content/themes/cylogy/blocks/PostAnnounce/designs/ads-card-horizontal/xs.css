@@ -1,0 +1,12 @@
+.PostAnnounce.__design-ads-card-horizontal {
+  --ads-card-content-padding: 1em 0;
+  --ads-card-image-min-height: 186px;
+}
+.PostAnnounce.__design-ads-card-horizontal:not(.hydrated) {
+  display: block!important;
+  min-height: var(--ads-card-image-min-height) !important;
+}
+.PostAnnounce.__design-ads-card-horizontal:not(.hydrated) > * {
+  opacity: 0;
+}
+/*# sourceMappingURL=xs.css.map */
