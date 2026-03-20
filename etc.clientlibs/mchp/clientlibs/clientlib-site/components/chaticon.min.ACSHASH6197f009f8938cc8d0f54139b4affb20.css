@@ -1,0 +1,6 @@
+.mchp-chat-icon{width:100%;display:block;height:10px}
+#chat-icon-div{height:70px;width:70px;position:fixed;bottom:20px;right:8px;text-align:center;align-content:center;box-shadow:2px 2px 10px lightgrey;border-radius:5px;display:inline-grid;cursor:pointer;z-index:1001;background:white}
+@media(max-width:775px){#chat-icon-div{bottom:100px;right:6px}
+}
+#chat-icon-div p{margin:0}
+.chat-icon{color:dodgerblue;text-align:center;margin:0 auto;display:block;font-size:30px}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./favicon.png">
+    <script>
+// akam-sw.js install script version 1.3.6
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.6";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),v());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=navigator.serviceWorker.__proto__.register;if(navigator.serviceWorker.__proto__.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function v(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}v()}}();</script>
+<script type="text/javascript" src="https://alcdn.msauth.net/browser/2.35.0/js/msal-browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://www.microchip.com/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/d55178fe-9ecc-452c-8fd7-230da8313c9a/OtAutoBlock.js"></script>
+    <script type="text/javascript" 
+            src="https://cdn.cookielaw.org/consent/d55178fe-9ecc-452c-8fd7-230da8313c9a/otSDKStub.js" 
+            data-domain-script="d55178fe-9ecc-452c-8fd7-230da8313c9a" 
+            charset="UTF-8">
+    </script>
+    <script type="text/javascript">
+      function OptanonWrapper() { }
+    </script>
+    <script type="text/javascript" src="https://www.microchip.com/ResourcePackages/Microchip/assets/dist/js/tracking.min.js?v=20180921"></script>
+
+    <title>Welcome to myMicrochip - Home</title>
+    <style>
+      /* Center the loader */
+      #loader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: .7;
+      }
+      .mchp-loader-icon {
+        background-image: url("./myMicrochip/microchip-solid.svg");
+
+        position: relative;
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        color: #fff;
+        font-size: 5em;
+        /* animation: fa-beat 3s ease infinite; */
+        animation-name: fa-beat;
+        animation-duration: 1s; 
+        animation-timing-function: ease; 
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+
+        @keyframes fa-beat{0{transform:scale(1)}
+          5%{transform:scale(1.25)}
+          20%{transform:scale(1)}
+          30%{transform:scale(1)}
+          35%{transform:scale(1.25)}
+          50%{transform:scale(1)}
+          55%{transform:scale(1.25)}
+          70%{transform:scale(1)}
+          }
+      }
+      .appDivDisp {
+        display: block;
+      }
+      .appDivDispN {
+        display: none;
+      }
+    </style>
+  <script defer src="./js/chunk-vendors-node_modules_axios_lib_a.172861caf6df5322.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-browser_dist__.b273ecfbd09468dd.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-browser_dist_e.ee228b3a7fc879e6.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-browser_dist_p.7d8bc1a5a0a5e7d4.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-common_dist__.946e0d8918ebbc96.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-common_dist_c.691c86995b5a42b5.js"></script><script defer src="./js/chunk-vendors-node_modules_azure_msal-common_dist_p.49f3866bf36f96f9.js"></script><script defer src="./js/chunk-vendors-node_modules_bootstrap_dist_css_bootstrap_min_css-84667f63.4c64d92c04c1f641.js"></script><script defer src="./js/chunk-vendors-node_modules_bootstrap_dist_js_bootstrap_js-e11b38a6.d7c50650cd4e8406.js"></script><script defer src="./js/chunk-vendors-node_modules_core-js_internals_a.1c33276fc4156580.js"></script><script defer src="./js/chunk-vendors-node_modules_core-js_modules_e.5319877500ec8222.js"></script><script defer src="./js/chunk-vendors-node_modules_crypto-js_a.445c7e193aede854.js"></script><script defer src="./js/chunk-vendors-node_modules_c.f6806e9cde2a217c.js"></script><script defer src="./js/chunk-vendors-node_modules_fortawesome_fontawesome-free_c.365b60512fdc9a2d.js"></script><script defer src="./js/chunk-vendors-node_modules_fortawesome_fontawesome-svg-core_index_mjs-d1d83be9.b8d7f43b67de3632.js"></script><script defer src="./js/chunk-vendors-node_modules_fortawesome_free-r.785f235b0098e809.js"></script><script defer src="./js/chunk-vendors-node_modules_f.8c21a3a82149a864.js"></script><script defer src="./js/chunk-vendors-node_modules_lodash_lodash_js-34c8b429.077a123b9c897f87.js"></script><script defer src="./js/chunk-vendors-node_modules_popperjs_core_lib_c.2f42342aa3aa6e26.js"></script><script defer src="./js/chunk-vendors-node_modules_s.e1b1ef9d9ef18419.js"></script><script defer src="./js/chunk-vendors-node_modules_vue-l.b6d025993da3ac2e.js"></script><script defer src="./js/chunk-vendors-node_modules_vue3.bc9a2f7c4c398e79.js"></script><script defer src="./js/chunk-vendors-node_modules_vue_.2c2a3af75262c903.js"></script><script defer src="./js/chunk-vendors-node_modules_vue_runtime-core_dist_runtime-core_esm-bundler_js-38aeea58.a3a2a04714232c57.js"></script><script defer src="./js/app-d.86a004029ed90df7.js"></script><script defer src="./js/app-src_A.656209fe58176d91.js"></script><script defer src="./js/app-src_as.46c62b45d074145d.js"></script><script defer src="./js/app-src_components_L.97aa2dfaf1bbca16.js"></script><script defer src="./js/app-src_components_R.ee27d520f5051ae1.js"></script><script defer src="./js/app-src_components_c.318b5474d8e3231f.js"></script><script defer src="./js/app-src_components_main-content_L.c9fb8f066b9d5e17.js"></script><script defer src="./js/app-src_components_my-cards_UserCard_vue-1.f4331211547f858b.js"></script><script defer src="./js/app-src_components_my-cards_shareableCards_R.efa6d2e6cd44ede2.js"></script><script defer src="./js/app-src_components_my-preferences_A.98d73b2922278d0f.js"></script><script defer src="./js/app-src_components_reference-designs_ReferenceDesignsS.0fed1b03cc7bb74a.js"></script><script defer src="./js/app-src_m.7ae05060a182fd76.js"></script><script defer src="./js/app-src_store_i.bf0fcc8c49e6b46b.js"></script><script defer src="./js/app-src_store_modules_m.26f582af067d68b5.js"></script><script defer src="./js/app-src_views_C.c3578cbd344d00cb.js"></script><script defer src="./js/app-src_views_Ma.1fa1d44a19a2ffe1.js"></script><script defer src="./js/app-src_views_M.a539c58e76b2e6f3.js"></script><script defer src="./js/app-src_views_RequestA.125737dc18d9a2d1.js"></script><script defer src="./js/app-src_views_SecureDocumentDownload_vue-2.afaa03a50abbfebb.js"></script><script defer src="./js/app-src_views_S.cbb0123b91c8a979.js"></script>
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"true","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-b5242b0d-ce43-4e35-b6c0-54b25a6d3ea5","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="HCSEV-U5H4D-73E56-YQZHY-A3PRY",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"HCSEV-U5H4D-73E56-YQZHY-A3PRY",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="true"=="true"?1:0,t="cookiepresent",n="hglyiidilzcnm2n4swva-f-e949a4ae6-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"39","ak.cp":"211479","ak.ai":parseInt("179286",10),"ak.ol":"0","ak.cr":17,"ak.ipv":4,"ak.proto":"h2","ak.rid":"52d5393a","ak.r":49882,"ak.a2":e,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"57.151.132.0","ak.cport":2075,"ak.gh":"23.210.6.199","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1773966762","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==zwb/frIeO2lYYKup0ULQ9LzDVGEy2qqepEWZ6vuCntv1BbBz8J2nWPHX44kpN6IxT/YCsgB6PqfLOFyo8t7BW0+S6Z+2oGr9BoVFRtM+AaRDNDAObR2p1sb7gxn/XSEkVR5l7A/XvlAHzYsLmxofuW8SULFb8GR1T6oiwORMLHt1KJUtmaHV4qF937xP+pv4YyvX+MibKro+QQHcixWrwqV9SnDWQt1GJUPWNLrgeDIZlQU7CK6BFuwH8WR8ZP1E1hGNPAYWQryY2IoKUdgmNTvdV6SG+YkgFvinoZEuCZvQDz0gu2mvDamkOj+OawYx23QjAc3yrMZCYEdC+Vm7HGb1BeG/q8Ci4+SQyYNDC2EhA0ERrj3NGKmB51LFZSjm0QdCTx/ai9Zsuz9vSgM46TkQOTNdSlDUUd21Q5nziG0=","ak.pv":"419","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><script >bazadebezolkohpepadr="538143916"</script><script type="text/javascript" src="https://www.microchip.com/akam/13/20136dad"  defer></script></head>
+  <body onload="">
+    
+      <div id="app"></div>
+  <script type="text/javascript"  src="/AWvjMVH3-zCZcFOHjssytoo9/riOYDftLDV2tXpab/MENZaywUEwE/AU85VV4a/ayIB"></script><noscript><img src="https://www.microchip.com/akam/13/pixel_20136dad?a=dD04NTM0NjE1ZGVlZDQ4ZmRiYTJiY2IwYWUwMzUwNjUyOTkyYmIxZmRjJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript"  src="/AWvjMVH3-zCZcFOHjssytoo9/hSOYDfEcaG/bx5eaywUEwE/DmUXRAQN/an0D?v=68a24952-ce15-3ae5-afad-7cd5e24317d2" defer></script></body>
+</html>
